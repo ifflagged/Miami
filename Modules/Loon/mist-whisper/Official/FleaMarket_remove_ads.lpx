@@ -1,1 +1,62 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-VhpHgX53vsZD3r3h7tCSZ9&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="VhpHgX53vsZD3r3h7tCSZ9">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'zNVhv9P5PdkA9H6CW_6EKzPPzmVRPAO1yZF.oLVLcCA-1790352264-1.2.1.1-r8Hf_fAOxD4QildNxZTv1jVyarecEYdIIBz_kYXpKAl.UxLbaeiRaWrfYgWasa0_',cITimeS: '1790352264',cN: 'VhpHgX53vsZD3r3h7tCSZ9',cRay: 'a40b43b47c42c97e',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/Lpx/FleaMarket_remove_ads.lpx?__cf_chl_tk=C5wG0uV3J0aBL76QcDnzz.e78i9kb84AoE0NQMmliI0-1790352264-1.0.1.1-t4s.KcplHmScCbmXKNc4k36Hp_ChUDeP4bEpQ6tdFAc",cvId: '3',cZone: 'kelvinlab.wuyra.com',fa:"/Lpx/FleaMarket_remove_ads.lpx?__cf_chl_f_tk=C5wG0uV3J0aBL76QcDnzz.e78i9kb84AoE0NQMmliI0-1790352264-1.0.1.1-t4s.KcplHmScCbmXKNc4k36Hp_ChUDeP4bEpQ6tdFAc",md: '8rbXTH2Y6.B.tKpdtRcgXw90onw8B9TeA.82nNU8c0U-1790352264-1.2.1.1-pS2qQ4cRXTV_rrVK3gd9lRLTk2gZ8gWlSk4qSgp6l9KuA.nZSAiTd5GmBdzB0eAWeVdk6gRp1b4XXTaSbNQfCaFX0ssh1Mh_OkPF2CfAQHY74P1lDOMd5v0__Kofmn4y3OwiET_h8ibCQCtQn7CZXRSZ2t.SNjpwRlJcWkC0ChHdAcxQm7bnGVy0xYLrKCDIJ97q9QUbacdxU2LbzQVYZ9j_lSsy0QWweFNUPpZN_3Y5Ir11t_pIK.dC6Z92bKbKVJdZQM91piMO3niLZtOy1gfTejziHccXX.cdWP4Ux4zD7FWscO_o4Uw0JdN29ayOveSVqDo0nOOSRz4.JfHZtyNwI6hgnt_3KBubOaPnMMiXDSm8PoMrAXmiTJ3G12g1t_gY2so965KmllHFXW3VyDj7mFfozG1HjwjrEE8hn6UnZ39Z8fuIhSDqbR79Uwook59dMVu66CabxNp_HYoV9EyDt0Lf8OQAfJSlmawn3WBX7gQB6r0hbiLxNLWyiPPUQA8TAyMZBqxgd7d_DxSqE1FpSFlcPbxTZhMcXFS9.Tu_WxwwEyI49YY43bglR6MeutTkti1SPwUu1suBr_OGIWAP2wBjBPBGff_26G2rA3ainiqZh9mr33BcoBC1_JHPjDJ_2o4vdBjPROZXeb9ij5UnGfVMBivd4eNFu8CRf.hHc1_WF4B.5FmHCRPAO5BA4IdhDrxqvDbfo5Is0pS4kQl6bz9XNArmrVoffzPRtZMXXsK.sMREsE3XriTV3iS2rb1nbSdnqu3aOxZSis.rywCmdTmxxL7jnN_wpwTNHmLgCFwDT7_pukpvljhukneIe4m_G2VOMIIpJ381YeJeRKpWNpGgxu6nZajyU4YeOvU1RoAEzr.D315runTYpVoyLsLcleHBBSXpk2KN3X3KA4kgld_sKtDc1D2jcMoMormrJUXb03kx8SzDAK8aE8C.DwxI1o9R5xuvtOC5U9M2q089whJMxnMTzhe.cSDtZECt33.1XcAngTimwKGZ1bgvGimVfavnfRmXeXQ60mdjag',mdrd: 'bhKT4ZflMQ7Px79jJutvMc9a3s3yZ8XEFLeXPFX4eZY-1790352264-1.2.1.1-2J9owOSBBMEuzHTZDctPS.sjODgH._PLle0..T3JowWXZFJAQBUnuUaqnQ7rxch1q3GJ2vQBLlBABTk4lFsizfbZeEX0X0vwJZbiO3Hqd3FznIHoNdBiAQXBQ20kozeq1Ws7H.12gAAu8VE.RgEhUt9aQ8Hs_hmoo79AGRPc7ME.yLz0wRcWH04YilqC123ZtCQSRjsWXU5Q_AHQ2vrs1uOYnN81WPeeRan3UEWz3RZtJgB5SkU0jd0ukxi0aaxlilgqZ6oHj59mVT3ao326.A',};var a = document.createElement('script');a.nonce = 'VhpHgX53vsZD3r3h7tCSZ9';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a40b43b47c42c97e';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Lpx/FleaMarket_remove_ads.lpx?__cf_chl_rt_tk=C5wG0uV3J0aBL76QcDnzz.e78i9kb84AoE0NQMmliI0-1790352264-1.0.1.1-t4s.KcplHmScCbmXKNc4k36Hp_ChUDeP4bEpQ6tdFAc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+#!name=闲鱼去广告
+#!desc=移除开屏广告、商品信息流广告、关注推荐、搜索栏填充词、首页签到入口及悬浮广告，精简我的页面。
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], wish[https://github.com/mist-whisper]
+#!tag=去广告
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.4.0(962)
+#!homepage=https://kelvinlab.wuyra.com
+#!icon=https://resource.wuyra.com/Icon/App_icon/120px/FleaMarket.png
+#!date=2026-05-18 21:36:26
+
+[Rewrite]
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash\.ads\/ reject-dict
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ response-body-json-jq '.data.homeTopList |= map(select(.sectionType == "kingkongDo")) | .data.sections |= map(select(.data.clickParam.args.cardType as $ct | $ct != "homeMultiBanner" and $ct != "mamaAD")) | .data.sections |= map(select((.template.name|type=="string")and(.template.name=="idlefish_home_new_commodity_card"or(.template.name|contains("fish_home_tags_item_card")))))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.widget\.refresh\.get\/ response-body-json-jq '.data.homeTopList |= map(select(.sectionType == "kingkongDo"))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/ response-body-json-jq '.data.container.sections |= map(select(.template.name == "fish_home_miniapp"))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.list\/ reject-dict
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.fun\.follow\.feed\.list\/ response-body-json-jq '.data.sections|=map(select(.cardType==2001))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.community\/ response-body-json-jq '.data.feedsList |= map(select(.template.name == "idlefish_home_new_commodity_card" or .template.name == "idlefish_home_new_content_card"))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.recommend\.list\/ reject-dict
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.newitem\.page\/ response-body-json-jq '.data.sections |= map(select(.data.clickParam.args.cardType as $ct | $ct != "banner" and $ct != "mamaAD"))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.near\.by\.corner\.info\/ reject-dict
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.flow\.plat\.section\/ response-body-json-jq '.data.data.components |= map(select(.data and (.data|type=="object") and .data.template and (.data.template|type=="object") and .data.template.name and (.data.template.name|type=="string") and (.data.template.name|contains("fish_city_kingkong"))))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\.top\/ response-body-json-jq '.data.data.components |= map(select(.key == "fish_home_second_stage_top_cardV3"))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/ response-body-json-jq '.data.sections |= map(select((.template.cardEnum != "ads") and (.cardType == "common")))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/ response-body-json-jq '.data.container.sections |= map(select(.template.name | test("^my_fy[0-9]+_(header|user_info|trade|appraise|tools)$"))) | .data.container.sections |= map(.item |= (if .level and .level.exContent and (.level.exContent | has("tips")) then del(.level) else . end)) | .data.container.sections|=map(if .sectionBizCode=="entry2025" then .item.tool.exContent.tools|=[[.[][]|select(.exContent.id as $id|$id==1 or $id==2 or $id==3 or $id==5 or $id==29 or $id==32 or $id==38)]|sort_by(. as $item|([5,2,3,32,38,1,29]|index($item.exContent.id)))|[range(0;length;5) as $i|.[$i:$i+5]]][] else . end)'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.buy\.feeds\/ reject-dict
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade\/ reject-dict
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ response-body-json-jq '.data.circleList[]?.showInfo |= del(.titleImage, .atmosphereImageUrl) | .data.next.headList |= map(select(.bizCode == "main" or .bizCode == "market" or .bizCode == "IDLE_CIRCLE")) | del(.data.next.headList[]?.showInfo.rightTagImage)'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.magic\.home\.page\.list\/ response-body-json-del data.topList
+
+^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/ response-body-json-jq '.data.resultList |= map(if .data.item.main.exContent.dislikeFeedback.clickParam.args.bizType == "ad" then empty else . end)'
+
+^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/ response-body-json-del data.resultPrefixBar
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover\/ response-body-json-jq '.data.resultList |= map(select(.type != "MarketHotSpot"))'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/ response-body-json-jq '.data.cardList |= map(if has("cardData") and (.cardData | has("hotwords")) then .cardData |= del(.hotwords) else . end)'
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.playboy\.recommend\/ reject-dict
+
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.trade\.full\.info\/ response-body-json-jq '.data.components |= map(select(.render | . == "orderStatusVO" or . == "addressInfoVO" or . == "orderInfoVO"))'
+
+[MitM]
+hostname=acs.m.goofish.com, g-acs.m.goofish.com

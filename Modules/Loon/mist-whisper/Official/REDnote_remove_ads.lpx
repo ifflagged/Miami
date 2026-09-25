@@ -1,1 +1,71 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-jkMQQ66BK0PN7AnepZkyqz&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="jkMQQ66BK0PN7AnepZkyqz">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'XW2T.n6v8FPieOZMOsbU0Gj2XGgtuLbCzUWe96atEfo-1790352266-1.2.1.1-jF8jKbMHw4EeV.vaKPCYCkkzqDPh.WmjTv9Ko2BR4afz9ytErPr2l66IwXYgmKcn',cITimeS: '1790352266',cN: 'jkMQQ66BK0PN7AnepZkyqz',cRay: 'a40b43bf6808a471',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/Lpx/REDnote_remove_ads.lpx?__cf_chl_tk=sF_uX9HSMI9o3VK2C445HvGE0PvS6g.Z.mYlL7WWyyg-1790352266-1.0.1.1-K39SBRA5qP5OK9pop7Oh2Q5vVBZYbS5W0tQibZLtg14",cvId: '3',cZone: 'kelvinlab.wuyra.com',fa:"/Lpx/REDnote_remove_ads.lpx?__cf_chl_f_tk=sF_uX9HSMI9o3VK2C445HvGE0PvS6g.Z.mYlL7WWyyg-1790352266-1.0.1.1-K39SBRA5qP5OK9pop7Oh2Q5vVBZYbS5W0tQibZLtg14",md: 'Hy6iEFAZIrA4De5VI9Wb1.Pjgzks7gcOdd4THkYuvHo-1790352266-1.2.1.1-1ua_7RoYo36Mr7_HMn9fTbVSidPg5GKZuUIwePi9Q74wvQUdnRDvl4sdJBSx22Ar3hqFNVxgvkc2WcXxaV47JLauLwMzb.2hWIkN0ny3GsrjA3w0JD.k_0qHq_StLWRDrga3BhCLn_sMP2.WRrsReVUnf9sA1JPI9aeAZJL5sn0HrPDPnPpWoQHtTcuzLxdGFJWSF8RX0BBO0TaxyrP8aooyqkQernsS_cGgjFZgtaAfRyPrJb_WfL4c1u9xxUxXYf.I4D_64629mhrfRQN1RbHnc5XHF81B57KKPm6iabVVMNyYNEukAMHYT0vQCHpZBXUku3yoUYG.HailcDzN7OOjjExCZuLk.YMkDTgiEjP.36aPujuclJfODD0oW7k676e3PpSAfkgb5rzqdpSn3Fvoy5g3wFT3OwH3T.FblnqNA32ODcmVU0II44ZAhwMf4CU51FvOkkO1MpdQ3VklmN6waCljA0J_ojnOYAZ7h8_fMbmPkDJ4Pnv5D2gnz8e5ONbCeH3IBIn28p9x_3O8UMkxNjaf8LofPMLzBDL4M93poJeOR2YLPsRybgAjIC8DZF1RtYRdpjjMGlrbIGvCpzcHGyM7OoM8a23Pd3UzsQ8FBFRrhd1_TihZSGwID0wvCkCsgEgFsDkVT5XhN6n1GAu3PREW0xA56Wni8jUbdio8sYEZDnF2VNhFAxAeKG2h7ZlU6iELhMGBRI0tJLnZrR0U.nB6VvLqK2hRmHOf4e317xNGaKfQh7LzKTFdQCY_u3sP8jexZREygQK32xL8Y3vXUFkxfhbhzeEl1kT1RgLcdt59WwzDck1wDPdNttM917A5B39.Y2KeAj6NLV9_6QcfGHVJ5tJInnW2RTtKAolG7jCOMqDf4e.Y_oPDr2UPRA7sUoU7tvlHzp4MBq2NyTN90gUtpB6bJf12HB9obLm_.MP1nwqOwxdtXF4b_975cq.eeIThpdM2ySBkGb114PYbXbQ8bIA6mUzQ1LtYgy1jWviozJixVhC8owXKVXSvNY1sGGdaEJVvYo1.zKs.tw',mdrd: 'oyUtSnYCvbyGWIvHOFdfrM6cx9ZdeH7sR2Rj2D5JYfQ-1790352266-1.2.1.1-ZKR64eSO2YCSL0TUBL8zjxkWCDuF1AuYwY1LCRV3QQoI_.zDnrTpop8T.KpVJvRkzjWZXleS9RtZYTnxFiUpQZC3es29yoogBe3NHosU_7fKTnD.5fnIBCxrE62oA9b9DzYpREFmZEvoBvx9ygDF6HgtLd3gsaas7pvDzA_.32.jnM2hmmXfF2.sr3Tu1q9FaS14ppDMeKSWjjVM4drvwjAjynZuVPwejIt46k8QArjGCtcywa1PjUWwyUEhoWb5H6g87JG7.xUw90_TicBpvg',};var a = document.createElement('script');a.nonce = 'jkMQQ66BK0PN7AnepZkyqz';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a40b43bf6808a471';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Lpx/REDnote_remove_ads.lpx?__cf_chl_rt_tk=sF_uX9HSMI9o3VK2C445HvGE0PvS6g.Z.mYlL7WWyyg-1790352266-1.0.1.1-K39SBRA5qP5OK9pop7Oh2Q5vVBZYbS5W0tQibZLtg14"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+#!name=小红书去广告
+#!desc=显示发布笔记时间，过滤信息流推广，移除笔记和评论区图片视频以及live图水印，移除评论区表情包水印和下载限制，切换开关后重新进入笔记即可生效。IP分流可在插件内自行选择。如有异常，请先清除缓存或重装后再尝试。
+#!author=fmz200[https://github.com/fmz200], Baby[https://github.com/Yu9191], RuCu6[https://github.com/RuCu6], wish[https://github.com/mist-whisper], meichiny[https://github.com/meichiny]
+#!tag=去广告
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.4.0(962)
+#!homepage=https://kelvinlab.wuyra.com
+#!icon=https://resource.wuyra.com/Icon/App_icon/120px/REDnote.png
+#!date=2026-06-16 14:58:00
+
+[Argument]
+xhs_sticker=switch, true, false, tag=表情包图片模式,desc=是否开启表情包图片模式开关
+
+[Rule]
+DOMAIN, ads-img-qc.xhscdn.com, REJECT
+DOMAIN, ads-video-al.xhscdn.com, REJECT
+DOMAIN, ads-video-qc.xhscdn.com, REJECT
+DOMAIN, t-ads.xiaohongshu.com, REJECT
+AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
+
+URL-REGEX,"^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?!.*(list|feed|search|detail|get))", PROXY
+
+[Rewrite]
+# 惊喜弹窗
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(?:get_style|open|submit_action) reject-dict
+^https?:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? reject-dict
+
+# 信息流
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/guide\? reject-dict
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/detailfeed\/preload\? reject-dict
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/guide\/user_banner reject-dict
+^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/(v\d+\/ads\/resource|v\d+\/hey\/\w+\/hey_gallery) reject-dict
+
+# 评论区图片水印
+^https?:\/\/ci\.xiaohongshu\.com\/system_config\/watermark reject-img
+
+# 搜同款
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/longpress response-body-json-jq 'del(.data.image_press_result.anchor_detail)'
+
+# 搜索高亮
+# ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v5\/note\/comment\/list\? response-body-json-jq '.data.comments[]?|=(del(.hash_tags)|del(.sub_comments[]?.hash_tags)|if .content then .content|=gsub("#(?<word>[^#\\[]+)\\[搜索高亮\\]#";"\(.word)") else . end|.sub_comments[]?|=if .content then .content|=gsub("#(?<word>[^#\\[]+)\\[搜索高亮\\]#";"\(.word)") else . end)'
+
+[Script]
+# 在首页 feed 笔记标题前显示生成时间
+http-response ^https?:\/\/[a-z0-9-]+\.xiaohongshu\.com\/api\/sns\/v\d+\/homefeed script-path=https://resource.wuyra.com/Script/REDnote/REDnote_feed_time.js, requires-body=true, timeout=60, tag=显示笔记时间
+
+# 搜索页
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner|hot)_list script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除搜索页广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(hint|trending)\? script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除搜索页广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/notes\? script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除搜索页广告
+
+# 开屏广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\? script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除开屏广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除开屏广告
+
+# 详情页及小部件
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除详情页感兴趣的人
+
+# 图片水印,视频水印
+http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d\/note\/(imagefeed|live_photo\/save) script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除图片视频水印
+http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d\/(followfeed|homefeed)\? script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除图片视频水印
+http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v2\/note\/feed|v3\/note\/videofeed)\? script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除图片视频水印
+http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v4\/note\/videofeed|v10\/note\/video\/save)\? script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除图片视频水印
+
+# 评论区图片、live图水印，表情包下载
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v5\/note\/comment\/list|v3\/note\/comment\/sub_comments)\? script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, enable={xhs_sticker}, tag=表情包图片模式
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/interaction\/comment\/video\/download\? script-path=https://resource.wuyra.com/Script/REDnote/REDnote_remove_ads.js, requires-body=true, timeout=60, tag=移除小红书评论区水印
+
+[MITM]
+hostname=edith.xiaohongshu.com, www.xiaohongshu.com, ci.xiaohongshu.com, rec.xiaohongshu.com, so.xiaohongshu.com

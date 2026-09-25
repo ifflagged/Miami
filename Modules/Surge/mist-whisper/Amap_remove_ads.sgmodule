@@ -1,1 +1,80 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-Y3KDnKu7ugbjlpnTXvuMn5&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="Y3KDnKu7ugbjlpnTXvuMn5">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'hx7zouXT1Ovfq.PgG1nFtIx1ml9_k7aK3ila.CcVzr8-1790352267-1.2.1.1-H.1wp42tFfr9iq_RNyDLNJskFvnHnnkCswoYDNWtiZmN5jjId75frAkRrEaCEOsj',cITimeS: '1790352267',cN: 'Y3KDnKu7ugbjlpnTXvuMn5',cRay: 'a40b43c9a91226b4',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/Module/Amap_remove_ads.sgmodule?__cf_chl_tk=t0s4qdL3L5DV9e4pP5UxmXIB1vA2LSo0vI.vqxABV_A-1790352267-1.0.1.1-nexmsLbGNf2KRBGImPWTSgYOouepzJUY5DEFR9rxPRg",cvId: '3',cZone: 'kelvinlab.wuyra.com',fa:"/Module/Amap_remove_ads.sgmodule?__cf_chl_f_tk=t0s4qdL3L5DV9e4pP5UxmXIB1vA2LSo0vI.vqxABV_A-1790352267-1.0.1.1-nexmsLbGNf2KRBGImPWTSgYOouepzJUY5DEFR9rxPRg",md: 'kkOlzRJ5q7VklYnzwm5iAkOCXHfEbXMcw.o0i6pl500-1790352267-1.2.1.1-1J84Tq.uzT8k90wXYwEZvqaoliG9i5BUritlPF_g9jLbTPX9zs2MDaosfnGNW2StKsjmYAMsR0DiCPczsGfmhXG9eIP.Bywca2z5pxsjr.g.GtTCe8SWv3UcIfWDb9832A62qcMAnJn0AGskouE8hC0JqU.8sF3rjQ7HnUBb7K7mIqcsfV3YdEgCXW28A0lyyahrRdYvdau_1spUAvyuta4ZuHdQbAnZjuK30DUpedW4.lh5jS3lgHsLphZD6RpIbveSfBtDsr0ZnW4LKnhkRNq0GW3xTT7nieK5tqDp_gxsGrwLdLTbrSd9SCj3eDgX3yLW2NWPo_StDFnc7TSG7DzhVSGFpDTtGv6ygqm0TXU.ec4eGMH9z6WjhWRO5xWHIj_wdhN9OoS.iVjOl1NnYgWKKeUuw7EAeLhnFAmHuFkbJkbRMIQKoxByGSKvfl4q1zJPL8T8.nHI3.jgjyCj39CnNHa1fzcGpnsCjVnBliKo0gpPww2HgD6IqEIeFqjnBgil8xyaAoR464IVi7BTyLs7om60P5MTSzbmHU779yV_xXW7tHB05wkz_7VeNe2egRLjNl26htxjJGagzU3mW4oKGKRUsdmFx7w1sROWyYRiRbuUrHrgluuAI0Vg1e.y.8rTIvBzoDzTiyX6QGjGgo9kQ8aVpV1m3TJdvCmooYJeOONS0jLAeRvllG3yFinObif0t0V0mx6VQq7fDMlbMD7aVxqcwCbr5uInuuDrdIg0aUI5Q6OWzh3DrZv5Ac7RJtroTErh1GLSRqXQtNu3RctUXo20Wwjk22TQ5dwh0BATvaYvyDqOog9esyex0pyHzi_M68UCAEbdqvva_X3JwJmFh1wLXp.pVYGEUmUTzlCE12Zvfyl.7td2nLmRTweXXEmaiQbNfb26VA.ebMM8NoDQ5YjOR5236pXor7ve4aliGCvs0hl9atj6HPamjzxWySwhXKE9NVbQZnSPHaZtkh.0octsqfz8OTTDPrOiEzuFqSKBtyCIFtolSCHDUUbPdGH2hV34ysQWc0oJ357DyA',mdrd: 'KdosvQLLjP5MKb7wU4Mpb0USHNoN3jOv_T52YaIUqwo-1790352267-1.2.1.1-57NKOl5lCu8ULCweTsw3xlU9SaJj0.BGjB2DjFKed_zhj7rJGB1.loFJRcuEp3IEz8RAIWmgM59m4IPGQod_9bOm7W3LjPs7Q7a3LNPVk4gTQwIiWyGasWmToMc8DtZ9ZwUPEdZ5lBAOQGhnf5kNh3GyS6y.TCOk9sdHnAr3c8CD_0s.tkoeHlj60BlBXTM0JXRk4aVUPEPmevi_E7bJQi2uIYNWnDCsN1d4TehFjLUupnLqHGikl5aYRQo235KdEyIymp4R5xIEV.CEo8Awhg',};var a = document.createElement('script');a.nonce = 'Y3KDnKu7ugbjlpnTXvuMn5';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a40b43c9a91226b4';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Module/Amap_remove_ads.sgmodule?__cf_chl_rt_tk=t0s4qdL3L5DV9e4pP5UxmXIB1vA2LSo0vI.vqxABV_A-1790352267-1.0.1.1-nexmsLbGNf2KRBGImPWTSgYOouepzJUY5DEFR9rxPRg"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+#!name=高德地图去广告
+#!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。
+#!author=RuCu6[https://github.com/RuCu6]
+#!category=去广告
+#!date=2026-02-22 06:04:15
+
+[Rule]
+DOMAIN,amap-aos-info-nogw.amap.com,REJECT
+DOMAIN,free-aos-cdn-image.amap.com,REJECT
+DOMAIN-SUFFIX,v.smtcdns.com,REJECT
+
+[Body Rewrite]
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","commonMaterial"]])'
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","tipsOperationLocation"]])'
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","resourcePlacement"]])'
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/homepage\? 'delpaths([["history_tags"]])'
+http-response-jq ^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\? 'delpaths([["data","carTips","data","popupInfo"]])'
+
+[Map Local]
+^https:\/\/m5-zb\.amap\.com\/ws\/ride\/home\/page\/get_commuting_card\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/orderList\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(?:car-end|route-plan) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/ai\.amap\.com\/v1\/ai_rec\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/aos\/main\/page\/product\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:main-page-assets|main-page-location|ridewalk-end-fc|usr-profile-fc\/homeV2) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/(?:mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:order\/car\/(?:feedback\/get_card_questions|feedback\/viptips|king_toolbox_car_bubble|remark\/satisfactionConf|rights_information)|tips\/onscene_visual_optimization) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:pay\/web\/paySuccess\/info\/request|transportation\/diversion\/resource\/driving) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除路线规划、导航结束页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除导航详情页底部酒店、处理附近页 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除搜索栏推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除搜索详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除我的页面推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除附近页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除开屏广告 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除打车页推广卡片、弹窗 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除打车页红点角标、天气图标 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+移除导航详情页推广 = type=http-response, pattern=^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Amap_remove_ads/kelee.one_Amap_remove_ads.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% *.amap.com

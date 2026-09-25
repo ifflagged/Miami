@@ -1,1 +1,57 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-YgBJEQDLfaxrJpuIpVBVSx&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="YgBJEQDLfaxrJpuIpVBVSx">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'eI0XWYHoBnfylpPJG9epNMZ.2frX6.z8m4YrDKwRNYg-1790352264-1.2.1.1-gwvoqsIyB.vLi7W06UlJGBvzqUO..3SFHjS22XsQkKNAkLNWW5o661gJ2VxitK69',cITimeS: '1790352264',cN: 'YgBJEQDLfaxrJpuIpVBVSx',cRay: 'a40b43b34a82c92f',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/Lpx/Dingdong_remove_ads.lpx?__cf_chl_tk=03vUXOqZ3CUGXCbOa4Fm4SO1lI0kRyG4RcVwtccnieU-1790352264-1.0.1.1-kLqeDYHz43zMdYC5Y6Diax_Xf1J5WubiFcEQRLlWXHU",cvId: '3',cZone: 'kelvinlab.wuyra.com',fa:"/Lpx/Dingdong_remove_ads.lpx?__cf_chl_f_tk=03vUXOqZ3CUGXCbOa4Fm4SO1lI0kRyG4RcVwtccnieU-1790352264-1.0.1.1-kLqeDYHz43zMdYC5Y6Diax_Xf1J5WubiFcEQRLlWXHU",md: 'iQzC_XcsY7LJZ5aYBbU5pW3s1Le6fuaLs_Y0wZrPwzI-1790352264-1.2.1.1-CA6LHjK5nNLMw7WjTfJEZPnohOyuDIbrEhdr_BXFMZij4N0gUtimgZyz_vcfkMrrYg8dyv1iy_uOsG4kIrTK9CKXiKgYESX376A3d92LvdHhYIKdOPDiPAIKdC7hCaTv_mNQpu8_Qsa0McbwTXF3SPyzcpvJeOYn1I4C8RmqsCMDAB43Kh2Xx_aZNumocMYDnYNmu0G0RuQd6rKPuwaB0zNFnryHMIsdNVTGiGARlBjZX9zkSgUAWTVfd2YhInQBhqj.rd3DXhSnNaUhuwyA7ZTH0_XDO_Eo7emhZmpbXPggtRUNZ96jErOjE6QUBwoe5senIIn9aBYDMVktdgdwqQxLhUxS9YimiL6PF.DebqWCuh6nzQvXsYYDbfDM3JGaoc26dsjhGfHCvrkO_A_Jyr8nVYkJI3yCZO2Hz704pY4RXrTzMd.olnPst8xx_P5gYbZzC4_F8wV0910SepDsHaqgdnxrSKa8rjXxMT0hPMcErmyhoc_TvnThD9Cdaf76DIDihYwCCRtIfCh6Qxhwue37UnpGfxG59h12si32IB6UVs6T6AMO7M8R54ZouvEs3I.JkpFadw20davc2PhkpaiWmVsIR7yHXeT3U3BvxW3AWbCJqtHrhTxOIBIPeBsyRkrz9JzYpcSk8FGaCrad1_UC9fesgrzayWfgWYvLpv6VOeR84V90Rh6UKznhpSWO01lQpeADXpX8OQX35nMCdLP.sFt_uRg.SLh4HK9c2tcGtICJMVa.pMZAgT1DJZLfhxUxLnZ11YNGRhD40vn_MLTIte84B.55rBfwZgZX1VDjLx..zUYeWLFjbefxogItmmHtlgz2ftn3gf1oPSHtkb2nhIQZAs1bsg9Q1_HGac0soi8oURf_9rUzFRdsC7tLSDz44HImKTncze77kuXkiEujTPE6Kf2b0vIc0ihzYSgU4HkEwIXkylItEOLJ6F.vwWY5ruX3rDgL.SSkpnV_Ftr1DIotlQyY.b0yOF0x.SjCRY30kS1ZsJaflR2tA01UJ_Fs7m_Z0MEF1RtcVgaoBw',mdrd: 'W4x8bBUfWdejBIemrTFLnSbYwHrqRfjLk5vI0MGPdZg-1790352264-1.2.1.1-yCjqwskcgvMnA3vCN3mOihjHJDZWZJ8BHn8yaAmBEmW_ROGArDXltHWAOjC82g9AZKVG9BcnDtrVtYsS12MdnLPFv9dNTVsgRI6BeCa_bJLq_kFFQw4lAEZzo0nZA_GTsAk4oTvyhakeLLmQLfZ9oKoiGuCcSL6FbKYOnEhDpOU9AOBC7kpGX9jcGyBtz4JeVtm5LDjB3YAgr4LO9x8.cfIu9qFSJi1KvESTVt.TEDxfNFqH9vUcv6dLPjMIV5Wa2hFTuCsyhZX0u4kMWdrV8w',};var a = document.createElement('script');a.nonce = 'YgBJEQDLfaxrJpuIpVBVSx';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a40b43b34a82c92f';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Lpx/Dingdong_remove_ads.lpx?__cf_chl_rt_tk=03vUXOqZ3CUGXCbOa4Fm4SO1lI0kRyG4RcVwtccnieU-1790352264-1.0.1.1-kLqeDYHz43zMdYC5Y6Diax_Xf1J5WubiFcEQRLlWXHU"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+#!name=叮咚买菜去广告
+#!desc=移除开屏广告、弹窗推广、搜索推荐、信息流广告、悬浮广告、各页面购物推荐、精简我的页面，移除底栏和各页面AI入口。
+#!author=zirawell[https://github.com/zirawell], 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], wish[https://github.com/mist-whisper]
+#!tag=去广告
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.4.0(962)
+#!homepage=https://kelvinlab.wuyra.com
+#!icon=https://resource.wuyra.com/Icon/App_icon/120px/Dingdong.png
+#!date=2025-05-13 15:17:08
+
+[Rule]
+DOMAIN, trackercollect.ddxq.mobi, REJECT
+DOMAIN, ddfs-public.ddimg.mobi, REJECT
+DOMAIN, rttrack.ddxq.mobi, REJECT
+
+[Rewrite]
+^https?:\/\/119\.29\.29\.\d+\/d reject-200
+
+^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ reject
+
+^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop reject
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/vip\/getVipAd\/\? reject-dict
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/marketingNotice\? reject-dict
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/search\/rollHotKeyword\? reject-dict
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/search\/rankingList\? reject-dict
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/search\/hotKeyword\? reject-dict
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/order\/getRecommend$ reject-dict
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/userLike\? reject-dict
+
+^https:\/\/user\.api\.ddxq\.mobi\/userportal-service\/api\/v1\/user\/queryMyPage\/\? reject-dict
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/categoriesNewDetail\? response-body-json-del data.ad_info
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/tool\/getConfig\? response-body-json-del data.ai_enter_config
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/guide-service\/userLike\/flowData$ reject-dict
+
+^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/newDetails\? response-body-json-del data.top_advert_data data.suspension
+
+^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/newDetails\? response-body-json-jq '.data.list |= map(select(has("capsule_freedom_zone") | not))'
+
+^https:\/\/maicai\.api\.ddxq\.mobi\/guide-service\/productApi\/productDetail\/info\? response-body-json-del data.detail.chatEntry
+
+^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/bottomNavi response-body-json-jq 'del(.data.adId?) | if (.data.bottom_list? | length > 0) then .data.bottom_list |= map(select(.type != "eatwhat")) else . end'
+
+^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/homeFlowDetail response-body-json-jq 'walk(if type == "object" and has("list") then .list |= map(if type == "object" and has("multi_advertise_data_list") then del(.multi_advertise_data_list) else . end) else . end)'
+
+[MitM]
+hostname=119.29.29.*, maicai.api.ddxq.mobi, user.api.ddxq.mobi

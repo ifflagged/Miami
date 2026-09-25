@@ -1,1 +1,56 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-YVaTw7Gx1psR4P38orq0PW&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="YVaTw7Gx1psR4P38orq0PW">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'oLIS_oO42Qua4EsI0GeR2nSV4_nF602LDaw6jd4wrK8-1790352267-1.2.1.1-Bd_Lc.q181HXXdnc8QxQL4_VUi5uYTY0Y3NpZneYEp1KlT2UQkpx9JEKj.p5PxRQ',cITimeS: '1790352267',cN: 'YVaTw7Gx1psR4P38orq0PW',cRay: 'a40b43c79c6703e0',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/Lpx/Zhihu_remove_ads.lpx?__cf_chl_tk=mVElK2hYH5z8fEd06S_09eF1pBc9farGu3wlUmbf5OA-1790352267-1.0.1.1-Qg3qCXf_7lmjY_NybVwcPDAZY5yJjpJD6sFZYR4ux7E",cvId: '3',cZone: 'kelvinlab.wuyra.com',fa:"/Lpx/Zhihu_remove_ads.lpx?__cf_chl_f_tk=mVElK2hYH5z8fEd06S_09eF1pBc9farGu3wlUmbf5OA-1790352267-1.0.1.1-Qg3qCXf_7lmjY_NybVwcPDAZY5yJjpJD6sFZYR4ux7E",md: 'FFfAsPHHNGayHfGZVujxYg7B7VJX85tovq7E_wPq4j8-1790352267-1.2.1.1-FmrpU2b7c1SP4k56uNlD4ADz8S8HNZiZiA8Wn7zAD6oCLunzwjlIljI.fDb.tKk_HgH67HmEsT.e9b.U_yVfjwLjudb_5Dz10S0mvVoFxcNqHpu7Oi_oUFiFORJxEcwgYwldAhsxGUShS5MrGSU5ZH3SUKDwiUEWvfimWZpJRG1KDM.meXcCka0i9ka1gDAeKlzjMK3sWZkzX9JOUNcyWNOHOCV1eA5N3Uoc1P4LReqf71GeP9Cl8e2hZU9071t_bdi2dRmQTWBe93Ll2Zq3JCPTIgd2VyoDPaxtqSoZEZPY_CtceVM09Bmd1qHJUNyFGEiOETQIEnev_zNKtmB0eMfhrGngtQJTbv8p4YBtNVZKvHo1vg.9QNxK.uc6YJzTia3sX1JBptJGREEn_v39rdUUwR9rqzC7AJQcn7pPc1taGB6Ugmmu9L2PTxhFVss12VG2uL8sv9wVNVJwiSGL5kOdZq.x.s3ErX6jDrCONv1W6vv2X9TKCAUHwCcAHkw5MC3bKUVBcO5ZCXFvQyxvibTf7eTKFAQI8l4exJqHEm2WIh8hh2A4C5.6VmkHUbObq9VCvV_MRz8UoUnJy3jE9KOJCRc0cVpLW5PcWElpiwxaoTxcG3s9IppZNEkOD9GFFYXJoCgQtMD_jskfUe5h4FWPXtQwGfNE26AvUgeIhBDYT_1axYzAP6LRSorq3K40jFXHTV.8YZFUjbBudHYgm9bmJPMsgEFJkJEUYsebO1FLa6nXkC2i0rjZEIcW1aLO60C_N7YLxqynCegMrOANW9zYx4VS8TswVghA6Rle_nCLYswdkjmzNuwgnF.cs0KIhiqHHboBd9rq12y1qeo6iz20w.Tes1EtXiXKDoMatcz85JJ1jSJyRBINx.T3Yk_t3AzwetlwZDF4tpgBp5seuJp3mkyUpeynRY.Hkft3YJ.kV3eh8X83G3uOEKE5WqAHservURUjczexdPDhtg6IhwUs5bLyqI8Pyk9KnpnrT_ZM7bk2_uBP4yluR_nF_xnug6j98cT81HspjgpnmnFZXg',mdrd: 'UeFgQQjzfm_..mXK2vKO9JTet6n5PVRpiBEcDIYUegc-1790352267-1.2.1.1-QSUtqlugjURTsSL7.fezDK.kAMZALq12zzWA_ogkQ4MT8.w3YocRenLYSUUz2Ki61qgdO3Pcid7t3O2V2YM3FYrL8Rp9ITmNu20H9c0WC3MpBN4OKsb1sW2eRR.lX8013Sfl_LbE6.dU7bn3Nr5q4u9tgjeCIjzZQhEwn7aUBn.devn6.b5KqSpVlIHsnBnTB9dvdfsVxoRHnEzrgHadaK06LbyDlCQW1aT09CSFCVDIc5JbqzVBbB.1oD1t291MCMSG1qwCo38Gwu0_KJANHg',};var a = document.createElement('script');a.nonce = 'YVaTw7Gx1psR4P38orq0PW';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a40b43c79c6703e0';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Lpx/Zhihu_remove_ads.lpx?__cf_chl_rt_tk=mVElK2hYH5z8fEd06S_09eF1pBc9farGu3wlUmbf5OA-1790352267-1.0.1.1-Qg3qCXf_7lmjY_NybVwcPDAZY5yJjpJD6sFZYR4ux7E"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+#!name=知乎去广告
+#!desc=移除HTTPDNS和QUIC传输配置，移除开屏广告、信息流广告、回答页广告，移除回答页下的相关回答、专栏卡片及圈子卡片，移除直答页面推荐知识库和提问推荐，移除评论区评论氛围满意度调查，精简首页顶部标签及我的页面。
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+#!tag=去广告
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.4.0(962)
+#!homepage=https://kelvinlab.wuyra.com
+#!icon=https://resource.wuyra.com/Icon/App_icon/120px/Zhihu.png
+#!date=2026-05-18 22:52:05
+
+[Rewrite]
+^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/zhihu\/config\/all\? response-body-json-jq 'def drop_keys: {"km_httpdns_new_config_tars":true,"preFetchHttpDns":true,"httpdns_detector_use_concurrent":true,"httpdns_use_memory_cache":true,"httpdns_new_config_tars":true,"coreNetworkConf_useTars":true,"km_coreNetworkConf_useTars":true,"sugarQuicConfig":true,"quic_dns_detect_enable":true,"quicMixAB":true,"quic_downgrade_enable":true,"quic_priority_strategy":true,"quic_check_health_enable":true,"tquic_configuration":true,"networkExprimentList":true,"tars_ab_list":true,"zaSetExtraRequestHeader":true}; .data.configs |= map(select((drop_keys[.configKey] // false) | not) | if (.configValue | type) == "object" then del(.configValue.delayHttpdns, .configValue.dnsParser, .configValue.HTTPDNS) else . end)'
+
+^https:\/\/api\.zhihu\.com\/commercial_api\/ reject-dict reject-dict
+
+^https:\/\/api\.zhihu\.com\/root\/tab\/v\d(?:\?.+)?$ response-body-json-jq '.tab_list |= map(select(.tab_type == "follow" or .tab_type == "recommend" or .tab_type == "hot" or .tab_type == "ring_tab"))'
+
+^https:\/\/api\.zhihu\.com\/topstory\/recommend\? response-body-json-jq '.data |= map(select(.type == "ComponentCard"))'
+
+^https:\/\/api\.zhihu\.com\/questions\/\d+\/feeds\? response-body-json-del ad_info
+
+^https:\/\/api\.zhihu\.com\/next-render\?id=\d+&type=answer reject-dict
+
+^https:\/\/api\.zhihu\.com\/comment_v\d\/(answers|pins)\/\d+\/root_comment\? response-body-json-del atmosphere_voting_config
+
+^https:\/\/(api|page-info)\.zhihu\.com\/(articles|answers)\/v\d\/\d+$ response-body-json-del third_business
+
+^https:\/\/(api|page-info)\.zhihu\.com\/(articles|answers)\/v\d\/\d+$ response-body-json-jq '.structured_content.segments |= map(select(.type != "card"))'
+^https:\/\/api\.zhihu\.com\/topstory\/recommend\? response-body-json-jq '.data[]?.children |= (if type == "array" then map(select(.id != "ring")) else . end)'
+
+^https:\/\/api\.zhihu\.com\/(articles|answers|pins)\/v\d\/\d+\? response-body-json-del third_business ring_info interaction_bar_plugins
+
+^https:\/\/api\.zhihu\.com\/comment_v\d\/answers\/\d+\/list-headers$ response-body-json-del continuous_consumption_module
+
+^https:\/\/api\.zhihu\.com\/podcasts\/hub\/v\d$ response-body-json-del banners
+
+^https:\/\/api\.zhihu\.com\/search\/preset_words\? reject-dict
+
+^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v\d\? response-body-json-jq '.recommend_queries.queries |= map(select(.type == "normal"))'
+
+^https:\/\/zhida\.zhihu\.com\/ai_ingress\/knowledge\/square\/categories\/feeds\?categoryId=1%7D$ reject-dict
+
+^https:\/\/zhida\.zhihu\.com\/ai_ingress\/ai_chat\/guidance$ reject-dict
+
+^https:\/\/www\.zhihu\.com\/api\/v\d\/members\/homepage_card$ reject-dict
+
+^https:\/\/api\.zhihu\.com\/people\/homepage_entry_v\d$ reject-dict
+
+^https:\/\/api\.zhihu\.com\/kvip\/right\/my_card\? reject-dict
+
+^https:\/\/api\.zhihu\.com\/people\/self$ response-body-json-del vip_info.entrance_new.right_button vip_info.entrance_v2
+^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card\/v\d\? reject-dict
+
+[MitM]
+hostname=m-cloud.zhihu.com, api.zhihu.com, www.zhihu.com, page-info.zhihu.com, zhida.zhihu.com

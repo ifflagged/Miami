@@ -1,1 +1,39 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-9fGH0UoeD3ZVkQo94I8xPz&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="9fGH0UoeD3ZVkQo94I8xPz">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'tWTDhE9N531CMz6cmUFMFwu7AcqrvzMfR0P5JHyB4QY-1790352266-1.2.1.1-p6bLrvHZNO.9ISnpDIKcpAE76llOiCtrgoILIReR2pHc9CazaAcGDer4J2PI57Gj',cITimeS: '1790352266',cN: '9fGH0UoeD3ZVkQo94I8xPz',cRay: 'a40b43c1bac8f8be',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/Lpx/Taobao_remove_ads.lpx?__cf_chl_tk=1.thDFvGaHZWPtBcdXswmo7s477mWs8rr0KPCDbToS4-1790352266-1.0.1.1-53pHx.bQo1Mo1avZumkyi53fNsTZ1esG4KN0aAor_MM",cvId: '3',cZone: 'kelvinlab.wuyra.com',fa:"/Lpx/Taobao_remove_ads.lpx?__cf_chl_f_tk=1.thDFvGaHZWPtBcdXswmo7s477mWs8rr0KPCDbToS4-1790352266-1.0.1.1-53pHx.bQo1Mo1avZumkyi53fNsTZ1esG4KN0aAor_MM",md: 'Dtuh95AfBoEylGWs65W9yvGWHfCsq3yYk5.gMK04nr4-1790352266-1.2.1.1-6.2GmSfT5L8Cika95N3nvy6y7KPWjnoVgsBiygogOo4M_NhQA6HkNHP4pSH9M3EzM3U0hOZDGgLyqiK3JUcm5a_OxUQTS8yby2mXMEJ1vxxatWRZV.IEpvJcNo15g.IF4lS_HTlGQ3.lNo09eaMIEtJLGNRmXwMvrTqepOybDd3EguJ0XgbGsK.8t9SzY.BfLpbEkKAdrdevJhUINoTbzOj53YN3_jzPqew9qomPu0ENa5i8J9eKk_T6wxV0qH6.80EkQi.tWq3z0NZpfrjkWcldN5honM5_JrRUkIrITAZ5lN9ViiNvxDbu6XkVrYtwpXHZz2kBl_Dwr7ux2_0ltBEyta3tNlPD2TC9aS02J7qEi6jBwFDh7iFgAZO5A6mWJBPMzrRaUz0SDRrdyYZoITKcupWpjZRIlhw3aS0z5x4iN_PAzsP66_wUW8.dnSHSdl5gVWjflYcsqDYjw28hV6zjmnkAA13SSza0lwG3iaOitNZvoWVuSt9GN0gWL4sQb3fUEOr3P9dSMtOQfdpRyctKQuNiUUpgqO.4ABwd5zHhVlFCay39zExi0c_AbEvq.evShrLohk1kBkaFZXRw5gO_twEJHAy_h4RmrrCGQqMLfnkFUma.OBlGtM9lWd4eBKo_YDhBJFoLcxxyR7u3_pZFyjv3nLI7K1H.Sn4JqdUC35uXIaWyfkLrH4aNqPNKed.uk9uoN6ZlpkwJPD23Zt8Wm4_atOdeF3HEqxOB2g5key1BnSEgfczfSlKMaRsNraUpA1dgI2T8UouQnYOjfqqSUhAk07vmDogYExyVh88W4xWP_lOF3__tKsO1MjqtX1MmehBSWnsK2jJs7gh9ZHA9E_amFxHRCLhe3qpnnXTrWVKM9WWWBXiblCNIoFpUIjOd79lEaJ6_u5CqEhK.GvF89q9kqQE6EQNu7rCcy4dDkIyxtYLVo88x4OAf0V7OU62nRjz25TVSKyPRFoeDLhHjswvDhb0CWfSn2fWJ99novBWSpvgZBbFMiEs3rz_gEL1jxWz5nQALApzceYkCRg',mdrd: 'PXGOy_PVzk99faDeIfPKoyAOwTMycV0zpp3A_uHNXZ8-1790352266-1.2.1.1-.8s0FATr2TnVJS.GQ2Omevds2GO1DjrhoLOJpG5O8oeeRlWsM44id5GAqY6j6gXRno97QddiHGGU3Sc_xHLvxyZX3Gg3Etqk8wdMjzMGyBKGk.732U7GaxefT_LdM0HK9kpNkmcM6mwtgMVn7noWHjMq3B.GxFRs4Vq30IZfUDvqiQcNSArSwhjQ7m55947LjFQD4SkCc.GAl5XyWvwNgiT0BwOUUB1bLu243japxvlIgqQM1Iwi0zhE3XSxlNVfEaTj8KscQ5T1nfMD6Agyzg',};var a = document.createElement('script');a.nonce = '9fGH0UoeD3ZVkQo94I8xPz';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a40b43c1bac8f8be';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Lpx/Taobao_remove_ads.lpx?__cf_chl_rt_tk=1.thDFvGaHZWPtBcdXswmo7s477mWs8rr0KPCDbToS4-1790352266-1.0.1.1-53pHx.bQo1Mo1avZumkyi53fNsTZ1esG4KN0aAor_MM"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+#!name=淘宝去广告
+#!desc=过滤淘宝开屏广告
+#!author=RuCu6[https://github.com/RuCu6],kelv1n1n[https://github.com/kelv1n1n]
+#!tag=去广告
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.4.0(962)
+#!homepage=https://kelvinlab.wuyra.com
+#!icon=https://resource.wuyra.com/Icon/App_icon/120px/Taobao.png
+#!date=2025-06-19 18:34:00
+
+[Rule]
+DOMAIN, adashx.m.taobao.com, REJECT
+DOMAIN, ossgw.alicdn.com, REJECT
+DOMAIN, ems.youku.com, REJECT
+DOMAIN, hudong.alicdn.com, REJECT
+DOMAIN, h-adashx.ut.taobao.com, REJECT
+DOMAIN, ut.taobao.com, REJECT
+
+[Rewrite]
+^https:\/\/(?:gw|heic)\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(?:octopus|tps)-(?:1080|1125)-\d{4}\.(?:jpg|png)_(?:1\d{3}|9\d{2})x(?:1\d{3}|9\d{2})q[59]0 reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources reject-dict
+# ^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602|tps-1080-1920)\.(jp|pn)g_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 reject-dict
+# ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) reject-dict
+
+[Script]
+http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) script-path=https://raw.githubusercontent.com/ishowshu/qx/main/script/taobao.js,requires-body=true,tag=移除淘宝开屏广告
+http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path=https://raw.githubusercontent.com/ishowshu/qx/main/script/taobao.js,requires-body=true,tag=移除淘宝开屏广告
+
+[MitM]
+hostname=acs.m.taobao.com,heic.alicdn.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com

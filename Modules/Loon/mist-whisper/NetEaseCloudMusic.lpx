@@ -1,1 +1,84 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-jySah1gTRIIdN1MFm96N9Q&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="jySah1gTRIIdN1MFm96N9Q">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'IeD6IPbPtAcWp3a8OjPvD.LW.6aVSJWV7iNtxPHV98w-1790352265-1.2.1.1-l.BimtdVLY2NYL6bsfmNvjsVhgmqMj3DXUnY26ACu4KHqBrTuc1YZfeLrGgtdolr',cITimeS: '1790352265',cN: 'jySah1gTRIIdN1MFm96N9Q',cRay: 'a40b43bbee450944',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/Lpx/NetEaseCloudMusic.lpx?__cf_chl_tk=QZ4juD4moAY7HzCNLQW8SQqT4raF1okrc3Lt7c7Jq64-1790352265-1.0.1.1-DSUXs_dR5SlgbA5K70j6_3Os1zWtvfjh2Efj5WwIQjA",cvId: '3',cZone: 'kelvinlab.wuyra.com',fa:"/Lpx/NetEaseCloudMusic.lpx?__cf_chl_f_tk=QZ4juD4moAY7HzCNLQW8SQqT4raF1okrc3Lt7c7Jq64-1790352265-1.0.1.1-DSUXs_dR5SlgbA5K70j6_3Os1zWtvfjh2Efj5WwIQjA",md: '7baJPfb8QczeylQjpEg8dRguAESynow9IJVlFWBM57M-1790352265-1.2.1.1-1zrY13ffAsWH84j.2qCObxGlZDOFrBEqvQOZBkNBqYlpvuNHkXrPuLg1FEHWhu7UYfyiPwRCgK5MGmcRh674V5lfHCMzV6xkZlUMOyTm1htR8VATW9QB8fEnvvSh_1w5aN2ct_dZs45y8gLZqJ7cx9uCpRN.lQNpI6Ld5MsiV.g7roMn6GB9sx3rhk5P2hkBpFTtwFSvHBlElIrPdzXdxQ5WlUgj5KYtsbllmIRJmNdK2Ewuc_V_Y6cjML9h7WBfjP_B6QsGB.8dCW07QnalPLZilirPpsWdA7aCjpkxcyAbvaflM.ChugNzOgYghn.t4gCN_8hMXKElFjHzheBJ65f0oVESBA7W5_43TC8IaSM2y5lduZnwn9i.zGBsb.MmtTqmSgZk4oTJpTJtShu65kjxV0Ra1YG_PnzFTWSw43fWT69pq04aYVnA9xa_5uTKe9mqKXYsaKPBhByraVPauiq7Xh4StPiXf89Uu7EZIUTdvTspRFE2dz1O.fg3r9RRwgtq7dQdn35U9G1ZVh7jabl9Xyt6jkwvYTkhtHFRkznqhMFi_353p52YUUXSjLfoZYOh2HGPkq3vnmGi.i3aFQE0_pWHfhMpop8Vj1lA1OKJH4dNdzdgnKM.G6o6BcqhBsMg7wwUreUm9OGgJ8BQCOVDWH2gTzKtumufDhKrQN97hYomo1znHt8dvpSqhKvoC9aJ0UQg5c1N14oZaorISUQvFx.KjbYwfcAUxFyU0uwHjD5V2L1rYMeP6JNjSEoSSqF2HNfTRw9gUAGaBee7dvXrfAEbALjDdbHqAseZPzLmXWICYyRMrAlJTTpI4vqXNeiJ1H938fgXVJP0ylPfjvVkiwLQ70_Guwo5HR671Nv7ly37Chg2PIUic1URFu_56RGfCF0Ig0z4u3P6U8i1DAah9aK6d1VRCNnnhyRx2pFHy14cXQpYTNC3a_heusmz5xJvwl5_tnBg2Xq76u.es5xUqFscNmPOrdqy8Gwd2k2Sp9vEPgAMSkcvUUD2p65e6YsKvefbcosduwnS_t0wpg',mdrd: 'Hr5lClZsmAyCk_7DUiSoHdB99WKHfuzX3jtFinv0lK8-1790352265-1.2.1.1-aTWm_x8o6oXRuztOg1TAJLRmGYksLribwaWTyQEC5soiE3TQF5VvdCMVniY7iVQBTeKS4RK8TeqObaj57pe6RZwxXxiBOFEaR5LXqEd6_cF2D60GbeHhiwL5PIrTrtO5LUEYYXpwDEyAJgaUHTZVrMbQKeGDgHeCixEZuinyiY8dvan_p0fWfmy.X0uzPu5vx.6g2kxBxBKl1.xabB2FSI6JMdaWMgwTM56drPKWQQf3pnzJzgP9iLPj_xdS5tnvoamLmOHsxeyeuUPJJgKHRw',};var a = document.createElement('script');a.nonce = 'jySah1gTRIIdN1MFm96N9Q';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a40b43bbee450944';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Lpx/NetEaseCloudMusic.lpx?__cf_chl_rt_tk=QZ4juD4moAY7HzCNLQW8SQqT4raF1okrc3Lt7c7Jq64-1790352265-1.0.1.1-DSUXs_dR5SlgbA5K70j6_3Os1zWtvfjh2Efj5WwIQjA"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+#!name=网易云音乐去广告
+#!desc=过滤网易云音乐广告，并允许自定义界面。
+#!author=Keywos[https://github.com/Keywos], RuCu6[https://github.com/RuCu6], wish[https://github.com/mist-whisper], anyehttp[https://raw.githubusercontent.com/anyehttp]
+#!tag=解锁去广告
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.4.0(962)
+#!homepage=https://kelvinlab.wuyra.com
+#!icon=https://resource.wuyra.com/Icon/App_icon/120px/NetEaseCloudMusic.png
+#!date=2025-10-01 17:25:00
+
+[Argument]
+Music163_VIP_Shared=switch,"false","true",tag=[功能解锁]共享会员,desc=
+MY=switch,"false","true",tag=[隐藏底栏]漫游标签,desc=
+DT=switch,"false","true",tag=[隐藏底部]笔记标签,desc=
+FX=switch,"false","true",tag=[隐藏底部]发现标签,desc=
+PRGG=switch,"false","true",tag=[隐藏首页]问候语,desc=
+PRRK=switch,"false","true",tag=[隐藏首页]排行榜,desc=
+PRDRD=switch,"false","true",tag=[隐藏首页]每日推荐,desc=
+PRSCVPT=switch,"false","true",tag=[隐藏首页]推荐歌单,desc=
+PRST=switch,"false","true",tag=[隐藏首页]最近常听,desc=
+PRRR=switch,"false","true",tag=[隐藏首页]雷达歌单,desc=
+HMPR=switch,"false","true",tag=[隐藏首页]音乐合伙人,desc=
+PRMST=switch,"false","true",tag=[隐藏首页]推荐专属歌单,desc=
+PRCN=switch,"false","true",tag=[隐藏首页]你的专属歌单,desc=
+
+[Rule]
+DOMAIN,iadmat.nosdn.127.net,REJECT
+DOMAIN,iadmatapk.nosdn.127.net,REJECT
+DOMAIN,iadmusicmat.music.126.net,REJECT
+DOMAIN,iadmusicmatvideo.music.126.net,REJECT
+DOMAIN,ipv4.music.163.com,REJECT
+DOMAIN,ipv6.music.163.com,REJECT
+
+[Rewrite]
+# 开屏广告
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(ocpc\/)?ad\/ mock-response-body data-type=text
+
+# 今日运势 商城 Beat专区 音乐收藏家 | type:ACTIVITY | 低至5.2折
+^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:delivery\/(batch-)?deliver|moment\/tab\/info\/|side-bar\/mini-program\/music-service\/account|yunbei\/account\/entrance\/) reject-dict
+
+# 播放页 歌名下方 乐迷团｜关注｜播放页提示｜音乐应用红点｜播放提示
+^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:community\/friends\/fans-group\/artist\/group\/|mine\/applet\/redpoint|music\/songshare\/text\/recommend\/|resniche\/position\/play\/new\/|resniche\/tspopup\/show|resource\/comments?\/musiciansaid\/|user\/sub\/artist) reject-dict
+^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:ios\/version|mlivestream\/entrance\/playpage\/|link\/position\/show\/strategy|link\/scene\/show\/resource|v1\/content\/exposure\/comment\/banner\/) reject-dict
+
+# 搜索页 搜索词 热搜卡片 猜你喜欢 我的应用下方提醒
+^https?:\/\/interface\d?\.music\.163.com\/w?e?api\/search\/default mock-response-body data-type=text
+^https?:\/\/interface\d?\.music\.163\.com\/w?eapi\/(?:activity\/bonus\/playpage\/time\/query|resource-exposure\/|search\/(?:chart\/|rcmd\/keyword\/|specialkeyword\/)) reject-dict
+
+# 主页播客推荐
+^https:\/\/interface\d\.music\.163\.com\/eapi\/my\/podcast\/tab\/recommend reject-dict
+
+[Script]
+# 播放会员歌曲
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/(?:v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/resource.wuyra.com_ShareVIP.js, requires-body=false, binary-body-mode=false, timeout=20, tag=播放会员歌曲, enable={Music163_VIP_Shared}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/v3\/song\/detail script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/resource.wuyra.com_ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = 播放会员歌曲, enable={Music163_VIP_Shared}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/song\/(?:chorus|enhance\/|play\/|type\/detail\/get) script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/resource.wuyra.com_ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = 播放会员歌曲, enable={Music163_VIP_Shared}
+
+# 播放器会员皮肤
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/playermode\/ script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/resource.wuyra.com_ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = 播放器会员皮肤, enable={Music163_VIP_Shared}
+
+# 搜索结果会员歌曲
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/search\/(?:complex\/page|complex\/rec\/song\/get|song\/list\/page) script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/resource.wuyra.com_ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = 搜索结果会员歌曲, enable={Music163_VIP_Shared}
+
+# 侧边栏会员等级
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/resource.wuyra.com_ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = 侧边栏会员等级, enable={Music163_VIP_Shared}
+
+# 歌单列表会员认证
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/w?e?api\/(?:homepage\/|v6\/)?playlist\/(?!(?:delete|subscribe|unsubscribe)) script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/resource.wuyra.com_ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = 播放列表会员认证, enable={Music163_VIP_Shared}
+
+# 会员认证
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/resource.wuyra.com_ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = 会员认证, enable={Music163_VIP_Shared}
+
+# 以下为非会员部分
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:batch|v2\/resource\/comment\/floor\/get) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/kelee.one_NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=评论区、热推、有话想说、分享一下、歌曲下的祝福等小提示
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:homepage\/block\/page|link\/page\/rcmd\/(?:block\/resource\/multi\/refresh|resource\/show)) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/kelee.one_NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=推荐、home、主页,argument=[{PRGG},{PRRK},{PRDRD},{PRSCVPT},{PRST},{PRRR},{HMPR},{PRMST},{PRCN}]
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/home\/framework\/tab script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/kelee.one_NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=底部选项卡,argument=[{MY},{DT},{FX}]
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/page\/discovery\/resource\/show script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/kelee.one_NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=发现页
+# http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/song\/play\/more\/list\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/kelee.one_NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=播放音效
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/position\/show\/resource script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/kelee.one_NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=我的页面
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/user\/follow\/users\/mixed\/get script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/NetEaseCloudMusic/kelee.one_NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=显示未关注你的人
+
+[MitM]
+hostname=interface*.music.163.com
