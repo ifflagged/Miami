@@ -1,0 +1,12 @@
+#!name=walmart-rewrite
+#!desc=walmart-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 沃尔玛 - WALMART
+^https?:\/\/api-hyper\.walmartmobile\.cn\/search\/ad\/all - reject
+
+[MITM]
+hostname = api-hyper.walmartmobile.cn
+

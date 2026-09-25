@@ -1,0 +1,12 @@
+#!name=yonghui-rewrite
+#!desc=yonghui-rewrite
+#!icon=icon not found
+#!category=Jacob
+
+[URL Rewrite]
+# > 永辉生活 - YONGHUI
+^https?:\/\/api\.yonghuivip\.com\/web\/shensuan\/ad\/getAd - reject-200
+
+[MITM]
+hostname = %APPEND% api.yonghuivip.com
+

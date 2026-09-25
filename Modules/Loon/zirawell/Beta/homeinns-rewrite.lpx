@@ -1,0 +1,12 @@
+#!name=homeinns-rewrite
+#!desc=homeinns-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 首旅如家 - HOMEINNS
+^https?:\/\/app\.homeinns\.com\/api\/landing - reject
+
+[MITM]
+hostname = app.homeinns.com
+

@@ -1,0 +1,31 @@
+#!name=17u-rewrite
+#!desc=17u-rewrite
+#!icon=icon not found
+#!category=Jacob
+
+[URL Rewrite]
+# > 同程旅行 - 17U
+^https?:\/\/wx\.17u\.cn\/xcxhomeapi\/((aggregator\/index)|(home\/(?>screen|banner|converge)))$ - reject
+
+[Map Local]
+^https?:\/\/wx\.17u\.cn\/crapi\/query\/(?>ad|getAdImgUrlByCode) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https?:\/\/tcmobileapi\.17usoft\.com\/foundation\/foundationHandler\.ashx data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https?:\/\/tcmobileapi\.17usoft\.com\/userextend\/member\/myIndex data-type=text data=" " status-code=200
+
+^https?:\/\/tcmobileapi\.17usoft\.com\/backendActivity\/ori\/ordercenter\/recommend data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https?:\/\/tcmobileapi\.17usoft\.com\/appindexnew\/index\/(?>openscreen|getpopupimages|getindexlayoutcelllist|newmemberzone|getsearchboxtext|gethotrecommend) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m\.ly\.com\/visa\/fetch\/home\/getAdvDialogData data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https?:\/\/mobileapi\.ly\.com\/wlfrontend\/app\/scenicMain data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https?:\/\/mobile-api2011\.elong\.com\/adgateway\/newad\/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https?:\/\/mobilehotelapi\.elong\.com\/appHotel\/adx\/advert\/getAdvert data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% wx.17u.cn, tcmobileapi.17usoft.com, m.ly.com, mobileapi.ly.com, mobile-api2011.elong.com, mobilehotelapi.elong.com
+

@@ -1,0 +1,20 @@
+#!name=🍟 Fries: Netflix
+#!desc=(BETA) Netflix Mod
+#!author=VirgilClyne
+#!icon=icon not found
+#!tag=Jacob
+#!openUrl=http://boxjs.com/#/app/GetSomeFries.Netflix.beta
+#!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🍟-Netflix
+
+[Script]
+http-response ^https?:\/\/www\.netflix\.com\/(api\/ftl\/probe) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Netflix.beta/VirgilClyne_Netflix.beta.js, requires-body=true, tag=🍟 Netflix Web
+
+http-response ^https?:\/\/(ios|ios-anycast|ios-prefix)\.prod\.(ftl|cloud|http1)\.netflix\.com\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Netflix.beta/VirgilClyne_Netflix.beta.js, requires-body=true, tag=🍟 Netflix iOS
+
+http-response ^https?:\/\/(android|android-anycast|android-prefix)\.prod\.(ftl|cloud)\.netflix\.com\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Netflix.beta/VirgilClyne_Netflix.beta.js, requires-body=true, tag=🍟 Netflix Android
+
+http-response ^https?:\/\/(cast|cast-uiboot|android-prefix)\.prod\.(http1)\.netflix\.com\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Netflix.beta/VirgilClyne_Netflix.beta.js, requires-body=true, tag=🍟 Netflix Chromecast
+
+[MITM]
+hostname = www.netflix.com, *.prod.ftl.netflix.com, *.prod.cloud.netflix.com
+

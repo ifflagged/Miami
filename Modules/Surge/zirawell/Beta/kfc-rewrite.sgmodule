@@ -1,0 +1,15 @@
+#!name=kfc-rewrite
+#!desc=kfc-rewrite
+#!icon=icon not found
+#!category=Jacob
+
+[URL Rewrite]
+^https?:\/\/res\.kfc\.com.\cn\/advertisement - reject
+
+[Map Local]
+# > 肯德基 - KFC
+^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome data-type=text data=" " status-code=200
+
+[MITM]
+hostname = %APPEND% res.kfc.com.cn
+

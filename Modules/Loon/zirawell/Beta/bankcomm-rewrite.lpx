@@ -1,0 +1,14 @@
+#!name=bankcomm-rewrite
+#!desc=bankcomm-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 交通银行 - BANKCOMM
+^https?:\/\/download1\.bankcomm\.com\/chngweb\/CHNRCSP\/media - reject-200
+^https?:\/\/download1\.bankcomm\.com\/mobs6-inner\/offline\/static\/releaseConf - reject
+^https?:\/\/download1\.bankcomm\.com\/_cdn\/mobs\/home\/oss\/pub\/file\/file\/public\/config\/pageConfig - reject
+
+[MITM]
+hostname = download1.bankcomm.com
+

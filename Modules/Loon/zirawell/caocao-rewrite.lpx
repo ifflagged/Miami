@@ -1,0 +1,13 @@
+#!name=caocao-rewrite
+#!desc=caocao-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 曹操出行 - CAOCAO
+^https?:\/\/ptmpcap\.caocaokeji\.cn\/advert-bss\/ - reject-img
+^https?:\/\/cap\.caocaokeji\.cn\/advert-bss\/ - reject
+
+[MITM]
+hostname = ptmpcap.caocaokeji.cn, cap.caocaokeji.cn
+

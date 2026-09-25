@@ -1,0 +1,15 @@
+#!name=ejoy-rewrite
+#!desc=ejoy-rewrite
+#!icon=icon not found
+#!category=Jacob
+
+[URL Rewrite]
+# > 易捷加油 - EJOY
+^https?:\/\/a\.sinopecsales\.com\/app\/cms - reject-dict
+^https?:\/\/a\.sinopecsales\.com\/app\/wff\/ - reject-array
+^https?:\/\/a\.sinopecsales\.com\/app\/layout\/image\/xfq - reject-img
+^https?:\/\/a\.sinopecsales\.com\/app\/update\/(?>AppOpenConfig|AppVersion) - reject-dict
+
+[MITM]
+hostname = %APPEND% a.sinopecsales.com
+

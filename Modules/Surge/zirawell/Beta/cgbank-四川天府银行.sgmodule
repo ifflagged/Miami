@@ -1,0 +1,16 @@
+#!name=cgbank-%E5%9B%9B%E5%B7%9D%E5%A4%A9%E5%BA%9C%E9%93%B6%E8%A1%8C
+#!desc=cgbank-%E5%9B%9B%E5%B7%9D%E5%A4%A9%E5%BA%9C%E9%93%B6%E8%A1%8C
+#!icon=icon not found
+#!category=Jacob
+
+[Body Rewrite]
+http-response ^https?:\/\/chl\.tf\.cn\/channelmg\/sys\/socso\/order\/queryOrderInfo "imgUrl" "imgUrl0"
+
+[Map Local]
+^https?:\/\/chl\.tf\.cn\/channelmg\/sys\/socso\/socsonew\/queryIsRealNameAdertInfo data-type=json data="{}" status-code=200
+
+^https?:\/\/wechat\.tf\.cn\/mini-financial\/model\/queryPopup data-type=json data="{}" status-code=200
+
+[MITM]
+hostname = %APPEND% chl.tf.cn, wechat.tf.cn
+

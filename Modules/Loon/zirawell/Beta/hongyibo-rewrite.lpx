@@ -1,0 +1,12 @@
+#!name=hongyibo-rewrite
+#!desc=hongyibo-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 花小猪 - HONGYIBO
+^https?:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity\/mget\?_t - reject-dict
+
+[MITM]
+hostname = res.hongyibo.com.cn
+

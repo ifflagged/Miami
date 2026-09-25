@@ -1,0 +1,22 @@
+#!name=freshippo-rewrite
+#!desc=freshippo-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 盒马 - FRESHIPPO
+^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch\?appkey=23230111 - reject
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.alibaba\.emas\.publish\.update\.get - reject-dict
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.hippotown\.tabbar\.info - reject
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.sg\.querysinglescene - reject-dict
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.querysinglepage - reject-200
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.fc\.recommend\.feedscommondservice - reject-dict
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.crm\.platform\.ma\.recommend - reject-dict
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.mimir\.recommend(?!\.hgitems) - reject-dict
+
+[Script]
+http-response ^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.query(?>indexpage|mypage|tabfeedstream) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/freshippo-rewrite/zirawell_freshippo.js, requires-body=true, timeout=60, tag=freshippo
+
+[MITM]
+hostname = amdc.m.taobao.com, acs.m.taobao.com, acs-m.freshippo.com
+

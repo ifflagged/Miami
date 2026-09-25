@@ -1,0 +1,14 @@
+#!name=meituanwm-rewrite
+#!desc=meituanwm-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 美团外卖 - MEITUANWM
+^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/(?>loadInfo|openscreen|startpicture) - reject
+^https?:\/\/p\d\.meituan\.net\/cell - reject
+^https?:\/\/s3plus\.meituan\.net\/v\d\/mss_\w+\/goku\/(?>lottie|lucency) - reject-img
+
+[MITM]
+hostname = wmapi.meituan.com, p*.meituan.net, s3plus.meituan.net
+

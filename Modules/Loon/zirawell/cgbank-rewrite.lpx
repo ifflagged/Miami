@@ -1,0 +1,12 @@
+#!name=cgbank-rewrite
+#!desc=cgbank-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 天府手机银行 - CGBANK
+^https?:\/\/cgbank\.oss-cn-shenzhen\.aliyuncs\.com\/visual\/advertisingImg\/.+.jpg - reject-200
+
+[MITM]
+hostname = cgbank.oss-cn-shenzhen.aliyuncs.com
+

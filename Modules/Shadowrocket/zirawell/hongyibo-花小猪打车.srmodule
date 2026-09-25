@@ -1,0 +1,14 @@
+#!name=hongyibo-%E8%8A%B1%E5%B0%8F%E7%8C%AA%E6%89%93%E8%BD%A6
+#!desc=hongyibo-%E8%8A%B1%E5%B0%8F%E7%8C%AA%E6%89%93%E8%BD%A6
+#!icon=icon not found
+#!category=Jacob
+
+[Rule]
+DOMAIN,api.hongyibo.com.cn,REJECT,extended-matching
+
+[Map Local]
+^https?:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity data-type=json data="{}"
+
+[MITM]
+hostname = %APPEND% res.hongyibo.com.cn
+

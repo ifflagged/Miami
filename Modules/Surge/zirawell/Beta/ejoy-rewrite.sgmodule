@@ -1,0 +1,18 @@
+#!name=ejoy-rewrite
+#!desc=ejoy-rewrite
+#!icon=icon not found
+#!category=Jacob
+
+[Map Local]
+# > 易捷加油 - EJOY
+^https?:\/\/a\.sinopecsales\.com\/app\/cms data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https?:\/\/a\.sinopecsales\.com\/app\/wff\/ data-type=text data="[]" status-code=200
+
+^https?:\/\/a\.sinopecsales\.com\/app\/layout\/image\/xfq data-type=tiny-gif status-code=200
+
+^https?:\/\/a\.sinopecsales\.com\/app\/update\/(?>AppOpenConfig|AppVersion) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% a.sinopecsales.com
+

@@ -1,0 +1,12 @@
+#!name=enmonster-rewrite
+#!desc=enmonster-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 怪兽赤兔 - ENMONSTER
+^https?:\/\/awg\.enmonster\.com\/apa(\/index)?\/advert - reject
+
+[MITM]
+hostname = awg.enmonster.com
+

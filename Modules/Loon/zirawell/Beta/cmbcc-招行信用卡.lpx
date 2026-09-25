@@ -1,0 +1,13 @@
+#!name=cmbcc-%E6%8B%9B%E8%A1%8C%E4%BF%A1%E7%94%A8%E5%8D%A1
+#!desc=cmbcc-%E6%8B%9B%E8%A1%8C%E4%BF%A1%E7%94%A8%E5%8D%A1
+#!icon=icon not found
+#!tag=Jacob
+
+[Script]
+http-response ^https?:\/\/xyk\.cmbchina\.com\/WebAppConfigService\/get(Page)?ResourceBits script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/cmbcc-招行信用卡/zirawell_cmbcc.js, requires-body=true, tag=cmbcc
+
+http-response ^https?:\/\/weclub\.ccc\.cmbchina\.com\/SCRMMiniAppCenterNode\/resource\/gateway\/get-page-resource script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/cmbcc-招行信用卡/zirawell_cmbcc.js, requires-body=true, tag=cmbcc
+
+[MITM]
+hostname = xyk.cmbchina.com, weclub.ccc.cmbchina.com
+

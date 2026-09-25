@@ -1,0 +1,11 @@
+#!name=hellobike-%E5%93%88%E5%95%B0
+#!desc=hellobike-%E5%93%88%E5%95%B0
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+^https?:\/\/api\.hellobike\.com\/api\?adx mock-response-body data-type=json data="{}" status-code=200
+
+[MITM]
+hostname = api.hellobike.com
+

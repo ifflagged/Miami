@@ -1,0 +1,15 @@
+#!name=mstand
+#!desc=mstand
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+^https?:\/\/wechat-api-dj\.mstand\.cn\/scrm\/app\/mdm\/index\/listAdv\?types=(?!1&) mock-response-body data-type=json data="{}" status-code=200
+^https?:\/\/wechat-api-dj\.mstand\.cn\/system\/dms\/dmsAdSetting\/issue mock-response-body data-type=json data="{}" status-code=200
+
+[Script]
+http-response ^https?:\/\/wechat-api-dj\.mstand\.cn\/scrm\/mini\/app\/index\/info script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/mstand/zirawell_wechatApplet.js, requires-body=true, tag=mstand
+
+[MITM]
+hostname = wechat-api-dj.mstand.cn
+

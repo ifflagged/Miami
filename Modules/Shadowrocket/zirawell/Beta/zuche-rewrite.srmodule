@@ -1,0 +1,17 @@
+#!name=zuche-rewrite
+#!desc=zuche-rewrite
+#!icon=icon not found
+#!category=Jacob
+
+[URL Rewrite]
+# > 神舟租车 - ZUCHE
+^https?:\/\/apiproxy\.zuche\.com\/action\/carrctapi\/brand\/area\/advertising - reject
+^https?:\/\/apiproxy\.zuche\.com\/action\/carrctapi\/order\/appStartInit - reject-dict
+^https?:\/\/apiproxy\.zuche\.com\/resource\/cardes\/toufang\/marketing - reject-dict
+^https?:\/\/apiproxy\.zuche\.com\/resource\/cardes\/guide - reject-dict
+^https?:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/base\/versionInfo - reject-dict
+^https?:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/order\/homeCommonTips - reject-dict
+
+[MITM]
+hostname = %APPEND% apiproxy.zuche.com
+

@@ -1,0 +1,20 @@
+#!name=zhuanzhuan-rewrite
+#!desc=zhuanzhuan-rewrite
+#!icon=icon not found
+#!tag=Jacob
+
+[Rewrite]
+# > 转转 - ZHUANZHUAN
+^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo - reject-dict
+# 转转右下角悬浮广告
+^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/userred\?scene=homePage - reject-dict
+
+[Script]
+# “我的”页面去除冗余的模块
+http-response ^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/zhuanzhuan-rewrite/zirawell_zhuanzhuan.js, requires-body=true, timeout=60, tag=zhuanzhuan
+
+http-response ^https?:\/\/app\.zhuanzhuan\.com\/zz\/v\d\/zzinfoshow\/getchoicegoodsinfos script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/zhuanzhuan-rewrite/Script-Hub-Org_replace-body.js, requires-body=true, timeout=30, tag=replaceBody, argument=infoData-%3Erandom_body
+
+[MITM]
+hostname = app.zhuanzhuan.com
+
