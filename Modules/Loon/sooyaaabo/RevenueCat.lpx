@@ -11,9 +11,9 @@
 #!date = 2026-09-23 00:00
 
 # 2026-09-13
-# https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+# https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/chxm1023_Reheji.js
 # 2024-07-08
-# https://ddgksf2013.top/scripts/revenuecat.vip.js
+# https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/ddgksf2013.top_revenuecat.vip.js
 # 2025-01-10
 # https://github.com/Guding88/Script/blob/main/APPheji_Guding.plugin
 # 2025-02-27
@@ -30,20 +30,20 @@ request if ${url} ~= /^https:\/\/api\.lianjiu\.fun\/app\/api\/v1\/profile/i then
 
 [Script]
 # chxm1023
-response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack响应@chxm1023", requires_body=true
-request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack请求@chxm1023"
+response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/chxm1023_Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack响应@chxm1023", requires_body=true
+request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/chxm1023_Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack请求@chxm1023"
 
 # Guding88
-response if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://raw.githubusercontent.com/Guding88/Script/main/APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack响应@Guding88", requires_body=true
-request if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://raw.githubusercontent.com/Guding88/Script/main/APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack请求@Guding88"
+response if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/Guding88_APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack响应@Guding88", requires_body=true
+request if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/Guding88_APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack请求@Guding88"
 
 # ddgksf2013
-response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://ddgksf2013.top/scripts/revenuecat.vip.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack响应@ddgksf2013", requires_body=true
-request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/ddgksf2013/Scripts/master/deleteHeader.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack请求@ddgksf2013"
+response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/ddgksf2013.top_revenuecat.vip.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack响应@ddgksf2013", requires_body=true
+request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/ddgksf2013_deleteHeader.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack请求@ddgksf2013"
 
 # Yu9191
-response if ${url} ~= /^https:\/\/(api\.revenuecat\.com|api\.rc-backup\.com)\/.+\/(receipts$|subscribers\/[^\/]+$)/i then script("https://loon.103516.xyz/Script/RevenueCat/RevenueCat-Yu9191.js") with enable=${RevenueCat-Yu9191}, tag="[RevenueCat]会员Crack响应@Yu9191", requires_body=true
-request if ${url} ~= /^https:\/\/(api\.revenuecat\.com|api\.rc-backup\.com)\/.+\/(receipts$|subscribers\/[^\/]+$)/i then script("https://loon.103516.xyz/Script/RevenueCat/RevenueCat-Yu9191.js") with enable=${RevenueCat-Yu9191}, tag="[RevenueCat]会员Crack请求@Yu9191"
+response if ${url} ~= /^https:\/\/(api\.revenuecat\.com|api\.rc-backup\.com)\/.+\/(receipts$|subscribers\/[^\/]+$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/loon.103516.xyz_RevenueCat-Yu9191.js") with enable=${RevenueCat-Yu9191}, tag="[RevenueCat]会员Crack响应@Yu9191", requires_body=true
+request if ${url} ~= /^https:\/\/(api\.revenuecat\.com|api\.rc-backup\.com)\/.+\/(receipts$|subscribers\/[^\/]+$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/loon.103516.xyz_RevenueCat-Yu9191.js") with enable=${RevenueCat-Yu9191}, tag="[RevenueCat]会员Crack请求@Yu9191"
 
 [MitM]
 hostname = api.revenuecat.com, api.rc-backup.com, api.lianjiu.fun
