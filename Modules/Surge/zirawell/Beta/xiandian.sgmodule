@@ -1,9 +1,0 @@
-#!name=xiandian
-#!desc=xiandian
-#!icon=icon not found
-#!category={encoded_author}
-
-[Rule]
-DOMAIN,smarket.dian.so,REJECT,extended-matching,pre-matching
-DOMAIN,file.dian.so,REJECT,extended-matching,pre-matching
-

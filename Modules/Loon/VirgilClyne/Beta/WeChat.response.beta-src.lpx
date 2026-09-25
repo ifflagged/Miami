@@ -1,8 +1,0 @@
-#!name=WeChat
-#!desc=WeChat
-#!icon=icon not found
-#!tag={encoded_author}
-
-[Rewrite]
-undefined undefined undefined
-

@@ -1,8 +1,0 @@
-#!name=duoduo
-#!desc=duoduo
-#!icon=icon not found
-#!tag={encoded_author}
-
-[Rule]
-DOMAIN-SUFFIX,ad.duoduo.link,REJECT
-

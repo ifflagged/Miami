@@ -1,8 +1,0 @@
-#!name=shouqianba
-#!desc=shouqianba
-#!icon=icon not found
-#!category={encoded_author}
-
-[Rule]
-DOMAIN,ads-shopping.shouqianba.com,REJECT,extended-matching
-

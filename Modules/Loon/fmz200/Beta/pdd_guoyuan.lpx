@@ -1,8 +1,0 @@
-#!name=pdd_guoyuan
-#!desc=pdd_guoyuan
-#!icon=icon not found
-#!tag={encoded_author}
-
-[Script]
-cron "30 1,7,12,18,22 * * *" script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/pdd_guoyuan/fmz200_pdd_guoyuan.js, timeout=120, tag=pdd_guoyuan
-
