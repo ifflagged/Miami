@@ -14,6 +14,7 @@ GIT | ZenmoFeiShi | https://github.com/ZenmoFeiShi/Qx.git |
 GIT | zirawell    | https://github.com/zirawell/R-Store.git | 
 GIT | VirgilClyne | https://github.com/VirgilClyne/GetSomeFries.git | 
 GIT | fmz200      | https://github.com/fmz200/wool_scripts.git | 
+GIT | NSRingo | https://github.com/NSRingo/WeatherKit.git | modules
 
 # 2. JSON 索引模式
 JSON | sooyaaabo    | https://loonlab.103516.xyz/Plugin/plugins.json | 
@@ -37,7 +38,7 @@ RELEASE | NSRingo   | NSRingo/MapKit |
 RELEASE | NSRingo   | NSRingo/TV | 
 
 # 4. 文件夹模式 (直接扫描提取本地指定文件夹所有模块)
-DIR | NSRingo  | https://github.com/NSRingo/WeatherKit/tree/main/modules |
+# DIR | NSRingo  | NSRingo/WeatherKit |
 
 # 5. 单链接直连模式 (直接下载单文件)
 DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Loon/Plugin/DiDi-Custom.plugin |
