@@ -1,0 +1,29 @@
+# ==============================================================================
+# 格式规范：
+# 类型 | 作者名 | 链接或仓库地址 | 补充参数 (子目录/提取字段，可选)
+# 
+# 类型支持：
+# 1. GIT     : Git 仓库克隆模式 (参数为源码子目录，留空默认为根目录)
+# 2. JSON    : JSON 接口解析模式 (参数为额外 UA，留空用默认)
+# 3. RELEASE : GitHub Release Assets API 模式
+# 4. DIRECT  : 单个直接下载链接 (兼容原来的 Modules-Links.txt)
+# ==============================================================================
+
+# 1. Git 源码模式
+GIT | ZenmoFeiShi | https://github.com/ZenmoFeiShi/Qx.git | 
+GIT | zirawell    | https://github.com/zirawell/R-Store.git | 
+GIT | VirgilClyne | https://github.com/VirgilClyne/GetSomeFries.git | 
+GIT | fmz200      | https://github.com/fmz200/wool_scripts.git | 
+
+# 2. JSON 索引模式
+JSON | sooyaaabo    | https://loonlab.103516.xyz/Plugin/plugins.json | 
+JSON | ddgksf2013   | https://ddgksf2013.top/data.json | 
+JSON | mist-whisper | https://kelvinlab.wuyra.com/list.json | 
+
+# 3. GitHub Release 模式
+RELEASE | NSRingo   | NSRingo/WeatherKit | 
+RELEASE | Biliverse | Biliverse/Enhanced | 
+RELEASE | DualSubs  | DualSubs/Universal | 
+
+# 4. 单链接直连模式 (直接下载单文件)
+DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Loon/Plugin/DiDi-Custom.plugin |
