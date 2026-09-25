@@ -1,7 +1,7 @@
 #!name=amap-%E9%AB%98%E5%BE%B7%E6%89%93%E8%BD%A6
 #!desc=amap-%E9%AB%98%E5%BE%B7%E6%89%93%E8%BD%A6
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 ^https?:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource mock-response-body data-type=json data="{}" status-code=200

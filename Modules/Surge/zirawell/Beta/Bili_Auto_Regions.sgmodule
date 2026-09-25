@@ -1,7 +1,7 @@
 #!name=Bili_Auto_Regions
 #!desc=Bili_Auto_Regions
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Rule]
 #可选, 由于qx纯tun特性, 不添加规则可能会导致脚本失效. https://github.com/NobyDa/Script/issues/382

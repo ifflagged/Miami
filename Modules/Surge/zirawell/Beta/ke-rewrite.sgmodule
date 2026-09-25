@@ -1,7 +1,7 @@
 #!name=ke-rewrite
 #!desc=ke-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 贝壳找房 - KE

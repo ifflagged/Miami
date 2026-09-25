@@ -1,7 +1,7 @@
 #!name=kfc-%E8%82%AF%E5%BE%B7%E5%9F%BA+
 #!desc=kfc-%E8%82%AF%E5%BE%B7%E5%9F%BA+
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Map Local]
 ^https?:\/\/dynamicad\.kfc\.com\.cn\/api data-type=json data="{}"

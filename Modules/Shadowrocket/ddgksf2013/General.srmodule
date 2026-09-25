@@ -1,0 +1,12 @@
+#!name=General
+#!desc=General
+#!icon=icon not found
+#!category={encoded_author}
+
+[URL Rewrite]
+# Redirect Google Search Service
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+
+[MITM]
+hostname = %APPEND% www.google.cn
+

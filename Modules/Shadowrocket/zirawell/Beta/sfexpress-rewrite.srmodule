@@ -1,7 +1,7 @@
 #!name=sfexpress-rewrite
 #!desc=sfexpress-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 顺丰速运 - SFEXPRESS

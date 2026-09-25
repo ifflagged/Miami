@@ -1,7 +1,7 @@
 #!name=i4
 #!desc=i4
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 ^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml - reject

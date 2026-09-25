@@ -1,7 +1,7 @@
 #!name=dianping-rewrite
 #!desc=dianping-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 大众点评 - DIANPING

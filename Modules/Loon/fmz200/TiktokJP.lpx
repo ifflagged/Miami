@@ -1,7 +1,7 @@
 #!name=TiktokJP
 #!desc=TiktokJP
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # TikTok  日本

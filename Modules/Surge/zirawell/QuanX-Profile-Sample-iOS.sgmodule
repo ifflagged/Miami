@@ -1,7 +1,7 @@
 #!name=QuanX-Profile-Sample-iOS
 #!desc=QuanX-Profile-Sample-iOS
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Rule]
 # 本地网段

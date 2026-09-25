@@ -1,7 +1,7 @@
 #!name=kfc-Applet
 #!desc=kfc-Applet
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Map Local]
 ^https?:\/\/dynamicad\.kfc\.com\.cn\/api data-type=json data="{}"

@@ -1,7 +1,7 @@
 #!name=zhuanzhuan-rewrite
 #!desc=zhuanzhuan-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 转转 - ZHUANZHUAN

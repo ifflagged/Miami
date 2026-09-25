@@ -1,7 +1,7 @@
 #!name=pizzahut-rewrite
 #!desc=pizzahut-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 ^https?:\/\/res\.pizzahut\.com\.cn\/CRM\/phad\/apphome\/apphome - reject

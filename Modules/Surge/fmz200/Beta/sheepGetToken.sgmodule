@@ -1,7 +1,7 @@
 #!name=sheepGetToken
 #!desc=sheepGetToken
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Script]
 # 羊了个羊获取token

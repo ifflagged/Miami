@@ -1,7 +1,7 @@
 #!name=flyert-CheckIn
 #!desc=flyert-CheckIn
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Script]
 飞客-Cookie = type=http-request, pattern=^https?:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=getdata&.*, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/flyert-CheckIn/zirawell_flyert.js

@@ -1,7 +1,7 @@
 #!name=jd-rewrite
 #!desc=jd-rewrite
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # 屏蔽强制更新

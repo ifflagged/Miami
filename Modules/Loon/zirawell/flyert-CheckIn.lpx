@@ -1,7 +1,7 @@
 #!name=flyert-CheckIn
 #!desc=flyert-CheckIn
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Script]
 http-request ^https?:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=getdata&.* script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/flyert-CheckIn/zirawell_flyert.js, tag=飞客-Cookie

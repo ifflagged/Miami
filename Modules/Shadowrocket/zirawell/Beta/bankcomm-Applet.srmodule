@@ -1,7 +1,7 @@
 #!name=bankcomm-Applet
 #!desc=bankcomm-Applet
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 ^https?:\/\/creditcardapp\.bankcomm\.com\/cnsvPmpaMdbcardWeb\/page\/getGuidePageAds - reject

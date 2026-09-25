@@ -1,7 +1,7 @@
 #!name=enmonster-rewrite
 #!desc=enmonster-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 怪兽赤兔 - ENMONSTER

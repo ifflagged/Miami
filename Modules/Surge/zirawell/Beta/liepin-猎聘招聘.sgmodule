@@ -1,7 +1,7 @@
 #!name=liepin-%E7%8C%8E%E8%81%98%E6%8B%9B%E8%81%98
 #!desc=liepin-%E7%8C%8E%E8%81%98%E6%8B%9B%E8%81%98
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Body Rewrite]
 http-response ^https?:\/\/api-wanda\.liepin\.com\/api\/com\.liepin\.cbp\.baizhong\.op\.v\d-show-4pc adList random_body

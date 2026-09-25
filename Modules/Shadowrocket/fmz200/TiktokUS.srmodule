@@ -1,7 +1,7 @@
 #!name=TiktokUS
 #!desc=TiktokUS
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # TikTok 美国

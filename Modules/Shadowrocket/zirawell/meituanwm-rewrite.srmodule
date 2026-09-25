@@ -1,7 +1,7 @@
 #!name=meituanwm-rewrite
 #!desc=meituanwm-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 美团外卖 - MEITUANWM

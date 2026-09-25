@@ -2,7 +2,7 @@
 #!desc=WeChat安全页面自动跳转
 #!author=VirgilClyne
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 #!openUrl=http://boxjs.com/#/app/GetSomeFries.WeChat
 #!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/WeChat
 #!manual=https://github.com/VirgilClyne/GetSomeFries/wiki/WeChat

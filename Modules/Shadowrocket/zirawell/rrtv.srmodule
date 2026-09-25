@@ -1,7 +1,7 @@
 #!name=rrtv
 #!desc=rrtv
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 ^https?:\/\/api\.rr\.tv\/.*?Version - reject

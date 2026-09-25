@@ -1,7 +1,7 @@
 #!name=freshippo-rewrite
 #!desc=freshippo-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 盒马 - FRESHIPPO

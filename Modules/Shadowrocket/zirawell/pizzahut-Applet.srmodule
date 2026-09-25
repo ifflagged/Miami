@@ -1,7 +1,7 @@
 #!name=pizzahut-Applet
 #!desc=pizzahut-Applet
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Map Local]
 ^https?:\/\/res\.pizzahut\.com\.cn\/CRM data-type=json data="{}"

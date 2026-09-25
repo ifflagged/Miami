@@ -1,7 +1,7 @@
 #!name=tuhu-rewrite
 #!desc=tuhu-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 途虎养车 - TUHU

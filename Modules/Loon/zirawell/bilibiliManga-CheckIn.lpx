@@ -1,7 +1,7 @@
 #!name=bilibiliManga-CheckIn
 #!desc=bilibiliManga-CheckIn
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Script]
 http-request ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/bilibiliManga-CheckIn/zirawell_bilibiliManga.js, tag=哔哩哔哩漫画-Cookie

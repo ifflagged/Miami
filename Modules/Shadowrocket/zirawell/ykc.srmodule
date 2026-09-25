@@ -1,7 +1,7 @@
 #!name=ykc
 #!desc=ykc
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Rule]
 DOMAIN,et.ykccn.com,REJECT,extended-matching

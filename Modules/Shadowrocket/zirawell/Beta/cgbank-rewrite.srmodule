@@ -1,7 +1,7 @@
 #!name=cgbank-rewrite
 #!desc=cgbank-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 天府手机银行 - CGBANK

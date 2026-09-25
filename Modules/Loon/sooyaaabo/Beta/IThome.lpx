@@ -1,0 +1,14 @@
+#!name=IT之家
+#!desc=过滤IT之家广告，自定义移除置顶和轮播图，自定义移除项需在插件配置。
+#!author=Keywos[https://github.com/Keywos], 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+#!icon=icon not found
+#!tag={encoded_author}
+#!openUrl=https://apps.apple.com/app/id570610859
+#!tag=去广告
+#!loon_version=3.5.1(998)
+#!homepage=https://loonlab.103516.xyz/Plugin/
+#!date=2026-09-23 00:00
+
+[MITM]
+hostname = napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com
+

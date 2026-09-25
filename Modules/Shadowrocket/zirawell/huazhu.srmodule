@@ -1,7 +1,7 @@
 #!name=huazhu
 #!desc=huazhu
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Script]
 华住会-Cookie = type=http-request, pattern=^https?:\/\/hweb-personalcenter\.huazhu\.com\/login\/autoLogin$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/huazhu/zirawell_huazhu.js

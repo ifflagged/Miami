@@ -1,7 +1,7 @@
 #!name=amap-%E9%AB%98%E5%BE%B7%E6%89%93%E8%BD%A6
 #!desc=amap-%E9%AB%98%E5%BE%B7%E6%89%93%E8%BD%A6
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Map Local]
 ^https?:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource data-type=json data="{}" status-code=200

@@ -1,7 +1,7 @@
 #!name=QQMusic
 #!desc=QQMusic
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Script]
 http-request ^http:\/\/u6\.y\.qq\.com\/cgi-bin\/musicu\.fcg script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ZenmoFeiShi/QQMusic/ZenmoFeiShi_QQMusic.js, timeout=60, tag=QQMusic

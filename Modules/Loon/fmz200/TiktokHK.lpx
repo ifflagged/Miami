@@ -1,7 +1,7 @@
 #!name=TiktokHK
 #!desc=TiktokHK
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # TikTok 香港

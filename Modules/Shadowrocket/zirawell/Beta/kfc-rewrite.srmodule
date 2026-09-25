@@ -1,7 +1,7 @@
 #!name=kfc-rewrite
 #!desc=kfc-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 肯德基 - KFC

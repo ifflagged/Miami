@@ -2,7 +2,7 @@
 #!desc=Keep
 #!author=怎么肥事
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 #!update=2026-4-14
 
 [Rule]

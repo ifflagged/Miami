@@ -1,7 +1,7 @@
 #!name=txtv
 #!desc=txtv
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Script]
 http-request ^https?:\/\/vip\.video\.qq\.com\/rpc\/trpc\.new_task_system\.task_system\.TaskSystem\/ReadTaskList\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/txtv/zirawell_txtv.js, tag=腾讯视频-Cookie-1

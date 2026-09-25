@@ -1,7 +1,7 @@
 #!name=fcbox-rewrite
 #!desc=fcbox-rewrite
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # > 丰巢 - FCBOX

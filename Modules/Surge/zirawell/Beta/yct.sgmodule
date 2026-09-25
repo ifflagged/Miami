@@ -1,7 +1,7 @@
 #!name=yct
 #!desc=yct
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Map Local]
 ^https?:\/\/r2\.gzyct\.com\/qrcode\/advert data-type=json data="{}" status-code=200

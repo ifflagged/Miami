@@ -1,7 +1,7 @@
 #!name=Nodeseek_NsCheckin
 #!desc=Nodeseek_NsCheckin
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Script]
 http-request ^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/\d+\?readme=1$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ZenmoFeiShi/Nodeseek_NsCheckin/ZenmoFeiShi_Nodeseek_NsCheckin.js, timeout=60, tag=Nodeseek_NsCheckin

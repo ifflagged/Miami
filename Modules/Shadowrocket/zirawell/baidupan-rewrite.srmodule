@@ -1,7 +1,7 @@
 #!name=baidupan-rewrite
 #!desc=baidupan-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 百度网盘 - BAIDUPAN

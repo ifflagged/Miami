@@ -1,7 +1,7 @@
 #!name=csair-rewrite
 #!desc=csair-rewrite
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # > 南方航空 - CSAIR

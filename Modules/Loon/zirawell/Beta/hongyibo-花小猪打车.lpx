@@ -1,7 +1,7 @@
 #!name=hongyibo-%E8%8A%B1%E5%B0%8F%E7%8C%AA%E6%89%93%E8%BD%A6
 #!desc=hongyibo-%E8%8A%B1%E5%B0%8F%E7%8C%AA%E6%89%93%E8%BD%A6
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rule]
 DOMAIN,api.hongyibo.com.cn,REJECT

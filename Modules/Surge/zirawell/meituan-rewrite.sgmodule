@@ -1,7 +1,7 @@
 #!name=meituan-rewrite
 #!desc=meituan-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 美团 - MEITUAN

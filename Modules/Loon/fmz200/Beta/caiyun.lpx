@@ -1,7 +1,7 @@
 #!name=caiyun
 #!desc=caiyun
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 undefined undefined undefined

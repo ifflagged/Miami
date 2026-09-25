@@ -1,7 +1,7 @@
 #!name=TiktokTW
 #!desc=TiktokTW
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # TikTok 台湾

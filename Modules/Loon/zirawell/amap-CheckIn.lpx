@@ -1,7 +1,7 @@
 #!name=amap-CheckIn
 #!desc=amap-CheckIn
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Script]
 http-response ^^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/amap-CheckIn/zirawell_amap.js, tag=高德打车-Cookie

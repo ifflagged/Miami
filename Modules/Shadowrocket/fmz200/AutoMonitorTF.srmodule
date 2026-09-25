@@ -1,7 +1,7 @@
 #!name=AutoMonitorTF
 #!desc=AutoMonitorTF
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Script]
 AutoMonitorTF = type=cron, cronexp=30 * * * * ?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/AutoMonitorTF/fmz200_AutoMonitorTF.js, timeout=120, wake-system=1

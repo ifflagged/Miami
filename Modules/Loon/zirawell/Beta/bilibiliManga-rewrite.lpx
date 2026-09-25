@@ -1,7 +1,7 @@
 #!name=bilibiliManga-rewrite
 #!desc=bilibiliManga-rewrite
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # > 哔哩哔哩漫画 - BILIBILIMANGA

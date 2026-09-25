@@ -1,7 +1,7 @@
 #!name=bankcomm-rewrite
 #!desc=bankcomm-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 交通银行 - BANKCOMM

@@ -1,7 +1,7 @@
 #!name=eleme-rewrite
 #!desc=eleme-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 淘宝闪购 - TBTO

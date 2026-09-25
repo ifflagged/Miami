@@ -1,7 +1,7 @@
 #!name=TiktokUK
 #!desc=TiktokUK
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # TikTok 英国

@@ -1,7 +1,7 @@
 #!name=Loon4Mac
 #!desc=Loon4Mac
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Argument]
 兜底策略=select,香港节点,台湾节点,狮城节点,美国节点,日本节点,韩国节点,DIRECT,img-url = https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Loon_02.png

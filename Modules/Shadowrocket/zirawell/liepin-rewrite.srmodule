@@ -1,7 +1,7 @@
 #!name=liepin-rewrite
 #!desc=liepin-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 猎聘 - LIEPIN

@@ -1,7 +1,7 @@
 #!name=PingMeSignin
 #!desc=PingMeSignin
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Script]
 http-request ^https:\/\/api\.pingmeapp\.net\/app\/queryBalanceAndBonus script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/PingMeSignin/fmz200_get_cookie.js, timeout=60, tag=get_cookie

@@ -1,0 +1,11 @@
+#!name=UnblockURLinWeChat
+#!desc=UnblockURLinWeChat
+#!icon=icon not found
+#!tag={encoded_author}
+
+[Script]
+http-response ^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/UnblockURLinWeChat/ddgksf2013_weixin110.js, requires-body=true, timeout=60, tag=weixin110
+
+[MITM]
+hostname = weixin110.qq.com, security.wechat.com
+

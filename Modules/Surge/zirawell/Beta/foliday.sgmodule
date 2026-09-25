@@ -1,7 +1,7 @@
 #!name=foliday
 #!desc=foliday
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Script]
 foliday = type=http-response, pattern=^https?:\/\/apis\.folidaymall\.com\/online\/capi\/component\/getPageComponents, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/foliday/zirawell_foliday.js, requires-body=true, max-size=0

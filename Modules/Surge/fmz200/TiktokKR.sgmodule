@@ -1,7 +1,7 @@
 #!name=TiktokKR
 #!desc=TiktokKR
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # TikTok 韩国

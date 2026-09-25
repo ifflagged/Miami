@@ -1,7 +1,7 @@
 #!name=didi-rewrite
 #!desc=didi-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 滴滴出行 - DIDI

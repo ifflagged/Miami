@@ -1,7 +1,7 @@
 #!name=QuanX
 #!desc=QuanX
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Rule]
 # 请求本地

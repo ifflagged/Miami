@@ -1,7 +1,7 @@
 #!name=17u-rewrite
 #!desc=17u-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 同程旅行 - 17U

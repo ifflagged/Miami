@@ -1,7 +1,7 @@
 #!name=lkcoffee-rewrite
 #!desc=lkcoffee-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 瑞幸咖啡 - LKCOFFEE

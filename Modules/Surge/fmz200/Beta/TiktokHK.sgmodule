@@ -1,7 +1,7 @@
 #!name=TiktokHK
 #!desc=TiktokHK
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # TikTok 香港

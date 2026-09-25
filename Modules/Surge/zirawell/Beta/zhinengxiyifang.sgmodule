@@ -1,7 +1,7 @@
 #!name=zhinengxiyifang
 #!desc=zhinengxiyifang
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 ^https?:\/\/api-marketing\.zhinengxiyifang\.cn\/api\/v\d\/cloudcode\/wechat\/bid - reject

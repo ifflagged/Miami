@@ -1,7 +1,7 @@
 #!name=Loon4Mac
 #!desc=Loon4Mac
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 #!arguments=兜底策略:香港节点,大陆网址:香港节点,电报消息:香港节点,微信消息:DIRECT,微博服务:香港节点,大陆抖音:香港节点,海外抖音:香港节点,人工智能:日本节点,苹果服务:DIRECT,谷歌服务:香港节点,油管视频:香港节点
 
 [General]

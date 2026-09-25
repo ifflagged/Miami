@@ -1,7 +1,7 @@
 #!name=yonghui-rewrite
 #!desc=yonghui-rewrite
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # > 永辉生活 - YONGHUI

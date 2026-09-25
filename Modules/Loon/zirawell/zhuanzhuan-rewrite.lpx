@@ -1,7 +1,7 @@
 #!name=zhuanzhuan-rewrite
 #!desc=zhuanzhuan-rewrite
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # > 转转 - ZHUANZHUAN

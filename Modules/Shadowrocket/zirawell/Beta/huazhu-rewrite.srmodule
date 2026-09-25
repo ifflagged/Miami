@@ -1,7 +1,7 @@
 #!name=huazhu-rewrite
 #!desc=huazhu-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # 开屏广告

@@ -1,7 +1,7 @@
 #!name=bankcomm-rewrite
 #!desc=bankcomm-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 ^https?:\/\/download1\.bankcomm\.com\/mobs6-inner\/offline\/static\/releaseConf - reject

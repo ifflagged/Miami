@@ -1,7 +1,7 @@
 #!name=caocao-rewrite
 #!desc=caocao-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 曹操出行 - CAOCAO

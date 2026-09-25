@@ -1,7 +1,7 @@
 #!name=mcd-rewrite
 #!desc=mcd-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 麦当劳 - MCD

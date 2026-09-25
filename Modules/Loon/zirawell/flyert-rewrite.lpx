@@ -1,7 +1,7 @@
 #!name=flyert-rewrite
 #!desc=flyert-rewrite
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # > 飞客 - FLYERT

@@ -1,7 +1,7 @@
 #!name=TiktokMO
 #!desc=TiktokMO
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # TikTok 澳门

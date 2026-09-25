@@ -1,7 +1,7 @@
 #!name=ctrip
 #!desc=ctrip
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Script]
 携程旅行-Cookie = type=http-response, pattern=^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/[a-zA-Z]+Login(?:$|\?), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/ctrip/zirawell_ctrip.js

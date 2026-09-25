@@ -1,7 +1,7 @@
 #!name=rouman5
 #!desc=rouman5
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rule]
 DOMAIN-SUFFIX,rou3.xyz,REJECT

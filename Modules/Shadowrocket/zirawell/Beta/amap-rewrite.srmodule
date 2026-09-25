@@ -1,7 +1,7 @@
 #!name=amap-rewrite
 #!desc=amap-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 高德地图 - AMAP

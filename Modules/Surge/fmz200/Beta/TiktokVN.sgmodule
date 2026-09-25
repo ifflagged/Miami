@@ -1,7 +1,7 @@
 #!name=TiktokVN
 #!desc=TiktokVN
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # TikTok 越南

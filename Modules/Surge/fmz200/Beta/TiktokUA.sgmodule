@@ -1,7 +1,7 @@
 #!name=TiktokUA
 #!desc=TiktokUA
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # TikTok 乌克兰

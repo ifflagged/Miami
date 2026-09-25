@@ -1,7 +1,7 @@
 #!name=xmly-CheckIn
 #!desc=xmly-CheckIn
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Script]
 http-request ^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/xmly-CheckIn/zirawell_xmly.js, tag=喜马拉雅-Cookie

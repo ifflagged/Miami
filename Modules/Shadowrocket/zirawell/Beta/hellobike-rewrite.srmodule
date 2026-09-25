@@ -1,7 +1,7 @@
 #!name=hellobike-rewrite
 #!desc=hellobike-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 哈啰<微信小程序> - HELLOBIKE

@@ -1,7 +1,7 @@
 #!name=xmly-rewrite
 #!desc=xmly-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # 修复轮播Ad失效Bug

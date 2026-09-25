@@ -1,7 +1,7 @@
 #!name=yonghui-rewrite
 #!desc=yonghui-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 永辉生活 - YONGHUI

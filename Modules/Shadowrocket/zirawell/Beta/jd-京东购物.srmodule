@@ -1,7 +1,7 @@
 #!name=jd-%E4%BA%AC%E4%B8%9C%E8%B4%AD%E7%89%A9
 #!desc=jd-%E4%BA%AC%E4%B8%9C%E8%B4%AD%E7%89%A9
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [Map Local]
 ^https?:\/\/api\.m\.jd\.com\/\?loginType=11 data-type=json data="{}"

@@ -1,7 +1,7 @@
 #!name=zuche-rewrite
 #!desc=zuche-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 神舟租车 - ZUCHE

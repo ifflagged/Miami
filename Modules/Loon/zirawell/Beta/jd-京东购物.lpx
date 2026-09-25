@@ -1,7 +1,7 @@
 #!name=jd-%E4%BA%AC%E4%B8%9C%E8%B4%AD%E7%89%A9
 #!desc=jd-%E4%BA%AC%E4%B8%9C%E8%B4%AD%E7%89%A9
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 ^https?:\/\/api\.m\.jd\.com\/\?loginType=11 mock-response-body data-type=json data="{}" status-code=200

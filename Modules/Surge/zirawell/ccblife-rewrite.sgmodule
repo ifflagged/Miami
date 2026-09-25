@@ -1,7 +1,7 @@
 #!name=ccblife-rewrite
 #!desc=ccblife-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # 首页底部-种草推荐

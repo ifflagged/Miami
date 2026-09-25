@@ -1,7 +1,7 @@
 #!name=ejoy-rewrite
 #!desc=ejoy-rewrite
 #!icon=icon not found
-#!tag=Jacob
+#!tag={encoded_author}
 
 [Rewrite]
 # > 易捷加油 - EJOY

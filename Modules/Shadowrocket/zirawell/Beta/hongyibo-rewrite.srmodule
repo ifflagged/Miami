@@ -1,7 +1,7 @@
 #!name=hongyibo-rewrite
 #!desc=hongyibo-rewrite
 #!icon=icon not found
-#!category=Jacob
+#!category={encoded_author}
 
 [URL Rewrite]
 # > 花小猪 - HONGYIBO
