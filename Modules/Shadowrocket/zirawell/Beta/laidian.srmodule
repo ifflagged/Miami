@@ -1,0 +1,11 @@
+#!name=laidian
+#!desc=laidian
+#!icon=icon not found
+#!category=zirawell
+
+[Map Local]
+^https?:\/\/mobile-api\.imlaidian\.com\/api\/args data-type=json data="{}"
+
+[MITM]
+hostname = %APPEND% mobile-api.imlaidian.com
+

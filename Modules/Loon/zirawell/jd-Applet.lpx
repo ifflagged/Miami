@@ -1,0 +1,11 @@
+#!name=jd-Applet
+#!desc=jd-Applet
+#!icon=icon not found
+#!tag=zirawell
+
+[Rewrite]
+^https?:\/\/api\.m\.jd\.com\/\?loginType=11 mock-response-body data-type=json data="{}" status-code=200
+
+[MITM]
+hostname = api.m.jd.com
+

@@ -1,0 +1,8 @@
+#!name=ql_sync
+#!desc=ql_sync
+#!icon=icon not found
+#!tag=fmz200
+
+[Script]
+cron "* 配置：40 0 * * *" script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/ql_sync/fmz200_ql_sync.js, timeout=120, tag=ql_sync
+
