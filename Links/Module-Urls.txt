@@ -21,9 +21,23 @@ JSON | ddgksf2013   | https://ddgksf2013.top/data.json |
 JSON | mist-whisper | https://kelvinlab.wuyra.com/list.json | 
 
 # 3. GitHub Release 模式
-RELEASE | NSRingo   | NSRingo/WeatherKit | 
 RELEASE | Biliverse | Biliverse/Enhanced | 
+RELEASE | Biliverse | Biliverse/Global | 
+RELEASE | Biliverse | Biliverse/Redirect | 
+RELEASE | Biliverse | Biliverse/ADBlock | 
+RELEASE | Biliverse | Biliverse/Roaming | 
 RELEASE | DualSubs  | DualSubs/Universal | 
+RELEASE | DualSubs  | DualSubs/Netflix | 
+RELEASE | DualSubs  | DualSubs/YouTube | 
+RELEASE | DualSubs  | DualSubs/Spotify | 
+RELEASE | DualSubs  | DualSubs/AddOn | 
+RELEASE | NSRingo   | NSRingo/WeatherKit | 
+RELEASE | NSRingo   | NSRingo/LocationService | 
+RELEASE | NSRingo   | NSRingo/MapKit | 
+RELEASE | NSRingo   | NSRingo/TV | 
 
-# 4. 单链接直连模式 (直接下载单文件)
+# 4. 文件夹模式 (直接扫描提取本地指定文件夹所有模块)
+DIR | NSRingo  | https://github.com/NSRingo/WeatherKit/tree/main/modules |
+
+# 5. 单链接直连模式 (直接下载单文件)
 DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Loon/Plugin/DiDi-Custom.plugin |
