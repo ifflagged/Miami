@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,smartop-sdkapi.jiguang.cn
-DOMAIN,smartop-sdkapi-ipv6.jiguang.cn
+payload:
+  - DOMAIN,smartop-sdkapi.jiguang.cn
+  - DOMAIN,smartop-sdkapi-ipv6.jiguang.cn

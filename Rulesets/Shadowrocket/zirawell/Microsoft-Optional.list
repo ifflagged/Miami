@@ -1,31 +1,33 @@
-#规则数量:25
-#不支持的规则数量:0
+#规则数量:24
+#不支持的规则数量:1
 #已排除的规则数量:0
+#不支持的规则:
+#USER-AGENT, Microsoft*
 
 #-----------------以下为解析后的规则-----------------#
 
-USER-AGENT,Microsoft*
-DOMAIN-KEYWORD,microsoft
-DOMAIN-SUFFIX,ms
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,bing.net
-DOMAIN-SUFFIX,hotmail.com
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,live.net
-DOMAIN-SUFFIX,microsofttranslator.com
-DOMAIN-SUFFIX,msauth.net
-DOMAIN-SUFFIX,msecnd.net
-DOMAIN-SUFFIX,msocdn.com
-DOMAIN-SUFFIX,msedge.net
-DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,office.com
-DOMAIN-SUFFIX,office.net
-DOMAIN-SUFFIX,office365.com
-DOMAIN-SUFFIX,onenote.com
-DOMAIN-SUFFIX,onenote.net
-DOMAIN-SUFFIX,outlook.com
-DOMAIN-SUFFIX,visualstudio.com
-DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windows.net
-DOMAIN-SUFFIX,xbox.com
-DOMAIN-SUFFIX,xboxlive.com
+payload:
+  - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-SUFFIX,ms
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,bing.net
+  - DOMAIN-SUFFIX,hotmail.com
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,live.net
+  - DOMAIN-SUFFIX,microsofttranslator.com
+  - DOMAIN-SUFFIX,msauth.net
+  - DOMAIN-SUFFIX,msecnd.net
+  - DOMAIN-SUFFIX,msocdn.com
+  - DOMAIN-SUFFIX,msedge.net
+  - DOMAIN-SUFFIX,msn.com
+  - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,office.net
+  - DOMAIN-SUFFIX,office365.com
+  - DOMAIN-SUFFIX,onenote.com
+  - DOMAIN-SUFFIX,onenote.net
+  - DOMAIN-SUFFIX,outlook.com
+  - DOMAIN-SUFFIX,visualstudio.com
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,windows.net
+  - DOMAIN-SUFFIX,xbox.com
+  - DOMAIN-SUFFIX,xboxlive.com

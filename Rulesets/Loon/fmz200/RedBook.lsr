@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,edith.xiaohongshu.com
+payload:
+  - DOMAIN-SUFFIX,edith.xiaohongshu.com

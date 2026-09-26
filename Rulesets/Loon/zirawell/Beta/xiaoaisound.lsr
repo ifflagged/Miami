@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,mistat.xiaomi.com
+payload:
+  - DOMAIN-SUFFIX,mistat.xiaomi.com

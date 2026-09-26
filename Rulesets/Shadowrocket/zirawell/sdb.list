@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,dwtracking.jk.cn
+payload:
+  - DOMAIN,dwtracking.jk.cn

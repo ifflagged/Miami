@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ad-files.4pyun.com
-DOMAIN,ad-api.4pyun.com
+payload:
+  - DOMAIN,ad-files.4pyun.com
+  - DOMAIN,ad-api.4pyun.com

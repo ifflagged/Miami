@@ -4,7 +4,8 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,voiceads.cn
-DOMAIN-SUFFIX,voiceads.com
-DOMAIN-SUFFIX,iflyad.bj.openstorage.cn
-DOMAIN-KEYWORD,ossp.voicecloud.cn
+payload:
+  - DOMAIN-SUFFIX,voiceads.cn
+  - DOMAIN-SUFFIX,voiceads.com
+  - DOMAIN-SUFFIX,iflyad.bj.openstorage.cn
+  - DOMAIN-KEYWORD,ossp.voicecloud.cn

@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,a.cpic.com.cn
+payload:
+  - DOMAIN,a.cpic.com.cn

@@ -4,6 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,adx.hupu.com
-DOMAIN,adx-api.hupu.com
-DOMAIN,goblin.hupu.com
+payload:
+  - DOMAIN,adx.hupu.com
+  - DOMAIN,adx-api.hupu.com
+  - DOMAIN,goblin.hupu.com

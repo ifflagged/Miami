@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,pageviewp.icbc.com.cn
+payload:
+  - DOMAIN,pageviewp.icbc.com.cn

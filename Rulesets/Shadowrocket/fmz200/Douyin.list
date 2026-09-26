@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,amemv.com
-DOMAIN-SUFFIX,douyinvod.com
+payload:
+  - DOMAIN-SUFFIX,amemv.com
+  - DOMAIN-SUFFIX,douyinvod.com

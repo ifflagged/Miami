@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,emdcadvertise.eastmoney.com
-DOMAIN,emdcadvertisepj.eastmoney.com
+payload:
+  - DOMAIN,emdcadvertise.eastmoney.com
+  - DOMAIN,emdcadvertisepj.eastmoney.com

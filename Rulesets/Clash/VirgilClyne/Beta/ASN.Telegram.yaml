@@ -1,11 +1,10 @@
-#规则数量:19
-#不支持的规则数量:1
+#规则数量:20
+#不支持的规则数量:0
 #已排除的规则数量:0
-#不支持的规则:
-#PROCESS-NAME,org.telegram.messenger
 
 #-----------------以下为解析后的规则-----------------#
 
+PROCESS-NAME,org.telegram.messenger
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tx.me
