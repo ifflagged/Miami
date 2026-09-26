@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,apm-api.huazhu.com
+payload:
+  - DOMAIN,apm-api.huazhu.com
