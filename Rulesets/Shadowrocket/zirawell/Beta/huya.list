@@ -1,0 +1,14 @@
+#规则数量:7
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,live-ads.huya.com
+  - DOMAIN,pp-cdnfile2pcdn.msstatic.com
+  - DOMAIN,livewebbs2pcdn.msstatic.com
+  - DOMAIN,huyafile.msstatic.com
+  - DOMAIN,livewebbs2.msstatic.com
+  - DOMAIN,business.msstatic.com
+  - DOMAIN-SUFFIX,v1d.szbdyd.com

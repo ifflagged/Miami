@@ -1,0 +1,19 @@
+#规则数量:12
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - IP-CIDR,59.82.14.1/32,no-resolve
+  - IP-CIDR,59.82.14.161/32,no-resolve
+  - IP-CIDR,59.82.34.147/32,no-resolve
+  - IP-CIDR,59.82.34.255/32,no-resolve
+  - IP-CIDR,59.82.113.219/32,no-resolve
+  - IP-CIDR,59.82.113.10/32,no-resolve
+  - IP-CIDR,139.95.0.151/32,no-resolve
+  - IP-CIDR,139.95.4.98/32,no-resolve
+  - IP-CIDR,47.246.103.9/32,no-resolve
+  - IP-CIDR,47.246.103.10/32,no-resolve
+  - IP-CIDR,203.119.238.164/32,no-resolve
+  - IP-CIDR,203.119.238.63/32,no-resolve

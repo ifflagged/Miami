@@ -1,0 +1,10 @@
+#规则数量:4
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,switch.cup.com.cn
+DOMAIN,ads.cup.com.cn
+DOMAIN,analytics.95516.com
+DOMAIN,tysdk.95516.com

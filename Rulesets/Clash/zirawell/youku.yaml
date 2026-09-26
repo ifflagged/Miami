@@ -1,0 +1,64 @@
+#规则数量:57
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,amdc.m.youku.com
+  - DOMAIN,api.sm.cn
+  - DOMAIN,huichuan-mc.sm.cn
+  - DOMAIN,huichuan.sm.cn
+  - DOMAIN,cad.youku.com
+  - DOMAIN,pre-acs.youku.com
+  - DOMAIN,m-vali.cp31.ott.cibntv.net
+  - DOMAIN,vali-g1.cp31.ott.cibntv.net
+  - DOMAIN,vali-ugc.cp31.ott.cibntv.net
+  - DOMAIN,pl.cp31.ott.cibntv.net
+  - DOMAIN,ykad-data.youku.com
+  - DOMAIN,sealine.youku.com
+  - DOMAIN,youku-acs.m.taobao.com
+  - DOMAIN-SUFFIX,ems.youku.com
+  - DOMAIN-SUFFIX,ad.mobile.youku.com
+  - DOMAIN-SUFFIX,ad.youku.com
+  - DOMAIN-SUFFIX,bdcode.youke.com
+  - DOMAIN-SUFFIX,atm.youku.com
+  - DOMAIN-SUFFIX,actives.youku.com
+  - DOMAIN-SUFFIX,ad.api.3g.tudou.com
+  - DOMAIN-SUFFIX,ad.api.3g.youku.com
+  - DOMAIN-SUFFIX,ad.api.mobile.youku.com
+  - DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com
+  - DOMAIN-SUFFIX,b.smartvideo.youku.com
+  - DOMAIN-SUFFIX,c.yes.youku.com
+  - DOMAIN-SUFFIX,m.yes.youku.com
+  - DOMAIN-SUFFIX,myes.youku.com
+  - DOMAIN-SUFFIX,das.api.youku.com
+  - DOMAIN-SUFFIX,das.mobile.youku.com
+  - DOMAIN-SUFFIX,dl.g.youku.com
+  - DOMAIN-SUFFIX,dmapp.youku.com
+  - DOMAIN-SUFFIX,gamex.mobile.youku.com
+  - DOMAIN-SUFFIX,hudong.pl.youku.com
+  - DOMAIN-SUFFIX,huodong.pl.youku.com
+  - DOMAIN-SUFFIX,huodong.vip.youku.com
+  - DOMAIN-SUFFIX,hz.youku.com
+  - DOMAIN-SUFFIX,l.ykimg.com
+  - DOMAIN-SUFFIX,l.youku.com
+  - DOMAIN-SUFFIX,lstat.youku.com
+  - DOMAIN-SUFFIX,mobilemsg.youku.com
+  - DOMAIN-SUFFIX,msg.youku.com
+  - DOMAIN-SUFFIX,passport-log.youku.com
+  - DOMAIN-SUFFIX,p-log.ykimg.com
+  - DOMAIN-SUFFIX,s.p.youku.com
+  - DOMAIN-SUFFIX,sdk.m.youku.com
+  - DOMAIN-SUFFIX,stat.youku.com
+  - DOMAIN-SUFFIX,store.tv.api.3g.youku.com
+  - DOMAIN-SUFFIX,store.xl.api.3g.youku.com
+  - DOMAIN-SUFFIX,tdrec.youku.com
+  - DOMAIN-SUFFIX,test.ott.youku.com
+  - DOMAIN-SUFFIX,urchin.lstat.youku.com
+  - DOMAIN-SUFFIX,val.api.youku.com
+  - DOMAIN-SUFFIX,wan.youku.com
+  - DOMAIN-SUFFIX,ykatr.youku.com
+  - DOMAIN-SUFFIX,ykrec.youku.com
+  - DOMAIN-KEYWORD,push.m.youku.com
+  - DOMAIN-KEYWORD,iyes.youku.com

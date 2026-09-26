@@ -1,0 +1,13 @@
+#规则数量:7
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,zlink.ugsdk.cn
+DOMAIN,content-open.douyin.com
+DOMAIN,webcast-open.douyin.com
+DOMAIN,lf-webcast-gr-sourcecdn.bytegecko.com
+DOMAIN,lf3-reading.fqnovelstatic.com
+DOMAIN,mon11-misc.fqnovel.com
+DOMAIN-KEYWORD,-applog.fqnovel.com

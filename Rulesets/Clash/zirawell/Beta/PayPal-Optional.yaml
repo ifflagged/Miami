@@ -1,0 +1,12 @@
+#规则数量:3
+#不支持的规则数量:1
+#已排除的规则数量:0
+#不支持的规则:
+#USER-AGENT, PayPal*
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN-KEYWORD,paypal
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypalobjects.com

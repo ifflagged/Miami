@@ -1,0 +1,119 @@
+#规则数量:113
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,name:  iRingo: 🗺️ Maps
+DOMAIN,description: |-
+DOMAIN,自定义 Maps app
+DOMAIN,添加国际版功能
+DOMAIN,自定义服务版本
+DOMAIN,compat_arguments:
+DOMAIN,GeoManifest.Dynamic.Config.CountryCode: CN
+DOMAIN,UrlInfoSet.Dispatcher: AutoNavi
+DOMAIN,UrlInfoSet.Directions: AutoNavi
+DOMAIN,UrlInfoSet.RAP: Apple
+DOMAIN,UrlInfoSet.LocationShift: AUTO
+DOMAIN,TileSet.Earth: AUTO
+DOMAIN,TileSet.Roads: AUTO
+DOMAIN,TileSet.Satellite: AUTO
+DOMAIN,Storage: Argument
+DOMAIN,LogLevel: WARN
+DOMAIN,compat_arguments_desc: |
+DOMAIN,├ AUTO: 🇺🇳自动（跟随用户当前所在地区）
+DOMAIN,├ CN: 🇨🇳中国大陆
+DOMAIN,├ HK: 🇭🇰中国香港
+DOMAIN,├ TW: 🇹🇼中国台湾
+DOMAIN,├ SG: 🇸🇬新加坡
+DOMAIN,├ US: 🇺🇸美国
+DOMAIN,├ JP: 🇯🇵日本
+DOMAIN,├ AU: 🇦🇺澳大利亚
+DOMAIN,├ GB: 🇬🇧英国
+DOMAIN,├ KR: 🇰🇷韩国
+DOMAIN,├ CA: 🇨🇦加拿大
+DOMAIN,└ IE: 🇮🇪爱尔兰
+DOMAIN,此选项影响“地图”整体配置内容，包括以下的地图功能与服务。
+DOMAIN,├ AutoNavi: 🧭高德（🇨🇳:互动百科/大众点评/携程 | 🇺🇳:维基百科/Yelp/Booking）
+DOMAIN,└ Apple: Apple（维基百科/Yelp/Booking）
+DOMAIN,地点数据接口，此选项影响公共指南，兴趣点(POI)与位置信息等功能。
+DOMAIN,├ AutoNavi: 🧭高德（🇨🇳:高德地图 | 🇺🇳:TomTom）
+DOMAIN,└ Apple: Apple（🇨🇳:🈚️ | 🇺🇳:TomTom）
+DOMAIN,导航与ETA服务接口，此选项影响导航与ETA(到达时间)等功能。
+DOMAIN,├ AutoNavi: 🧭高德（🇨🇳:🈶️但未开放 | 🇺🇳:🈚️）
+DOMAIN,└ Apple: Apple（🇨🇳:🈚️ | 🇺🇳:🈶️）
+DOMAIN,评分和照片服务接口，此选项影响评分和照片服务以及照片使用。
+DOMAIN,├ AutoNavi: 🧭高德（🈚️坐标，使用🇨🇳GCJ-02坐标）
+DOMAIN,└ Apple: Apple（🈶️坐标，使用🇺🇳WGS-84坐标）
+DOMAIN,定位漂移修正服务接口，控制定位漂移和🧭指南针与📍坐标的经纬度。
+DOMAIN,├ AutoNavi: 🧭高德版（主要显示国家与国界）
+DOMAIN,└ Apple: Apple（主要显示城市与地貌）
+DOMAIN,此选项影响地球视图下行政区划、地貌等信息的显示。
+DOMAIN,├ CN: 🇨🇳中国（🇨🇳:卫星视图道路正确 | 🇺🇳:无四处看看）
+DOMAIN,└ XX: Apple（🇨🇳:卫星视图道路偏移 | 🇺🇳:有四处看看）
+DOMAIN,此选项影响卫星视图下的道路图像与四处看看可用路段。
+DOMAIN,├ CN: 🇨🇳中国四维（仅🇨🇳）
+DOMAIN,└ XX: 🇺🇳DigitalGlobe（全球，但🇨🇳较旧）
+DOMAIN,此选项影响 2D 卫星图像的版本。
+DOMAIN,├ Argument: 优先使用插件选项与模块参数等，由 $argument 传入的配置，$argument 不包含的设置项由 PersistentStore (BoxJs) 提供
+DOMAIN,├ PersistentStore: 只使用来自 BoxJs 等，由 $persistentStore 提供的配置
+DOMAIN,└ database: 只使用由作者的 database.mjs 文件提供的默认配置，其他任何自定义配置不再起作用
+DOMAIN,选择要使用的配置类型。未设置此选项或不通过此选项的旧版本的配置顺序依旧是 $persistentStore (BoxJs) > $argument > database。
+DOMAIN,├ OFF: 关闭
+DOMAIN,├ ERROR: ❌ 错误
+DOMAIN,├ WARN: ⚠️ 警告
+DOMAIN,├ INFO: ℹ️ 信息
+DOMAIN,├ DEBUG: 🅱️ 调试
+DOMAIN,└ ALL: 全部
+DOMAIN,选择脚本日志的输出等级，低于所选等级的日志将全部输出。
+DOMAIN,open_url: http://boxjs.com/#/app/iRingo.Maps
+DOMAIN,homepage: https://NSRingo.github.io/guide/GeoServices/maps
+DOMAIN,icon: https://developer.apple.com/assets/elements/icons/maps/maps-128x128.png
+DOMAIN,rules:
+DOMAIN,domain_suffix:
+DOMAIN,match: is.autonavi.com
+DOMAIN,policy: DIRECT
+DOMAIN,domain:
+DOMAIN,match: gspe11-2-cn-ssl.ls.apple.com
+DOMAIN,policy: DIRECT
+DOMAIN,domain:
+DOMAIN,match: gspe12-cn-ssl.ls.apple.com
+DOMAIN,policy: DIRECT
+DOMAIN,domain:
+DOMAIN,match: gspe19-cn-ssl.ls.apple.com
+DOMAIN,policy: DIRECT
+DOMAIN,domain:
+DOMAIN,match: gspe19-2-cn-ssl.ls.apple.com
+DOMAIN,policy: DIRECT
+DOMAIN,domain:
+DOMAIN,match: gspe79-cn-ssl.ls.apple.com
+DOMAIN,policy: DIRECT
+DOMAIN,scriptings:
+DOMAIN,http_request:
+DOMAIN,name: 🗺️ Maps.config.defaults.request
+DOMAIN,env:
+DOMAIN,http_response:
+DOMAIN,name: 🗺️ Maps.config.defaults.response
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,http_request:
+DOMAIN,name: 🗺️ Maps.config.announcements.request
+DOMAIN,env:
+DOMAIN,http_response:
+DOMAIN,name: 🗺️ Maps.config.announcements.response
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,binary_body: true
+DOMAIN,http_request:
+DOMAIN,name: 🗺️ Maps.geo_manifest.dynamic.config.request
+DOMAIN,env:
+DOMAIN,http_response:
+DOMAIN,name: 🗺️ Maps.geo_manifest.dynamic.config.response
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,binary_body: true
+DOMAIN,mitm:
+DOMAIN,hostnames:
+DOMAIN,includes:
+DOMAIN,configuration.ls.apple.com
+DOMAIN,gspe35-ssl.ls.apple.com

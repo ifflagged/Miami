@@ -1,0 +1,10 @@
+#规则数量:4
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,toblog.ctobsnssdk.com
+DOMAIN,t-dsp.pinduoduo.com
+DOMAIN,sdk1xyajs.data.kuiniuca.com
+DOMAIN,conf-darwin.xycdn.com

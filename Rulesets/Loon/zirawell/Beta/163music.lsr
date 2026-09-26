@@ -1,0 +1,16 @@
+#规则数量:9
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,ipv4.music.163.com
+  - DOMAIN,ipv6.music.163.com
+  - DOMAIN,iadmat.nosdn.127.net
+  - DOMAIN,iadmatapk.nosdn.127.net
+  - DOMAIN,admusicpic.music.126.net
+  - DOMAIN-SUFFIX,163jiasu.com
+  - DOMAIN-SUFFIX,httpdns.music.163.com
+  - DOMAIN-SUFFIX,iadmusicmatvideo.music.126.net
+  - DOMAIN-SUFFIX,iadmusicmat.music.126.net

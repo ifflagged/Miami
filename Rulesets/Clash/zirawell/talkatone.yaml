@@ -1,0 +1,32 @@
+#规则数量:25
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN-SUFFIX,4dvertible.com
+  - DOMAIN-SUFFIX,adrta.com
+  - DOMAIN-SUFFIX,adsrvr.org
+  - DOMAIN-SUFFIX,ads.inmobi.com
+  - DOMAIN-SUFFIX,ads.pubmatic.com
+  - DOMAIN-SUFFIX,amazon-adsystem.com
+  - DOMAIN-SUFFIX,bidder.criteo.com
+  - DOMAIN-SUFFIX,gum.criteo.com
+  - DOMAIN-SUFFIX,i.sng.link
+  - DOMAIN-SUFFIX,impression.link
+  - DOMAIN-SUFFIX,inhousedsp.com
+  - DOMAIN-SUFFIX,inner-active.mobi
+  - DOMAIN-SUFFIX,jampp.com
+  - DOMAIN-SUFFIX,mobilefuse.com
+  - DOMAIN-SUFFIX,outbrainimg.com
+  - DOMAIN-SUFFIX,outbrain.com
+  - DOMAIN-SUFFIX,pomodoromedia.com
+  - DOMAIN-SUFFIX,richmob.cn
+  - DOMAIN-SUFFIX,smadex.com
+  - DOMAIN-SUFFIX,smaato.net
+  - DOMAIN-SUFFIX,spadsync.com
+  - DOMAIN-SUFFIX,tappx.com
+  - DOMAIN-SUFFIX,trustarc.com
+  - DOMAIN-SUFFIX,truste.com
+  - DOMAIN-SUFFIX,zemanta.com

@@ -1,0 +1,10 @@
+#规则数量:4
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,ptom.caohua.com
+DOMAIN,tracking.leiting.com
+DOMAIN,ads.games.laohu.com
+DOMAIN,shark-tracer.netease.com
