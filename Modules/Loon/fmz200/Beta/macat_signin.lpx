@@ -1,8 +1,0 @@
-#!name=macat_signin
-#!desc=macat_signin
-#!icon=icon not found
-#!tag=fmz200
-
-[Script]
-cron "22 7 * * *" script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/macat_signin/fmz200_macat_signin.js, timeout=120, tag=马克喵签到, img-url=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/macat_signin/fmz200_Macat.js
-

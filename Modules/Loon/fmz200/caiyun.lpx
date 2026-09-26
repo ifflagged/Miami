@@ -1,9 +1,0 @@
-#!name=caiyun
-#!desc=caiyun
-#!icon=icon not found
-#!tag=fmz200
-
-[Rewrite]
-undefined undefined undefined
-$done({ }); header
-

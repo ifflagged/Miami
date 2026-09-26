@@ -1,8 +1,0 @@
-#!name=AutoJoinTF
-#!desc=AutoJoinTF
-#!icon=icon not found
-#!category=fmz200
-
-[Script]
-AutoJoinTF = type=cron, cronexp=0 0/3 * * * ?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/AutoJoinTF/fmz200_AutoJoinTF.js, timeout=120, wake-system=1
-
