@@ -4,16 +4,15 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,titan.pinduoduo.com
-  - DOMAIN,apm.pinduoduo.com
-  - DOMAIN,ta-a.pinduoduo.com
-  - DOMAIN,ta.pinduoduo.com
-  - DOMAIN,th-a.pinduoduo.com
-  - DOMAIN,th-b.pinduoduo.com
-  - DOMAIN,th.pinduoduo.com
-  - DOMAIN,ta.yangkeduo.com
-  - DOMAIN,th.yangkeduo.com
-  - DOMAIN,meta.yangkeduo.com
-  - DOMAIN,meta.pinduoduo.com
-  - DOMAIN,m.pinduoduo.net
+DOMAIN,titan.pinduoduo.com
+DOMAIN,apm.pinduoduo.com
+DOMAIN,ta-a.pinduoduo.com
+DOMAIN,ta.pinduoduo.com
+DOMAIN,th-a.pinduoduo.com
+DOMAIN,th-b.pinduoduo.com
+DOMAIN,th.pinduoduo.com
+DOMAIN,ta.yangkeduo.com
+DOMAIN,th.yangkeduo.com
+DOMAIN,meta.yangkeduo.com
+DOMAIN,meta.pinduoduo.com
+DOMAIN,m.pinduoduo.net

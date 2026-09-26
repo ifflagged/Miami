@@ -34,7 +34,7 @@ request if ${url} ~= /^https:\/\/streaming\.test\/tiktok\/?$/i then script("http
 
 request if ${url} ~= /^https:\/\/streaming\.test\/youtube\/?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/StreamingMedia/huskydsb_youtube.js") with tag="[流媒体解锁测试]YouTube", timeout=60
 
-request if ${url} ~= /^https:\/\/streaming\.test\/max\/?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/StreamingMedia/huskydsb_max_e19dfe.js") with tag="[流媒体解锁测试]HBO Max", timeout=60
+request if ${url} ~= /^https:\/\/streaming\.test\/max\/?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/StreamingMedia/huskydsb_max.js") with tag="[流媒体解锁测试]HBO Max", timeout=60
 
 request if ${url} ~= /^https:\/\/streaming\.test\/primevideo\/?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/StreamingMedia/huskydsb_primevideo.js") with tag="[流媒体解锁测试]PrimeVideo", timeout=60
 
@@ -62,7 +62,7 @@ request if ${url} ~= /^https:\/\/streaming\.test\/kktv\/?$/i then script("https:
 
 request if ${url} ~= /^https:\/\/streaming\.test\/linetv\/?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/StreamingMedia/huskydsb_linetv.js") with tag="[流媒体解锁测试]LINE TV", timeout=60
 
-request if ${url} ~= /^https:\/\/streaming\.test\/ip\/?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/StreamingMedia/huskydsb_ip_e9a487.js") with tag="[流媒体解锁测试]IPv6", timeout=60
+request if ${url} ~= /^https:\/\/streaming\.test\/ip\/?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/StreamingMedia/huskydsb_ip.js") with tag="[流媒体解锁测试]IPv6", timeout=60
 
 request if ${url} ~= /^https:\/\/streaming\.test\/dns\/?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/StreamingMedia/huskydsb_surfsharkdns.js") with tag="[流媒体解锁测试]Surfshark DNS", timeout=60
 

@@ -8011,7 +8011,7 @@ http-response ^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d/(token|m3u
 
 # > 飞客茶馆
 # hostname = api.flydigi.com
-http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_fly_0f84fa.js, requires-body=true, timeout=60, tag=飞客茶馆, enable={fwke_enable}
+http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_fly.js, requires-body=true, timeout=60, tag=飞客茶馆, enable={fwke_enable}
 http-response ^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_flyert.js, requires-body=true, timeout=60, tag=飞客茶馆, enable={fwke_enable}
 
 # > 粉笔
@@ -8127,7 +8127,7 @@ http-response ^https?:\/\/mapi\.mafengwo\.cn\/user\/profile\/get_(list|profile) 
 
 # > 买单吧
 # hostname = creditcardapp.bankcomm.cn, creditcardapp.bankcomm.com, creditcard.bankcomm.cn, creditcard.bankcomm.com
-http-response ^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1& script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_mdb_44e513.js, requires-body=true, timeout=60, tag=mdb, enable={mddjba_enable}
+http-response ^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1& script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_mdb.js, requires-body=true, timeout=60, tag=mdb, enable={mddjba_enable}
 
 # > 脉脉
 # hostname = open.taou.com, h3.open.taou.com
@@ -8430,7 +8430,7 @@ http-response ^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinf
 
 # > 悠洗APP
 # hostname = api.ulife.group
-http-response ^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_yx_4da07d.js, requires-body=true, timeout=60, tag=悠洗APP, enable={yzxiapp_enable}
+http-response ^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_yx.js, requires-body=true, timeout=60, tag=悠洗APP, enable={yzxiapp_enable}
 
 # > YouTube
 # hostname = rr*.googlevideo.com, youtubei.googleapis.com

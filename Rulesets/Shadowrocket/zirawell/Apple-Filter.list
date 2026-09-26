@@ -1,39 +1,37 @@
-#规则数量:14
-#不支持的规则数量:17
+#规则数量:31
+#不支持的规则数量:0
 #已排除的规则数量:0
-#不支持的规则:
-#USER-AGENT, *com.apple.mobileme.fmip1
-#USER-AGENT, *WeatherFoundation*
-#USER-AGENT, %E5%9C%B0%E5%9B%BE*
-#USER-AGENT, %E6%9F%A5%E6%89%BE*
-#USER-AGENT, %E8%AE%BE%E7%BD%AE*
-#USER-AGENT, AppStore*
-#USER-AGENT, com.apple.appstored*
-#USER-AGENT, com.apple.geod*
-#USER-AGENT, com.apple.Maps
-#USER-AGENT, FindMy*
-#USER-AGENT, FMDClient*
-#USER-AGENT, FMFD*
-#USER-AGENT, fmflocatord*
-#USER-AGENT, geod*
-#USER-AGENT, locationd*
-#USER-AGENT, Maps*
-#USER-AGENT, TestFlight*
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,apple.co
-  - DOMAIN-SUFFIX,apple.com
-  - DOMAIN-SUFFIX,apple.com.cn
-  - DOMAIN-SUFFIX,apple-cloudkit.com
-  - DOMAIN-SUFFIX,appstore.com
-  - DOMAIN-SUFFIX,cdn-apple.com
-  - DOMAIN-SUFFIX,crashlytics.com
-  - DOMAIN-SUFFIX,icloud.com
-  - DOMAIN-SUFFIX,icloud.com.cn
-  - DOMAIN-SUFFIX,icloud-content.com
-  - DOMAIN-SUFFIX,itunes.com
-  - DOMAIN-SUFFIX,me.com
-  - DOMAIN-SUFFIX,mzstatic.com
-  - DOMAIN,api.smoot.apple.cn
+USER-AGENT,*com.apple.mobileme.fmip1
+USER-AGENT,*WeatherFoundation*
+USER-AGENT,%E5%9C%B0%E5%9B%BE*
+USER-AGENT,%E6%9F%A5%E6%89%BE*
+USER-AGENT,%E8%AE%BE%E7%BD%AE*
+USER-AGENT,AppStore*
+USER-AGENT,com.apple.appstored*
+USER-AGENT,com.apple.geod*
+USER-AGENT,com.apple.Maps
+USER-AGENT,FindMy*
+USER-AGENT,FMDClient*
+USER-AGENT,FMFD*
+USER-AGENT,fmflocatord*
+USER-AGENT,geod*
+USER-AGENT,locationd*
+USER-AGENT,Maps*
+USER-AGENT,TestFlight*
+DOMAIN-SUFFIX,apple.co
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN,api.smoot.apple.cn

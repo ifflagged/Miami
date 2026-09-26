@@ -2312,7 +2312,7 @@ http-request ^https?:\/\/vv\.video\.qq\.com\/getvinfo &sppreviewtype=\d(.*)&spsr
 
 ^https?:\/\/smart\.789\.image\.mucang\.cn\/advert data-type=tiny-gif
 
-^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/creditpage-config data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_u51_569f05.json"
+^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/creditpage-config data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_u51.json"
 
 ^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/(?>ad|abtest|store|mlog) data-type=json data="{}"
 
@@ -2604,7 +2604,7 @@ http-request ^https?:\/\/vv\.video\.qq\.com\/getvinfo &sppreviewtype=\d(.*)&spsr
 
 ^https?:\/\/app\.badmintoncn\.com\/mag\/operative\/v\d\/ad\/listNotEndByPlace\?place=first_page data-type=text data=""
 
-^https?:\/\/mobile\.cmbchina\.com\/dcardmanage\/salary-welfare\/get-recommend data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cmb_46e9a8.json"
+^https?:\/\/mobile\.cmbchina\.com\/dcardmanage\/salary-welfare\/get-recommend data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cmb.json"
 
 ^https?:\/\/wallet\.lakala\.com\/m\/lama\/mgt\/activity\/bank\/query\/list data-type=json data="{}"
 
@@ -3800,7 +3800,7 @@ http-request ^https?:\/\/vv\.video\.qq\.com\/getvinfo &sppreviewtype=\d(.*)&spsr
 
 ^https?:\/\/staticlive\.douyucdn\.cn\/.+?\/getStartSend data-type=tiny-gif
 
-^https?:\/\/apps\.teamair\.cn\/app\/version data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_qi_e93687.json"
+^https?:\/\/apps\.teamair\.cn\/app\/version data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_qi.json"
 
 ^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.(discover|shade)\/ data-type=json data="{}"
 
@@ -3927,7 +3927,7 @@ soul = type=http-response, pattern=^https?:\/\/post\.soulapp\.cn\/v\d\/post\/hom
 
 goofish = type=http-response, pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_goofish.js, requires-body=true, max-size=0
 
-12306 = type=http-response, pattern=^https?:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, max-size=0
+12306 = type=http-response, pattern=^https?:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, max-size=0
 
 weibo = type=http-response, pattern=^https?:\/\/api\.weibo\.cn\/2\/direct_messages\/user_list\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_weibo.js, requires-body=true, max-size=0
 
@@ -3959,7 +3959,7 @@ smzdm = type=http-response, pattern=^https?:\/\/app-api\.smzdm\.com\/util\/(load
 
 rrtv = type=http-response, pattern=^https?:\/\/api\.rr\.tv\/app\/config\/h5NativeBar, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_rrtv.js, requires-body=true, max-size=0
 
-cgbcc = type=http-response, pattern=^https?:\/\/8\.95508\.com\/creditbank\/mgs\/mgw\.htm$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, max-size=0
+cgbcc = type=http-response, pattern=^https?:\/\/8\.95508\.com\/creditbank\/mgs\/mgw\.htm$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, max-size=0
 
 smzdm = type=http-response, pattern=^https?:\/\/post\.m\.smzdm\.com\/ajax_app\/ajax_get_footer_list, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_smzdm.js, requires-body=true, max-size=0
 
@@ -3991,7 +3991,7 @@ gaoding = type=http-response, pattern=^https?:\/\/www\.gaoding\.com\/api\/v\d\/o
 
 kuwo = type=http-response, pattern=^https?:\/\/(mgxhtj|nmobi|searchrecterm)\.kuwo\.cn\/(mgxh|mobi|recterm)\.s, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_kuwo.js, requires-body=true, max-size=0
 
-pdd = type=http-response, pattern=^https?:\/\/api\.pinduoduo\.com\/api\/oak\/integration\/render, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_pdd_4c4ce2.js, requires-body=true, max-size=0
+pdd = type=http-response, pattern=^https?:\/\/api\.pinduoduo\.com\/api\/oak\/integration\/render, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_pdd.js, requires-body=true, max-size=0
 
 weibo = type=http-response, pattern=^https?:\/\/new\.vip\.weibo\.cn\/aj\/appicon\/list\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_weibo.js, requires-body=true, max-size=0
 
@@ -4055,7 +4055,7 @@ smzdm = type=http-response, pattern=^https?:\/\/user-api\.smzdm\.com\/vip, scrip
 
 bilibiliManga = type=http-response, pattern=^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Home\/HomeFeed, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_bilibiliManga.js, requires-body=true, max-size=0
 
-bosclife = type=http-response, pattern=^https?:\/\/mgs1\.bosc\.cn(:\d+)?\/mgw, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, max-size=0
+bosclife = type=http-response, pattern=^https?:\/\/mgs1\.bosc\.cn(:\d+)?\/mgw, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, max-size=0
 
 iqiyi = type=http-response, pattern=^https?:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cntv.js, requires-body=true, max-size=0
 
@@ -4087,7 +4087,7 @@ kkmh = type=http-response, pattern=^https?:\/\/(cdn-)?social\.kkmh\.com\/v\d\/gr
 
 peiyinxiu = type=http-response, pattern=^https?:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_peiyinxiu.js, requires-body=true, max-size=0
 
-jd = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(?>deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome|readCustomSurfaceList), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_jd_bbc806.js, requires-body=true, max-size=0
+jd = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(?>deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome|readCustomSurfaceList), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_jd.js, requires-body=true, max-size=0
 
 kuwo = type=http-response, pattern=^https?:\/\/audiobookpay\.kuwo\.cn\/a\.p, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_kuwo.js, requires-body=true, max-size=0
 
@@ -4141,7 +4141,7 @@ adunion = type=http-response, pattern=^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview, s
 
 adunion = type=http-response, pattern=^https?:\/\/is.snssdk.com/api/ad/union/sdk, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_adsense.js, requires-body=true, max-size=0
 
-ppx = type=http-response, pattern=^https?:\/\/.+\.pipix\.com\/bds\/feed\/channel_list\/, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ppx_82f045.js, requires-body=true, max-size=0
+ppx = type=http-response, pattern=^https?:\/\/.+\.pipix\.com\/bds\/feed\/channel_list\/, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ppx.js, requires-body=true, max-size=0
 
 iqiyi = type=http-response, pattern=^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cntv.js, requires-body=true, max-size=0
 
@@ -4209,13 +4209,13 @@ adrive = type=http-response, pattern=^https?:\/\/member\.alipan\.com\/v\d\/users
 
 xiaohongshu = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/(?>banner|hot)_list, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_xiaohongshu.js, requires-body=true, max-size=0
 
-ppx = type=http-response, pattern=^https?:\/\/.+\.pipix\.com\/bds\/user\/check_in\/, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ppx_82f045.js, requires-body=true, max-size=0
+ppx = type=http-response, pattern=^https?:\/\/.+\.pipix\.com\/bds\/user\/check_in\/, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ppx.js, requires-body=true, max-size=0
 
 peiyinxiu = type=http-response, pattern=^https?:\/\/iosapi\.peiyinxiu\.com\/Api\/Friend\/GetRecommendUsers, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_peiyinxiu.js, requires-body=true, max-size=0
 
 tuhu = type=http-response, pattern=^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/cl-common-api\/api\/personalCenter\/getCmsModuleList, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_tuhu.js, requires-body=true, max-size=0
 
-sdb = type=http-response, pattern=^https?:\/\/cdn\.sdb\.com\.cn\/bron-coms\/bron-coms\/material-image, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_sdb_8e791c.js, requires-body=true, max-size=0
+sdb = type=http-response, pattern=^https?:\/\/cdn\.sdb\.com\.cn\/bron-coms\/bron-coms\/material-image, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_sdb.js, requires-body=true, max-size=0
 
 163music = type=http-response, pattern=^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/user\/follow\/users\/mixed\/get, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_163music.js, requires-body=true, max-size=0
 
@@ -4237,7 +4237,7 @@ gamer = type=http-response, pattern=^https?:\/\/api\.gamer\.com\.tw\/mobile_app\
 
 163news = type=http-response, pattern=^https?:\/\/nex\.163\.com\/q, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_163news.js, requires-body=true, max-size=0
 
-abc = type=http-response, pattern=^https?:\/\/mobilepaas\.abchina\.com\.cn(:\d+)?\/mgw\.htm$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, max-size=0
+abc = type=http-response, pattern=^https?:\/\/mobilepaas\.abchina\.com\.cn(:\d+)?\/mgw\.htm$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, max-size=0
 
 rrtv = type=http-response, pattern=^https?:\/\/api\.rr\.tv\/ad\/getAll, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_rrtv.js, requires-body=true, max-size=0
 
@@ -4245,7 +4245,7 @@ zhihu = type=http-response, pattern=^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\
 
 weibo = type=http-response, pattern=^https?:\/\/api\.weibo\.cn\/2\/(checkin\/show|client\/publisher_list|push\/active)\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_weibo.js, requires-body=true, max-size=0
 
-ys7 = type=http-response, pattern=^https?:\/\/\w+\.ys7\.com\/v\d\/valueadded\/operation\/config\/master\/station, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ys7_019b7b.js, requires-body=true, max-size=0
+ys7 = type=http-response, pattern=^https?:\/\/\w+\.ys7\.com\/v\d\/valueadded\/operation\/config\/master\/station, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ys7.js, requires-body=true, max-size=0
 
 bilibiliManga = type=http-response, pattern=^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comment\/Main, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_bilibiliManga.js, requires-body=true, max-size=0
 
@@ -4277,7 +4277,7 @@ guiderank = type=http-response, pattern=^https?:\/\/zone\.guiderank-app\.com\/gu
 
 mishop = type=http-response, pattern=^https?:\/\/api\.m\.mi\.com\/v\d\/order\/expressView, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mishop.js, requires-body=true, max-size=0
 
-qbb = type=http-response, pattern=^https?:\/\/webapi\.qbb6\.com\/h5\/api\/lib\/internal\/append\/get, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_qbb_f7069b.js, requires-body=true, max-size=0
+qbb = type=http-response, pattern=^https?:\/\/webapi\.qbb6\.com\/h5\/api\/lib\/internal\/append\/get, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_qbb.js, requires-body=true, max-size=0
 
 amap = type=http-response, pattern=^https?:\/\/m\d\.amap\.com\/ws\/c3frontend\/af-(hotel|launch)\/page\/main\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amap.js, requires-body=true, max-size=0
 
@@ -4289,7 +4289,7 @@ dushu365 = type=http-response, pattern=^https?:\/\/g(.*)\.dushu365\.com\/chief-o
 
 sogou = type=http-response, pattern=^https?:\/\/sec\.sginput\.qq\.com\/q, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_sougou.js, max-size=0
 
-pdd = type=http-response, pattern=^https?:\/\/api\.pinduoduo\.com\/api\/alexa\/\w+\/hub, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_pdd_4c4ce2.js, requires-body=true, max-size=0
+pdd = type=http-response, pattern=^https?:\/\/api\.pinduoduo\.com\/api\/alexa\/\w+\/hub, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_pdd.js, requires-body=true, max-size=0
 
 51cto = type=http-response, pattern=^https?:\/\/edu\.51cto\.com\/app\.php\?$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_51cto.js, requires-body=true, max-size=0
 
@@ -4315,7 +4315,7 @@ baidutieba = type=http-response, pattern=^https?:\/\/c\.tieba\.baidu\.com\/c\/f\
 
 163music = type=http-response, pattern=^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/link\/position\/show\/resource, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_163music.js, requires-body=true, max-size=0
 
-bosc = type=http-response, pattern=^https?:\/\/pmbservice\.bosc\.cn:\d+\/mgw, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, max-size=0
+bosc = type=http-response, pattern=^https?:\/\/pmbservice\.bosc\.cn:\d+\/mgw, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, max-size=0
 
 amap = type=http-response, pattern=^https?:\/\/m\d\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amap.js, requires-body=true, max-size=0
 
@@ -4329,13 +4329,13 @@ dushu365 = type=http-response, pattern=^https?:\/\/g(.*)\.dushu365\.com\/chief-o
 
 dushu365 = type=http-response, pattern=^https?:\/\/g(.*)\.dushu365\.com\/sns-orchestration-system\/homePage\/api\/v100\/myPage, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_dushu365.js, requires-body=true, max-size=0
 
-mdb = type=http-response, pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mdb_44e513.js, requires-body=true, max-size=0
+mdb = type=http-response, pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mdb.js, requires-body=true, max-size=0
 
 amap = type=http-response, pattern=^https?:\/\/m\d\.amap\.com\/ws\/faas\/amap-navigation\/(?>card-service-plan-home|main-page), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amap.js, requires-body=true, max-size=0
 
 zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_zhihu.js, requires-body=true, max-size=0
 
-ecny = type=http-response, pattern=^https?:\/\/mgs\.wallet\.pbcdci\.cn(:\d+)?\/mgw\.htm$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, requires-body=true, max-size=0
+ecny = type=http-response, pattern=^https?:\/\/mgs\.wallet\.pbcdci\.cn(:\d+)?\/mgw\.htm$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, requires-body=true, max-size=0
 
 adunion = type=http-response, pattern=^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amdc.js, max-size=0
 
@@ -4355,7 +4355,7 @@ ddxq = type=http-response, pattern=^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\
 
 bilibili = type=http-response, pattern=^https?:\/\/(?>app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v\d\.Teenagers\/ModeStatus, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_bilibiliProtoA.js, requires-body=true, max-size=0
 
-cmbwl = type=http-request, pattern=^https?:\/\/m2\.cmbwinglungbank\.com(:\d+)?\/mgw, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, max-size=0
+cmbwl = type=http-request, pattern=^https?:\/\/m2\.cmbwinglungbank\.com(:\d+)?\/mgw, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, max-size=0
 
 iqiyi = type=http-response, pattern=^https?:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cntv.js, requires-body=true, max-size=0
 

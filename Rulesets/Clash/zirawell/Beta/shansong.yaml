@@ -4,5 +4,4 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,ads.ishansong.com
+DOMAIN,ads.ishansong.com

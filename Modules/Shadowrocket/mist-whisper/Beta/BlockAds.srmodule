@@ -416,7 +416,7 @@ http-response-jq ^https:\/\/cn\.iot\.dreame\.tech:13267\/dreame-system\/dreame-a
 移除JavDB广告 = type=http-response, pattern=^https:\/\/javdb\.com\/, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/BlockAds/resource_Javdb.js, requires-body=true
 
 # 建行生活全面净化
-移除建行生活广告 = type=http-response, pattern=^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtrl\?txcode=, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/BlockAds/resource_CCB_842ebb.js, requires-body=true, timeout=20
+移除建行生活广告 = type=http-response, pattern=^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtrl\?txcode=, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/BlockAds/resource_CCB.js, requires-body=true, timeout=20
 
 # 黑料网
 黑料网净化 = type=http-response, pattern=^https?:\/\/(?:www\.)?(?:heiliao|hlwxx|hlcx\d*)\.com\/(?!static\/|favicon|api\/|index\/statistics|uploads\/), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/BlockAds/resource_hlw_remove_ads.js, requires-body=true

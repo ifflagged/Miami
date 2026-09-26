@@ -1949,7 +1949,7 @@ response if ${url} ~= /^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d\/
 # response if ${url} ~= /^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/Flightradar24.js") with enable=${flightradar24_script}, tag="[广告拦截合集]Flightradar24", requires_body=true
 
 # 飞客茶馆 - 47.100.65.202, www.flyert.com, www.flyert.com.cn
-response if ${url} ~= /^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BlockAds/fmz200_fly_0f84fa.js") with enable=${feikechaguan_script}, tag="[广告拦截合集]飞客茶馆", requires_body=true
+response if ${url} ~= /^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BlockAds/fmz200_fly.js") with enable=${feikechaguan_script}, tag="[广告拦截合集]飞客茶馆", requires_body=true
 response if ${url} ~= /^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BlockAds/zirawell_flyert.js") with enable=${feikechaguan_script}, tag="[广告拦截合集]飞客茶馆", requires_body=true
 
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<< #
@@ -1979,7 +1979,7 @@ response if ${url} ~= /^https:\/\/lawsonapi\.yorentown\.com\/portal\/app\/global
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<< #
 # 买单吧 - creditcardapp.bankcomm.com, creditcardapp.bankcomm.cn
-response if ${url} ~= /^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BlockAds/zirawell_mdb_44e513.js") with enable=${maidanba_script}, tag="[广告拦截合集]买单吧", requires_body=true
+response if ${url} ~= /^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BlockAds/zirawell_mdb.js") with enable=${maidanba_script}, tag="[广告拦截合集]买单吧", requires_body=true
 
 # 脉脉 - open.taou.com, h3.open.taou.com
 response if ${url} ~= /^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BlockAds/fmz200_maimai_ads.js") with enable=${maimai_script}, tag="[广告拦截合集]脉脉", requires_body=true
@@ -2064,7 +2064,7 @@ response if ${url} ~= /^https?:\/\/www\.myusmile\.online\/user\/plaqueTopic\/sel
 
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<< #
 # 悠洗 - api.ulife.group
-response if ${url} ~= /^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BlockAds/fmz200_yx_4da07d.js") with enable=${youxi_script}, tag="[广告拦截合集]悠洗", requires_body=true
+response if ${url} ~= /^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BlockAds/fmz200_yx.js") with enable=${youxi_script}, tag="[广告拦截合集]悠洗", requires_body=true
 
 # >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<< #
 # 掌上公交 - wx.mygolbs.com

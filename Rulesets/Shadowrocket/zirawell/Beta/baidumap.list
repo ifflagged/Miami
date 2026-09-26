@@ -4,9 +4,8 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,afd.baidu.com
-  - DOMAIN,afdconf.baidu.com
-  - DOMAIN,httpdns.baidubce.com
-  - DOMAIN,lc.map.baidu.com
-  - IP-CIDR,186.76.76.200/32,no-resolve
+DOMAIN,afd.baidu.com
+DOMAIN,afdconf.baidu.com
+DOMAIN,httpdns.baidubce.com
+DOMAIN,lc.map.baidu.com
+IP-CIDR,186.76.76.200/32,no-resolve

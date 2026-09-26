@@ -37,7 +37,7 @@ LogLevel=input,"WARN",tag=[调试] 日志等级, desc=[调试] 日志等级\n   
 ^https:\/\/(?:biliverse\.github\.io|app\.bilibili\.com)\/api\/Enhanced(?:\?.*)?$ mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/Biliverse/Biliverse.Enhanced/Biliverse_Biliverse.Enhanced.PreferencePanes.json" status-code=200
 
 [Script]
-http-request ^https:\/\/(?:biliverse\.github\.io|app\.bilibili\.com)\/api\/(?:get|set|delete)(?:\?.*)?$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/Biliverse/Biliverse.Enhanced/NSNanoCat_api_f2db8a.js, requires-body=true, tag=PreferencePanes.API
+http-request ^https:\/\/(?:biliverse\.github\.io|app\.bilibili\.com)\/api\/(?:get|set|delete)(?:\?.*)?$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/Biliverse/Biliverse.Enhanced/NSNanoCat_api.js, requires-body=true, tag=PreferencePanes.API
 
 http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/resource\/show\/tab\/v2\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/Biliverse/Biliverse.Enhanced/Biliverse_response.bundle.js, requires-body=true, tag=📺 Biliverse.Enhanced.x.resource.show.tab.v2, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Home.Top_more},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
 

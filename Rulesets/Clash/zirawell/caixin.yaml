@@ -4,9 +4,8 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,gg.caixin.com
-  - DOMAIN,dolphin.caixin.com
-  - DOMAIN-SUFFIX,apollo.caixin.com
-  - DOMAIN-SUFFIX,logstat.caixin.com
-  - DOMAIN-SUFFIX,promote.caixin.com
+DOMAIN,gg.caixin.com
+DOMAIN,dolphin.caixin.com
+DOMAIN-SUFFIX,apollo.caixin.com
+DOMAIN-SUFFIX,logstat.caixin.com
+DOMAIN-SUFFIX,promote.caixin.com

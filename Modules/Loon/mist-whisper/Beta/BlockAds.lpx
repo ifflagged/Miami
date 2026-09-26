@@ -347,7 +347,7 @@ http-request ^https:\/\/ghfgnm\.com\/mmapi\/m3u8\/p\/.+\.m3u8 script-path=https:
 http-response ^https:\/\/javdb\.com\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/BlockAds/resource_Javdb.js, requires-body=true, tag=移除JavDB广告
 
 # 建行生活全面净化
-http-response ^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtrl\?txcode= script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/BlockAds/resource_CCB_842ebb.js, requires-body=true, timeout=20, tag=移除建行生活广告
+http-response ^https:\/\/yunbusiness\.ccb\.com\/clp_service|basic_service\/txCtrl\?txcode= script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/BlockAds/resource_CCB.js, requires-body=true, timeout=20, tag=移除建行生活广告
 
 # 黑料网
 http-response ^https?:\/\/(?:www\.)?(?:heiliao|hlwxx|hlcx\d*)\.com\/(?!static\/|favicon|api\/|index\/statistics|uploads\/) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/BlockAds/resource_hlw_remove_ads.js, requires-body=true, tag=黑料网净化

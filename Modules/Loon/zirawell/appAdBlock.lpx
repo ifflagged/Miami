@@ -2195,7 +2195,7 @@ DOMAIN-KEYWORD,wan.sogou.com,REJECT
 ^https?:\/\/s1\.api\.tv\.itc\.cn\/v\d\/mobile\/control\/switch\.json mock-response-body data-type=text status-code=200
 ^https?:\/\/damang\.api\.mgtv\.com\/station\/album\/red\/dot\? mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/smart\.789\.image\.mucang\.cn\/advert mock-response-body data-type=tiny-gif status-code=200
-^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/creditpage-config mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_u51_569f05.json"
+^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/creditpage-config mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_u51.json"
 ^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/(?>ad|abtest|store|mlog) mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/kg_ad mock-response-body data-type=tiny-gif status-code=200
 ^https?:\/\/api\.bwton\.com\/bff\/app\/index\/recommend mock-response-body data-type=json data="{}" status-code=200
@@ -2341,7 +2341,7 @@ DOMAIN-KEYWORD,wan.sogou.com,REJECT
 ^https?:\/\/mobile-consumer-sapp\.chery\.cn\/web\/position\/getShowList\?displayPlatform=1&tabType=0& mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/compus\.xiaofubao\.com\/compus\/advertising\/getStartupAdvertising mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/app\.badmintoncn\.com\/mag\/operative\/v\d\/ad\/listNotEndByPlace\?place=first_page mock-response-body data-type=text status-code=200
-^https?:\/\/mobile\.cmbchina\.com\/dcardmanage\/salary-welfare\/get-recommend mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cmb_46e9a8.json"
+^https?:\/\/mobile\.cmbchina\.com\/dcardmanage\/salary-welfare\/get-recommend mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cmb.json"
 ^https?:\/\/wallet\.lakala\.com\/m\/lama\/mgt\/activity\/bank\/query\/list mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/\w+\.ys7\.com\/api\/user\/tabList mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/api\.pinduoduo\.com\/api\/caterham\/v\d\/query\/new_chat_group mock-response-body data-type=json data="{}" status-code=200
@@ -2939,7 +2939,7 @@ DOMAIN-KEYWORD,wan.sogou.com,REJECT
 ^https?:\/\/api\.zhihu\.com\/distribute\/rhea\/qa_ad_card\/h5\/recommendation\? mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/mage(v\d)?\.if\.qidian\.com\/argus\/api\/v\d\/followsubscribe mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/staticlive\.douyucdn\.cn\/.+?\/getStartSend mock-response-body data-type=tiny-gif status-code=200
-^https?:\/\/apps\.teamair\.cn\/app\/version mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_qi_e93687.json"
+^https?:\/\/apps\.teamair\.cn\/app\/version mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_qi.json"
 ^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.(discover|shade)\/ mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/ios\.jjwxc\.com\/appAdIos mock-response-body data-type=json data="{}" status-code=200
 ^https?:\/\/s3plus\.meituan\.net\/v\d\/mss_\w+\/goku\/(?>lottie|lucency) mock-response-body data-type=tiny-gif status-code=200
@@ -3044,7 +3044,7 @@ http-response ^https?:\/\/post\.soulapp\.cn\/v\d\/post\/homepage\/guide\/card sc
 
 http-response ^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_goofish.js, requires-body=true, tag=goofish
 
-http-response ^https?:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, tag=12306
+http-response ^https?:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, tag=12306
 
 http-response ^https?:\/\/api\.weibo\.cn\/2\/direct_messages\/user_list\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_weibo.js, requires-body=true, tag=weibo
 
@@ -3076,7 +3076,7 @@ http-response ^https?:\/\/app-api\.smzdm\.com\/util\/(loading|update) script-pat
 
 http-response ^https?:\/\/api\.rr\.tv\/app\/config\/h5NativeBar script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_rrtv.js, requires-body=true, tag=rrtv
 
-http-response ^https?:\/\/8\.95508\.com\/creditbank\/mgs\/mgw\.htm$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, tag=cgbcc
+http-response ^https?:\/\/8\.95508\.com\/creditbank\/mgs\/mgw\.htm$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, tag=cgbcc
 
 http-response ^https?:\/\/post\.m\.smzdm\.com\/ajax_app\/ajax_get_footer_list script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_smzdm.js, requires-body=true, tag=smzdm
 
@@ -3108,7 +3108,7 @@ http-response ^https?:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/template
 
 http-response ^https?:\/\/(mgxhtj|nmobi|searchrecterm)\.kuwo\.cn\/(mgxh|mobi|recterm)\.s script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_kuwo.js, requires-body=true, tag=kuwo
 
-http-response ^https?:\/\/api\.pinduoduo\.com\/api\/oak\/integration\/render script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_pdd_4c4ce2.js, requires-body=true, tag=pdd
+http-response ^https?:\/\/api\.pinduoduo\.com\/api\/oak\/integration\/render script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_pdd.js, requires-body=true, tag=pdd
 
 http-response ^https?:\/\/new\.vip\.weibo\.cn\/aj\/appicon\/list\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_weibo.js, requires-body=true, tag=weibo
 
@@ -3172,7 +3172,7 @@ http-response ^https?:\/\/user-api\.smzdm\.com\/vip script-path=https://github.c
 
 http-response ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Home\/HomeFeed script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_bilibiliManga.js, requires-body=true, tag=bilibiliManga
 
-http-response ^https?:\/\/mgs1\.bosc\.cn(:\d+)?\/mgw script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, tag=bosclife
+http-response ^https?:\/\/mgs1\.bosc\.cn(:\d+)?\/mgw script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, tag=bosclife
 
 http-response ^https?:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cntv.js, requires-body=true, tag=iqiyi
 
@@ -3204,7 +3204,7 @@ http-response ^https?:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed scr
 
 http-response ^https?:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_peiyinxiu.js, requires-body=true, tag=peiyinxiu
 
-http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(?>deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome|readCustomSurfaceList) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_jd_bbc806.js, requires-body=true, tag=jd
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(?>deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome|readCustomSurfaceList) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_jd.js, requires-body=true, tag=jd
 
 http-response ^https?:\/\/audiobookpay\.kuwo\.cn\/a\.p script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_kuwo.js, requires-body=true, tag=kuwo
 
@@ -3258,7 +3258,7 @@ http-response ^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview script-path=https://github
 
 http-response ^https?:\/\/is.snssdk.com/api/ad/union/sdk script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_adsense.js, requires-body=true, tag=adunion
 
-http-response ^https?:\/\/.+\.pipix\.com\/bds\/feed\/channel_list\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ppx_82f045.js, requires-body=true, tag=ppx
+http-response ^https?:\/\/.+\.pipix\.com\/bds\/feed\/channel_list\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ppx.js, requires-body=true, tag=ppx
 
 http-response ^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cntv.js, requires-body=true, tag=iqiyi
 
@@ -3326,13 +3326,13 @@ http-response ^https?:\/\/member\.alipan\.com\/v\d\/users\/onboard_list script-p
 
 http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/(?>banner|hot)_list script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_xiaohongshu.js, requires-body=true, tag=xiaohongshu
 
-http-response ^https?:\/\/.+\.pipix\.com\/bds\/user\/check_in\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ppx_82f045.js, requires-body=true, tag=ppx
+http-response ^https?:\/\/.+\.pipix\.com\/bds\/user\/check_in\/ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ppx.js, requires-body=true, tag=ppx
 
 http-response ^https?:\/\/iosapi\.peiyinxiu\.com\/Api\/Friend\/GetRecommendUsers script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_peiyinxiu.js, requires-body=true, tag=peiyinxiu
 
 http-response ^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/cl-common-api\/api\/personalCenter\/getCmsModuleList script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_tuhu.js, requires-body=true, tag=tuhu
 
-http-response ^https?:\/\/cdn\.sdb\.com\.cn\/bron-coms\/bron-coms\/material-image script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_sdb_8e791c.js, requires-body=true, tag=sdb
+http-response ^https?:\/\/cdn\.sdb\.com\.cn\/bron-coms\/bron-coms\/material-image script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_sdb.js, requires-body=true, tag=sdb
 
 http-response ^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/user\/follow\/users\/mixed\/get script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_163music.js, requires-body=true, tag=163music
 
@@ -3354,7 +3354,7 @@ http-response ^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d/(?>token|m
 
 http-response ^https?:\/\/nex\.163\.com\/q script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_163news.js, requires-body=true, tag=163news
 
-http-response ^https?:\/\/mobilepaas\.abchina\.com\.cn(:\d+)?\/mgw\.htm$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, tag=abc
+http-response ^https?:\/\/mobilepaas\.abchina\.com\.cn(:\d+)?\/mgw\.htm$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, tag=abc
 
 http-response ^https?:\/\/api\.rr\.tv\/ad\/getAll script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_rrtv.js, requires-body=true, tag=rrtv
 
@@ -3362,7 +3362,7 @@ http-response ^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? script-
 
 http-response ^https?:\/\/api\.weibo\.cn\/2\/(checkin\/show|client\/publisher_list|push\/active)\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_weibo.js, requires-body=true, tag=weibo
 
-http-response ^https?:\/\/\w+\.ys7\.com\/v\d\/valueadded\/operation\/config\/master\/station script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ys7_019b7b.js, requires-body=true, tag=ys7
+http-response ^https?:\/\/\w+\.ys7\.com\/v\d\/valueadded\/operation\/config\/master\/station script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ys7.js, requires-body=true, tag=ys7
 
 http-response ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comment\/Main script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_bilibiliManga.js, requires-body=true, tag=bilibiliManga
 
@@ -3394,7 +3394,7 @@ http-response ^https?:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/home\/ge
 
 http-response ^https?:\/\/api\.m\.mi\.com\/v\d\/order\/expressView script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mishop.js, requires-body=true, tag=mishop
 
-http-response ^https?:\/\/webapi\.qbb6\.com\/h5\/api\/lib\/internal\/append\/get script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_qbb_f7069b.js, requires-body=true, tag=qbb
+http-response ^https?:\/\/webapi\.qbb6\.com\/h5\/api\/lib\/internal\/append\/get script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_qbb.js, requires-body=true, tag=qbb
 
 http-response ^https?:\/\/m\d\.amap\.com\/ws\/c3frontend\/af-(hotel|launch)\/page\/main\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amap.js, requires-body=true, tag=amap
 
@@ -3406,7 +3406,7 @@ http-response ^https?:\/\/g(.*)\.dushu365\.com\/chief-orch\/home\/bookPortal\/v1
 
 http-response ^https?:\/\/sec\.sginput\.qq\.com\/q script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_sougou.js, tag=sogou
 
-http-response ^https?:\/\/api\.pinduoduo\.com\/api\/alexa\/\w+\/hub script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_pdd_4c4ce2.js, requires-body=true, tag=pdd
+http-response ^https?:\/\/api\.pinduoduo\.com\/api\/alexa\/\w+\/hub script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_pdd.js, requires-body=true, tag=pdd
 
 http-response ^https?:\/\/edu\.51cto\.com\/app\.php\?$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_51cto.js, requires-body=true, tag=51cto
 
@@ -3432,7 +3432,7 @@ http-response ^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|f
 
 http-response ^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/link\/position\/show\/resource script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_163music.js, requires-body=true, tag=163music
 
-http-response ^https?:\/\/pmbservice\.bosc\.cn:\d+\/mgw script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, tag=bosc
+http-response ^https?:\/\/pmbservice\.bosc\.cn:\d+\/mgw script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, tag=bosc
 
 http-response ^https?:\/\/m\d\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amap.js, requires-body=true, tag=amap
 
@@ -3446,13 +3446,13 @@ http-response ^https?:\/\/g(.*)\.dushu365\.com\/chief-orch\/home\/bookPortal\/v1
 
 http-response ^https?:\/\/g(.*)\.dushu365\.com\/sns-orchestration-system\/homePage\/api\/v100\/myPage script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_dushu365.js, requires-body=true, tag=dushu365
 
-http-response ^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1& script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mdb_44e513.js, requires-body=true, tag=mdb
+http-response ^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1& script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mdb.js, requires-body=true, tag=mdb
 
 http-response ^https?:\/\/m\d\.amap\.com\/ws\/faas\/amap-navigation\/(?>card-service-plan-home|main-page) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amap.js, requires-body=true, tag=amap
 
 http-response ^https?:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_zhihu.js, requires-body=true, tag=zhihu
 
-http-response ^https?:\/\/mgs\.wallet\.pbcdci\.cn(:\d+)?\/mgw\.htm$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, requires-body=true, tag=ecny
+http-response ^https?:\/\/mgs\.wallet\.pbcdci\.cn(:\d+)?\/mgw\.htm$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, requires-body=true, tag=ecny
 
 http-response ^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amdc.js, tag=adunion
 
@@ -3472,7 +3472,7 @@ http-response ^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/(?>bottomNavi|homeFl
 
 http-response ^https?:\/\/(?>app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v\d\.Teenagers\/ModeStatus script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_bilibiliProtoA.js, requires-body=true, tag=bilibili
 
-http-request ^https?:\/\/m2\.cmbwinglungbank\.com(:\d+)?\/mgw script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw_071f18.js, tag=cmbwl
+http-request ^https?:\/\/m2\.cmbwinglungbank\.com(:\d+)?\/mgw script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_mgw.js, tag=cmbwl
 
 http-response ^https?:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_cntv.js, requires-body=true, tag=iqiyi
 

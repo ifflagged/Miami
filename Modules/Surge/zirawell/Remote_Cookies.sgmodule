@@ -27,7 +27,7 @@ Remote_Cookies = type=http-request,pattern=^https?:\/\/vip\.video\.qq\.com\/rpc\
 Remote_Cookies = type=http-request,pattern=^https?:\/\/pbaccess\.video\.qq\.com\/trpc\.videosearch\.hot_rank\.HotRankServantHttp\/HotRankHttp,requires-body=0,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/Remote_Cookies/zirawell_txtv.js
 Remote_Cookies = type=http-request,pattern=^https?:\/\/pbaccess\.video\.qq.\com\/trpc\.video_account_login\.web_login_trpc\.WebLoginTrpc\/NewRefresh,requires-body=1,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/Remote_Cookies/zirawell_txtv.js
 # NGA玩家社区 Cookie
-Remote_Cookies = type=http-request,pattern=^https?:\/\/ngabbs.com\/nuke.php$,requires-body=1,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/Remote_Cookies/zirawell_nga_d1e58d.js
+Remote_Cookies = type=http-request,pattern=^https?:\/\/ngabbs.com\/nuke.php$,requires-body=1,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/Remote_Cookies/zirawell_nga.js
 # 建行生活 Cookie
 Remote_Cookies = type=http-request,pattern=^https?:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin),requires-body=1,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/Remote_Cookies/zirawell_ccblife.js
 # 高德打车 Cookie

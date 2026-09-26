@@ -21,7 +21,7 @@
 # https://raw.githubusercontent.com/ClydeTime/BiliBili/master/modules/BiliBiliDailyBonus.plugin
 # 2026-06-26
 # https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps.cookie.js
-# https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps_92c36b.js
+# https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps.js
 
 [Argument]
 # 微信支付有优惠
@@ -70,7 +70,7 @@ cron ${Cron-Bilibili} then script("https://github.com/ifflagged/Miami/raw/main/M
 
 # WPS - personal-act.wps.cn
 request if ${url} ~= /^https:\/\/personal-act\.wps\.cn\/activity-rubik\/activity\/page_info/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps.cookie.js") with enable=${Cookie-WPS}, tag="[WPS]每日签到Cookie"
-cron ${Cron-WPS} then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps_92c36b.js") with enable=${Task-WPS}, tag="[WPS]每日签到Task"
+cron ${Cron-WPS} then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps.js") with enable=${Task-WPS}, tag="[WPS]每日签到Task"
 
 [MitM]
 hostname = payapp.weixin.qq.com, api.weibo.cn, cm.bilibili.com, m.bilibili.com, personal-act.wps.cn

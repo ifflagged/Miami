@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ad.cyapi.cn
-DOMAIN,gather.colorfulclouds.net
+payload:
+  - DOMAIN,ad.cyapi.cn
+  - DOMAIN,gather.colorfulclouds.net

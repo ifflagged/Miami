@@ -6059,7 +6059,7 @@ wechatApplet = type=http-response, pattern=^https?:\/\/ump\.ems\.com\.cn\/new-ge
 
 replaceBody = type=http-response, pattern=^https?:\/\/47\.100\.65\.202\/api\/mobile\/index\.php\?version=\d&mobile=yes&module=basicdata&type=forumlist, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/Script-Hub-Org_replace-body.js, requires-body=true, max-size=-1, timeout=30, argument=adv-%3Efmz200
 
-fly = type=http-response, pattern=^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_fly_0f84fa.js, requires-body=true, max-size=-1, timeout=60
+fly = type=http-response, pattern=^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_fly.js, requires-body=true, max-size=-1, timeout=60
 
 flyert = type=http-response, pattern=^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/zirawell_flyert.js, requires-body=true, max-size=-1, timeout=60
 
@@ -6146,7 +6146,7 @@ lawson = type=http-response, pattern=^https:\/\/lawsonapi\.yorentown\.com\/porta
 
 mafengwo = type=http-response, pattern=^https?:\/\/mapi\.mafengwo\.cn\/user\/profile\/get_(list|profile), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/zirawell_mafengwo.js, requires-body=true, max-size=-1, timeout=60
 
-mdb = type=http-response, pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/zirawell_mdb_44e513.js, requires-body=true, max-size=-1, timeout=60
+mdb = type=http-response, pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/zirawell_mdb.js, requires-body=true, max-size=-1, timeout=60
 
 # 帖子末尾 - 看过此贴的用户也在看
 maimai_ads = type=http-response, pattern=^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_maimai_ads.js, requires-body=true, max-size=-1, timeout=60
@@ -6456,7 +6456,7 @@ cnftp = type=http-response, pattern=^https?:\/\/push\.m\.youku\.com\/collect-api
 # 开屏广告
 cnftp = type=http-response, pattern=^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_cnftp.js, requires-body=true, max-size=-1, timeout=60
 
-yx = type=http-response, pattern=^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_yx_4da07d.js, requires-body=true, max-size=-1, timeout=60
+yx = type=http-response, pattern=^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_yx.js, requires-body=true, max-size=-1, timeout=60
 
 # hostname = rr*.googlevideo.com, youtubei.googleapis.com
 youtube.response = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/Maasea_youtube.response.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60

@@ -11,7 +11,7 @@
 #!date=2026-05-13
 
 [Script]
-cmbwl = type=http-request,pattern=^https?:\/\/m2\.cmbwinglungbank\.com(:\d+)?\/mgw,requires-body=0,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/cmbwl/zirawell_mgw_071f18.js
+cmbwl = type=http-request,pattern=^https?:\/\/m2\.cmbwinglungbank\.com(:\d+)?\/mgw,requires-body=0,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/cmbwl/zirawell_mgw.js
 
 [MITM]
 hostname= %APPEND% m2.cmbwinglungbank.com

@@ -438,12 +438,12 @@ response if ${url} ~= /^https\:\/\/(?:weixin110\.qq|security\.wechat)\.com\/cgi-
 
 # --------------- 微信小程序 --------------- #
 # 企迈点单系统 //webapi.qmai.cn, images.qmai.cn
-response if ${url} ~= /^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_kff_c50e5e.js") with tag="[微信]移除企迈点单系统广告", requires_body=true
+response if ${url} ~= /^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_kff.js") with tag="[微信]移除企迈点单系统广告", requires_body=true
 
 # EMS中国邮政物流速递 @TEAXS //ec.ems.com.cn, ump.ems.com.cn
 response if ${url} ~= /^https?:\/\/ec\.ems\.com\.cn\/ecr-qry-web\/redis\/pageInfoByChannel/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/zirawell_wechatApplet.js") with tag="[微信]移除EMS中国邮政物流速递广告", requires_body=true
 response if ${url} ~= /^https?:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/zirawell_wechatApplet.js") with tag="[微信]移除EMS中国邮政物流速递广告", requires_body=true
-response if ${url} ~= /^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_ems_bb67af.js") with tag="[微信]移除EMS中国邮政物流速递广告", requires_body=true
+response if ${url} ~= /^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_ems.js") with tag="[微信]移除EMS中国邮政物流速递广告", requires_body=true
 
 # 小兔充充 @TEAXS //mapi.xiaotucc.com
 response if ${url} ~= /^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_xiaotucc.js") with tag="[微信]移除小兔充充广告", requires_body=true
@@ -470,7 +470,7 @@ response if ${url} ~= /^https:\/\/cappapi\.alittle-tea\.com\/open\?method=cateri
 response if ${url} ~= /^https:\/\/api\.prod\.dj\.mstand\.cn\/scrm\/mini\/app\/index\/info/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_M_Stand.js") with tag="[微信]移除M Stand广告", requires_body=true
 
 # T3出行 //passenger.t3go.cn
-response if ${url} ~= /^https:\/\/passenger\.t3go\.cn\/(solution\-|common\-)?(passenger\-)?(activity\-|app\-)?api\/notoken\/(trip\/)?api\/(home\/|common\/)?(v[1-3]\/)?(ad\/getNegativescreen|solution\/passenger\/open\/getHomeMenu|leftmenu|getHomeInfoGlobal)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_T3_a02a50.js") with tag="[微信]移除T3出行广告", requires_body=true
+response if ${url} ~= /^https:\/\/passenger\.t3go\.cn\/(solution\-|common\-)?(passenger\-)?(activity\-|app\-)?api\/notoken\/(trip\/)?api\/(home\/|common\/)?(v[1-3]\/)?(ad\/getNegativescreen|solution\/passenger\/open\/getHomeMenu|leftmenu|getHomeInfoGlobal)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_T3.js") with tag="[微信]移除T3出行广告", requires_body=true
 
 # 古茗 //newton.gumingnc.com
 response if ${url} ~= /^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/WeChat/kelee_ming.js") with tag="[微信]移除古茗广告", requires_body=true

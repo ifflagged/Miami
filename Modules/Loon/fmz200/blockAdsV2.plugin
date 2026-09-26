@@ -8015,7 +8015,7 @@ response if ${url} ~= /^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d/(
 
 # > 飞客茶馆
 # hostname = api.flydigi.com
-response if ${url} ~= /^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_fly_0f84fa.js") with enable=fwke_enable, tag="飞客茶馆", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_fly.js") with enable=fwke_enable, tag="飞客茶馆", timeout=60, requires_body=true
 response if ${url} ~= /^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_flyert.js") with enable=fwke_enable, tag="飞客茶馆", timeout=60, requires_body=true
 
 # > 粉笔
@@ -8131,7 +8131,7 @@ response if ${url} ~= /^https?:\/\/mapi\.mafengwo\.cn\/user\/profile\/get_(list|
 
 # > 买单吧
 # hostname = creditcardapp.bankcomm.cn, creditcardapp.bankcomm.com, creditcard.bankcomm.cn, creditcard.bankcomm.com
-response if ${url} ~= /^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_mdb_44e513.js") with enable=mddjba_enable, tag="mdb", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_mdb.js") with enable=mddjba_enable, tag="mdb", timeout=60, requires_body=true
 
 # > 脉脉
 # hostname = open.taou.com, h3.open.taou.com
@@ -8434,7 +8434,7 @@ response if ${url} ~= /^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.up
 
 # > 悠洗APP
 # hostname = api.ulife.group
-response if ${url} ~= /^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_yx_4da07d.js") with enable=yzxiapp_enable, tag="悠洗APP", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_yx.js") with enable=yzxiapp_enable, tag="悠洗APP", timeout=60, requires_body=true
 
 # > YouTube
 # hostname = rr*.googlevideo.com, youtubei.googleapis.com

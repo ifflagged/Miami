@@ -251,7 +251,7 @@ http-request ^https?:\/\/gateway\.cotticoffee\.com\/cotti-capi\/customer\/positi
 
 http-response ^https?:\/\/(?>webapi|miniapp)\.qmai\.cn\/web\/catering([0-9]-apiserver)?\/advertising\/ad\/advertiseInfo script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/wechatAdBlock/zirawell_qmai.js, requires-body=true, tag=wechatAppletGeneral
 
-http-response ^https?:\/\/kaoshi\.wjx\.top\/wjx\/join\/completemobile script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/wechatAdBlock/zirawell_wjx_ec2015.js, requires-body=true, tag=wjx
+http-response ^https?:\/\/kaoshi\.wjx\.top\/wjx\/join\/completemobile script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/wechatAdBlock/zirawell_wjx.js, requires-body=true, tag=wjx
 
 http-request ^https?:\/\/mbpxapi\.yundasys\.com(:\d+)?\/gateway\/interface script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/wechatAdBlock/zirawell_yunda.js, requires-body=true, tag=yunda
 
