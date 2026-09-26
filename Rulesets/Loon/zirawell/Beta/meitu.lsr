@@ -4,10 +4,9 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,adui.tg.meitu.com
-  - DOMAIN,corp.meitu.com
-  - DOMAIN,gg.meitu.com
-  - DOMAIN,message.meitu.com
-  - DOMAIN,tuiguang.meitu.com
-  - DOMAIN,stat.meitudata.com
+DOMAIN,adui.tg.meitu.com
+DOMAIN,corp.meitu.com
+DOMAIN,gg.meitu.com
+DOMAIN,message.meitu.com
+DOMAIN,tuiguang.meitu.com
+DOMAIN,stat.meitudata.com

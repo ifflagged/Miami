@@ -4,7 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,rou3.xyz
-  - DOMAIN-SUFFIX,bg4nxu2u5t.com
-  - DOMAIN-SUFFIX,lkpmprksau.com
+DOMAIN-SUFFIX,rou3.xyz
+DOMAIN-SUFFIX,bg4nxu2u5t.com
+DOMAIN-SUFFIX,lkpmprksau.com

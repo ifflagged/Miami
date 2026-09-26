@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,adm.10jqka.com.cn
-  - DOMAIN,stat.10jqka.com.cn
+DOMAIN,adm.10jqka.com.cn
+DOMAIN,stat.10jqka.com.cn

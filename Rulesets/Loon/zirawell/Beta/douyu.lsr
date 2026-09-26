@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,stun1.douyucdn.cn
-  - DOMAIN,stun1.qvb.qcloud.com
+DOMAIN,stun1.douyucdn.cn
+DOMAIN,stun1.qvb.qcloud.com

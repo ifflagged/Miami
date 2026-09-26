@@ -1,23 +1,21 @@
-#规则数量:14
-#不支持的规则数量:1
+#规则数量:15
+#不支持的规则数量:0
 #已排除的规则数量:0
-#不支持的规则:
-#USER-AGENT,TikTok*
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,p16-tiktokcdn-com.akamaized.net
-  - DOMAIN-SUFFIX,byteoversea.com
-  - DOMAIN-SUFFIX,ibytedtos.com
-  - DOMAIN-SUFFIX,ibyteimg.com
-  - DOMAIN-SUFFIX,ipstatp.com
-  - DOMAIN-SUFFIX,muscdn.com
-  - DOMAIN-SUFFIX,musical.ly
-  - DOMAIN-SUFFIX,sgpstatp.com
-  - DOMAIN-SUFFIX,snssdk.com
-  - DOMAIN-SUFFIX,tik-tokapi.com
-  - DOMAIN-SUFFIX,tiktok.com
-  - DOMAIN-SUFFIX,tiktokv.com
-  - DOMAIN-SUFFIX,ttwstatic.com
-  - DOMAIN-KEYWORD,tiktokcdn
+DOMAIN,p16-tiktokcdn-com.akamaized.net
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,ipstatp.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,sgpstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,tik-tokapi.com
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-KEYWORD,tiktokcdn
+USER-AGENT,TikTok*

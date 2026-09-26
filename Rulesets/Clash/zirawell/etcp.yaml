@@ -4,5 +4,4 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,logs-bigdata.yeehaw.com.cn
+DOMAIN,logs-bigdata.yeehaw.com.cn

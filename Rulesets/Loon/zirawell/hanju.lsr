@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,da.bridgeturbo.com
-  - DOMAIN,adx-os.bridgeturbo.com
+DOMAIN,da.bridgeturbo.com
+DOMAIN,adx-os.bridgeturbo.com

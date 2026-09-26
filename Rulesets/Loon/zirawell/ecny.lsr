@@ -4,7 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - IP-CIDR,1.202.85.193/32,no-resolve
-  - DOMAIN,mdc.wallet.pbcdci.cn
-  - DOMAIN,mdap.wallet.pbcdci.cn
+IP-CIDR,1.202.85.193/32,no-resolve
+DOMAIN,mdc.wallet.pbcdci.cn
+DOMAIN,mdap.wallet.pbcdci.cn

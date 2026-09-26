@@ -4,8 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,switch.cup.com.cn
-  - DOMAIN,ads.cup.com.cn
-  - DOMAIN,analytics.95516.com
-  - DOMAIN,tysdk.95516.com
+DOMAIN,switch.cup.com.cn
+DOMAIN,ads.cup.com.cn
+DOMAIN,analytics.95516.com
+DOMAIN,tysdk.95516.com

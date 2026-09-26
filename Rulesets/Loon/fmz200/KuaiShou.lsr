@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,gifshow.com
-  - DOMAIN-SUFFIX,apissl.ksapisrv.com
+DOMAIN-SUFFIX,gifshow.com
+DOMAIN-SUFFIX,apissl.ksapisrv.com
