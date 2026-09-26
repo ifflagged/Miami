@@ -1,0 +1,177 @@
+#规则数量:171
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,name: 🪐 Biliverse: ⚙️ Enhanced
+DOMAIN,description: |-
+DOMAIN,哔哩哔哩：增强模式
+DOMAIN,中国站功能增强及UI自定义
+DOMAIN,compat_arguments:
+DOMAIN,Home.Switch: true
+  HOME.TAB: 2036,2037
+DOMAIN,Home.Tab_default: 2037
+DOMAIN,Home.Top_left: mine
+DOMAIN,Home.Top: messages
+  HOME.TOP_MORE: CATEGORIES,search
+  BOTTOM: HOME,dynamic
+DOMAIN,Region.Switch: true
+DOMAIN,Mine.Switch: true
+DOMAIN,Mine.iPad.Switch: true
+DOMAIN,Storage: PersistentStore
+DOMAIN,LogLevel: WARN
+DOMAIN,compat_arguments_desc: |
+DOMAIN,启用后可自定义首页顶栏、标签页和底部导航栏内容。标签页由分区页的快捷访问决定。
+DOMAIN,├ 2036: 直播
+DOMAIN,├ 2037: 推荐
+DOMAIN,├ 780: 热门
+DOMAIN,├ 545: 番剧
+DOMAIN,├ 774: 动画（港澳台）
+DOMAIN,├ 151: 影视
+DOMAIN,├ 801: 韩综（港澳台）
+DOMAIN,└ 2280: 校园
+DOMAIN,这里只列出常用选项；分区页提供接近60个快捷访问选项，无法在模块参数中完整列出。请前往 BiliBili App 分区页，使用原生“快捷访问”功能自定义首页标签页。
+DOMAIN,├ 2036: 直播
+DOMAIN,├ 2037: 推荐
+DOMAIN,├ 780: 热门
+DOMAIN,├ 545: 番剧
+DOMAIN,├ 774: 动画（港澳台）
+DOMAIN,├ 151: 影视
+DOMAIN,├ 801: 韩综（港澳台）
+DOMAIN,└ 2280: 校园
+DOMAIN,请选择启动APP时默认展示的标签页，需先将该标签页加入分区页的快捷访问。
+DOMAIN,├ mine: 用户中心-我的
+DOMAIN,└ videoshortcut: 短视频
+DOMAIN,请选择顶栏（左侧）按钮（用户头像）的作用（在biliBili粉色版中无法修改）。
+DOMAIN,├ game_center: 游戏中心
+DOMAIN,├ mall: 会员购
+DOMAIN,└ messages: 消息
+DOMAIN,请选择启用的顶栏（右侧）按钮。
+DOMAIN,├ categories: 更多分区
+DOMAIN,└ search: 搜索
+DOMAIN,请选择启用的首页标签栏右侧按钮。
+DOMAIN,├ home: 首页
+DOMAIN,├ dynamic: 动态
+DOMAIN,├ publish: 发布
+DOMAIN,├ ogv: 节目（港澳台）
+DOMAIN,├ mall: 会员购
+DOMAIN,├ messages: 消息
+DOMAIN,└ mine: 我的
+DOMAIN,请选择启用的底部导航栏按钮，最多6个。
+DOMAIN,启用后可自定义分区标签页的内容。
+DOMAIN,启用后可自定义我的标签页的服务内容。
+DOMAIN,启用后可自定义iPad版我的标签页的服务内容。
+DOMAIN,├ Argument: 优先使用 $argument，其次使用 PersistentStore (BoxJs)，最后使用 database.mjs 的默认配置
+DOMAIN,├ PersistentStore: 优先使用 PersistentStore (BoxJs)，其次使用 $argument，最后使用 database.mjs 的默认配置
+DOMAIN,└ database: 只使用由作者的 database.mjs 文件提供的默认配置，其他任何自定义配置不再起作用
+DOMAIN,默认使用 PersistentStore，配置优先级为 database -> $argument -> PersistentStore (BoxJs)；选择 Argument 时为 database -> PersistentStore (BoxJs) -> $argument。
+DOMAIN,├ OFF: 关闭
+DOMAIN,├ ERROR: ❌ 错误
+DOMAIN,├ WARN: ⚠️ 警告
+DOMAIN,├ INFO: ℹ️ 信息
+DOMAIN,├ DEBUG: 🅱️ 调试
+DOMAIN,└ ALL: 全部
+DOMAIN,选择脚本日志的输出等级，低于所选等级的日志将全部输出。
+DOMAIN,open_url: http://boxjs.com/#/app/Biliverse.Enhanced
+DOMAIN,homepage: https://biliverse.github.io/guide/enhanced
+DOMAIN,icon: https://github.com/Biliverse/Enhanced/raw/main/src/assets/icon_rounded.png
+DOMAIN,map_locals:
+DOMAIN,to: https://biliverse.github.io/settings/
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: text/html
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://biliverse.github.io/settings/theme.css
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: text/css
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://biliverse.github.io/settings/index.mjs
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: text/javascript
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://biliverse.github.io/settings/assets/Biliverse_subject.png
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: image/png
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://biliverse.github.io/settings/assets/Enhanced_subject.png
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: image/png
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://biliverse.github.io/settings/assets/Global_subject.png
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: image/png
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://biliverse.github.io/settings/assets/Redirect_subject.png
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: image/png
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://biliverse.github.io/settings/assets/ADBlock_subject.png
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: image/png
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://github.com/NSNanoCat/PreferencePanes/releases/latest/download/index.html
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: text/html
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://github.com/NSNanoCat/PreferencePanes/releases/latest/download/index.mjs
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: text/javascript
+DOMAIN,Cache-Control: no-store
+DOMAIN,to: https://github.com/NSNanoCat/PreferencePanes/releases/latest/download/navigation.mjs
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Content-Type: text/javascript
+DOMAIN,Cache-Control: no-store
+DOMAIN,status_code: 200
+DOMAIN,headers:
+DOMAIN,Cache-Control: no-store
+DOMAIN,X-PreferencePanes-Version: 0.6.0
+DOMAIN,scriptings:
+DOMAIN,http_request:
+DOMAIN,name: PreferencePanes.API
+DOMAIN,max_size: 65536
+DOMAIN,body_required: true
+DOMAIN,http_response:
+DOMAIN,name: 📺 Biliverse.Enhanced.x.resource.show.tab.v2
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,http_request:
+DOMAIN,name: 📺 Biliverse.Enhanced.show.v1.Mixture.RegionShortcut.request.grpc
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,binary_body: true
+DOMAIN,http_response:
+DOMAIN,name: 📺 Biliverse.Enhanced.show.v1.Mixture.RegionList.response.grpc
+DOMAIN,env:
+DOMAIN,max_size: 262144
+DOMAIN,body_required: true
+DOMAIN,binary_body: true
+DOMAIN,http_response:
+DOMAIN,name: 📺 Biliverse.Enhanced.x.v2.account.mine
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,http_response:
+DOMAIN,name: 📺 Biliverse.Enhanced.x.v2.region.index
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,http_response:
+DOMAIN,name: 📺 Biliverse.Enhanced.x.v2.channel.region.list
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,mitm:
+DOMAIN,hostnames:
+DOMAIN,includes:
+DOMAIN,biliverse.github.io
+DOMAIN,app.bilibili.com
+DOMAIN,app.biliapi.net
+DOMAIN,grpc.biliapi.net
