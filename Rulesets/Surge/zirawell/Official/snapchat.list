@@ -1,3 +1,0 @@
-# > snapchat - SNAPCHAT
-host, ads.snapchat.com, reject
-host, adsapi.snapchat.com, reject
