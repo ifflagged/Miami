@@ -1,0 +1,110 @@
+name: Universal Mirror
+
+on:
+  schedule:
+    - cron: '7 */1 * * *'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Specific target'
+        required: false
+        default: 'all'
+
+jobs:
+  sync-manager:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'schedule' || github.event.inputs.target != 'merge' }}
+    permissions:
+      contents: write
+    services:
+      docker:
+        image: xream/script-hub:latest
+        ports: [9100:9100, 9101:9101]
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        author: [
+          universal_engine
+        ]
+
+    steps:
+      - name: Check Input
+        id: check
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ github.event.inputs.target }}" != "all" ]]; then
+            if [[ "${{ matrix.author }}" != "${{ github.event.inputs.target }}" ]]; then
+              echo "skip=true" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - uses: actions/checkout@v4.2.2
+        if: steps.check.outputs.skip != 'true'
+
+      - name: Checkout Logic Scripts
+        if: steps.check.outputs.skip != 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/ShalalaLala
+          path: .remote_logic
+          token: ${{ secrets.ACTION_TOKEN }}
+                    
+      - name: Run Sync Script
+        if: steps.check.outputs.skip != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTION_TOKEN: ${{ secrets.ACTION_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          CURRENT_REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          target_script=".remote_logic/Scripts/${{ github.event.repository.name }}/${{ matrix.author }}.sh"
+          
+          if [ -f "$target_script" ]; then
+            chmod +x "$target_script"
+            sleep $((RANDOM % 10))
+            bash "$target_script"
+          else
+            echo "❌ Script not found: $target_script"
+            exit 1
+          fi
+
+  final-merge:
+    needs: sync-manager 
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4.2.2
+      
+      - name: Checkout Logic Scripts
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/ShalalaLala
+          path: .remote_logic
+          token: ${{ secrets.ACTION_TOKEN }}
+
+      - name: Run Merge Script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          target_script=".remote_logic/Scripts/${{ github.event.repository.name }}/merge_modules.sh"
+          chmod +x "$target_script"
+          bash "$target_script"
+
+  cleanup:
+    needs: final-merge
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      issues: write
+      contents: read
+    steps:
+      - name: Delete old workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 3
+          keep_minimum_runs: 1
