@@ -1,4 +1,0 @@
-# > speedtest - SPEEDTEST
-host, ads.pubmatic.com, reject
-host, id.hadron.ad.gt, reject
-host-keyword, -adsystem.com, reject
