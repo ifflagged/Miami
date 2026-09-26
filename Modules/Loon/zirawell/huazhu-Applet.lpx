@@ -1,0 +1,11 @@
+#!name=huazhu-Applet
+#!desc=huazhu-Applet
+#!icon=icon not found
+#!tag=zirawell
+
+[Rewrite]
+^https?:\/\/api-fouth-mem\.huazhu\.com\/api\/rights\/bannerList mock-response-body data-type=json data="{}" status-code=200
+
+[MITM]
+hostname = api-fouth-mem.huazhu.com
+

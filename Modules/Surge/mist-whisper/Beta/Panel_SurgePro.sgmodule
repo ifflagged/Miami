@@ -1,0 +1,13 @@
+#!name=Surge Pro
+#!desc=显示Surge的启动时间
+#!author=Rabbit-Spec[https://github.com/Rabbit-Spec]
+#!icon=icon not found
+#!category=mist-whisper
+#!date=2024.09-09
+
+[Panel]
+SurgePro = script-name=SurgePro, update-interval=1
+
+[Script]
+SurgePro = type=generic, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Panel_SurgePro/Rabbit-Spec_SurgePro.js, timeout=10, argument=icon=paperplane.circle&color=#f6c970
+
