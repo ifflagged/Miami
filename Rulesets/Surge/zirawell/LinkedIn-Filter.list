@@ -1,0 +1,18 @@
+#!name=Linkedin Filter
+#!homepage=https://github.com/zirawell/R-Store
+#!raw-url=https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Filter/Linkedin.list
+#!tg-group=https://t.me/RStoreCom
+#!date=2024-11-08 10:24:00
+#!---------------------------------------------------------------------------------------------------------------
+DOMAIN, e122475.dscg.akamaiedge.net
+DOMAIN, licdn.cn.cdn20.com
+DOMAIN, linkedin.sc.omtrdc.net
+DOMAIN-SUFFIX, bizographics.com
+DOMAIN-SUFFIX, l-0005.dc-msedge.net
+DOMAIN-SUFFIX, l-0005.l-msedge.net
+DOMAIN-SUFFIX, licdn.cn
+DOMAIN-SUFFIX, licdn.com
+DOMAIN-SUFFIX, linkedin.at
+DOMAIN-SUFFIX, linkedin.cn
+DOMAIN-SUFFIX, linkedin.com
+DOMAIN-SUFFIX, lnkd.in
