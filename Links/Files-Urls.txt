@@ -42,7 +42,3 @@ RELEASE | NSRingo   | NSRingo/TV |
 
 # 5. 单链接直连模式 (直接下载单文件)
 DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Loon/Plugin/DiDi-Custom.plugin |
-
-# 6. 单链接直连模式 (直接下载单文件)
-DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Surge/Ruleset/Direct.list |
-DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Surge/Ruleset/Media/Emby.list |
