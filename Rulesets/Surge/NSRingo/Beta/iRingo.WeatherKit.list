@@ -4,126 +4,125 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,name:  iRingo: 🌤 WeatherKit
-  - DOMAIN,description: |-
-  - DOMAIN,iOS 18 & macOS 15 & watchOS 11
-  - DOMAIN,1.解锁全部天气功能
-  - DOMAIN,2.修改空气质量数据
-  - DOMAIN,3.修改下一小时降水数据
-  - DOMAIN,4.修改天气数据
-  - DOMAIN,5.修改天气预警数据
-  - DOMAIN,compat_arguments:
-  - DATASETS:AIRQUALITY,currentWeather
-  - DOMAIN,Weather.Provider: ColorfulClouds
-  - DOMAIN,WeatherAlerts.Provider: QWeatherWeb
-  - DOMAIN,NextHour.Provider: ColorfulClouds
-  - DOMAIN,AirQuality.Current.Pollutants.Provider: ColorfulClouds
-  - DOMAIN,AirQuality.Calculate.Algorithm: EU_EAQI
-  - DOMAIN,API.ColorfulClouds.Token: 
-  - DOMAIN,API.QWeather.Host: devapi.qweather.com
-  - DOMAIN,API.QWeather.Token: 
-  - DOMAIN,API.WAQI.Token: 
-  - DOMAIN,Storage: Argument
-  - DOMAIN,LogLevel: WARN
-  - DOMAIN,compat_arguments_desc: |
-  - DOMAIN,├ airQuality: 空气质量
-  - DOMAIN,├ currentWeather: 当前天气
-  - DOMAIN,├ forecastDaily: 每日预报
-  - DOMAIN,├ forecastHourly: 每小时预报
-  - DOMAIN,├ forecastNextHour: 未来一小时降水强度
-  - DOMAIN,└ weatherAlerts: 天气预警
-  - DOMAIN,选择需要解析并处理的数据集；未选择的数据槽始终保持原样透传，不作修改。
-  - DOMAIN,├ WeatherKit: WeatherKit（不替换）
-  - DOMAIN,├ ColorfulClouds: 彩云天气
-  - DOMAIN,└ QWeather: 和风天气
-  - DOMAIN,使用选定的数据源替换天气数据。
-  - DOMAIN,├ WeatherKit: WeatherKit（不修改）
-  - DOMAIN,├ QWeatherWeb: 和风天气网页
-  - DOMAIN,├ QWeather: 和风天气 API
-  - DOMAIN,└ ColorfulClouds: 彩云天气 API
-  - DOMAIN,使用选定的数据源处理天气预警数据。
-  - DOMAIN,├ WeatherKit: WeatherKit（不添加）
-  - DOMAIN,├ ColorfulClouds: 彩云天气
-  - DOMAIN,└ QWeather: 和风天气
-  - DOMAIN,使用选定的数据源填充未来一小时降水强度的数据。
-  - DOMAIN,├ ColorfulClouds: 彩云天气
-  - DOMAIN,└ QWeather: 和风天气
-  - DOMAIN,使用选定的数据源填补污染物数据。
-  - DOMAIN,├ None: 不转换
-  - DOMAIN,├ UBA: 德国LQI（FB001846）
-  - IP-CIDR,├ EU_EAQI: 欧盟EAQI（ETC HE Report 2024/17）,no-resolve
-  - DOMAIN,├ WAQI_InstantCast_US: 美标InstantCast（EPA-454/B-24-002）
-  - DOMAIN,├ WAQI_InstantCast_CN: 国标InstantCast（HJ 633—2012）
-  - DOMAIN,├ WAQI_InstantCast_CN_25_DRAFT: 国标InstantCast（HJ 633 2025年草案）
-  - DOMAIN,├ CA_AQHI: 加拿大AQHI（10.17269/s41997-019-00237-w）
-  - DOMAIN,├ HK_AQHI: 香港AQHI
-  - DOMAIN,├ AQHI_Multi_CN: AQHI-Multi（中国）
-  - DOMAIN,├ AQHI_Multi_CN_HK: AQHI-Multi（中国+香港）
-  - DOMAIN,├ CN_DEATH_AQHI: 中国（致死风险）AQHI
-  - DOMAIN,└ CN_DEATH_HK_AQHI: 中国（致死风险）+香港AQHI
-  - DOMAIN,使用内置算法，通过污染物数据本地计算空气指数。InstantCast源自于WAQI，美标版本使用了WAQI的臭氧标准。
-  - DOMAIN,彩云天气 API 令牌
-  - DOMAIN,和风天气 API 使用的主机名
-  - DOMAIN,和风天气 API 令牌
-  - DOMAIN,WAQI API 令牌，填写此字段将自动使用WAQI高级API
-  - DOMAIN,├ Argument: 优先使用插件选项与模块参数等，由 $argument 传入的配置，$argument 不包含的设置项由 PersistentStore (BoxJs) 提供
-  - DOMAIN,├ PersistentStore: 只使用来自 BoxJs 等，由 $persistentStore 提供的配置
-  - DOMAIN,└ database: 只使用由作者的 database.mjs 文件提供的默认配置，其他任何自定义配置不再起作用
-  - DOMAIN,选择要使用的配置类型。未设置此选项或不通过此选项的旧版本的配置顺序依旧是 $persistentStore (BoxJs) > $argument > database。
-  - DOMAIN,├ OFF: 关闭
-  - DOMAIN,├ ERROR: ❌ 错误
-  - DOMAIN,├ WARN: ⚠️ 警告
-  - DOMAIN,├ INFO: ℹ️ 信息
-  - DOMAIN,├ DEBUG: 🅱️ 调试
-  - DOMAIN,└ ALL: 全部
-  - DOMAIN,选择脚本日志的输出等级，低于所选等级的日志将全部输出。
-  - DOMAIN,open_url: http://boxjs.com/#/app/iRingo.WeatherKit
-  - DOMAIN,homepage: https://NSRingo.github.io/guide/Weather/weather-kit
-  - DOMAIN,icon: https://developer.apple.com/assets/elements/icons/weatherkit/weatherkit-128x128.png
-  - DOMAIN,rules:
-  - DOMAIN,domain:
-  - DOMAIN,match: weather-analytics-events.apple.com
-  - DOMAIN,policy: REJECT-DROP
-  - DOMAIN,domain_suffix:
-  - DOMAIN,match: tthr.apple.com
-  - DOMAIN,policy: REJECT-DROP
-  - DOMAIN,domain:
-  - DOMAIN,match: tether.edge.apple
-  - DOMAIN,policy: REJECT-DROP
-  - DOMAIN,and:
-  - DOMAIN,match:
-  - DOMAIN,or:
-  - DOMAIN,match:
-  - DOMAIN,asn:
-  - DOMAIN,match: 714
-  - DOMAIN,no_resolve: true
-  - DOMAIN,asn:
-  - DOMAIN,match: 6185
-  - DOMAIN,no_resolve: true
-  - DOMAIN,protocol:
-  - DOMAIN,match: QUIC
-  - DOMAIN,policy: REJECT-DROP
-  - DOMAIN,scriptings:
-  - DOMAIN,http_response:
-  - DOMAIN,name: 🌤 WeatherKit.api.v1.availability.response
-  - DOMAIN,env:
-  - DOMAIN,body_required: true
-  - DOMAIN,http_request:
-  - DOMAIN,name: 🌤 WeatherKit.api.v1.airQualityScale.request
-  - DOMAIN,env:
-  - DOMAIN,http_request:
-  - DOMAIN,name: 🌤 WeatherKit.api.v1.weatherAlerts.html.request
-  - DOMAIN,env:
-  - DOMAIN,http_request:
-  - DOMAIN,name: 🌤 WeatherKit.api.v1.weatherAlerts.api.request
-  - DOMAIN,env:
-  - DOMAIN,http_response:
-  - DOMAIN,name: 🌤 WeatherKit.api.v2.weather.response
-  - DOMAIN,env:
-  - DOMAIN,body_required: true
-  - DOMAIN,binary_body: true
-  - DOMAIN,mitm:
-  - DOMAIN,hostnames:
-  - DOMAIN,includes:
-  - DOMAIN,weatherkit.apple.com
+DOMAIN,name:  iRingo: 🌤 WeatherKit
+DOMAIN,description: |-
+DOMAIN,iOS 18 & macOS 15 & watchOS 11
+DOMAIN,1.解锁全部天气功能
+DOMAIN,2.修改空气质量数据
+DOMAIN,3.修改下一小时降水数据
+DOMAIN,4.修改天气数据
+DOMAIN,5.修改天气预警数据
+DOMAIN,compat_arguments:
+  DATASETS: AIRQUALITY,currentWeather
+DOMAIN,Weather.Provider: ColorfulClouds
+DOMAIN,WeatherAlerts.Provider: QWeatherWeb
+DOMAIN,NextHour.Provider: ColorfulClouds
+DOMAIN,AirQuality.Current.Pollutants.Provider: ColorfulClouds
+DOMAIN,AirQuality.Calculate.Algorithm: EU_EAQI
+DOMAIN,API.ColorfulClouds.Token: 
+DOMAIN,API.QWeather.Host: devapi.qweather.com
+DOMAIN,API.QWeather.Token: 
+DOMAIN,API.WAQI.Token: 
+DOMAIN,Storage: Argument
+DOMAIN,LogLevel: WARN
+DOMAIN,compat_arguments_desc: |
+DOMAIN,├ airQuality: 空气质量
+DOMAIN,├ currentWeather: 当前天气
+DOMAIN,├ forecastDaily: 每日预报
+DOMAIN,├ forecastHourly: 每小时预报
+DOMAIN,├ forecastNextHour: 未来一小时降水强度
+DOMAIN,└ weatherAlerts: 天气预警
+DOMAIN,选择需要解析并处理的数据集；未选择的数据槽始终保持原样透传，不作修改。
+DOMAIN,├ WeatherKit: WeatherKit（不替换）
+DOMAIN,├ ColorfulClouds: 彩云天气
+DOMAIN,└ QWeather: 和风天气
+DOMAIN,使用选定的数据源替换天气数据。
+DOMAIN,├ WeatherKit: WeatherKit（不修改）
+DOMAIN,├ QWeatherWeb: 和风天气网页
+DOMAIN,├ QWeather: 和风天气 API
+DOMAIN,└ ColorfulClouds: 彩云天气 API
+DOMAIN,使用选定的数据源处理天气预警数据。
+DOMAIN,├ WeatherKit: WeatherKit（不添加）
+DOMAIN,├ ColorfulClouds: 彩云天气
+DOMAIN,└ QWeather: 和风天气
+DOMAIN,使用选定的数据源填充未来一小时降水强度的数据。
+DOMAIN,├ ColorfulClouds: 彩云天气
+DOMAIN,└ QWeather: 和风天气
+DOMAIN,使用选定的数据源填补污染物数据。
+DOMAIN,├ None: 不转换
+DOMAIN,├ UBA: 德国LQI（FB001846）
+IP-CIDR,├ EU_EAQI: 欧盟EAQI（ETC HE Report 2024/17）,no-resolve
+DOMAIN,├ WAQI_InstantCast_US: 美标InstantCast（EPA-454/B-24-002）
+DOMAIN,├ WAQI_InstantCast_CN: 国标InstantCast（HJ 633—2012）
+DOMAIN,├ WAQI_InstantCast_CN_25_DRAFT: 国标InstantCast（HJ 633 2025年草案）
+DOMAIN,├ CA_AQHI: 加拿大AQHI（10.17269/s41997-019-00237-w）
+DOMAIN,├ HK_AQHI: 香港AQHI
+DOMAIN,├ AQHI_Multi_CN: AQHI-Multi（中国）
+DOMAIN,├ AQHI_Multi_CN_HK: AQHI-Multi（中国+香港）
+DOMAIN,├ CN_DEATH_AQHI: 中国（致死风险）AQHI
+DOMAIN,└ CN_DEATH_HK_AQHI: 中国（致死风险）+香港AQHI
+DOMAIN,使用内置算法，通过污染物数据本地计算空气指数。InstantCast源自于WAQI，美标版本使用了WAQI的臭氧标准。
+DOMAIN,彩云天气 API 令牌
+DOMAIN,和风天气 API 使用的主机名
+DOMAIN,和风天气 API 令牌
+DOMAIN,WAQI API 令牌，填写此字段将自动使用WAQI高级API
+DOMAIN,├ Argument: 优先使用插件选项与模块参数等，由 $argument 传入的配置，$argument 不包含的设置项由 PersistentStore (BoxJs) 提供
+DOMAIN,├ PersistentStore: 只使用来自 BoxJs 等，由 $persistentStore 提供的配置
+DOMAIN,└ database: 只使用由作者的 database.mjs 文件提供的默认配置，其他任何自定义配置不再起作用
+DOMAIN,选择要使用的配置类型。未设置此选项或不通过此选项的旧版本的配置顺序依旧是 $persistentStore (BoxJs) > $argument > database。
+DOMAIN,├ OFF: 关闭
+DOMAIN,├ ERROR: ❌ 错误
+DOMAIN,├ WARN: ⚠️ 警告
+DOMAIN,├ INFO: ℹ️ 信息
+DOMAIN,├ DEBUG: 🅱️ 调试
+DOMAIN,└ ALL: 全部
+DOMAIN,选择脚本日志的输出等级，低于所选等级的日志将全部输出。
+DOMAIN,open_url: http://boxjs.com/#/app/iRingo.WeatherKit
+DOMAIN,homepage: https://NSRingo.github.io/guide/Weather/weather-kit
+DOMAIN,icon: https://developer.apple.com/assets/elements/icons/weatherkit/weatherkit-128x128.png
+DOMAIN,rules:
+DOMAIN,domain:
+DOMAIN,match: weather-analytics-events.apple.com
+DOMAIN,policy: REJECT-DROP
+DOMAIN,domain_suffix:
+DOMAIN,match: tthr.apple.com
+DOMAIN,policy: REJECT-DROP
+DOMAIN,domain:
+DOMAIN,match: tether.edge.apple
+DOMAIN,policy: REJECT-DROP
+DOMAIN,and:
+DOMAIN,match:
+DOMAIN,or:
+DOMAIN,match:
+DOMAIN,asn:
+DOMAIN,match: 714
+DOMAIN,no_resolve: true
+DOMAIN,asn:
+DOMAIN,match: 6185
+DOMAIN,no_resolve: true
+DOMAIN,protocol:
+DOMAIN,match: QUIC
+DOMAIN,policy: REJECT-DROP
+DOMAIN,scriptings:
+DOMAIN,http_response:
+DOMAIN,name: 🌤 WeatherKit.api.v1.availability.response
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,http_request:
+DOMAIN,name: 🌤 WeatherKit.api.v1.airQualityScale.request
+DOMAIN,env:
+DOMAIN,http_request:
+DOMAIN,name: 🌤 WeatherKit.api.v1.weatherAlerts.html.request
+DOMAIN,env:
+DOMAIN,http_request:
+DOMAIN,name: 🌤 WeatherKit.api.v1.weatherAlerts.api.request
+DOMAIN,env:
+DOMAIN,http_response:
+DOMAIN,name: 🌤 WeatherKit.api.v2.weather.response
+DOMAIN,env:
+DOMAIN,body_required: true
+DOMAIN,binary_body: true
+DOMAIN,mitm:
+DOMAIN,hostnames:
+DOMAIN,includes:
+DOMAIN,weatherkit.apple.com
