@@ -5257,7 +5257,7 @@ http-response ^https?:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageI
 
 http-response ^https?:\/\/47\.100\.65\.202\/api\/mobile\/index\.php\?version=\d&mobile=yes&module=basicdata&type=forumlist script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/Script-Hub-Org_replace-body.js, requires-body=true, timeout=30, tag=replaceBody, argument=adv-%3Efmz200
 
-http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_fly.js, requires-body=true, timeout=60, tag=fly
+http-response ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_fly_0f84fa.js, requires-body=true, timeout=60, tag=fly
 
 http-response ^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/zirawell_flyert.js, requires-body=true, timeout=60, tag=flyert
 
@@ -5344,7 +5344,7 @@ http-response ^https:\/\/lawsonapi\.yorentown\.com\/portal\/app\/globalLaunch\/l
 
 http-response ^https?:\/\/mapi\.mafengwo\.cn\/user\/profile\/get_(list|profile) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/zirawell_mafengwo.js, requires-body=true, timeout=60, tag=mafengwo
 
-http-response ^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1& script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/zirawell_mdb.js, requires-body=true, timeout=60, tag=mdb
+http-response ^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1& script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/zirawell_mdb_44e513.js, requires-body=true, timeout=60, tag=mdb
 
 # 帖子末尾 - 看过此贴的用户也在看
 http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_maimai_ads.js, requires-body=true, timeout=60, tag=maimai_ads
@@ -5654,7 +5654,7 @@ http-response ^https?:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_co
 # 开屏广告
 http-response ^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_cnftp.js, requires-body=true, timeout=60, tag=cnftp
 
-http-response ^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_yx.js, requires-body=true, timeout=60, tag=yx
+http-response ^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/fmz200_yx_4da07d.js, requires-body=true, timeout=60, tag=yx
 
 # hostname = rr*.googlevideo.com, youtubei.googleapis.com
 http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/rewrite/Maasea_youtube.response.js, requires-body=true, binary-body-mode=true, timeout=60, tag=youtube.response

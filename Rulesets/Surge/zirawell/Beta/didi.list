@@ -4,8 +4,9 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,adtrack.xiaojukeji.com
-IP-CIDR,123.207.209.39/32,no-resolve
-IP-CIDR,123.207.209.60/32,no-resolve
-IP-CIDR,139.199.240.12/32,no-resolve
-IP-CIDR,139.199.240.15/32,no-resolve
+payload:
+  - DOMAIN,adtrack.xiaojukeji.com
+  - IP-CIDR,123.207.209.39/32,no-resolve
+  - IP-CIDR,123.207.209.60/32,no-resolve
+  - IP-CIDR,139.199.240.12/32,no-resolve
+  - IP-CIDR,139.199.240.15/32,no-resolve

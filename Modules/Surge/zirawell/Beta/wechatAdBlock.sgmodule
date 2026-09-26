@@ -417,7 +417,7 @@ cotti = type=http-request, pattern=^https?:\/\/gateway\.cotticoffee\.com\/cotti-
 
 wechatAppletGeneral = type=http-response, pattern=^https?:\/\/(?>webapi|miniapp)\.qmai\.cn\/web\/catering([0-9]-apiserver)?\/advertising\/ad\/advertiseInfo, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/wechatAdBlock/zirawell_qmai.js, requires-body=true, max-size=0
 
-wjx = type=http-response, pattern=^https?:\/\/kaoshi\.wjx\.top\/wjx\/join\/completemobile, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/wechatAdBlock/zirawell_wjx.js, requires-body=true, max-size=0
+wjx = type=http-response, pattern=^https?:\/\/kaoshi\.wjx\.top\/wjx\/join\/completemobile, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/wechatAdBlock/zirawell_wjx_ec2015.js, requires-body=true, max-size=0
 
 yunda = type=http-request, pattern=^https?:\/\/mbpxapi\.yundasys\.com(:\d+)?\/gateway\/interface, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/wechatAdBlock/zirawell_yunda.js, requires-body=true, max-size=0
 

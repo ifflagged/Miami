@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,advertise.baicizhan.com
-DOMAIN,advertise.baicizhan.org
+payload:
+  - DOMAIN,advertise.baicizhan.com
+  - DOMAIN,advertise.baicizhan.org

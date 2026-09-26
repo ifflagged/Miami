@@ -4,7 +4,8 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,cdninstagram.com
-DOMAIN-SUFFIX,instagr.am
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-KEYWORD,instagram
+payload:
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,instagr.am
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-KEYWORD,instagram

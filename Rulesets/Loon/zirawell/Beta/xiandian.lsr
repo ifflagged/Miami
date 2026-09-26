@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,smarket.dian.so
-DOMAIN,file.dian.so
+payload:
+  - DOMAIN,smarket.dian.so
+  - DOMAIN,file.dian.so

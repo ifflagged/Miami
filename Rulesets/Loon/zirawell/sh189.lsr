@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,bigdata-behaviordata.189.cn
+payload:
+  - DOMAIN,bigdata-behaviordata.189.cn

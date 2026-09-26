@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,ad.duoduo.link
+payload:
+  - DOMAIN-SUFFIX,ad.duoduo.link

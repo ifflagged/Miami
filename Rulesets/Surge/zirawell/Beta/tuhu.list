@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,analytics.tuhu.com
-DOMAIN,ta.tuhu.cn
+payload:
+  - DOMAIN,analytics.tuhu.com
+  - DOMAIN,ta.tuhu.cn

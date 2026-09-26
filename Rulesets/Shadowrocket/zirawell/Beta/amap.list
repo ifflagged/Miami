@@ -4,12 +4,13 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,amap-aos-info-nogw.amap.com
-DOMAIN,free-aos-cdn-image.amap.com
-DOMAIN,apiinit.amap.com
-DOMAIN,icloud-amap.com
-DOMAIN,optimus-ads.amap.com
-DOMAIN-SUFFIX,adiu.amap.com
-DOMAIN-SUFFIX,page.amap.com
-DOMAIN-KEYWORD,logs.amap.com
-DOMAIN-KEYWORD,ads.amap.com
+payload:
+  - DOMAIN,amap-aos-info-nogw.amap.com
+  - DOMAIN,free-aos-cdn-image.amap.com
+  - DOMAIN,apiinit.amap.com
+  - DOMAIN,icloud-amap.com
+  - DOMAIN,optimus-ads.amap.com
+  - DOMAIN-SUFFIX,adiu.amap.com
+  - DOMAIN-SUFFIX,page.amap.com
+  - DOMAIN-KEYWORD,logs.amap.com
+  - DOMAIN-KEYWORD,ads.amap.com

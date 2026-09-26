@@ -6407,7 +6407,7 @@ blued登录后个人界面广告 = type=http-response, pattern=^https?:\/\/socia
 动画疯 = type=http-response, pattern=^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d/(token|m3u8).php\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/NobyDa_BahamutAnimeAds.js, requires-body=true, timeout=60
 
 # hostname = api.flydigi.com
-飞客茶馆 = type=http-response, pattern=^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_fly.js, requires-body=true, timeout=60
+飞客茶馆 = type=http-response, pattern=^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_fly_0f84fa.js, requires-body=true, timeout=60
 
 飞客茶馆 = type=http-response, pattern=^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_flyert.js, requires-body=true, timeout=60
 
@@ -6497,7 +6497,7 @@ keep = type=http-response, pattern=^https?:\/\/api\.gotokeep\.com\/sportpage\/sp
 马蜂窝 = type=http-response, pattern=^https?:\/\/mapi\.mafengwo\.cn\/user\/profile\/get_(list|profile), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_mafengwo.js, requires-body=true, timeout=60
 
 # hostname = creditcardapp.bankcomm.cn, creditcardapp.bankcomm.com, creditcard.bankcomm.cn, creditcard.bankcomm.com
-mdb = type=http-response, pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_mdb.js, requires-body=true, timeout=60
+mdb = type=http-response, pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_mdb_44e513.js, requires-body=true, timeout=60
 
 # 帖子末尾 看过此贴的用户也在看
 脉脉帖子末尾 = type=http-response, pattern=^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_maimai_ads.js, requires-body=true, timeout=60
@@ -6781,7 +6781,7 @@ UnblockURLinWeChat-解除微信链接限制 = type=http-response, pattern=^https
 优酷开屏广告 = type=http-response, pattern=^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_cnftp.js, requires-body=true, timeout=60
 
 # hostname = api.ulife.group
-悠洗APP = type=http-response, pattern=^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_yx.js, requires-body=true, timeout=60
+悠洗APP = type=http-response, pattern=^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_yx_4da07d.js, requires-body=true, timeout=60
 
 # 响应体
 YouTube响应体 = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/Maasea_youtube.response.js, requires-body=true, binary-body-mode=true, timeout=60

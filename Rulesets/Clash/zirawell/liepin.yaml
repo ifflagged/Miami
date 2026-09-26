@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,apmplus.volces.com
+payload:
+  - DOMAIN,apmplus.volces.com
