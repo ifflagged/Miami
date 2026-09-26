@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,pmbanalysis.bosc.cn
+payload:
+  - DOMAIN-SUFFIX,pmbanalysis.bosc.cn

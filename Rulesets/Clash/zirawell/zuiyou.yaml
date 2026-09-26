@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,adapi.izuiyou.com
+payload:
+  - DOMAIN,adapi.izuiyou.com

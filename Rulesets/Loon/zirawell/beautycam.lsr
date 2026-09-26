@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,aaid.uyunad.com
-DOMAIN,adui.tg.meitu.com
+payload:
+  - DOMAIN,aaid.uyunad.com
+  - DOMAIN,adui.tg.meitu.com

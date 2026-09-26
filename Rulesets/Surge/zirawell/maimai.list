@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,track.mm.taou.com
+payload:
+  - DOMAIN-SUFFIX,track.mm.taou.com
