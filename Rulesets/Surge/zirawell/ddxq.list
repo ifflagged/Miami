@@ -4,6 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,trackercollect.ddxq.mobi
-DOMAIN,ddfs-public.ddimg.mobi
-DOMAIN,rttrack.ddxq.mobi
+payload:
+  - DOMAIN,trackercollect.ddxq.mobi
+  - DOMAIN,ddfs-public.ddimg.mobi
+  - DOMAIN,rttrack.ddxq.mobi

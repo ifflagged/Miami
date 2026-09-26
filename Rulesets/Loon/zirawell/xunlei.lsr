@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,adsp.xunlei.com
-DOMAIN,etl.xlmc.sandai.net
+payload:
+  - DOMAIN,adsp.xunlei.com
+  - DOMAIN,etl.xlmc.sandai.net

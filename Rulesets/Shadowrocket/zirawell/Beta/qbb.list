@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,apilog.qbb6.com
+payload:
+  - DOMAIN-SUFFIX,apilog.qbb6.com

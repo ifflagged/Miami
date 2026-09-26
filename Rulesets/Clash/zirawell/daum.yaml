@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,track.tiara.daum.net
-  - DOMAIN,track.tiara.kakao.com
+DOMAIN,track.tiara.daum.net
+DOMAIN,track.tiara.kakao.com
