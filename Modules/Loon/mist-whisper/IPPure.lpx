@@ -10,4 +10,4 @@
 #!date=2025-12-29 15:22:00
 
 [Script]
-generic script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/IPPure/resource.wuyra.com_IPPure2.js, timeout=15, tag=节点纯净度检测,img-url=globe.asia.australia.system
+generic script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/IPPure/resource_IPPure2.js, timeout=15, tag=节点纯净度检测,img-url=globe.asia.australia.system

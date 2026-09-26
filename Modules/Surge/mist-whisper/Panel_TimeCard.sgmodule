@@ -8,4 +8,4 @@
 Timecard = script-name=Timecard,update-interval=3600
 
 [Script]
-Timecard = type=generic,timeout=10,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Panel_TimeCard/resource.wuyra.com_TimeCard.js
+Timecard = type=generic,timeout=10,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Panel_TimeCard/resource_TimeCard.js

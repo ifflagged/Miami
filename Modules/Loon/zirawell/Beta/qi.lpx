@@ -12,7 +12,7 @@
 #!date=2025-07-08
 
 [Rewrite]
-^https?:\/\/apps\.teamair\.cn\/app\/version mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/qi/zirawell_qi.json"
+^https?:\/\/apps\.teamair\.cn\/app\/version mock-response-body data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/qi/zirawell_qi_e93687.json"
 
 [MITM]
 hostname = apps.teamair.cn

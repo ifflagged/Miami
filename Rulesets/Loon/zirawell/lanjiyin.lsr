@@ -4,5 +4,4 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-KEYWORD,medicine.lanjiyin.com.cn
+DOMAIN-KEYWORD,medicine.lanjiyin.com.cn

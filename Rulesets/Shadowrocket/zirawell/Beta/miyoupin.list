@@ -4,5 +4,4 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,stat.youpin.mi.com
+DOMAIN,stat.youpin.mi.com

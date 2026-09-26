@@ -7,9 +7,9 @@
 #!category=🍟 Fries
 
 [Script]
-http-response ^https?:\/\/disney\.api\.edge\.bamgrid\.com\/(session|(graph\/)?v1\/(public|device)\/graphql) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Disney+/VirgilClyne_Disney%2B.js, requires-body=1, tag=🍟 Disney+ Response
-http-request ^https?:\/\/disney\.content\.edge\.bamgrid\.com\/svc script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Disney+/VirgilClyne_Disney%2B.js, requires-body=0, tag=🍟 Disney+ Request
-# http-response ^https?:\/\/disney\.content\.edge\.bamgrid\.com\/(svc\/content\/DmcVideo) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Disney+/VirgilClyne_Disney%2B.js, requires-body=1, tag=🍟 Disney+ Response
+http-response ^https?:\/\/disney\.api\.edge\.bamgrid\.com\/(session|(graph\/)?v1\/(public|device)\/graphql) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Disney+/VirgilClyne_Disney_2B.js, requires-body=1, tag=🍟 Disney+ Response
+http-request ^https?:\/\/disney\.content\.edge\.bamgrid\.com\/svc script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Disney+/VirgilClyne_Disney_2B.js, requires-body=0, tag=🍟 Disney+ Request
+# http-response ^https?:\/\/disney\.content\.edge\.bamgrid\.com\/(svc\/content\/DmcVideo) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/VirgilClyne/Disney+/VirgilClyne_Disney_2B.js, requires-body=1, tag=🍟 Disney+ Response
 
 [MITM]
 hostname = disney.api.edge.bamgrid.com, disney.content.edge.bamgrid.com

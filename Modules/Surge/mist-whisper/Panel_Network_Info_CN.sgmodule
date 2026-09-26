@@ -9,7 +9,7 @@
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 
 [Script]
-net-info-panel.js=script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Panel_Network_Info_CN/resource.wuyra.com_Net-info-panel_CN.js,type=generic,timeout=30
+net-info-panel.js=script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Panel_Network_Info_CN/resource_Net-info-panel_CN.js,type=generic,timeout=30
 
 [Host]
 ip-api.com = 208.95.112.1

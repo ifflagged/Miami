@@ -18,7 +18,7 @@
 ^https?:\/\/dfg\.bosc\.cn(:\d+)?\/public\/sdkConfig\/get data-type=json data="{}" status-code=200
 
 [Script]
-bosclife = type=http-response,pattern=^https?:\/\/mgs1\.bosc\.cn(:\d+)?\/mgw,requires-body=0,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/bosclife/zirawell_mgw.js
+bosclife = type=http-response,pattern=^https?:\/\/mgs1\.bosc\.cn(:\d+)?\/mgw,requires-body=0,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/bosclife/zirawell_mgw_071f18.js
 
 [MITM]
 hostname= %APPEND% mpaas1.bosc.cn, dfg.bosc.cn, gdlf.bosc.cn, mgs1.bosc.cn

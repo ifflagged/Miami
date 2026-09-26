@@ -36,7 +36,7 @@
 ^https:\/\/(?:biliverse\.github\.io|app\.bilibili\.com)\/api\/Enhanced(?:\?.*)?$ data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/Biliverse/Biliverse.Enhanced/Biliverse_Biliverse.Enhanced.PreferencePanes.json" header="Content-Type:application/json; charset=utf-8|Cache-Control:no-store|X-PreferencePanes-Version:0.6.0"
 
 [Script]
-PreferencePanes.API = type=http-request, pattern=^https:\/\/(?:biliverse\.github\.io|app\.bilibili\.com)\/api\/(?:get|set|delete)(?:\?.*)?$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/Biliverse/Biliverse.Enhanced/NSNanoCat_api.js, requires-body=true, max-size=65536
+PreferencePanes.API = type=http-request, pattern=^https:\/\/(?:biliverse\.github\.io|app\.bilibili\.com)\/api\/(?:get|set|delete)(?:\?.*)?$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/Biliverse/Biliverse.Enhanced/NSNanoCat_api_f2db8a.js, requires-body=true, max-size=65536
 
 📺 Biliverse.Enhanced.x.resource.show.tab.v2 = type=http-response, pattern=^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/resource\/show\/tab\/v2\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/Biliverse/Biliverse.Enhanced/Biliverse_response.bundle.js, requires-body=true, argument=Home.Switch="{{{Home.Switch}}}"&Home.Tab="{{{Home.Tab}}}"&Home.Tab_default="{{{Home.Tab_default}}}"&Home.Top_left="{{{Home.Top_left}}}"&Home.Top="{{{Home.Top}}}"&Home.Top_more="{{{Home.Top_more}}}"&Bottom="{{{Bottom}}}"&Region.Switch="{{{Region.Switch}}}"&Mine.Switch="{{{Mine.Switch}}}"&Mine.iPad.Switch="{{{Mine.iPad.Switch}}}"&Storage="{{{Storage}}}"&LogLevel="{{{LogLevel}}}"
 

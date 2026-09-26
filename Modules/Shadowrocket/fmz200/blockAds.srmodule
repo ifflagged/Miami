@@ -8496,7 +8496,7 @@ blued登录后个人界面广告 = type=http-response, pattern=^https?:\/\/socia
 # >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
 # > 飞客茶馆
 # hostname = api.flydigi.com
-飞客茶馆 = type=http-response, pattern=^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_fly.js, requires-body=true, timeout=60
+飞客茶馆 = type=http-response, pattern=^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_fly_0f84fa.js, requires-body=true, timeout=60
 
 飞客茶馆 = type=http-response, pattern=^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_flyert.js, requires-body=true, timeout=60
 
@@ -8619,7 +8619,7 @@ keep = type=http-response, pattern=^https?:\/\/api\.gotokeep\.com\/sportpage\/sp
 
 # > 买单吧
 # hostname = creditcardapp.bankcomm.cn, creditcardapp.bankcomm.com, creditcard.bankcomm.cn, creditcard.bankcomm.com
-mdb = type=http-response, pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_mdb.js, requires-body=true, timeout=60
+mdb = type=http-response, pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/zirawell_mdb_44e513.js, requires-body=true, timeout=60
 
 # > 脉脉
 # hostname = open.taou.com, h3.open.taou.com
@@ -8981,7 +8981,7 @@ YouTube响应体 = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.
 
 # > 悠洗APP
 # hostname = api.ulife.group
-悠洗APP = type=http-response, pattern=^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_yx.js, requires-body=true, timeout=60
+悠洗APP = type=http-response, pattern=^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_yx_4da07d.js, requires-body=true, timeout=60
 
 
 # >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<

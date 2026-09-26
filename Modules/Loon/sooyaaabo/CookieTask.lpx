@@ -21,7 +21,7 @@
 # https://raw.githubusercontent.com/ClydeTime/BiliBili/master/modules/BiliBiliDailyBonus.plugin
 # 2026-06-26
 # https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps.cookie.js
-# https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps.js
+# https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps_92c36b.js
 
 [Argument]
 # 微信支付有优惠
@@ -56,8 +56,8 @@ response if ${url} ~= /https:\/\/payapp\.weixin\.qq\.com\/(coupon-center-user\/h
 cron ${Cron-WeChatPay} then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/FoKit_wechat_pay_coupon.js") with enable=${Task-WeChatPay}, tag="[微信支付有优惠]领金币Task"
 
 # 微博 - api.weibo.cn
-request if ${url} ~= /^https?:\/\/api\.weibo\.cn\/\d\/users\/show/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/loon.103516.xyz_WeiboCookieTask.js") with enable=${Cookie-Weibo}, tag="[微博]每日签到Cookie"
-cron ${Cron-Weibo} then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/loon.103516.xyz_WeiboCookieTask.js") with enable=${Task-Weibo}, tag="[微博]每日签到Task"
+request if ${url} ~= /^https?:\/\/api\.weibo\.cn\/\d\/users\/show/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/loon_WeiboCookieTask.js") with enable=${Cookie-Weibo}, tag="[微博]每日签到Cookie"
+cron ${Cron-Weibo} then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/loon_WeiboCookieTask.js") with enable=${Task-Weibo}, tag="[微博]每日签到Task"
 
 # 微博超话 - api.weibo.cn
 request if ${url} ~= /^https:\/\/api\.weibo\.cn\/2\/(statuses\/container_timeline_topicsub|page\/button)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_weibotalk.cookie.js") with enable=${Cookie-WeiboTalk}, tag="[微博超话]每日签到Cookie", requires_body=true
@@ -70,7 +70,7 @@ cron ${Cron-Bilibili} then script("https://github.com/ifflagged/Miami/raw/main/M
 
 # WPS - personal-act.wps.cn
 request if ${url} ~= /^https:\/\/personal-act\.wps\.cn\/activity-rubik\/activity\/page_info/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps.cookie.js") with enable=${Cookie-WPS}, tag="[WPS]每日签到Cookie"
-cron ${Cron-WPS} then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps.js") with enable=${Task-WPS}, tag="[WPS]每日签到Task"
+cron ${Cron-WPS} then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/CookieTask/MaYIHEI_wps_92c36b.js") with enable=${Task-WPS}, tag="[WPS]每日签到Task"
 
 [MitM]
 hostname = payapp.weixin.qq.com, api.weibo.cn, cm.bilibili.com, m.bilibili.com, personal-act.wps.cn

@@ -19,7 +19,7 @@ DOMAIN, firefly.abchina.com.cn, REJECT, extended-matching, pre-matching
 ^https?:\/\/mall\.abchina\.com\.cn\/pips\/EbizccmClientServer\/PIPSPopupAdvertisement data-type=json data="{}" status-code=200
 
 [Script]
-abc = type=http-response,pattern=^https?:\/\/mobilepaas\.abchina\.com\.cn(:\d+)?\/mgw\.htm$,requires-body=0,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/abc/zirawell_mgw.js
+abc = type=http-response,pattern=^https?:\/\/mobilepaas\.abchina\.com\.cn(:\d+)?\/mgw\.htm$,requires-body=0,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/abc/zirawell_mgw_071f18.js
 
 [MITM]
 hostname= %APPEND% mall.abchina.com.cn, mobilepaas.abchina.com.cn
