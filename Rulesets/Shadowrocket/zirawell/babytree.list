@@ -4,12 +4,13 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,m.meitun.com
-DOMAIN,adx.babytree.com
-DOMAIN,adx-backend.babytree.com
-DOMAIN,ads.babytree.com
-DOMAIN,bbtads.babytree.com
-DOMAIN,tracking.babytree.com
-DOMAIN,mobads-pre-config.cdn.bcebos.com
-DOMAIN,titan.babytree.com
-DOMAIN,titan01.babytree.com
+payload:
+  - DOMAIN,m.meitun.com
+  - DOMAIN,adx.babytree.com
+  - DOMAIN,adx-backend.babytree.com
+  - DOMAIN,ads.babytree.com
+  - DOMAIN,bbtads.babytree.com
+  - DOMAIN,tracking.babytree.com
+  - DOMAIN,mobads-pre-config.cdn.bcebos.com
+  - DOMAIN,titan.babytree.com
+  - DOMAIN,titan01.babytree.com

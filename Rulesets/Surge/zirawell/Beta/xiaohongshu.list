@@ -4,11 +4,12 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ads-img-qc.xhscdn.com
-DOMAIN,ads-video-al.xhscdn.com
-DOMAIN,ads-video-qc.xhscdn.com
-DOMAIN,t-ads.xiaohongshu.com
-DOMAIN,ads-vp5.xhscdn.com
-DOMAIN,apm-native.xiaohongshu.com
-DOMAIN,spider-tracker.xiaohongshu.com
-DOMAIN,trace.rtbasia.com
+payload:
+  - DOMAIN,ads-img-qc.xhscdn.com
+  - DOMAIN,ads-video-al.xhscdn.com
+  - DOMAIN,ads-video-qc.xhscdn.com
+  - DOMAIN,t-ads.xiaohongshu.com
+  - DOMAIN,ads-vp5.xhscdn.com
+  - DOMAIN,apm-native.xiaohongshu.com
+  - DOMAIN,spider-tracker.xiaohongshu.com
+  - DOMAIN,trace.rtbasia.com

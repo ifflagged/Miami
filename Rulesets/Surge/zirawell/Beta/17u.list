@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,vstlog.17usoft.com
+payload:
+  - DOMAIN,vstlog.17usoft.com

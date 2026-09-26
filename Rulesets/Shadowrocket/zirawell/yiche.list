@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,adx.yiche.com
-DOMAIN,log.ycapp.yiche.com
+payload:
+  - DOMAIN,adx.yiche.com
+  - DOMAIN,log.ycapp.yiche.com

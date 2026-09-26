@@ -4,6 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,acdn.adnxs.com
-DOMAIN,mediation.adnxs.com
-DOMAIN,sin3-ib.adnxs.com
+payload:
+  - DOMAIN,acdn.adnxs.com
+  - DOMAIN,mediation.adnxs.com
+  - DOMAIN,sin3-ib.adnxs.com

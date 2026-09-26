@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ad.ysepay.com
+payload:
+  - DOMAIN,ad.ysepay.com

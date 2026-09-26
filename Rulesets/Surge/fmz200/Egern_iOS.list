@@ -4,449 +4,450 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ipv6: true
-DOMAIN,vif_only: true
-DOMAIN,block_quic: true
-DOMAIN,hijack_dns:
-DOMAIN-SUFFIX,:53
-DOMAIN,geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
-DOMAIN,asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
-DOMAIN,proxy_latency_test_url: http://www.google.com/generate_204
-DOMAIN,direct_latency_test_url: http://taobao.com/
-DOMAIN,dns:
-DOMAIN,bootstrap:
-DOMAIN,223.5.5.5
-DOMAIN,119.29.29.29
-DOMAIN,upstreams:
-DOMAIN,SecureDNS:
-DOMAIN,https://doh.pub/dns-query
-DOMAIN,https://dns.alidns.com/dns-query
-DOMAIN,forward:
-DOMAIN,domain_wildcard:
-DOMAIN,match: *
-DOMAIN,value: SecureDNS
-DOMAIN,hosts:
-DOMAIN,iosapps.itunes.apple.com:
-DOMAIN,iosapps.itunes.apple.com.download.ks-cdn.com
-DOMAIN,public_ip_lookup_url: https://ifconfig.me/ip
-DOMAIN,bypass_tunnel_proxy:
-IP-CIDR,192.168.0.0/16,no-resolve
-IP-CIDR,10.0.0.0/8,no-resolve
-IP-CIDR,172.16.0.0/12,no-resolve
-DOMAIN,localhost
-DOMAIN-SUFFIX,local
-DOMAIN,e.crashlynatics.com
-DOMAIN,real_ip_domains:
-DOMAIN-SUFFIX,battle.net
-DOMAIN-SUFFIX,blzstatic.cn
-DOMAIN-SUFFIX,battlenet.com
-DOMAIN-SUFFIX,battlenet.com.cn
-DOMAIN-SUFFIX,xboxlive.com
-DOMAIN,xbox.*.microsoft.com
-DOMAIN-SUFFIX,stun.playstation.net
-DOMAIN-SUFFIX,srv.nintendo.net
-DOMAIN-SUFFIX,msftncsi.com
-DOMAIN-SUFFIX,msftconnecttest.com
-DOMAIN,msftncsi.com
-DOMAIN,msftconnecttest.com
-DOMAIN,policy_groups:
-DOMAIN,select:
-DOMAIN,name: 大陆网址
-DOMAIN,policies:
-DOMAIN,DIRECT
-DOMAIN,美国节点
-DOMAIN,狮城节点
-DOMAIN,香港节点
-DOMAIN,日本节点
-DOMAIN,台湾节点
-DOMAIN,韩国节点
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/CN_02.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 兜底策略
-DOMAIN,policies:
-DOMAIN,香港节点
-DOMAIN,日本节点
-DOMAIN,美国节点
-DOMAIN,狮城节点
-DOMAIN,台湾节点
-DOMAIN,DIRECT
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Egern_00.png
-DOMAIN,hidden: false
-DOMAIN,auto_test:
-DOMAIN,name: 代理节点
-DOMAIN,policies:
-DOMAIN,我的机场
-DOMAIN,flatten: true
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Proxy.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 电报消息
-DOMAIN,policies:
-DOMAIN,美国节点
-DOMAIN,狮城节点
-DOMAIN,香港节点
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Telegram_01.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 微信消息
-DOMAIN,policies:
-DOMAIN,DIRECT
-DOMAIN,香港节点
-DOMAIN,台湾节点
-DOMAIN,狮城节点
-DOMAIN,美国节点
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/wechat.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 微博服务
-DOMAIN,policies:
-DOMAIN,香港节点
-DOMAIN,台湾节点
-DOMAIN,日本节点
-DOMAIN,狮城节点
-DOMAIN,韩国节点
-DOMAIN,美国节点
-DOMAIN,DIRECT
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Weibo-01.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 大陆抖音
-DOMAIN,policies:
-DOMAIN,台湾节点
-DOMAIN,日本节点
-DOMAIN,韩国节点
-DOMAIN,狮城节点
-DOMAIN,美国节点
-DOMAIN,DIRECT
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Tiktok_09.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 海外抖音
-DOMAIN,policies:
-DOMAIN,香港节点
-DOMAIN,台湾节点
-DOMAIN,日本节点
-DOMAIN,韩国节点
-DOMAIN,狮城节点
-DOMAIN,美国节点
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Tiktok_06.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 人工智能
-DOMAIN,policies:
-DOMAIN,美国节点
-DOMAIN,日本节点
-DOMAIN,台湾节点
-DOMAIN,韩国节点
-DOMAIN,狮城节点
-DOMAIN,香港节点
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT7.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 苹果服务
-DOMAIN,policies:
-DOMAIN,DIRECT
-DOMAIN,香港节点
-DOMAIN,狮城节点
-DOMAIN,美国节点
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Apple_02.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 谷歌服务
-DOMAIN,policies:
-DOMAIN,美国节点
-DOMAIN,香港节点
-DOMAIN,台湾节点
-DOMAIN,日本节点
-DOMAIN,韩国节点
-DOMAIN,狮城节点
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Google.png
-DOMAIN,hidden: false
-DOMAIN,select:
-DOMAIN,name: 油管视频
-DOMAIN,policies:
-DOMAIN,香港节点
-DOMAIN,台湾节点
-DOMAIN,日本节点
-DOMAIN,韩国节点
-DOMAIN,狮城节点
-DOMAIN,美国节点
-DOMAIN,flatten: false
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/YouTube_01.png
-DOMAIN,hidden: false
-DOMAIN,smart:
-DOMAIN,name: 香港节点
-DOMAIN,policies:
-DOMAIN,代理节点
-DOMAIN,flatten: true
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/HK_03.png
-DOMAIN,hidden: false
-DOMAIN,smart:
-DOMAIN,name: 台湾节点
-DOMAIN,policies:
-DOMAIN,代理节点
-DOMAIN,flatten: true
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/TW_02.png
-DOMAIN,hidden: false
-DOMAIN,smart:
-DOMAIN,name: 狮城节点
-DOMAIN,policies:
-DOMAIN,代理节点
-DOMAIN,flatten: true
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/SG_02.png
-DOMAIN,hidden: false
-DOMAIN,smart:
-DOMAIN,name: 美国节点
-DOMAIN,policies:
-DOMAIN,代理节点
-DOMAIN,flatten: true
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/US_02.png
-DOMAIN,hidden: false
-DOMAIN,smart:
-DOMAIN,name: 日本节点
-DOMAIN,policies:
-DOMAIN,代理节点
-DOMAIN,flatten: true
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/JP_02.png
-DOMAIN,hidden: false
-DOMAIN,smart:
-DOMAIN,name: 韩国节点
-DOMAIN,policies:
-DOMAIN,代理节点
-DOMAIN,flatten: true
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/KR_02.png
-DOMAIN,hidden: false
-DOMAIN,external:
-DOMAIN,name: 我的机场
-DOMAIN,type: auto_test
-DOMAIN,urls:
-DOMAIN,https://sub.store/download/local
-DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/SubStore.png
-DOMAIN,hidden: false
-DOMAIN,rules:
-DOMAIN,rule_set:
-DOMAIN,name: 腾讯视频去广告@奶思
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/TencentVideo.list
-DOMAIN,policy: REJECT
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: 广告拦截合集@奶思
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/rejectAd.list
-DOMAIN,policy: REJECT
-DOMAIN,disabled: false
-DOMAIN,domain_suffix:
-DOMAIN,match: boxjs.com
-DOMAIN,policy: 兜底策略
-DOMAIN,disabled: false
-DOMAIN,domain_suffix:
-DOMAIN,match: boxjs.net
-DOMAIN,policy: 兜底策略
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: AI分流合集@奶思
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/AI.list
-DOMAIN,policy: 人工智能
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: 抖音IP@奶思
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Douyin.list
-DOMAIN,policy: 大陆抖音
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: 小红书IP@奶思
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/RedBook.list
-DOMAIN,policy: 狮城节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: 快手IP@奶思
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/KuaiShou.list
-DOMAIN,policy: 狮城节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/WeChat/WeChat.list
-DOMAIN,policy: 微信消息
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Weibo/Weibo.list
-DOMAIN,policy: 微博服务
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/BiliBili/BiliBili.list
-DOMAIN,policy: 香港节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Soul.list
-DOMAIN,policy: 台湾节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/TikTok/TikTok.list
-DOMAIN,policy: 海外抖音
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Telegram/Telegram.list
-DOMAIN,policy: 电报消息
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/TestFlight/TestFlight.list
-DOMAIN,policy: 苹果服务
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: Apple合集
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/AppleAll.list
-DOMAIN,policy: 苹果服务
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Spotify/Spotify.list
-DOMAIN,policy: 狮城节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: Twitter
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Twitter.list
-DOMAIN,policy: 美国节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/YouTube/YouTube.list
-DOMAIN,policy: 油管视频
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/GoogleVoice/GoogleVoice.list
-DOMAIN,policy: 美国节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Google/Google.list
-DOMAIN,policy: 谷歌服务
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: Facebook
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Facebook.list
-DOMAIN,policy: 香港节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Line/Line.list
-DOMAIN,policy: 香港节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/KakaoTalk/KakaoTalk.list
-DOMAIN,policy: 台湾节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Talkatone.list
-DOMAIN,policy: 美国自建
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: LinkedIn@bm7
-DOMAIN,match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/LinkedIn/LinkedIn.list
-DOMAIN,policy: 美国节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: GitHub@bm7
-DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/GitHub/GitHub.list
-DOMAIN,policy: 兜底策略
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: 欧易分流@奶思
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/OKX.list
-DOMAIN,policy: 美国节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: 币安分流@奶思
-DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Binance.list
-DOMAIN,policy: 美国节点
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: LAN@奶思
-DOMAIN,match: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/LAN.list
-DOMAIN,policy: 大陆网址
-DOMAIN,disabled: false
-DOMAIN,rule_set:
-DOMAIN,name: GeoIP_CN@奶思
-DOMAIN,match: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/GeoIP_CN.list
-DOMAIN,policy: 大陆网址
-DOMAIN,disabled: false
-DOMAIN,default:
-DOMAIN,policy: 兜底策略
-DOMAIN,url_rewrites:
-DOMAIN,location: https://www.google.com
-DOMAIN,status_code: 302
-DOMAIN,header_rewrites:
-DOMAIN,replace:
-DOMAIN,name: Accept-Language
-DOMAIN,value: en-us
-DOMAIN,type: request
-DOMAIN,disabled: true
-DOMAIN,body_rewrites:
-DOMAIN,request_jq:
-DOMAIN,disabled: true
-DOMAIN,scriptings:
-DOMAIN,schedule:
-DOMAIN,name: gist备份
-IP-CIDR,cron: 10 0/8 * * *,no-resolve
-DOMAIN,timeout: 60
-DOMAIN,disabled: true
-DOMAIN,schedule:
-DOMAIN,name: gist恢复
-    CRON: 10 0,22 * * *
-DOMAIN,timeout: 60
-DOMAIN,disabled: true
-DOMAIN,mitm:
-DOMAIN,ca_p12: egern.p12
-DOMAIN,ca_passphrase: egern
-DOMAIN,hostnames:
-DOMAIN,includes:
-DOMAIN,raw.githubusercontent.com
-DOMAIN,gist.githubusercontent.com
-DOMAIN,github.com
-DOMAIN,hostnames_disabled:
-DOMAIN,includes:
-DOMAIN,raw.githubusercontent.com
-DOMAIN,gist.githubusercontent.com
-DOMAIN,github.com
-DOMAIN,modules:
-DOMAIN,url: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/Surge/module/XWebAds.module
-DOMAIN,enabled: true
-DOMAIN,name: 微博去广告&净化
-DOMAIN,url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/weibo.module
-DOMAIN,enabled: true
-DOMAIN,name: 广告拦截&净化合集
-DOMAIN,url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/blockAds.module
-DOMAIN,enabled: true
-DOMAIN,url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/RedditTranslation.module
-DOMAIN,enabled: true
-DOMAIN,name: 获取cookie&token合集
-DOMAIN,url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/cookies.module
-DOMAIN,enabled: false
-DOMAIN,url: http://127.0.0.1:9100/file/_start_/https://raw.githubusercontent.com/Tartarus2014/Loon-Script/refs/heads/master/Plugin/skip-proxy.lpx/_end_/skip-proxy.sgmodule?type=loon-plugin&target=surge-module&del=true&jqEnabled=true
-DOMAIN,enabled: true
-DOMAIN,name: Script Hub: 重写 & 规则集转换
-DOMAIN,url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.egern.yaml
-DOMAIN,enabled: true
-DOMAIN,name: Sub-Store
-DOMAIN,url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/Egern.yaml
-DOMAIN,enabled: true
-DOMAIN,name: BoxJs
-DOMAIN,url: https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
-DOMAIN,enabled: true
-DOMAIN,name: 节假日信息
-DOMAIN,url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
-DOMAIN,enabled: true
-DOMAIN,url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Flush-DNS/Moore/Flush-DNS.sgmodule
-DOMAIN,enabled: false
-DOMAIN,url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.sgmodule
-DOMAIN,enabled: true
-DOMAIN,url: https://raw.githubusercontent.com/ptntp/self-rule/main/Panel/streamcheck.sgmodule
-DOMAIN,enabled: true
-DOMAIN,url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/IP-Check/Moore/IP-Check.sgmodule
-DOMAIN,enabled: true
-DOMAIN,url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Network-Info/Moore/Network-Info.sgmodule
-DOMAIN,enabled: true
+payload:
+  - DOMAIN,ipv6: true
+  - DOMAIN,vif_only: true
+  - DOMAIN,block_quic: true
+  - DOMAIN,hijack_dns:
+  - DOMAIN-SUFFIX,:53
+  - DOMAIN,geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+  - DOMAIN,asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
+  - DOMAIN,proxy_latency_test_url: http://www.google.com/generate_204
+  - DOMAIN,direct_latency_test_url: http://taobao.com/
+  - DOMAIN,dns:
+  - DOMAIN,bootstrap:
+  - DOMAIN,223.5.5.5
+  - DOMAIN,119.29.29.29
+  - DOMAIN,upstreams:
+  - DOMAIN,SecureDNS:
+  - DOMAIN,https://doh.pub/dns-query
+  - DOMAIN,https://dns.alidns.com/dns-query
+  - DOMAIN,forward:
+  - DOMAIN,domain_wildcard:
+  - DOMAIN,match: *
+  - DOMAIN,value: SecureDNS
+  - DOMAIN,hosts:
+  - DOMAIN,iosapps.itunes.apple.com:
+  - DOMAIN,iosapps.itunes.apple.com.download.ks-cdn.com
+  - DOMAIN,public_ip_lookup_url: https://ifconfig.me/ip
+  - DOMAIN,bypass_tunnel_proxy:
+  - IP-CIDR,192.168.0.0/16,no-resolve
+  - IP-CIDR,10.0.0.0/8,no-resolve
+  - IP-CIDR,172.16.0.0/12,no-resolve
+  - DOMAIN,localhost
+  - DOMAIN-SUFFIX,local
+  - DOMAIN,e.crashlynatics.com
+  - DOMAIN,real_ip_domains:
+  - DOMAIN-SUFFIX,battle.net
+  - DOMAIN-SUFFIX,blzstatic.cn
+  - DOMAIN-SUFFIX,battlenet.com
+  - DOMAIN-SUFFIX,battlenet.com.cn
+  - DOMAIN-SUFFIX,xboxlive.com
+  - DOMAIN,xbox.*.microsoft.com
+  - DOMAIN-SUFFIX,stun.playstation.net
+  - DOMAIN-SUFFIX,srv.nintendo.net
+  - DOMAIN-SUFFIX,msftncsi.com
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN,msftncsi.com
+  - DOMAIN,msftconnecttest.com
+  - DOMAIN,policy_groups:
+  - DOMAIN,select:
+  - DOMAIN,name: 大陆网址
+  - DOMAIN,policies:
+  - DOMAIN,DIRECT
+  - DOMAIN,美国节点
+  - DOMAIN,狮城节点
+  - DOMAIN,香港节点
+  - DOMAIN,日本节点
+  - DOMAIN,台湾节点
+  - DOMAIN,韩国节点
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/CN_02.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 兜底策略
+  - DOMAIN,policies:
+  - DOMAIN,香港节点
+  - DOMAIN,日本节点
+  - DOMAIN,美国节点
+  - DOMAIN,狮城节点
+  - DOMAIN,台湾节点
+  - DOMAIN,DIRECT
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Egern_00.png
+  - DOMAIN,hidden: false
+  - DOMAIN,auto_test:
+  - DOMAIN,name: 代理节点
+  - DOMAIN,policies:
+  - DOMAIN,我的机场
+  - DOMAIN,flatten: true
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Proxy.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 电报消息
+  - DOMAIN,policies:
+  - DOMAIN,美国节点
+  - DOMAIN,狮城节点
+  - DOMAIN,香港节点
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Telegram_01.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 微信消息
+  - DOMAIN,policies:
+  - DOMAIN,DIRECT
+  - DOMAIN,香港节点
+  - DOMAIN,台湾节点
+  - DOMAIN,狮城节点
+  - DOMAIN,美国节点
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/wechat.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 微博服务
+  - DOMAIN,policies:
+  - DOMAIN,香港节点
+  - DOMAIN,台湾节点
+  - DOMAIN,日本节点
+  - DOMAIN,狮城节点
+  - DOMAIN,韩国节点
+  - DOMAIN,美国节点
+  - DOMAIN,DIRECT
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Weibo-01.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 大陆抖音
+  - DOMAIN,policies:
+  - DOMAIN,台湾节点
+  - DOMAIN,日本节点
+  - DOMAIN,韩国节点
+  - DOMAIN,狮城节点
+  - DOMAIN,美国节点
+  - DOMAIN,DIRECT
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Tiktok_09.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 海外抖音
+  - DOMAIN,policies:
+  - DOMAIN,香港节点
+  - DOMAIN,台湾节点
+  - DOMAIN,日本节点
+  - DOMAIN,韩国节点
+  - DOMAIN,狮城节点
+  - DOMAIN,美国节点
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Tiktok_06.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 人工智能
+  - DOMAIN,policies:
+  - DOMAIN,美国节点
+  - DOMAIN,日本节点
+  - DOMAIN,台湾节点
+  - DOMAIN,韩国节点
+  - DOMAIN,狮城节点
+  - DOMAIN,香港节点
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT7.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 苹果服务
+  - DOMAIN,policies:
+  - DOMAIN,DIRECT
+  - DOMAIN,香港节点
+  - DOMAIN,狮城节点
+  - DOMAIN,美国节点
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Apple_02.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 谷歌服务
+  - DOMAIN,policies:
+  - DOMAIN,美国节点
+  - DOMAIN,香港节点
+  - DOMAIN,台湾节点
+  - DOMAIN,日本节点
+  - DOMAIN,韩国节点
+  - DOMAIN,狮城节点
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Google.png
+  - DOMAIN,hidden: false
+  - DOMAIN,select:
+  - DOMAIN,name: 油管视频
+  - DOMAIN,policies:
+  - DOMAIN,香港节点
+  - DOMAIN,台湾节点
+  - DOMAIN,日本节点
+  - DOMAIN,韩国节点
+  - DOMAIN,狮城节点
+  - DOMAIN,美国节点
+  - DOMAIN,flatten: false
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/YouTube_01.png
+  - DOMAIN,hidden: false
+  - DOMAIN,smart:
+  - DOMAIN,name: 香港节点
+  - DOMAIN,policies:
+  - DOMAIN,代理节点
+  - DOMAIN,flatten: true
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/HK_03.png
+  - DOMAIN,hidden: false
+  - DOMAIN,smart:
+  - DOMAIN,name: 台湾节点
+  - DOMAIN,policies:
+  - DOMAIN,代理节点
+  - DOMAIN,flatten: true
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/TW_02.png
+  - DOMAIN,hidden: false
+  - DOMAIN,smart:
+  - DOMAIN,name: 狮城节点
+  - DOMAIN,policies:
+  - DOMAIN,代理节点
+  - DOMAIN,flatten: true
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/SG_02.png
+  - DOMAIN,hidden: false
+  - DOMAIN,smart:
+  - DOMAIN,name: 美国节点
+  - DOMAIN,policies:
+  - DOMAIN,代理节点
+  - DOMAIN,flatten: true
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/US_02.png
+  - DOMAIN,hidden: false
+  - DOMAIN,smart:
+  - DOMAIN,name: 日本节点
+  - DOMAIN,policies:
+  - DOMAIN,代理节点
+  - DOMAIN,flatten: true
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/JP_02.png
+  - DOMAIN,hidden: false
+  - DOMAIN,smart:
+  - DOMAIN,name: 韩国节点
+  - DOMAIN,policies:
+  - DOMAIN,代理节点
+  - DOMAIN,flatten: true
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/KR_02.png
+  - DOMAIN,hidden: false
+  - DOMAIN,external:
+  - DOMAIN,name: 我的机场
+  - DOMAIN,type: auto_test
+  - DOMAIN,urls:
+  - DOMAIN,https://sub.store/download/local
+  - DOMAIN,icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/SubStore.png
+  - DOMAIN,hidden: false
+  - DOMAIN,rules:
+  - DOMAIN,rule_set:
+  - DOMAIN,name: 腾讯视频去广告@奶思
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/TencentVideo.list
+  - DOMAIN,policy: REJECT
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: 广告拦截合集@奶思
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/rejectAd.list
+  - DOMAIN,policy: REJECT
+  - DOMAIN,disabled: false
+  - DOMAIN,domain_suffix:
+  - DOMAIN,match: boxjs.com
+  - DOMAIN,policy: 兜底策略
+  - DOMAIN,disabled: false
+  - DOMAIN,domain_suffix:
+  - DOMAIN,match: boxjs.net
+  - DOMAIN,policy: 兜底策略
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: AI分流合集@奶思
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/AI.list
+  - DOMAIN,policy: 人工智能
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: 抖音IP@奶思
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Douyin.list
+  - DOMAIN,policy: 大陆抖音
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: 小红书IP@奶思
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/RedBook.list
+  - DOMAIN,policy: 狮城节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: 快手IP@奶思
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/KuaiShou.list
+  - DOMAIN,policy: 狮城节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/WeChat/WeChat.list
+  - DOMAIN,policy: 微信消息
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Weibo/Weibo.list
+  - DOMAIN,policy: 微博服务
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/BiliBili/BiliBili.list
+  - DOMAIN,policy: 香港节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Soul.list
+  - DOMAIN,policy: 台湾节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/TikTok/TikTok.list
+  - DOMAIN,policy: 海外抖音
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Telegram/Telegram.list
+  - DOMAIN,policy: 电报消息
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/TestFlight/TestFlight.list
+  - DOMAIN,policy: 苹果服务
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: Apple合集
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/AppleAll.list
+  - DOMAIN,policy: 苹果服务
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Spotify/Spotify.list
+  - DOMAIN,policy: 狮城节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: Twitter
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Twitter.list
+  - DOMAIN,policy: 美国节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/YouTube/YouTube.list
+  - DOMAIN,policy: 油管视频
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/GoogleVoice/GoogleVoice.list
+  - DOMAIN,policy: 美国节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Google/Google.list
+  - DOMAIN,policy: 谷歌服务
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: Facebook
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Facebook.list
+  - DOMAIN,policy: 香港节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/Line/Line.list
+  - DOMAIN,policy: 香港节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/KakaoTalk/KakaoTalk.list
+  - DOMAIN,policy: 台湾节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Talkatone.list
+  - DOMAIN,policy: 美国自建
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: LinkedIn@bm7
+  - DOMAIN,match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/LinkedIn/LinkedIn.list
+  - DOMAIN,policy: 美国节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: GitHub@bm7
+  - DOMAIN,match: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Loon/GitHub/GitHub.list
+  - DOMAIN,policy: 兜底策略
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: 欧易分流@奶思
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/OKX.list
+  - DOMAIN,policy: 美国节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: 币安分流@奶思
+  - DOMAIN,match: https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/Binance.list
+  - DOMAIN,policy: 美国节点
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: LAN@奶思
+  - DOMAIN,match: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/LAN.list
+  - DOMAIN,policy: 大陆网址
+  - DOMAIN,disabled: false
+  - DOMAIN,rule_set:
+  - DOMAIN,name: GeoIP_CN@奶思
+  - DOMAIN,match: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/GeoIP_CN.list
+  - DOMAIN,policy: 大陆网址
+  - DOMAIN,disabled: false
+  - DOMAIN,default:
+  - DOMAIN,policy: 兜底策略
+  - DOMAIN,url_rewrites:
+  - DOMAIN,location: https://www.google.com
+  - DOMAIN,status_code: 302
+  - DOMAIN,header_rewrites:
+  - DOMAIN,replace:
+  - DOMAIN,name: Accept-Language
+  - DOMAIN,value: en-us
+  - DOMAIN,type: request
+  - DOMAIN,disabled: true
+  - DOMAIN,body_rewrites:
+  - DOMAIN,request_jq:
+  - DOMAIN,disabled: true
+  - DOMAIN,scriptings:
+  - DOMAIN,schedule:
+  - DOMAIN,name: gist备份
+  - IP-CIDR,cron: 10 0/8 * * *,no-resolve
+  - DOMAIN,timeout: 60
+  - DOMAIN,disabled: true
+  - DOMAIN,schedule:
+  - DOMAIN,name: gist恢复
+  - CRON:100,22 * * *
+  - DOMAIN,timeout: 60
+  - DOMAIN,disabled: true
+  - DOMAIN,mitm:
+  - DOMAIN,ca_p12: egern.p12
+  - DOMAIN,ca_passphrase: egern
+  - DOMAIN,hostnames:
+  - DOMAIN,includes:
+  - DOMAIN,raw.githubusercontent.com
+  - DOMAIN,gist.githubusercontent.com
+  - DOMAIN,github.com
+  - DOMAIN,hostnames_disabled:
+  - DOMAIN,includes:
+  - DOMAIN,raw.githubusercontent.com
+  - DOMAIN,gist.githubusercontent.com
+  - DOMAIN,github.com
+  - DOMAIN,modules:
+  - DOMAIN,url: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/Surge/module/XWebAds.module
+  - DOMAIN,enabled: true
+  - DOMAIN,name: 微博去广告&净化
+  - DOMAIN,url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/weibo.module
+  - DOMAIN,enabled: true
+  - DOMAIN,name: 广告拦截&净化合集
+  - DOMAIN,url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/blockAds.module
+  - DOMAIN,enabled: true
+  - DOMAIN,url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/RedditTranslation.module
+  - DOMAIN,enabled: true
+  - DOMAIN,name: 获取cookie&token合集
+  - DOMAIN,url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/cookies.module
+  - DOMAIN,enabled: false
+  - DOMAIN,url: http://127.0.0.1:9100/file/_start_/https://raw.githubusercontent.com/Tartarus2014/Loon-Script/refs/heads/master/Plugin/skip-proxy.lpx/_end_/skip-proxy.sgmodule?type=loon-plugin&target=surge-module&del=true&jqEnabled=true
+  - DOMAIN,enabled: true
+  - DOMAIN,name: Script Hub: 重写 & 规则集转换
+  - DOMAIN,url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.egern.yaml
+  - DOMAIN,enabled: true
+  - DOMAIN,name: Sub-Store
+  - DOMAIN,url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/Egern.yaml
+  - DOMAIN,enabled: true
+  - DOMAIN,name: BoxJs
+  - DOMAIN,url: https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
+  - DOMAIN,enabled: true
+  - DOMAIN,name: 节假日信息
+  - DOMAIN,url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
+  - DOMAIN,enabled: true
+  - DOMAIN,url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Flush-DNS/Moore/Flush-DNS.sgmodule
+  - DOMAIN,enabled: false
+  - DOMAIN,url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.sgmodule
+  - DOMAIN,enabled: true
+  - DOMAIN,url: https://raw.githubusercontent.com/ptntp/self-rule/main/Panel/streamcheck.sgmodule
+  - DOMAIN,enabled: true
+  - DOMAIN,url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/IP-Check/Moore/IP-Check.sgmodule
+  - DOMAIN,enabled: true
+  - DOMAIN,url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Network-Info/Moore/Network-Info.sgmodule
+  - DOMAIN,enabled: true

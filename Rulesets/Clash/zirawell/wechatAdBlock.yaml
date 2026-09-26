@@ -4,20 +4,21 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ad-api.4pyun.com
-DOMAIN,ad-files.4pyun.com
-DOMAIN,ad.maoyan.com
-DOMAIN,ads-shopping.shouqianba.com
-DOMAIN,ads.ishansong.com
-DOMAIN,api.hongyibo.com.cn
-DOMAIN,api.zysdsk.cn
-DOMAIN,bigdata-behaviordata.189.cn
-DOMAIN,dsp.fcbox.com
-DOMAIN,et.ykccn.com
-DOMAIN,file.dian.so
-DOMAIN,logs-bigdata.yeehaw.com.cn
-DOMAIN,rumt-zh.com
-DOMAIN,smarket.dian.so
-DOMAIN,tracker-prd.aldi.com.cn
-DOMAIN-SUFFIX,ad.duoduo.link
-DOMAIN-SUFFIX,wxsmsdy.video.qq.com
+payload:
+  - DOMAIN,ad-api.4pyun.com
+  - DOMAIN,ad-files.4pyun.com
+  - DOMAIN,ad.maoyan.com
+  - DOMAIN,ads-shopping.shouqianba.com
+  - DOMAIN,ads.ishansong.com
+  - DOMAIN,api.hongyibo.com.cn
+  - DOMAIN,api.zysdsk.cn
+  - DOMAIN,bigdata-behaviordata.189.cn
+  - DOMAIN,dsp.fcbox.com
+  - DOMAIN,et.ykccn.com
+  - DOMAIN,file.dian.so
+  - DOMAIN,logs-bigdata.yeehaw.com.cn
+  - DOMAIN,rumt-zh.com
+  - DOMAIN,smarket.dian.so
+  - DOMAIN,tracker-prd.aldi.com.cn
+  - DOMAIN-SUFFIX,ad.duoduo.link
+  - DOMAIN-SUFFIX,wxsmsdy.video.qq.com
