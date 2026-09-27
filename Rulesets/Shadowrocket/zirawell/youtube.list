@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,ads.youtube.com
-  - DOMAIN,s.youtube.com
+DOMAIN,ads.youtube.com
+DOMAIN,s.youtube.com

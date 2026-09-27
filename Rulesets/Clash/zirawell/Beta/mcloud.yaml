@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ad.mcloud.139.com
+payload:
+  - DOMAIN,ad.mcloud.139.com

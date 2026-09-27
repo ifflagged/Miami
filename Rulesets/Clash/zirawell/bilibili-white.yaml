@@ -4,7 +4,8 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ptom.caohua.com
-DOMAIN,tracking.leiting.com
-DOMAIN,ads.games.laohu.com
-DOMAIN,shark-tracer.netease.com
+payload:
+  - DOMAIN,ptom.caohua.com
+  - DOMAIN,tracking.leiting.com
+  - DOMAIN,ads.games.laohu.com
+  - DOMAIN,shark-tracer.netease.com

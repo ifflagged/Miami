@@ -4,14 +4,15 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,r.dianping.com
-DOMAIN,tte.meituan.com
-DOMAIN,lx0.meituan.com
-DOMAIN,dxlvs.meituan.com
-DOMAIN,dpmtpush.dianping.com
-DOMAIN,dynamicf.sankuai.com
-DOMAIN,live-monitor-broker.sankuai.com
-DOMAIN-SUFFIX,lx.meituan.net
-IP-CIDR,101.32.16.204/32,no-resolve
-IP-CIDR,103.63.160.80/32,no-resolve
-IP-CIDR,119.29.126.137/32,no-resolve
+payload:
+  - DOMAIN,r.dianping.com
+  - DOMAIN,tte.meituan.com
+  - DOMAIN,lx0.meituan.com
+  - DOMAIN,dxlvs.meituan.com
+  - DOMAIN,dpmtpush.dianping.com
+  - DOMAIN,dynamicf.sankuai.com
+  - DOMAIN,live-monitor-broker.sankuai.com
+  - DOMAIN-SUFFIX,lx.meituan.net
+  - IP-CIDR,101.32.16.204/32,no-resolve
+  - IP-CIDR,103.63.160.80/32,no-resolve
+  - IP-CIDR,119.29.126.137/32,no-resolve

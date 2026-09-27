@@ -4,8 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,badjs.weixinbridge.com
-  - DOMAIN,cube.weixinbridge.com
-  - DOMAIN,dns.weixin.qq.com.cn
-  - DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN,badjs.weixinbridge.com
+DOMAIN,cube.weixinbridge.com
+DOMAIN,dns.weixin.qq.com.cn
+DOMAIN-SUFFIX,wxs.qq.com
