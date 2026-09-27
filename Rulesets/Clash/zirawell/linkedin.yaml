@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,ads.linkedin.com
+payload:
+  - DOMAIN-SUFFIX,ads.linkedin.com
