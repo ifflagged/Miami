@@ -4,11 +4,10 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,zlink.ugsdk.cn
-  - DOMAIN,content-open.douyin.com
-  - DOMAIN,webcast-open.douyin.com
-  - DOMAIN,lf-webcast-gr-sourcecdn.bytegecko.com
-  - DOMAIN,lf3-reading.fqnovelstatic.com
-  - DOMAIN,mon11-misc.fqnovel.com
-  - DOMAIN-KEYWORD,-applog.fqnovel.com
+DOMAIN,zlink.ugsdk.cn
+DOMAIN,content-open.douyin.com
+DOMAIN,webcast-open.douyin.com
+DOMAIN,lf-webcast-gr-sourcecdn.bytegecko.com
+DOMAIN,lf3-reading.fqnovelstatic.com
+DOMAIN,mon11-misc.fqnovel.com
+DOMAIN-KEYWORD,-applog.fqnovel.com

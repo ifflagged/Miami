@@ -4,7 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-KEYWORD,okex.com
-  - DOMAIN-KEYWORD,oklink.com
-  - DOMAIN-KEYWORD,okx.com
+DOMAIN-KEYWORD,okex.com
+DOMAIN-KEYWORD,oklink.com
+DOMAIN-KEYWORD,okx.com
