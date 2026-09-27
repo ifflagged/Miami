@@ -1,6 +1,20 @@
-#规则数量:1613
-#不支持的规则数量:0
+#规则数量:1600
+#不支持的规则数量:13
 #已排除的规则数量:0
+#不支持的规则:
+#PROCESS-NAME,CoreLocationAgent
+#PROCESS-NAME,WeatherWidget
+#PROCESS-NAME,apsd
+#PROCESS-NAME,com.apple.Maps
+#PROCESS-NAME,findmydevice-user-agent
+#PROCESS-NAME,fmfd
+#PROCESS-NAME,mapspushd
+#PROCESS-NAME,netbiosd
+#PROCESS-NAME,trustd
+#PROCESS-NAME,com.apple.geod
+#PROCESS-NAME,Music
+#PROCESS-NAME,LookupViewService
+#PROCESS-NAME,TV
 
 #-----------------以下为解析后的规则-----------------#
 
@@ -1604,16 +1618,3 @@ USER-AGENT,AppleTV*
 USER-AGENT,com.apple.news*
 USER-AGENT,com.apple.trustd*
 USER-AGENT,com.apple.tv*
-PROCESS-NAME,CoreLocationAgent
-PROCESS-NAME,WeatherWidget
-PROCESS-NAME,apsd
-PROCESS-NAME,com.apple.Maps
-PROCESS-NAME,findmydevice-user-agent
-PROCESS-NAME,fmfd
-PROCESS-NAME,mapspushd
-PROCESS-NAME,netbiosd
-PROCESS-NAME,trustd
-PROCESS-NAME,com.apple.geod
-PROCESS-NAME,Music
-PROCESS-NAME,LookupViewService
-PROCESS-NAME,TV

@@ -4,8 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,abapi.hellobike.com
-  - DOMAIN,ip.hellobike.com
-  - DOMAIN,cdn.hellobike.com
-  - DOMAIN,apmgw.hellobike.com
+DOMAIN,abapi.hellobike.com
+DOMAIN,ip.hellobike.com
+DOMAIN,cdn.hellobike.com
+DOMAIN,apmgw.hellobike.com
