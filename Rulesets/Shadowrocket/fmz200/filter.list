@@ -1,8 +1,6 @@
-#规则数量:2760
-#不支持的规则数量:1
+#规则数量:2761
+#不支持的规则数量:0
 #已排除的规则数量:0
-#不支持的规则:
-#USER-AGENT,AVOS*, reject
 
 #-----------------以下为解析后的规则-----------------#
 
@@ -2298,6 +2296,7 @@ DOMAIN-SUFFIX,gg.uuu9.com
 DOMAIN-SUFFIX,adm.myzaker.com
 DOMAIN-SUFFIX,ggs.myzaker.com
 DOMAIN-SUFFIX,push-android.myzaker.com
+USER-AGENT,AVOS*
 DOMAIN,appcloud.zhihu.com
 DOMAIN,appcloud2.in.zhihu.com
 DOMAIN,mqtt.zhihu.com

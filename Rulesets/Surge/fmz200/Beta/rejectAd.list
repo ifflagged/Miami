@@ -1,8 +1,7 @@
-#规则数量:2746
-#不支持的规则数量:2
+#规则数量:2747
+#不支持的规则数量:1
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT,AVOS*
 #AND,((NOT,((DOMAIN,volcengine-kdocs-cache.wpscdn.cn))), (NOT,((DOMAIN,vod-settings.volcvod.com))), (NOT,((DOMAIN,volcengine-kdocs-cache.wpscdn.cn))), (OR,((DOMAIN-KEYWORD,volc))))
 
 #-----------------以下为解析后的规则-----------------#
@@ -2284,6 +2283,7 @@ DOMAIN-SUFFIX,gg.uuu9.com
 DOMAIN-SUFFIX,adm.myzaker.com
 DOMAIN-SUFFIX,ggs.myzaker.com
 DOMAIN-SUFFIX,push-android.myzaker.com
+USER-AGENT,AVOS*
 DOMAIN,appcloud.zhihu.com
 DOMAIN,appcloud2.in.zhihu.com
 DOMAIN,mqtt.zhihu.com
