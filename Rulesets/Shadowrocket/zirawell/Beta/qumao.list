@@ -4,15 +4,16 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ad.wtzw.com
-DOMAIN,drs-ipv6.wtzw.com
-DOMAIN,ad-drs.52qumao.com
-DOMAIN,ad-drs-ipv6.52qumao.com
-DOMAIN,api-adx.52qumao.com
-DOMAIN,fp-it.fengkongcloud.com
-DOMAIN-SUFFIX,adxvip.com
-DOMAIN-SUFFIX,ad.xelements.cn
-DOMAIN-SUFFIX,yunxish.com
-DOMAIN-SUFFIX,iggrowth.cn
-DOMAIN-SUFFIX,58iclick.com
-DOMAIN-KEYWORD,remad.qm989.com
+payload:
+  - DOMAIN,ad.wtzw.com
+  - DOMAIN,drs-ipv6.wtzw.com
+  - DOMAIN,ad-drs.52qumao.com
+  - DOMAIN,ad-drs-ipv6.52qumao.com
+  - DOMAIN,api-adx.52qumao.com
+  - DOMAIN,fp-it.fengkongcloud.com
+  - DOMAIN-SUFFIX,adxvip.com
+  - DOMAIN-SUFFIX,ad.xelements.cn
+  - DOMAIN-SUFFIX,yunxish.com
+  - DOMAIN-SUFFIX,iggrowth.cn
+  - DOMAIN-SUFFIX,58iclick.com
+  - DOMAIN-KEYWORD,remad.qm989.com

@@ -4,13 +4,12 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,ad.21cn.com
-  - DOMAIN,ad.k.21cn.com
-  - DOMAIN,admarket.21cn.com
-  - DOMAIN,adshows.21cn.com
-  - DOMAIN,appgo.189.cn
-  - DOMAIN,appgoad.189.cn
-  - DOMAIN,appupdates.189.cn
-  - IP-CIDR,122.229.8.47/32,no-resolve
-  - IP-CIDR,122.229.29.89/32,no-resolve
+DOMAIN,ad.21cn.com
+DOMAIN,ad.k.21cn.com
+DOMAIN,admarket.21cn.com
+DOMAIN,adshows.21cn.com
+DOMAIN,appgo.189.cn
+DOMAIN,appgoad.189.cn
+DOMAIN,appupdates.189.cn
+IP-CIDR,122.229.8.47/32,no-resolve
+IP-CIDR,122.229.29.89/32,no-resolve

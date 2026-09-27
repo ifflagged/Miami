@@ -4,6 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,log.cmbchina.com
-DOMAIN,mbads.paas.cmbchina.com
-DOMAIN,yl.zh.cmbchina.com
+payload:
+  - DOMAIN,log.cmbchina.com
+  - DOMAIN,mbads.paas.cmbchina.com
+  - DOMAIN,yl.zh.cmbchina.com
