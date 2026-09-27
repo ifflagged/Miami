@@ -10,28 +10,28 @@
 # ==============================================================================
 
 # 1. Git 源码模式
-GIT | ZenmoFeiShi | https://github.com/ZenmoFeiShi/Qx.git | 
-GIT | zirawell    | https://github.com/zirawell/R-Store.git | 
-GIT | VirgilClyne | https://github.com/VirgilClyne/GetSomeFries.git | 
-GIT | fmz200      | https://github.com/fmz200/wool_scripts.git | 
-GIT | NSRingo | https://github.com/NSRingo/WeatherKit.git | modules
+# GIT | ZenmoFeiShi | https://github.com/ZenmoFeiShi/Qx.git | 
+# GIT | zirawell    | https://github.com/zirawell/R-Store.git | 
+# GIT | VirgilClyne | https://github.com/VirgilClyne/GetSomeFries.git | 
+# GIT | fmz200      | https://github.com/fmz200/wool_scripts.git | 
+# GIT | NSRingo | https://github.com/NSRingo/WeatherKit.git | modules
 
 # 2. JSON 索引模式
-JSON | sooyaaabo    | https://loonlab.103516.xyz/Plugin/plugins.json | 
-JSON | ddgksf2013   | https://ddgksf2013.top/data.json | 
-JSON | mist-whisper | https://kelvinlab.wuyra.com/list.json | 
+# JSON | sooyaaabo    | https://loonlab.103516.xyz/Plugin/plugins.json | 
+# JSON | ddgksf2013   | https://ddgksf2013.top/data.json | 
+# JSON | mist-whisper | https://kelvinlab.wuyra.com/list.json | 
 
 # 3. GitHub Release 模式
-RELEASE | Biliverse | Biliverse/Enhanced | 
-RELEASE | Biliverse | Biliverse/Global | 
-RELEASE | Biliverse | Biliverse/Redirect | 
-RELEASE | Biliverse | Biliverse/ADBlock | 
-RELEASE | Biliverse | Biliverse/Roaming | 
-RELEASE | DualSubs  | DualSubs/Universal | 
-RELEASE | DualSubs  | DualSubs/Netflix | 
-RELEASE | DualSubs  | DualSubs/YouTube | 
-RELEASE | DualSubs  | DualSubs/Spotify | 
-RELEASE | DualSubs  | DualSubs/AddOn | 
+# RELEASE | Biliverse | Biliverse/Enhanced | 
+# RELEASE | Biliverse | Biliverse/Global | 
+# RELEASE | Biliverse | Biliverse/Redirect | 
+# RELEASE | Biliverse | Biliverse/ADBlock | 
+# RELEASE | Biliverse | Biliverse/Roaming | 
+# RELEASE | DualSubs  | DualSubs/Universal | 
+# RELEASE | DualSubs  | DualSubs/Netflix | 
+# RELEASE | DualSubs  | DualSubs/YouTube | 
+# RELEASE | DualSubs  | DualSubs/Spotify | 
+# RELEASE | DualSubs  | DualSubs/AddOn | 
 RELEASE | NSRingo   | NSRingo/WeatherKit | 
 RELEASE | NSRingo   | NSRingo/LocationService | 
 RELEASE | NSRingo   | NSRingo/MapKit | 
