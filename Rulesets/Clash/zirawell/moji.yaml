@@ -4,10 +4,9 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,ad.api.moji.com
-  - DOMAIN,adlaunch.moji.com
-  - DOMAIN,ads.mojicdn.com
-  - DOMAIN-SUFFIX,log.moji.com
-  - DOMAIN-SUFFIX,fds.api.moji.com
-  - DOMAIN-SUFFIX,me.api.moji.com
+DOMAIN,ad.api.moji.com
+DOMAIN,adlaunch.moji.com
+DOMAIN,ads.mojicdn.com
+DOMAIN-SUFFIX,log.moji.com
+DOMAIN-SUFFIX,fds.api.moji.com
+DOMAIN-SUFFIX,me.api.moji.com

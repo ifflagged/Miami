@@ -4,8 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,toblog.ctobsnssdk.com
-  - DOMAIN,t-dsp.pinduoduo.com
-  - DOMAIN,sdk1xyajs.data.kuiniuca.com
-  - DOMAIN,conf-darwin.xycdn.com
+DOMAIN,toblog.ctobsnssdk.com
+DOMAIN,t-dsp.pinduoduo.com
+DOMAIN,sdk1xyajs.data.kuiniuca.com
+DOMAIN,conf-darwin.xycdn.com

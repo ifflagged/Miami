@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,ad.jia.360.cn
-  - DOMAIN,ad.iot.360.cn
+DOMAIN,ad.jia.360.cn
+DOMAIN,ad.iot.360.cn

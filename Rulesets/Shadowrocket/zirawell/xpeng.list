@@ -4,8 +4,9 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,applog-perf.uc.cn
-DOMAIN,woodpecker.uc.cn
-DOMAIN,collect.xiaopeng.com
-DOMAIN,httpdns.yunxindns.com
-DOMAIN,apps-booster.xiaopeng.com
+payload:
+  - DOMAIN,applog-perf.uc.cn
+  - DOMAIN,woodpecker.uc.cn
+  - DOMAIN,collect.xiaopeng.com
+  - DOMAIN,httpdns.yunxindns.com
+  - DOMAIN,apps-booster.xiaopeng.com
