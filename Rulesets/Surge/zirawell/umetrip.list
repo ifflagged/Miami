@@ -1,0 +1,4 @@
+# > 航旅纵横 - UMETRIP
+host, analytics.umetrip.com, reject
+host, startup.umetrip.com, reject
+host, sensors.umetrip.com.cn, reject

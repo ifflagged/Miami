@@ -1,0 +1,15 @@
+#!name=YouTube Filter
+#!homepage=https://github.com/zirawell/R-Store
+#!raw-url=https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Filter/Optional/YouTube.list
+#!tg-group=https://t.me/RStoreCom
+#!date=2024-11-08 10:24:00
+#!---------------------------------------------------------------------------------------------------------------
+USER-AGENT, *youtube*
+USER-AGENT, YouTube*
+DOMAIN-KEYWORD, youtube
+DOMAIN, yt3.ggpht.com
+DOMAIN-SUFFIX, googlevideo.com
+DOMAIN-SUFFIX, gvt2.com
+DOMAIN-SUFFIX, youtu.be
+DOMAIN, youtubei.googleapis.com
+DOMAIN-SUFFIX, ytimg.com
