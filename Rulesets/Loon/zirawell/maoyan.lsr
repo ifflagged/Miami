@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ad.maoyan.com
+payload:
+  - DOMAIN,ad.maoyan.com
