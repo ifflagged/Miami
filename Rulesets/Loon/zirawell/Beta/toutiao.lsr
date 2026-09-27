@@ -4,15 +4,14 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,ad.toutiao.com
-  - DOMAIN-SUFFIX,dm.toutiao.com
-  - DOMAIN-SUFFIX,dsp.toutiao.com
-  - DOMAIN-SUFFIX,adshare.toutiao.com
-  - DOMAIN-SUFFIX,partner.toutiao.com
-  - DOMAIN-SUFFIX,track.toutiao.com
-  - DOMAIN-KEYWORD,s1.pstatp.com
-  - DOMAIN-KEYWORD,s2.pstatp.com
-  - DOMAIN-KEYWORD,s3.pstatp.com
-  - DOMAIN-KEYWORD,a3.pstatp.com
-  - DOMAIN-KEYWORD,a3.bytecdn.cn
+DOMAIN-SUFFIX,ad.toutiao.com
+DOMAIN-SUFFIX,dm.toutiao.com
+DOMAIN-SUFFIX,dsp.toutiao.com
+DOMAIN-SUFFIX,adshare.toutiao.com
+DOMAIN-SUFFIX,partner.toutiao.com
+DOMAIN-SUFFIX,track.toutiao.com
+DOMAIN-KEYWORD,s1.pstatp.com
+DOMAIN-KEYWORD,s2.pstatp.com
+DOMAIN-KEYWORD,s3.pstatp.com
+DOMAIN-KEYWORD,a3.pstatp.com
+DOMAIN-KEYWORD,a3.bytecdn.cn

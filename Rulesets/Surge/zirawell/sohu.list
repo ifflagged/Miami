@@ -4,17 +4,16 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,ad.sohu.com
-  - DOMAIN-SUFFIX,ads.sohu.com
-  - DOMAIN-SUFFIX,aty.sohu.com
-  - DOMAIN-SUFFIX,adnet.sohu.com
-  - DOMAIN-SUFFIX,ad.mail.sohu.com
-  - DOMAIN-SUFFIX,corp.sohu.com
-  - DOMAIN-SUFFIX,cpc.sohu.com
-  - DOMAIN-SUFFIX,go.sohu.com
-  - DOMAIN-SUFFIX,hui.sohu.com
-  - DOMAIN-SUFFIX,suvset.sohu.com
-  - DOMAIN-SUFFIX,track.sohu.com
-  - DOMAIN-SUFFIX,3rd.t.sohu.com
-  - DOMAIN-SUFFIX,888.tv.sohu.com
+DOMAIN-SUFFIX,ad.sohu.com
+DOMAIN-SUFFIX,ads.sohu.com
+DOMAIN-SUFFIX,aty.sohu.com
+DOMAIN-SUFFIX,adnet.sohu.com
+DOMAIN-SUFFIX,ad.mail.sohu.com
+DOMAIN-SUFFIX,corp.sohu.com
+DOMAIN-SUFFIX,cpc.sohu.com
+DOMAIN-SUFFIX,go.sohu.com
+DOMAIN-SUFFIX,hui.sohu.com
+DOMAIN-SUFFIX,suvset.sohu.com
+DOMAIN-SUFFIX,track.sohu.com
+DOMAIN-SUFFIX,3rd.t.sohu.com
+DOMAIN-SUFFIX,888.tv.sohu.com

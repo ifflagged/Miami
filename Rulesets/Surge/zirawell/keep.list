@@ -4,7 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,hc-ssp.sm.cn
-  - DOMAIN,apm.gotokeep.com
-  - DOMAIN,kad.gotokeep.com
+DOMAIN,hc-ssp.sm.cn
+DOMAIN,apm.gotokeep.com
+DOMAIN,kad.gotokeep.com

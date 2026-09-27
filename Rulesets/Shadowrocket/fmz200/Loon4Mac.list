@@ -1,11 +1,12 @@
-#规则数量:12
-#不支持的规则数量:0
+#规则数量:11
+#不支持的规则数量:1
 #已排除的规则数量:0
+#不支持的规则:
+#US_Filter = NameRegex, FilterKey = (?i)(🇺🇸|美)
 
 #-----------------以下为解析后的规则-----------------#
 
 DOMAIN,udp-fallback-mode = REJECT
-US_FILTER = NAMEREGEX,FilterKey = (?i)(🇺🇸|美)
 DOMAIN-SUFFIX,onejav.com
 DOMAIN-SUFFIX,supjav.com
 DOMAIN-SUFFIX,supremejav.com

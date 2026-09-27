@@ -1,17 +1,15 @@
-#规则数量:7
-#不支持的规则数量:2
+#规则数量:9
+#不支持的规则数量:0
 #已排除的规则数量:0
-#不支持的规则:
-#USER-AGENT, *youtube*
-#USER-AGENT, YouTube*
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-KEYWORD,youtube
-  - DOMAIN,yt3.ggpht.com
-  - DOMAIN-SUFFIX,googlevideo.com
-  - DOMAIN-SUFFIX,gvt2.com
-  - DOMAIN-SUFFIX,youtu.be
-  - DOMAIN,youtubei.googleapis.com
-  - DOMAIN-SUFFIX,ytimg.com
+USER-AGENT,*youtube*
+USER-AGENT,YouTube*
+DOMAIN-KEYWORD,youtube
+DOMAIN,yt3.ggpht.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN,youtubei.googleapis.com
+DOMAIN-SUFFIX,ytimg.com

@@ -4,12 +4,11 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,github.site
-  - DOMAIN-SUFFIX,github.store
-  - DOMAIN-SUFFIX,gh-proxy.com
-  - DOMAIN,emby.161611.xyz
-  - DOMAIN-SUFFIX,585820.xyz
-  - DOMAIN-SUFFIX,huangmin.cc.cd
-  - DOMAIN-SUFFIX,guangyacdn.com
-  - DOMAIN-SUFFIX,cmecloud.cn
+DOMAIN-SUFFIX,github.site
+DOMAIN-SUFFIX,github.store
+DOMAIN-SUFFIX,gh-proxy.com
+DOMAIN,emby.161611.xyz
+DOMAIN-SUFFIX,585820.xyz
+DOMAIN-SUFFIX,huangmin.cc.cd
+DOMAIN-SUFFIX,guangyacdn.com
+DOMAIN-SUFFIX,cmecloud.cn

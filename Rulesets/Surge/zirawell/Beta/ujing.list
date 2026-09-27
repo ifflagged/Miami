@@ -4,5 +4,4 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,ads.zhinengxiyifang.cn
+DOMAIN-SUFFIX,ads.zhinengxiyifang.cn
