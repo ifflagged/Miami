@@ -11,7 +11,7 @@
 
 # 1. Git 源码模式
 # GIT | ZenmoFeiShi | https://github.com/ZenmoFeiShi/Qx.git | 
-# GIT | zirawell    | https://github.com/zirawell/R-Store.git | 
+GIT | zirawell    | https://github.com/zirawell/R-Store.git | 
 # GIT | VirgilClyne | https://github.com/VirgilClyne/GetSomeFries.git | 
 # GIT | fmz200      | https://github.com/fmz200/wool_scripts.git | 
 # GIT | NSRingo | https://github.com/NSRingo/WeatherKit.git | modules
