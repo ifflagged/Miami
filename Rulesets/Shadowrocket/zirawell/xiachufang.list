@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,baidu-union-js.xiachufang.com
-DOMAIN-SUFFIX,baidu-union-pos.xiachufang.com
+payload:
+  - DOMAIN-SUFFIX,baidu-union-js.xiachufang.com
+  - DOMAIN-SUFFIX,baidu-union-pos.xiachufang.com

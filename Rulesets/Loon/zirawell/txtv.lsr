@@ -4,19 +4,20 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,info4.video.qq.com
-DOMAIN,info6.video.qq.com
-DOMAIN,vv.video.qq.com
-DOMAIN,ugchsy.gtimg.com
-DOMAIN,wxsmsdy.video.qq.com
-DOMAIN,sdkconfig.video.qq.com
-DOMAIN,activity.video.qq.com
-DOMAIN-SUFFIX,video.mpush.qq.com
-DOMAIN-SUFFIX,video.wap.mpush.qq.com
-DOMAIN-SUFFIX,video.ureport.push.qq.com
-DOMAIN-SUFFIX,api.poll.video.qq.com
-DOMAIN-SUFFIX,livep.l.ott.video.qq.com
-DOMAIN-SUFFIX,news-l.play.ott.video.qq.com
-DOMAIN-SUFFIX,vlive.qqvideo.tc.qq.com
-DOMAIN-KEYWORD,1258344696.file.myqcloud.com
-IP-CIDR,183.201.213.194/24,no-resolve
+payload:
+  - DOMAIN,info4.video.qq.com
+  - DOMAIN,info6.video.qq.com
+  - DOMAIN,vv.video.qq.com
+  - DOMAIN,ugchsy.gtimg.com
+  - DOMAIN,wxsmsdy.video.qq.com
+  - DOMAIN,sdkconfig.video.qq.com
+  - DOMAIN,activity.video.qq.com
+  - DOMAIN-SUFFIX,video.mpush.qq.com
+  - DOMAIN-SUFFIX,video.wap.mpush.qq.com
+  - DOMAIN-SUFFIX,video.ureport.push.qq.com
+  - DOMAIN-SUFFIX,api.poll.video.qq.com
+  - DOMAIN-SUFFIX,livep.l.ott.video.qq.com
+  - DOMAIN-SUFFIX,news-l.play.ott.video.qq.com
+  - DOMAIN-SUFFIX,vlive.qqvideo.tc.qq.com
+  - DOMAIN-KEYWORD,1258344696.file.myqcloud.com
+  - IP-CIDR,183.201.213.194/24,no-resolve

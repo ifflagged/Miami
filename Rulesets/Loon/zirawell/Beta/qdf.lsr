@@ -4,8 +4,9 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,lwlog.laiwang.com
-DOMAIN-SUFFIX,yksdks.com
-DOMAIN-SUFFIX,cpatrk.net
-DOMAIN-SUFFIX,mobsurl.com
-IP-CIDR,114.67.227.198/32,no-resolve
+payload:
+  - DOMAIN,lwlog.laiwang.com
+  - DOMAIN-SUFFIX,yksdks.com
+  - DOMAIN-SUFFIX,cpatrk.net
+  - DOMAIN-SUFFIX,mobsurl.com
+  - IP-CIDR,114.67.227.198/32,no-resolve

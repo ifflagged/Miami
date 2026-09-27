@@ -4,6 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,api.zuihuimai.com
-DOMAIN,analytics-api.smzdm.com
-DOMAIN,ynuf.aliapp.org
+payload:
+  - DOMAIN,api.zuihuimai.com
+  - DOMAIN,analytics-api.smzdm.com
+  - DOMAIN,ynuf.aliapp.org
