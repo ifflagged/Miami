@@ -1,31 +1,37 @@
-# > 微博 - WEIBO
-host, huodong.weibo.cn, reject
-host, bootpreload.uve.weibo.com, reject
-host, datacollection.uve.weibo.com, reject
-host, adpinpai.video.weibocdn.com, reject
-host-suffix, fastimage.uve.weibo.com, reject
-host-suffix, adimg.vue.weibo.com, reject
-host-suffix, zymo.mps.weibo.com, reject
-host-suffix, weibomingzi.com, reject
-host-suffix, sdkapp.uve.weibo.com, reject
-host-suffix, promote.biz.weibo.cn, reject
-host-suffix, gw5.push.mcp.weibo.cn, reject
-host-suffix, gw6.push.mcp.weibo.cn, reject
-host-suffix, game.weibo.cn, reject
-host-suffix, adimg.uve.weibo.com, reject
-host-suffix, game.weibo.com, reject
-host-suffix, ads.viber.com, reject
-host-suffix, ads-d.viber.com, reject
-host-suffix, ads.aws.viber.com, reject
-host-suffix, alitui.weibo.com, reject
-host-suffix, dp.im.weibo.cn, reject
-host-suffix, click.uve.weibo.com, reject
-host-suffix, wax.weibo.com, reject
-host-suffix, wbapp.uve.weibo.com, reject
-host-suffix, widget.weibo.com, reject
-host-suffix, dsp.edm.weibo.cn, reject
-host-suffix, alitui.weibo.com.cn, reject
-host-suffix, tui.weibo.com, reject
-host-suffix, wax.weibo.com.cn, reject
-host-suffix, ad.weibo.com, reject
-host-keyword, biz.weibo.com, reject
+#规则数量:30
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,huodong.weibo.cn
+  - DOMAIN,bootpreload.uve.weibo.com
+  - DOMAIN,datacollection.uve.weibo.com
+  - DOMAIN,adpinpai.video.weibocdn.com
+  - DOMAIN-SUFFIX,fastimage.uve.weibo.com
+  - DOMAIN-SUFFIX,adimg.vue.weibo.com
+  - DOMAIN-SUFFIX,zymo.mps.weibo.com
+  - DOMAIN-SUFFIX,weibomingzi.com
+  - DOMAIN-SUFFIX,sdkapp.uve.weibo.com
+  - DOMAIN-SUFFIX,promote.biz.weibo.cn
+  - DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn
+  - DOMAIN-SUFFIX,gw6.push.mcp.weibo.cn
+  - DOMAIN-SUFFIX,game.weibo.cn
+  - DOMAIN-SUFFIX,adimg.uve.weibo.com
+  - DOMAIN-SUFFIX,game.weibo.com
+  - DOMAIN-SUFFIX,ads.viber.com
+  - DOMAIN-SUFFIX,ads-d.viber.com
+  - DOMAIN-SUFFIX,ads.aws.viber.com
+  - DOMAIN-SUFFIX,alitui.weibo.com
+  - DOMAIN-SUFFIX,dp.im.weibo.cn
+  - DOMAIN-SUFFIX,click.uve.weibo.com
+  - DOMAIN-SUFFIX,wax.weibo.com
+  - DOMAIN-SUFFIX,wbapp.uve.weibo.com
+  - DOMAIN-SUFFIX,widget.weibo.com
+  - DOMAIN-SUFFIX,dsp.edm.weibo.cn
+  - DOMAIN-SUFFIX,alitui.weibo.com.cn
+  - DOMAIN-SUFFIX,tui.weibo.com
+  - DOMAIN-SUFFIX,wax.weibo.com.cn
+  - DOMAIN-SUFFIX,ad.weibo.com
+  - DOMAIN-KEYWORD,biz.weibo.com

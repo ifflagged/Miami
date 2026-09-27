@@ -1,0 +1,11 @@
+#!name=hellobike-Applet
+#!desc=hellobike-Applet
+#!icon=icon not found
+#!category=zirawell
+
+[Map Local]
+^https?:\/\/api\.hellobike\.com\/api\?adx data-type=json data="{}" status-code=200
+
+[MITM]
+hostname = %APPEND% api.hellobike.com
+

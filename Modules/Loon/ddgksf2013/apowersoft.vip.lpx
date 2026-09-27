@@ -1,0 +1,11 @@
+#!name=apowersoft
+#!desc=apowersoft
+#!icon=icon not found
+#!tag=ddgksf2013
+
+[Script]
+http-response ^https?:\/\/.*aoscdn\.com\/base\/vip\/v\d\/vips script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/apowersoft.vip/ddgksf2013_apowersoft.vip.js, requires-body=true, timeout=60, tag=apowersoft.vip
+
+[MITM]
+hostname = *.aoscdn.com
+

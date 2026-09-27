@@ -1,0 +1,11 @@
+#!name=fenbi
+#!desc=fenbi
+#!icon=icon not found
+#!tag=fmz200
+
+[Script]
+http-response ^https:\/\/tiku\.fenbi\.com\/activity\/app\/launcher\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/fenbi/fmz200_fenbi.js, requires-body=true, timeout=60, tag=fenbi
+
+[MITM]
+hostname = tiku.fenbi.com
+

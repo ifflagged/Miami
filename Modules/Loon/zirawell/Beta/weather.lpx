@@ -1,0 +1,11 @@
+#!name=weather
+#!desc=weather
+#!icon=icon not found
+#!tag=zirawell
+
+[Rewrite]
+^https?:\/\/e\.weather\.com\.cn\/weChat\/typhoonNull\.json mock-response-body data-type=json data="{}" status-code=200
+
+[MITM]
+hostname = e.weather.com.cn
+

@@ -1,0 +1,11 @@
+#!name=powerlong
+#!desc=powerlong
+#!icon=icon not found
+#!tag=zirawell
+
+[Rewrite]
+^https?:\/\/proservice\.powerlong\.com\/advertising mock-response-body data-type=json data="{}" status-code=200
+
+[MITM]
+hostname = proservice.powerlong.com
+

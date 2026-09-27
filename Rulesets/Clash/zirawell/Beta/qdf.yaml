@@ -1,0 +1,12 @@
+#规则数量:5
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,lwlog.laiwang.com
+  - DOMAIN-SUFFIX,yksdks.com
+  - DOMAIN-SUFFIX,cpatrk.net
+  - DOMAIN-SUFFIX,mobsurl.com
+  - IP-CIDR,114.67.227.198/32,no-resolve
