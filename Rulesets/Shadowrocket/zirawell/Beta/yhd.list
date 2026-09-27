@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,api.dsp.yhd.com
-  - DOMAIN-SUFFIX,tracker.yhd.com
+DOMAIN-SUFFIX,api.dsp.yhd.com
+DOMAIN-SUFFIX,tracker.yhd.com
