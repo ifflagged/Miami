@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,hellotalk8.com
-  - DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,hellotalk8.com
+DOMAIN-SUFFIX,appsflyersdk.com

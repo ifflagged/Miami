@@ -1,12 +1,14 @@
-#规则数量:6
-#不支持的规则数量:0
+#规则数量:3
+#不支持的规则数量:3
 #已排除的规则数量:0
+#不支持的规则:
+#US_Filter = NameRegex, FilterKey = (?i)(🇺🇸|美|US)
+#UK_Filter = NameRegex, FilterKey = (?i)(🇬🇧|英国)
+#URL-REGEX,\.log\.,REJECT
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,udp-fallback-mode = REJECT
-US_FILTER = NAMEREGEX,FilterKey = (?i)(🇺🇸|美|US)
-UK_FILTER = NAMEREGEX,FilterKey = (?i)(🇬🇧|英国)
-URL-REGEX,\.log\.
-DOMAIN-KEYWORD,haijiao
-FINAL,兜底策略
+payload:
+  - DOMAIN,udp-fallback-mode = REJECT
+  - DOMAIN-KEYWORD,haijiao
+  - FINAL,兜底策略
