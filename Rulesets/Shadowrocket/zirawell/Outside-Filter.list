@@ -1,15 +1,19 @@
-#规则数量:747
-#不支持的规则数量:0
+#规则数量:738
+#不支持的规则数量:9
 #已排除的规则数量:0
+#不支持的规则:
+#USER-AGENT, %E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5*
+#USER-AGENT, AwemeI18n*
+#USER-AGENT, Coinbase*
+#USER-AGENT, Instagram*
+#USER-AGENT, Resilio Sync*
+#USER-AGENT, WhatsApp*
+#USER-AGENT, OneDrive*
+#USER-AGENT, PayPal*
+#USER-AGENT, battleroyale*
 
 #-----------------以下为解析后的规则-----------------#
 
-USER-AGENT,%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5*
-USER-AGENT,AwemeI18n*
-USER-AGENT,Coinbase*
-USER-AGENT,Instagram*
-USER-AGENT,Resilio Sync*
-USER-AGENT,WhatsApp*
 DOMAIN,voice.telephony.goog
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line.me
@@ -18,12 +22,10 @@ DOMAIN-SUFFIX,line-apps.com
 DOMAIN-SUFFIX,line-cdn.net
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,nhncorp.jp
-USER-AGENT,OneDrive*
 DOMAIN-KEYWORD,onedrive
 DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,storage.live.com
-USER-AGENT,PayPal*
 DOMAIN-KEYWORD,paypal
 DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypalobjects.com
@@ -52,7 +54,6 @@ IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR6,2001:67c:4e8::/48,no-resolve
 IP-CIDR6,2001:b28:f23d::/48,no-resolve
 IP-CIDR6,2001:b28:f23f::/48,no-resolve
-USER-AGENT,battleroyale*
 DOMAIN-SUFFIX,2o7.net
 DOMAIN-SUFFIX,4everProxy.com
 DOMAIN-SUFFIX,4shared.com

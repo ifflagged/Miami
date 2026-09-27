@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,mdap.mpaas.cn-hangzhou.aliyuncs.com
-  - DOMAIN,csc-apm.sgcc.com.cn
+DOMAIN,mdap.mpaas.cn-hangzhou.aliyuncs.com
+DOMAIN,csc-apm.sgcc.com.cn

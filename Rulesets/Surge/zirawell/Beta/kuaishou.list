@@ -4,8 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,e.kuaishou.com
-  - DOMAIN-SUFFIX,cm.downloader.commercial.kuaishou.com
-  - DOMAIN-SUFFIX,cm.ad.gifshow.com
-  - DOMAIN-SUFFIX,cm.kwad.com
+DOMAIN-SUFFIX,e.kuaishou.com
+DOMAIN-SUFFIX,cm.downloader.commercial.kuaishou.com
+DOMAIN-SUFFIX,cm.ad.gifshow.com
+DOMAIN-SUFFIX,cm.kwad.com

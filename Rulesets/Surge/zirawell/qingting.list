@@ -4,7 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,ad.qingting.fm
-  - DOMAIN,adlaunch.qingting.fm
-  - DOMAIN,ad-cdn.qingting.fm
+DOMAIN,ad.qingting.fm
+DOMAIN,adlaunch.qingting.fm
+DOMAIN,ad-cdn.qingting.fm

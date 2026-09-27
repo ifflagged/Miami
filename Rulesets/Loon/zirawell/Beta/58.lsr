@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,track.58.com
-  - DOMAIN,tracklog.58.com
+DOMAIN,track.58.com
+DOMAIN,tracklog.58.com

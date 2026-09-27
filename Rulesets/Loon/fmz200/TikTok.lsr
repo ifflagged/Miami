@@ -1,6 +1,8 @@
-#规则数量:15
-#不支持的规则数量:0
+#规则数量:14
+#不支持的规则数量:1
 #已排除的规则数量:0
+#不支持的规则:
+#USER-AGENT,TikTok*
 
 #-----------------以下为解析后的规则-----------------#
 
@@ -18,4 +20,3 @@ DOMAIN-SUFFIX,tiktok.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-KEYWORD,tiktokcdn
-USER-AGENT,TikTok*
