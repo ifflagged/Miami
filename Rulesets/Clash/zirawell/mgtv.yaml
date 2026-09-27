@@ -4,24 +4,23 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,credits.bz.mgtv.com
-  - DOMAIN,credits2.bz.mgtv.com
-  - DOMAIN,credits3.bz.mgtv.com
-  - DOMAIN,dflow.bz.mgtv.com
-  - DOMAIN,encounter.bz.mgtv.com
-  - DOMAIN,floor.bz.mgtv.com
-  - DOMAIN,layer.bz.mgtv.com
-  - DOMAIN,vip.bz.mgtv.com
-  - DOMAIN,mob.bz.mgtv.com
-  - DOMAIN,rc-topic-api.bz.mgtv.com
-  - DOMAIN,rprain.bz.mgtv.com
-  - DOMAIN,rc-topic-api.bz.mgtv.com
-  - DOMAIN-SUFFIX,imgaliyun.res.mgtv.com
-  - DOMAIN-SUFFIX,pcvideoaliyun.titan.mgtv.com
-  - DOMAIN-SUFFIX,mobaliyun.res.mgtv.com
-  - DOMAIN-SUFFIX,pcvideoyd.titan.mgtv.com
-  - DOMAIN-SUFFIX,pcweb.v1.mgtv.com
-  - DOMAIN-SUFFIX,cmop.mgtv.com
-  - DOMAIN-SUFFIX,da.mgtv.com
-  - DOMAIN-SUFFIX,log.mgtv.com
+DOMAIN,credits.bz.mgtv.com
+DOMAIN,credits2.bz.mgtv.com
+DOMAIN,credits3.bz.mgtv.com
+DOMAIN,dflow.bz.mgtv.com
+DOMAIN,encounter.bz.mgtv.com
+DOMAIN,floor.bz.mgtv.com
+DOMAIN,layer.bz.mgtv.com
+DOMAIN,vip.bz.mgtv.com
+DOMAIN,mob.bz.mgtv.com
+DOMAIN,rc-topic-api.bz.mgtv.com
+DOMAIN,rprain.bz.mgtv.com
+DOMAIN,rc-topic-api.bz.mgtv.com
+DOMAIN-SUFFIX,imgaliyun.res.mgtv.com
+DOMAIN-SUFFIX,pcvideoaliyun.titan.mgtv.com
+DOMAIN-SUFFIX,mobaliyun.res.mgtv.com
+DOMAIN-SUFFIX,pcvideoyd.titan.mgtv.com
+DOMAIN-SUFFIX,pcweb.v1.mgtv.com
+DOMAIN-SUFFIX,cmop.mgtv.com
+DOMAIN-SUFFIX,da.mgtv.com
+DOMAIN-SUFFIX,log.mgtv.com

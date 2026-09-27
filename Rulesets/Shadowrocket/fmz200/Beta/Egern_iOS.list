@@ -396,7 +396,7 @@ DOMAIN,timeout: 60
 DOMAIN,disabled: true
 DOMAIN,schedule:
 DOMAIN,name: gist恢复
-CRON:100,22 * * *
+    CRON: 10 0,22 * * *
 DOMAIN,timeout: 60
 DOMAIN,disabled: true
 DOMAIN,mitm:

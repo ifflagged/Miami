@@ -4,7 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,anythinktech.com
-  - DOMAIN-SUFFIX,adkwai.com
-  - DOMAIN-SUFFIX,mob.com
+DOMAIN-SUFFIX,anythinktech.com
+DOMAIN-SUFFIX,adkwai.com
+DOMAIN-SUFFIX,mob.com

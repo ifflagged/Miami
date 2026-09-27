@@ -4,9 +4,10 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,ad-analysis.pconline.com.cn
-DOMAIN,iad0ssl.pcauto.com.cn
-DOMAIN,iad0ssl.pconline.com.cn
-DOMAIN,imgad0.pcauto.com.cn
-DOMAIN,imgad0.pconline.com.cn
-DOMAIN,ivy.pchouse.com.cn
+payload:
+  - DOMAIN,ad-analysis.pconline.com.cn
+  - DOMAIN,iad0ssl.pcauto.com.cn
+  - DOMAIN,iad0ssl.pconline.com.cn
+  - DOMAIN,imgad0.pcauto.com.cn
+  - DOMAIN,imgad0.pconline.com.cn
+  - DOMAIN,ivy.pchouse.com.cn

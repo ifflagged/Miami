@@ -1,18 +1,16 @@
-#规则数量:9
-#不支持的规则数量:1
+#规则数量:10
+#不支持的规则数量:0
 #已排除的规则数量:0
-#不支持的规则:
-#user-agent, AVOS*, reject
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,appcloud.zhihu.com
-  - DOMAIN,appcloud2.in.zhihu.com
-  - DOMAIN,crash2.zhihu.com
-  - DOMAIN,mqtt.zhihu.com
-  - DOMAIN,sugar.zhihu.com
-  - DOMAIN,zxid-m.mobileservice.cn
-  - IP-CIDR,103.41.167.237/32,no-resolve
-  - IP-CIDR,118.89.204.198/32,no-resolve
-  - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
+USER-AGENT,AVOS*
+DOMAIN,appcloud.zhihu.com
+DOMAIN,appcloud2.in.zhihu.com
+DOMAIN,crash2.zhihu.com
+DOMAIN,mqtt.zhihu.com
+DOMAIN,sugar.zhihu.com
+DOMAIN,zxid-m.mobileservice.cn
+IP-CIDR,103.41.167.237/32,no-resolve
+IP-CIDR,118.89.204.198/32,no-resolve
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve

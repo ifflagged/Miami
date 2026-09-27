@@ -4,13 +4,12 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-KEYWORD,xp.apple.com
-  - DOMAIN-KEYWORD,xp.itunes-apple.com
-  - DOMAIN-KEYWORD,gdmf.apple.com
-  - DOMAIN-KEYWORD,mesu.apple.com
-  - DOMAIN-KEYWORD,appldnld.apple.com
-  - DOMAIN-KEYWORD,gg.apple.com
-  - DOMAIN-KEYWORD,ns.itunes.apple.com
-  - DOMAIN-KEYWORD,updates.cdn-apple.com
-  - DOMAIN-KEYWORD,updates-http.cdn-apple.com
+DOMAIN-KEYWORD,xp.apple.com
+DOMAIN-KEYWORD,xp.itunes-apple.com
+DOMAIN-KEYWORD,gdmf.apple.com
+DOMAIN-KEYWORD,mesu.apple.com
+DOMAIN-KEYWORD,appldnld.apple.com
+DOMAIN-KEYWORD,gg.apple.com
+DOMAIN-KEYWORD,ns.itunes.apple.com
+DOMAIN-KEYWORD,updates.cdn-apple.com
+DOMAIN-KEYWORD,updates-http.cdn-apple.com

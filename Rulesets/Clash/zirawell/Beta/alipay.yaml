@@ -4,12 +4,11 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,adgw.alipay.com
-  - DOMAIN,amdc.alipay.com
-  - DOMAIN,rtms.alipay.com
-  - DOMAIN,amdc-sibling.alipay.com.cn
-  - DOMAIN,mobiledc.stable.alipay.net
-  - DOMAIN-SUFFIX,mdap.alipay.com
-  - DOMAIN-SUFFIX,ynuf.alipay.com
-  - DOMAIN-KEYWORD,loggw.alipay.com
+DOMAIN,adgw.alipay.com
+DOMAIN,amdc.alipay.com
+DOMAIN,rtms.alipay.com
+DOMAIN,amdc-sibling.alipay.com.cn
+DOMAIN,mobiledc.stable.alipay.net
+DOMAIN-SUFFIX,mdap.alipay.com
+DOMAIN-SUFFIX,ynuf.alipay.com
+DOMAIN-KEYWORD,loggw.alipay.com

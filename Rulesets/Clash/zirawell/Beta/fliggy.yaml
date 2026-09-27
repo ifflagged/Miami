@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-IP-CIDR,59.82.113.8/32,no-resolve
-DOMAIN,ad-track.fliggy.com
+payload:
+  - IP-CIDR,59.82.113.8/32,no-resolve
+  - DOMAIN,ad-track.fliggy.com

@@ -4,5 +4,4 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,dsp.fcbox.com
+DOMAIN,dsp.fcbox.com
