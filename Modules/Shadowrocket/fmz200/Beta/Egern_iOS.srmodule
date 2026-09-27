@@ -1,9 +1,0 @@
-#!name=Egern_iOS
-#!desc=Egern_iOS
-#!icon=icon not found
-#!category=fmz200
-
-[URL Rewrite]
-policy: - reject
-undefined undefined undefined
-
