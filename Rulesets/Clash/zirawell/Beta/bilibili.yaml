@@ -4,10 +4,11 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,adtrack.qianwen.com
-DOMAIN,ad-api.morefreegame.com
-DOMAIN-SUFFIX,ad.bilibili.com
-DOMAIN-SUFFIX,adcommon.bilibili.com
-DOMAIN-SUFFIX,cm.game.bilibili.com
-DOMAIN-SUFFIX,track.biligame.bilibili.com
-DOMAIN-KEYWORD,api.sobot.com
+payload:
+  - DOMAIN,adtrack.qianwen.com
+  - DOMAIN,ad-api.morefreegame.com
+  - DOMAIN-SUFFIX,ad.bilibili.com
+  - DOMAIN-SUFFIX,adcommon.bilibili.com
+  - DOMAIN-SUFFIX,cm.game.bilibili.com
+  - DOMAIN-SUFFIX,track.biligame.bilibili.com
+  - DOMAIN-KEYWORD,api.sobot.com

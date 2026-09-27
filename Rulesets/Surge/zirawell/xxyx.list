@@ -4,10 +4,9 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,1rtb.net
-  - DOMAIN-SUFFIX,adwangmai.com
-  - DOMAIN-SUFFIX,ad.richmob.cn
-  - DOMAIN-SUFFIX,fancyapi.com
-  - DOMAIN-SUFFIX,yfanads.com
-  - DOMAIN-SUFFIX,datads.cn
+DOMAIN-SUFFIX,1rtb.net
+DOMAIN-SUFFIX,adwangmai.com
+DOMAIN-SUFFIX,ad.richmob.cn
+DOMAIN-SUFFIX,fancyapi.com
+DOMAIN-SUFFIX,yfanads.com
+DOMAIN-SUFFIX,datads.cn

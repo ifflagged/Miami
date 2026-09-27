@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-KEYWORD,mpos-pic.helipay.com
+payload:
+  - DOMAIN-KEYWORD,mpos-pic.helipay.com

@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,rumt-zh.com
-DOMAIN,tracker-prd.aldi.com.cn
+payload:
+  - DOMAIN,rumt-zh.com
+  - DOMAIN,tracker-prd.aldi.com.cn
