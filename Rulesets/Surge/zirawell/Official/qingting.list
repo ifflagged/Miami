@@ -1,4 +1,0 @@
-# > 蜻蜓FM - QINGTING
-host, ad.qingting.fm, reject
-host, adlaunch.qingting.fm, reject
-host, ad-cdn.qingting.fm, reject
