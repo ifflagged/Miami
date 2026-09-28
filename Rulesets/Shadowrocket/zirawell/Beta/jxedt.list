@@ -4,9 +4,10 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,richmanapi.jxedt.com
-DOMAIN,richmanmain.jxedt.com
-DOMAIN,richmanrules.jxedt.com
-DOMAIN,richmanapi.ksedt.com
-DOMAIN,richmanmain.ksedt.com
-DOMAIN,richmanrules.ksedt.com
+payload:
+  - DOMAIN,richmanapi.jxedt.com
+  - DOMAIN,richmanmain.jxedt.com
+  - DOMAIN,richmanrules.jxedt.com
+  - DOMAIN,richmanapi.ksedt.com
+  - DOMAIN,richmanmain.ksedt.com
+  - DOMAIN,richmanrules.ksedt.com

@@ -4,6 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-IP-CIDR,180.76.76.200/32,no-resolve
-DOMAIN,afd.baidu.com
-DOMAIN,mobads.baidu.com
+payload:
+  - IP-CIDR,180.76.76.200/32,no-resolve
+  - DOMAIN,afd.baidu.com
+  - DOMAIN,mobads.baidu.com
