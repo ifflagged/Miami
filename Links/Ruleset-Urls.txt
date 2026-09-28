@@ -1,0 +1,17 @@
+# ==============================================================================
+# 格式规范：
+# 类型 | 作者名 | 链接或仓库地址 | 补充参数 (子目录/提取字段，可选)
+# 
+# 类型支持：
+# 1. GIT     : Git 仓库克隆模式 (参数为源码子目录，留空默认为根目录)
+# 2. JSON    : JSON 接口解析模式 (参数为额外 UA，留空用默认)
+# 3. RELEASE : GitHub Release Assets API 模式
+# 4. DIRECT  : 单个直接下载链接 (兼容原来的 Modules-Links.txt)
+# ==============================================================================
+
+# 1. 单链接直连模式 (直接下载单文件)
+DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Surge/Ruleset/Direct.list |
+DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Surge/Ruleset/Media/Emby.list |
+DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Surge/Ruleset/Direct.list |
+DIRECT | Jacob | ttps://github.com/ifflagged/Neverflagged/raw/main/Surge/Ruleset/Media/Emby.list |
+DIRECT | Jacob | https://github.com/ifflagged/Neverflagged/raw/main/Surge/Ruleset/Media/Nocopyright.list |
