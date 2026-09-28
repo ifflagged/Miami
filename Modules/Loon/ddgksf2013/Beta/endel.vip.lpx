@@ -1,0 +1,11 @@
+#!name=endel
+#!desc=endel
+#!icon=icon not found
+#!tag=ddgksf2013
+
+[Script]
+http-response ^https?:\/\/api-production\.endel\.io\/v\d\/call script-path=https://ddgksf2013.top/scripts/endel.vip.js, requires-body=true, timeout=60, tag=endel.vip
+
+[MITM]
+hostname = api-production.endel.io
+

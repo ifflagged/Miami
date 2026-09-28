@@ -1,0 +1,15 @@
+#!name=goodbility
+#!desc=goodbility
+#!icon=icon not found
+#!category=ddgksf2013
+
+[Script]
+goodbility.vip = type=http-response, pattern=^https:\/\/isi\.csan.[a-z.]+\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://ddgksf2013.top/scripts/goodbility.vip.js, requires-body=true, max-size=-1, timeout=60
+
+deleteHeader = type=http-request, pattern=^https:\/\/isi\.csan.[a-z.]+\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/deleteHeader.js, timeout=60
+
+goodbility.vip = type=http-response, pattern=^https?:\/\/notability\.com\/global, script-path=https://ddgksf2013.top/scripts/goodbility.vip.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% isi.csan.*, notability.com
+

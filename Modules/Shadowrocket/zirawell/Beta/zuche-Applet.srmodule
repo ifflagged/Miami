@@ -1,0 +1,13 @@
+#!name=zuche-Applet
+#!desc=zuche-Applet
+#!icon=icon not found
+#!category=zirawell
+
+[Map Local]
+^https?:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/marketing data-type=json data="{}"
+
+^https?:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/page\/advertising data-type=json data="{}"
+
+[MITM]
+hostname = %APPEND% apiproxy.zuche.com
+

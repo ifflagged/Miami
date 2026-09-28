@@ -1,0 +1,11 @@
+#!name=meituan-Applet
+#!desc=meituan-Applet
+#!icon=icon not found
+#!category=zirawell
+
+[Map Local]
+^https?:\/\/web\.meituan\.com\/api\/miniprogram\/index\/aggregate data-type=file data="https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Data/mt_aggregate.json"
+
+[MITM]
+hostname = %APPEND% web.meituan.com
+

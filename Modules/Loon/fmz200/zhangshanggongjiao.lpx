@@ -1,0 +1,11 @@
+#!name=zhangshanggongjiao
+#!desc=zhangshanggongjiao
+#!icon=icon not found
+#!tag=fmz200
+
+[Script]
+http-response https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhangshanggongjiao.js, requires-body=true, timeout=60, tag=zhangshanggongjiao
+
+[MITM]
+hostname = wx.mygolbs.com
+

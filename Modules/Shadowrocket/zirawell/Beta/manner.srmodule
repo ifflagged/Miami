@@ -1,0 +1,11 @@
+#!name=manner
+#!desc=manner
+#!icon=icon not found
+#!category=zirawell
+
+[Script]
+manner = type=http-response, pattern=^https?:\/\/triangle\.wearemanner\.com\/mp-api\/v\d\/ads, script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/manner.js, requires-body=true, max-size=0
+
+[MITM]
+hostname = %APPEND% triangle.wearemanner.com
+

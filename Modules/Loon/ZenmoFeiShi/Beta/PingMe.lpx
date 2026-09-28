@@ -1,0 +1,13 @@
+#!name=PingMe
+#!desc=PingMe
+#!icon=icon not found
+#!tag=ZenmoFeiShi
+
+[Script]
+http-request ^https:\/\/api\.pingmeapp\.net\/app\/queryBalanceAndBonus script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/PingMe.js, timeout=60, tag=PingMe
+
+cron "30 8,20 * * *" script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/PingMe.js, timeout=120, tag=PingMe签到
+
+[MITM]
+hostname = api.pingmeapp.net
+

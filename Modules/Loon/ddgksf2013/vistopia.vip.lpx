@@ -1,0 +1,11 @@
+#!name=vistopia
+#!desc=vistopia
+#!icon=icon not found
+#!tag=ddgksf2013
+
+[Script]
+http-response ^https?:\/\/api\.vistopia\.com\.cn\/api\/v\d+\/(user\/profile|content\/(article_list|content-show)|reader\/section-detail|services\/play-token) script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/vistopia.js, requires-body=true, timeout=60, tag=vistopia
+
+[MITM]
+hostname = api.vistopia.com.cn
+

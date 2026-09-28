@@ -1,0 +1,11 @@
+#!name=fenbi
+#!desc=fenbi
+#!icon=icon not found
+#!category=fmz200
+
+[Script]
+fenbi = type=http-response, pattern=^https:\/\/tiku\.fenbi\.com\/activity\/app\/launcher\?, script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/fenbi.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% tiku.fenbi.com
+

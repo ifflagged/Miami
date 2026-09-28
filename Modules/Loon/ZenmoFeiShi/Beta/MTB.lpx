@@ -1,0 +1,11 @@
+#!name=MTB
+#!desc=MTB
+#!icon=icon not found
+#!tag=ZenmoFeiShi
+
+[Script]
+http-response ^https:\/\/motibang\.com:8001\/api\/1\/user\/info script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MTB.js, requires-body=true, timeout=60, tag=MTB
+
+[MITM]
+hostname = motibang.com
+

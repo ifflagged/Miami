@@ -1,0 +1,12 @@
+#!name=baiduLib
+#!desc=baiduLib
+#!icon=icon not found
+#!tag=fmz200
+
+[Script]
+# 百度文库☆解锁VIP文档阅读权限（2022-10-17）
+http-response ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/baidu/baiduLib.js, requires-body=true, timeout=60, tag=baiduLib
+
+[MITM]
+hostname = appwk.baidu.com
+
