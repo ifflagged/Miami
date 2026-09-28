@@ -1,4 +1,4 @@
-#规则数量:17
+#规则数量:19
 #不支持的规则数量:0
 #已排除的规则数量:0
 
@@ -12,10 +12,12 @@ DOMAIN,ads.ishansong.com
 DOMAIN,api.hongyibo.com.cn
 DOMAIN,api.zysdsk.cn
 DOMAIN,bigdata-behaviordata.189.cn
+DOMAIN,djad.nmgyhxxkj.cn
 DOMAIN,dsp.fcbox.com
 DOMAIN,et.ykccn.com
 DOMAIN,file.dian.so
 DOMAIN,logs-bigdata.yeehaw.com.cn
+DOMAIN,pro.dajuhl.com
 DOMAIN,rumt-zh.com
 DOMAIN,smarket.dian.so
 DOMAIN,tracker-prd.aldi.com.cn

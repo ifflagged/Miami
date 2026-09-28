@@ -4,4 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,log.17gwx.com
+payload:
+  - DOMAIN,log.17gwx.com

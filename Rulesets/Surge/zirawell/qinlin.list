@@ -4,5 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,mall-dsp2.qinlinkeji.com
-DOMAIN,mallapi2.qinlinkeji.com
+payload:
+  - DOMAIN,mall-dsp2.qinlinkeji.com
+  - DOMAIN,mallapi2.qinlinkeji.com

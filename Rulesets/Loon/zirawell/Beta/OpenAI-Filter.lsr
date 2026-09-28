@@ -39,7 +39,7 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-KEYWORD,openaicom-api
   - DOMAIN-SUFFIX,chatgpt.livekit.cloud
-  - DOMAIN-SUFFIX,DOMAIN.livekit.cloud
+  - DOMAIN-SUFFIX,host.livekit.cloud
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - IP-CIDR,104.238.150.13/32,no-resolve
   - IP-CIDR,143.110.232.239/32,no-resolve

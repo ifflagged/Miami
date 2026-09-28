@@ -4,6 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,analytics.umetrip.com
-DOMAIN,startup.umetrip.com
-DOMAIN,sensors.umetrip.com.cn
+payload:
+  - DOMAIN,analytics.umetrip.com
+  - DOMAIN,startup.umetrip.com
+  - DOMAIN,sensors.umetrip.com.cn

@@ -4,6 +4,7 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN,adv-adlog.variflight.com
-DOMAIN,adv-ads.variflight.com
-DOMAIN,app-ad.variflight.com
+payload:
+  - DOMAIN,adv-adlog.variflight.com
+  - DOMAIN,adv-ads.variflight.com
+  - DOMAIN,app-ad.variflight.com
