@@ -8,14 +8,14 @@
 #!loon_version = 3.5.1(998)
 #!homepage = https://loonlab.103516.xyz/Plugin/
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/PinDuoDuo.png
-#!date = 2026-09-28 15:00
+#!date = 2026-09-29 00:00
 
-# 2026-05-27
-# https://raw.githubusercontent.com/ishowshu/qx/main/rewrite/pdd.snippet
-# 2026-09-26 12:55
+# 2026-09-28 21:10
 # https://rucu6.pages.dev/Plugins/pinduoduo.lpx
 # 2026-07-11 20:21:39
 # https://kelee.one/Tool/Loon/Lpx/PinDuoDuo_remove_ads.lpx
+# 2026-05-27
+# https://raw.githubusercontent.com/ishowshu/qx/main/rewrite/pdd.snippet
 
 [Rule]
 # 拦截HTTPDNS
@@ -62,9 +62,11 @@ request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/engels\/wait\/receive
 request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/buffon\/nasus\/recommend\?/i then reject_dict(200)
 
 request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\//i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/leporis\/notification\/clear_tab_red_dot\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/xrec\/goods_rec\/pay_after_use_v2\?/i then reject_dict(200)
+
 request if ${url} ~= /^https:\/\/api\.(?:pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash\?/i then reject_dict(200)
 request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/social\/mall\/follow\/hot\/recommend\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/leporis\/notification\/clear_tab_red_dot\?/i then reject_dict(200)
 
 request if ${url} ~= /^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v2\/query\/goods_detail_with_tags\?/i then reject_dict(200)
 
