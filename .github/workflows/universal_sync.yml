@@ -25,7 +25,8 @@ jobs:
       fail-fast: false
       matrix:
         author: [
-          universal_engine
+          module_engine,
+          rule_engine
         ]
 
     steps:
