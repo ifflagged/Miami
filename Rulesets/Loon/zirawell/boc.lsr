@@ -4,6 +4,5 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,iisp-oidea.mbs.boc.cn
-  - DOMAIN,iisp.mbs.boc.cn
+DOMAIN,iisp-oidea.mbs.boc.cn
+DOMAIN,iisp.mbs.boc.cn

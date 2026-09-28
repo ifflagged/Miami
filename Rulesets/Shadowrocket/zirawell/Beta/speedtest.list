@@ -4,7 +4,6 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN,ads.pubmatic.com
-  - DOMAIN,id.hadron.ad.gt
-  - DOMAIN-KEYWORD,-adsystem.com
+DOMAIN,ads.pubmatic.com
+DOMAIN,id.hadron.ad.gt
+DOMAIN-KEYWORD,-adsystem.com

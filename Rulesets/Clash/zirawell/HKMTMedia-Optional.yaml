@@ -4,11 +4,10 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-payload:
-  - DOMAIN-SUFFIX,biliapi.net
-  - DOMAIN,api.bilibili.com
-  - DOMAIN,upos-hz-mirrorakam.akamaized.net
-  - DOMAIN,cache.video.iqiyi.com
-  - DOMAIN-SUFFIX,api.mgtv.com
-  - DOMAIN-SUFFIX,wetv.vip
-  - DOMAIN-SUFFIX,wetvinfo.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN,api.bilibili.com
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+DOMAIN,cache.video.iqiyi.com
+DOMAIN-SUFFIX,api.mgtv.com
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,wetvinfo.com

@@ -4,20 +4,21 @@
 
 #-----------------以下为解析后的规则-----------------#
 
-DOMAIN-SUFFIX,apppv.zol.com.cn
-DOMAIN-SUFFIX,cpro.zol.com.cn
-DOMAIN-SUFFIX,dynamic.zol.com.cn
-DOMAIN-SUFFIX,imp.zol.com.cn
-DOMAIN-SUFFIX,js.zol.com.cn
-DOMAIN-SUFFIX,mstat.zol.com.cn
-DOMAIN-SUFFIX,pv.zol.com.cn
-DOMAIN-SUFFIX,pvc.zol.com.cn
-DOMAIN-SUFFIX,pvm.zol.com.cn
-DOMAIN-SUFFIX,pvmsite.zol.com.cn
-DOMAIN-SUFFIX,pvnapp.zol.com.cn
-DOMAIN-SUFFIX,pvsite.zol.com.cn
-DOMAIN-SUFFIX,pvtest.zol.com.cn
-DOMAIN-SUFFIX,wappv.zol.com.cn
-DOMAIN-SUFFIX,ydjs.zol.com.cn
-DOMAIN-SUFFIX,afp.zol-img.com.cn
-DOMAIN-SUFFIX,pic.zol-img.com.cn
+payload:
+  - DOMAIN-SUFFIX,apppv.zol.com.cn
+  - DOMAIN-SUFFIX,cpro.zol.com.cn
+  - DOMAIN-SUFFIX,dynamic.zol.com.cn
+  - DOMAIN-SUFFIX,imp.zol.com.cn
+  - DOMAIN-SUFFIX,js.zol.com.cn
+  - DOMAIN-SUFFIX,mstat.zol.com.cn
+  - DOMAIN-SUFFIX,pv.zol.com.cn
+  - DOMAIN-SUFFIX,pvc.zol.com.cn
+  - DOMAIN-SUFFIX,pvm.zol.com.cn
+  - DOMAIN-SUFFIX,pvmsite.zol.com.cn
+  - DOMAIN-SUFFIX,pvnapp.zol.com.cn
+  - DOMAIN-SUFFIX,pvsite.zol.com.cn
+  - DOMAIN-SUFFIX,pvtest.zol.com.cn
+  - DOMAIN-SUFFIX,wappv.zol.com.cn
+  - DOMAIN-SUFFIX,ydjs.zol.com.cn
+  - DOMAIN-SUFFIX,afp.zol-img.com.cn
+  - DOMAIN-SUFFIX,pic.zol-img.com.cn
