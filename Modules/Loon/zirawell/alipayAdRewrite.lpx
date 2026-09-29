@@ -37,9 +37,9 @@
 ^https?:\/\/waimai-guide\.ele\.me\/(gw|h5)\/mtop\.alsc\.eleme\.trigger\.respond - reject
 
 [Script]
-http-response ^https?:\/\/alsc-buy2\.ele\.me\/h5\/mtop\.alsc\.eleme\.order\.detail\.miniapp\.build script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, timeout=30, tag=replaceBody, argument=orderDetailCdpTriggerInfo-%3Erandom_body
+http-response ^https?:\/\/alsc-buy2\.ele\.me\/h5\/mtop\.alsc\.eleme\.order\.detail\.miniapp\.build script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/alipayAdRewrite/Script-Hub-Org_replace-body.js, requires-body=true, timeout=30, tag=replaceBody, argument=orderDetailCdpTriggerInfo-%3Erandom_body
 
-http-response ^https?:\/\/waimai-guide\.ele\.me\/(gw|h5)\/mtop\.alsc\.eleme\.miniapp\.homepage script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/eleme.js, requires-body=true, timeout=60, tag=eleme
+http-response ^https?:\/\/waimai-guide\.ele\.me\/(gw|h5)\/mtop\.alsc\.eleme\.miniapp\.homepage script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/alipayAdRewrite/zirawell_eleme.js, requires-body=true, timeout=60, tag=eleme
 
 [MITM]
 hostname = m5-zb.amap.com, aimai-guide.ele.me, creditcardapp.bankcomm.com, mdn.alicdn.com, shopping.ele.me, guide-acs.m.taobao.com, api.hellobike.com, alsc-buy2.ele.me, waimai-guide.ele.me

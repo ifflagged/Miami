@@ -4,7 +4,7 @@
 #!category=fmz200
 
 [Script]
-zhangshanggongjiao = type=http-response, pattern=https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do, script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhangshanggongjiao.js, requires-body=true, max-size=-1, timeout=60
+zhangshanggongjiao = type=http-response, pattern=https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/zhangshanggongjiao/fmz200_zhangshanggongjiao.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% wx.mygolbs.com

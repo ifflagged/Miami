@@ -4,7 +4,7 @@
 #!category=fmz200
 
 [Script]
-dict-youdao-ad = type=http-response, pattern=^https:\/\/dict\.youdao\.com\/(homepage\/promotion|course\/tab\/home|homepage\/tile), script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/youdao/dict-youdao-ad.js, requires-body=true, max-size=-1, timeout=60
+dict-youdao-ad = type=http-response, pattern=^https:\/\/dict\.youdao\.com\/(homepage\/promotion|course\/tab\/home|homepage\/tile), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/dict-youdao-ad/fmz200_dict-youdao-ad.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% dict.youdao.com

@@ -11,5 +11,5 @@
 #!date=2025-03-30 21:50:17
 
 [Script]
-network-changed script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/AutoPolicy/auto-policy.js, tag=auto-policy
+network-changed script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/AutoPolicy/Peng-YM_auto-policy.js, tag=auto-policy
 

@@ -4586,11 +4586,11 @@ response if ${url} ~= /^https:\/\/api\.bilibili\.com\/x\/pd-proxy\/tracker\?/ th
 response if ${url} ~= /^https:\/\/api\.bilibili\.com\/pgc\/view\/v2\/app\/season\?/ then response.json.jq(`del(.data.payment)`)
 response if ${url} ~= /^https:\/\/api\.bilibili\.com\/pgc\/page\/channel\?/ then response.json.jq(`.data.modules |= map(select(.type != "TIP") | if .type == "BANNER" then .module_data.items |= map(select(.url | startswith("https://www.bilibili.com/blackboard/era/") | not)) else . end)`)
 response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?/ then response.json.delete("data.common_equip")
-response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\?/ then response.json.jq_file("https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/jq/bilibili.tab.jq")
+response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\?/ then response.json.jq_file("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/kokoryh_bilibili.tab.jq")
 response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(list|show|event\/list2)\?/ then response.json.jq(`.data |= with_entries(if .key | IN("show", "event_list") then .value = [] else . end)`)
 response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\?/ then response.json.jq(`if .data.items then .data.items |= map(select((.banner_item == null) and (.ad_info == null) and (.card_goto == "av") and (.card_type | IN("small_cover_v2", "large_cover_single_v9", "large_cover_v1")))) end`)
 response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story\?/ then response.json.jq(`if .data.items then .data.items |= map(select((.ad_info == null) and (.card_goto | IN("vertical_ad_av", "vertical_ad_live", "vertical_ad_picture") | not)) | del(.story_cart_icon, .free_flow_toast, .image_infos, .course_info, .game_info)) end`)
-response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/v2\/account\/mine(\/ipad)?\?/ then response.json.jq_file("https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/jq/bilibili.mine.jq")
+response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/v2\/account\/mine(\/ipad)?\?/ then response.json.jq_file("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/kokoryh_bilibili.mine.jq")
 response if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?/ then response.json.jq(`.data.vip |= if . != null and .status == 0 then . + { status: 1, type: 2, due_date: 9005270400000, role: 15 } else . end`)
 
 # > 哔哩哔哩漫画
@@ -4650,7 +4650,7 @@ request if ${url} ~= /^https?:\/\/api3\.cls\.cn\/v1\/boot\/ad/ then reject(404)
 
 # > 彩云天气
 request if ${url} ~= /^https?:\/\/api\.caiyunapp\.com\/v1\/activity/ then reject_dict(200)
-response if ${url} ~= /^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\?/ then response.body.mock_file("json", "https://raw.githubusercontent.com/Keywos/rule/main/mocks/caiyun.json", 200)
+response if ${url} ~= /^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\?/ then response.body.mock_file("json", "https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_caiyun.json", 200)
 
 # > 菜鸟裹裹
 # hostname = cn-acs.m.cainiao.com, amdc.m.taobao.com
@@ -5260,7 +5260,7 @@ request if ${url} ~= /^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\
 
 # > 横店电影小程序
 # 开屏广告
-^https?:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/1 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/hengdian.json 302
+^https?:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/1 https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_hengdian.json 302
 # 顶部横幅广告
 request if ${url} ~= /^https?:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/2\?cid=/ then reject_dict(200)
 # 中间横幅广告
@@ -5404,7 +5404,7 @@ request if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?tx
 request if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341C147/ then reject(200)
 # 我的页面悬浮广告
 response if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?/ then response.body.replace(/"TAG_AD_INFO"/, "fmz200")
-response if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05/ then response.body.mock_file("json", "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/A3341AB05.json", 200)
+response if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05/ then response.body.mock_file("json", "https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_A3341AB05.json", 200)
 
 # 内置饿了么
 request if ${url} ~= /^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.alsc\.eleme\.\w+\.trigger\.respond/ then reject_dict(200)
@@ -7242,7 +7242,7 @@ request if ${url} ~= /^https?:\/\/wemallh5\.usmile\.com\/api\/sp-portal\/store\/
 # 首页弹窗
 request if ${url} ~= /^https?:\/\/www\.myusmile\.online\/user\/userTagRecord\/popup/ then reject(404)
 # 我的页推广
-http-response ^https?:\/\/www\.myusmile\.online\/user\/plaqueTopic\/selectByType script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/usmile.js
+http-response ^https?:\/\/www\.myusmile\.online\/user\/plaqueTopic\/selectByType script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_usmile.js
 
 # > 携程
 # hostname = m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com
@@ -7836,7 +7836,7 @@ request if ${url} ~= /^https?:\/\/(syh|www)\.zybang\.com\/adx\// then reject(200
 
 # > 12306
 # hostname = ad.12306.cn
-request if ${url} ~= /^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList/i then script("https://raw.githubusercontent.com/kokoryh/Script/master/js/12306.js") with enable=12306_enable, tag="12306", timeout=60, requires_body=true
+request if ${url} ~= /^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/kokoryh_12306.js") with enable=12306_enable, tag="12306", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ 2 ✅ <<<<<<<<<<<<<<
@@ -7852,12 +7852,12 @@ request if ${url} ~= /^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList/i then scrip
 
 # > 51信用卡管家
 # hostname = api.u51.com
-response if ${url} ~= /^https?:\/\/api\.u51\.com\/liabilitygateway\/api\/v\d\/homepage\/liabilityline/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/51card.js") with enable=51xyk_enable, tag="51信用卡管家", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/guanjia\/me-tab2\/config/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/51card.js") with enable=51xyk_enable, tag="51信用卡管家", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.u51\.com\/liabilitygateway\/api\/v\d\/homepage\/liabilityline/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_51card.js") with enable=51xyk_enable, tag="51信用卡管家", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/guanjia\/me-tab2\/config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_51card.js") with enable=51xyk_enable, tag="51信用卡管家", timeout=60, requires_body=true
 
 # > 555影视
 # hostname = vip7.fzwdyy.cn, *.qyfxgd.cn, *.weilai555.com, *.ecoliving168.com
-response if ${url} ~= /^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/movie\/index_recommend/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/555Ad.js") with enable=555_enable, tag="555影视广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/movie\/index_recommend/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_555Ad.js") with enable=555_enable, tag="555影视广告", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ 6 ✅ <<<<<<<<<<<<<<
@@ -7876,94 +7876,94 @@ response if ${url} ~= /^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/a
 
 # > 阿里巴巴
 # hostname = acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
-response if ${url} ~= /^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js") with enable=albb_enable, tag="阿里巴巴广告", timeout=60, requires_body=true
-response if ${url} ~= /^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js") with enable=albb_enable, tag="阿里巴巴广告", timeout=60, requires_body=true
-response if ${url} ~= /^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js") with enable=albb_enable, tag="myBlockAds", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cainiao.js") with enable=albb_enable, tag="阿里巴巴广告", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_myBlockAds.js") with enable=albb_enable, tag="阿里巴巴广告", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_myBlockAds.js") with enable=albb_enable, tag="myBlockAds", timeout=60, requires_body=true
 
 # > 阿里云盘
 # hostname = api.alipan.com, member.alipan.com
-response if ${url} ~= /^https:\/\/api\.alipan\.com\/apps\/v2\/users\/home\/(news|widgets)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/adrive/adrive.js") with enable=alyp_enable, tag="阿里云盘", timeout=60, requires_body=true
-response if ${url} ~= /^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/adrive/adrive.js") with enable=alyp_enable, tag="阿里云盘", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/api\.alipan\.com\/apps\/v2\/users\/home\/(news|widgets)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_adrive.js") with enable=alyp_enable, tag="阿里云盘", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_adrive.js") with enable=alyp_enable, tag="阿里云盘", timeout=60, requires_body=true
 
 # > 爱奇艺
 # hostname = -i.vip.iqiyi.com, *.iqiyi.com
 # 首页信息流广告
-response if ${url} ~= /^https?:\/\/[\d\.]+\/3f1\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页信息流广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/access\.if\.iqiyi\.com\/3f1\/cards\.iqiyi\.com\/(views_category\/3\.0\/category_home|views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页信息流广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/(category_home|categorylib_content|film_hybrid)\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页信息流广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页信息流广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/[\d\.]+\/3f1\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页信息流广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/access\.if\.iqiyi\.com\/3f1\/cards\.iqiyi\.com\/(views_category\/3\.0\/category_home|views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页信息流广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/(category_home|categorylib_content|film_hybrid)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页信息流广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页信息流广告", timeout=60, requires_body=true
 # 播放详情页
-response if ${url} ~= /^https?:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺播放详情页广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺播放详情页广告", timeout=60, requires_body=true
 # 搜索页列表
-response if ${url} ~= /^https?:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺搜索页列表广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺搜索页列表广告", timeout=60, requires_body=true
 # 评论区
-response if ${url} ~= /^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺评论区", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺评论区", timeout=60, requires_body=true
 # 我的页面菜单
-response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺我的页面菜单", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺我的页面菜单", timeout=60, requires_body=true
 # 首页左上角天气
-response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页左上角天气", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺首页左上角天气", timeout=60, requires_body=true
 # 通用控制,各tab页二楼
-response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺通用控制", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺通用控制", timeout=60, requires_body=true
 # 底部tab、顶部tab
-response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/views\/3\.0\/(bottom_theme|home_top_menu)\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺底部tab、顶部tab", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/views\/3\.0\/(bottom_theme|home_top_menu)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺底部tab、顶部tab", timeout=60, requires_body=true
 # 搜索框填充词
-response if ${url} ~= /^https?:\/\/search\.video\.iqiyi\.com\/q\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺搜索框填充词", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/search\.video\.iqiyi\.com\/q\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺搜索框填充词", timeout=60, requires_body=true
 # 开屏广告,播放广告
-response if ${url} ~= /^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺开屏广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=aiqiyi_enable, tag="爱奇艺开屏广告", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
 
 # > 百度地图
 # hostname = dss0.bdstatic.com, tb1.bdstatic.com, tb2.bdstatic.com, ss0.bdstatic.com, gss0.bdstatic.com, newclient.map.baidu.com
-response if ${url} ~= /^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/baidumap.js") with enable=bdduditu_enable, tag="百度地图广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_baidumap.js") with enable=bdduditu_enable, tag="百度地图广告", timeout=60, requires_body=true
 
 # > 百度贴吧
 # hostname = tiebac.baidu.com
-response if ${url} ~= /^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(ad\/getSplashAd|frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?)/i then script("https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js") with tag="贴吧json", timeout=10, requires_body=true
-response if ${url} ~= /^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/(b\/ad\/adBid|f\/(frs\/(page|threadlist|generalTabList)|ad\/getFeedAd|pb\/page|excellent\/personalized))\?cmd/i then script("https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js") with tag="贴吧proto", timeout=10, requires_body=true
+response if ${url} ~= /^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(ad\/getSplashAd|frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/app2smile_tieba-json.js") with tag="贴吧json", timeout=10, requires_body=true
+response if ${url} ~= /^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/(b\/ad\/adBid|f\/(frs\/(page|threadlist|generalTabList)|ad\/getFeedAd|pb\/page|excellent\/personalized))\?cmd/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/app2smile_tieba-proto.js") with tag="贴吧proto", timeout=10, requires_body=true
 
 # > 薄荷健康
 # hostname = api.boohee.com, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn, lego.boohee.com, status.boohee.com
 # 记录 大家都在看data.recom_cards / 底部按钮data.recom_btns
-response if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v2\/index\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/bohe/bohe_ads.js") with enable=bohejmkh_enable, tag="薄荷健康", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v2\/index\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_bohe_ads.js") with enable=bohejmkh_enable, tag="薄荷健康", timeout=60, requires_body=true
 # 广场 推荐 红标data.tabs[1].badge /轮播图data.recommend_ads
-response if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/bohe/bohe_ads.js") with enable=bohejmkh_enable, tag="薄荷健康", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_bohe_ads.js") with enable=bohejmkh_enable, tag="薄荷健康", timeout=60, requires_body=true
 # 代谢中心 顶部轮播图top_banner / 免费问诊推广diagnos_config / 合作医疗机构partner_hospital / 医患问答question_answer / 热门商品product / 品牌大事件brand_story
-response if ${url} ~= /^https:\/\/api\.boohee\.com\/open-interface\/v1\/string\/market_page\?title=metabolism_config$/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/bohe/bohe_ads.js") with enable=bohejmkh_enable, tag="薄荷健康", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/api\.boohee\.com\/open-interface\/v1\/string\/market_page\?title=metabolism_config$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_bohe_ads.js") with enable=bohejmkh_enable, tag="薄荷健康", timeout=60, requires_body=true
 
 # > 哔哩哔哩
 # hostname = grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, line3-h5-mobile-api.biligame.com
-request if ${url} ~= /^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$/i then script("https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.request.js") with enable=sponsorBlock, tag="bilibili.airborne", timeout=10, requires_body=true
-request if ${url} ~= /^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.viewunite\.v1\.View\/View|main\.community\.reply\.v1\.Reply\/MainList)$/i then script("https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.request.js") with enable=optimizeRequest, tag="bilibili.request", timeout=10, requires_body=true
-response if ${url} ~= /^https:\/\/api\.live\.bilibili\.com\/xlive\/(app-interface\/v2\/index\/feed|app-room\/v1\/index\/getInfoBy(Room|User))\?/i then script("https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.json.js") with tag="bilibili.live", requires_body=true
-response if ${url} ~= /^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$/i then script("https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.response.js") with tag="bilibili.protobuf", requires_body=true
+request if ${url} ~= /^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/kokoryh_bilibili.protobuf.request.js") with enable=sponsorBlock, tag="bilibili.airborne", timeout=10, requires_body=true
+request if ${url} ~= /^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.viewunite\.v1\.View\/View|main\.community\.reply\.v1\.Reply\/MainList)$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/kokoryh_bilibili.protobuf.request.js") with enable=optimizeRequest, tag="bilibili.request", timeout=10, requires_body=true
+response if ${url} ~= /^https:\/\/api\.live\.bilibili\.com\/xlive\/(app-interface\/v2\/index\/feed|app-room\/v1\/index\/getInfoBy(Room|User))\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/kokoryh_bilibili.json.js") with tag="bilibili.live", requires_body=true
+response if ${url} ~= /^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/kokoryh_bilibili.protobuf.response.js") with tag="bilibili.protobuf", requires_body=true
 
 # > 哔哩哔哩漫画
 # hostname = manga.bilibili.com, i*.hdslb.com
-response if ${url} ~= /^https?:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConf/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/bilibiliManga.js") with enable=bilimanhua_enable, tag="哔哩哔哩漫画", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/GetInitInfo/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/bilibiliManga.js") with enable=bilimanhua_enable, tag="哔哩哔哩漫画", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Home\/HomeFeed/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/bilibiliManga.js") with enable=bilimanhua_enable, tag="哔哩哔哩漫画", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comment\/Main/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/bilibiliManga.js") with enable=bilimanhua_enable, tag="哔哩哔哩漫画", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConf/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_bilibiliManga.js") with enable=bilimanhua_enable, tag="哔哩哔哩漫画", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/GetInitInfo/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_bilibiliManga.js") with enable=bilimanhua_enable, tag="哔哩哔哩漫画", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Home\/HomeFeed/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_bilibiliManga.js") with enable=bilimanhua_enable, tag="哔哩哔哩漫画", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comment\/Main/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_bilibiliManga.js") with enable=bilimanhua_enable, tag="哔哩哔哩漫画", timeout=60, requires_body=true
 
 # > Blued
 # hostname = social.blued.cn
 # 登录后个人界面广告
-response if ${url} ~= /^https?:\/\/social\.blued\.cn\/users\/.+\/more\/ios\?v=2/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/blued.js") with enable=blued_enable, tag="blued登录后个人界面广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/social\.blued\.cn\/users\/.+\/more\/ios\?v=2/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_blued.js") with enable=blued_enable, tag="blued登录后个人界面广告", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
 
 # > 财新网
-response if ${url} ~= /^https?:\/\/gg\.caixin\.com\/s\?z=caixin&op=1&c=3362/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/caixin/caixinAd.js") with enable=cdxb_enable, tag="财新广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/gg\.caixin\.com\/s\?z=caixin&op=1&c=3362/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_caixinAd.js") with enable=cdxb_enable, tag="财新广告", timeout=60, requires_body=true
 
 # > 菜鸟裹裹
 # hostname = cn-acs.m.cainiao.com, amdc.m.taobao.com
-response if ${url} ~= /^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/header.js") with enable=cdnngogo_enable, tag="菜鸟裹裹", timeout=60
-response if ${url} ~= /^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js") with enable=cdnngogo_enable, tag="菜鸟裹裹", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js") with enable=cdnngogo_enable, tag="菜鸟裹裹", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_header.js") with enable=cdnngogo_enable, tag="菜鸟裹裹", timeout=60
+response if ${url} ~= /^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cainiao.js") with enable=cdnngogo_enable, tag="菜鸟裹裹", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cainiao.js") with enable=cdnngogo_enable, tag="菜鸟裹裹", timeout=60, requires_body=true
 # 消息中心
-response if ${url} ~= /^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js") with enable=cdnngogo_enable, tag="菜鸟裹裹", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cainiao.js") with enable=cdnngogo_enable, tag="菜鸟裹裹", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
@@ -7971,41 +7971,41 @@ response if ${url} ~= /^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.
 # > 大众点评
 # hostname = 103.37.155.60, *.dianping.com, img.meituan.net, p.meituan.com, rms.meituan.com, www.dpfile.com, awp-assets.meituan.net, s3plus.meituan.net, p*.meituan.net, ddplus.meituan.net
 # 开屏广告
-response if ${url} ~= /^https?:\/\/img\.meituan\.net\/(?>dpmobile|goodsawardpic)\//i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/dianping.js") with enable=davsdmpk_enable, tag="大众点评", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/ddplus\.meituan\.net\/v\d\/mss_\w+\/picassovc/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/dianping.js") with enable=davsdmpk_enable, tag="大众点评", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/img\.meituan\.net\/(?>dpmobile|goodsawardpic)\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_dianping.js") with enable=davsdmpk_enable, tag="大众点评", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/ddplus\.meituan\.net\/v\d\/mss_\w+\/picassovc/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_dianping.js") with enable=davsdmpk_enable, tag="大众点评", timeout=60, requires_body=true
 
 # > 滴滴出行
 # hostname = res.xiaojukeji.com, common.diditaxi.com.cn, hd.xiaojukeji.com, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, conf.diditaxi.com.cn
-response if ${url} ~= /^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/freight\.xiaojukeji\.com\/gateway/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
-#http-response ^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js, requires-body=true, timeout=60, tag=滴滴出行
-response if ${url} ~= /^https?:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/daijia\.kuaidadi\.com\/gateway/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/daijia\.kuaidadi\.com:443\/gateway/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/freight\.xiaojukeji\.com\/gateway/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+#http-response ^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js, requires-body=true, timeout=60, tag=滴滴出行
+response if ${url} ~= /^https?:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/daijia\.kuaidadi\.com\/gateway/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/daijia\.kuaidadi\.com:443\/gateway/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="滴滴出行", timeout=60, requires_body=true
 # 微信小程序个人中心净化 感谢【TEXAS】分享
-response if ${url} ~= /^https?:\/\/common\.diditaxi\.com\.cn\/common\/v5/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js") with enable=didiiuxk_enable, tag="微信小程序个人中心净化", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/common\.diditaxi\.com\.cn\/common\/v5/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_didiAds.js") with enable=didiiuxk_enable, tag="微信小程序个人中心净化", timeout=60, requires_body=true
 
 # > 电影猎手
 # hostname = app-v1.ecoliving168.com
-response if ${url} ~= /^https:\/\/app-v1\.ecoliving168\.com\/api\/v1\/movie\/index_recommend\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/dianyinglieshou.js") with enable=dyls_enable, tag="电影猎手去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/app-v1\.ecoliving168\.com\/api\/v1\/movie\/index_recommend\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_dianyinglieshou.js") with enable=dyls_enable, tag="电影猎手去广告", timeout=60, requires_body=true
 
 # > 叮咚买菜
 # hostname = maicai.api.ddxq.mobi, gw.api.ddxq.mobi, user.api.ddxq.mobi
 # 开屏广告及首页推荐流及底部状态栏优化
-response if ${url} ~= /^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/(?>bottomNavi|homeFlowDetail)/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/ddxq.js") with enable=ddmc_enable, tag="叮咚买菜", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/(?>bottomNavi|homeFlowDetail)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_ddxq.js") with enable=ddmc_enable, tag="叮咚买菜", timeout=60, requires_body=true
 # 右下角AI
-response if ${url} ~= /^https?:\/\/maicai\.api\.ddxq\.mobi\/tool\/getConfig/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/ddxq.js") with enable=ddmc_enable, tag="叮咚买菜", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/maicai\.api\.ddxq\.mobi\/tool\/getConfig/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_ddxq.js") with enable=ddmc_enable, tag="叮咚买菜", timeout=60, requires_body=true
 # 我的页净化
-response if ${url} ~= /^https?:\/\/user\.api\.ddxq\.mobi\/userportal-service\/api\/v\d\/user\/queryMyPage/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/ddxq.js") with enable=ddmc_enable, tag="叮咚买菜", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/user\.api\.ddxq\.mobi\/userportal-service\/api\/v\d\/user\/queryMyPage/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_ddxq.js") with enable=ddmc_enable, tag="叮咚买菜", timeout=60, requires_body=true
 
 # > 动画疯
 # hostname = api.gamer.com.tw
 # (黑屏25秒)
-response if ${url} ~= /^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d/(token|m3u8).php\?/i then script("https://raw.githubusercontent.com/NobyDa/Script/master/Bahamut/BahamutAnimeAds.js") with enable=dshxfg_enable, tag="动画疯", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d/(token|m3u8).php\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/NobyDa_BahamutAnimeAds.js") with enable=dshxfg_enable, tag="动画疯", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
@@ -8015,15 +8015,15 @@ response if ${url} ~= /^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d/(
 
 # > 飞客茶馆
 # hostname = api.flydigi.com
-response if ${url} ~= /^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/fly.js") with enable=fwke_enable, tag="飞客茶馆", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/flyert.js") with enable=fwke_enable, tag="飞客茶馆", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_fly.js") with enable=fwke_enable, tag="飞客茶馆", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_flyert.js") with enable=fwke_enable, tag="飞客茶馆", timeout=60, requires_body=true
 
 # > 粉笔
-response if ${url} ~= /^https?:\/\/tiku\.fenbi\.com\/activity\/app\/launcher\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/fenbi.js") with enable=ffbi_enable, tag="粉笔开屏广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/tiku\.fenbi\.com\/activity\/app\/launcher\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_fenbi.js") with enable=ffbi_enable, tag="粉笔开屏广告", timeout=60, requires_body=true
 
 # > 复游会微信小程序
 # hostname = apis.folidaymall.com
-response if ${url} ~= /^https?:\/\/apis\.folidaymall\.com\/online\/capi\/component\/getPageComponents/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/foliday.js") with tag="复游会微信小程序", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/apis\.folidaymall\.com\/online\/capi\/component\/getPageComponents/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_foliday.js") with tag="复游会微信小程序", timeout=60, requires_body=true
 
 # > Flightradar24
 # http-response ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/Flightradar24.js, requires-body=true, timeout=60, tag=Flightradar24解锁, enable={flightradar24_enable}
@@ -8036,78 +8036,78 @@ response if ${url} ~= /^https?:\/\/apis\.folidaymall\.com\/online\/capi\/compone
 
 # > 航旅纵横
 # hostname = home.umetrip.com, discardrp.umetrip.com, startup.umetrip.com, oss.umetrip.com
-response if ${url} ~= /^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/umetrip/umetrip_ads.js") with enable=hlzh_enable, tag="航旅纵横", timeout=60, requires_body=true
+response if ${url} ~= /^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_umetrip_ads.js") with enable=hlzh_enable, tag="航旅纵横", timeout=60, requires_body=true
 
 # > 盒马
 # hostname = acs.m.taobao.com, acs-m.freshippo.com
-response if ${url} ~= /^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.query(?>indexpage|mypage|tabfeedstream)/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/freshippo.js") with enable=hema_enable, tag="盒马", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.query(?>indexpage|mypage|tabfeedstream)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_freshippo.js") with enable=hema_enable, tag="盒马", timeout=60, requires_body=true
 
 # > 汇付天下
 # 感谢【可莉】分享
-response if ${url} ~= /^https:\/\/mcsp\.cloudpnr\.com\/api\/miniapp\/popular\/T_MINIAPP$/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/huifutianxia_ads.js") with enable=hftx_enable, tag="汇付天下", timeout=60, requires_body=true
-response if ${url} ~= /^https:\/\/saas-ad\.cloudpnr\.com\/huifuad-base-api\/api\/tactics\/ad/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/huifutianxia_ads.js") with enable=hftx_enable, tag="汇付天下", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/mcsp\.cloudpnr\.com\/api\/miniapp\/popular\/T_MINIAPP$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_huifutianxia_ads.js") with enable=hftx_enable, tag="汇付天下", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/saas-ad\.cloudpnr\.com\/huifuad-base-api\/api\/tactics\/ad/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_huifutianxia_ads.js") with enable=hftx_enable, tag="汇付天下", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ I ✅ <<<<<<<<<<<<<<
 
 # > IT之家
 # 移除 轮播图 置顶文章 信息流广告
-response if ${url} ~= /^https?:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ithome/ithome.js") with enable=itzj_enable, tag="ithome", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_ithome.js") with enable=itzj_enable, tag="ithome", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ J ✅ <<<<<<<<<<<<<<
 
 # > 建行生活
 # hostname = yunbusiness.ccb.com, g.alicdn.com, waimai-guide.ele.me
-response if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB04/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/ccbLifeAds.js") with enable=jhsh_enable, tag="建行生活", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB04/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_ccbLifeAds.js") with enable=jhsh_enable, tag="建行生活", timeout=60, requires_body=true
 # 内置饿了么
-response if ${url} ~= /^https?:\/\/g\.alicdn\.com\/.*o2o-ad/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/alicdn.js") with enable=jhsh_enable, tag="建行生活内置饿了么", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/g\.alicdn\.com\/.*o2o-ad/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_alicdn.js") with enable=jhsh_enable, tag="建行生活内置饿了么", timeout=60, requires_body=true
 
 # > 京东
 # hostname = api.m.jd.com, dns.jd.com
-response if ${url} ~= /^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jingdong.js") with enable=jkds_enable, tag="京东", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_jingdong.js") with enable=jkds_enable, tag="京东", timeout=60, requires_body=true
 
 # > 京喜
 # hostname = api.m.jd.com
-response if ${url} ~= /^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingxiAd.js") with enable=jkxi_enable, tag="京喜", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_jingxiAd.js") with enable=jkxi_enable, tag="京喜", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
 
 # > 酷安
 # hostname = api.coolapk.com, www.coolapk.com
-response if ${url} ~= /^https?:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/coolapk.js") with enable=kuan_enable, tag="酷安", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/coolapk.js") with enable=kuan_enable, tag="酷安", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/api\.coolapk\.com\/v6\/page\/dataList\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/coolapk.js") with enable=kuan_enable, tag="酷安", timeout=60, requires_body=true
-request if ${url} ~= /^https:\/\/www\.coolapk\.com\/link.*/i then script("https://raw.githubusercontent.com/VenenoSix24/Ivy-Script/refs/heads/main/Loon/script/Coolapk_Redirect.js") with enable=kuan_enable, tag="酷安URL重定向", timeout=10
+response if ${url} ~= /^https?:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_coolapk.js") with enable=kuan_enable, tag="酷安", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_coolapk.js") with enable=kuan_enable, tag="酷安", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.coolapk\.com\/v6\/page\/dataList\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_coolapk.js") with enable=kuan_enable, tag="酷安", timeout=60, requires_body=true
+request if ${url} ~= /^https:\/\/www\.coolapk\.com\/link.*/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/VenenoSix24_Coolapk_Redirect.js") with enable=kuan_enable, tag="酷安URL重定向", timeout=10
 
 # > 酷我音乐
 # hostname = audiobookpay.kuwo.cn, mgxhtj.kuwo.cn, nmobi.kuwo.cn, searchrecterm.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn
-response if ${url} ~= /^https?:\/\/(mgxhtj|nmobi|searchrecterm)\.kuwo\.cn\/(mgxh|mobi|recterm)\.s/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuwo/kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(mgxhtj|nmobi|searchrecterm)\.kuwo\.cn\/(mgxh|mobi|recterm)\.s/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
 # 会员
-response if ${url} ~= /^https?:\/\/audiobookpay\.kuwo\.cn\/a\.p/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuwo/kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/musicpay\.kuwo\.cn\/music\.pay/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuwo/kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/vip1\.kuwo\.cn\/vip\/(enc\/user\/vip\?op=ui|v\d\/theme\?op=gd)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuwo/kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/vip1\.kuwo\.cn\/vip\/v\d\/user\/vip\?op=ui/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuwo/kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/audiobookpay\.kuwo\.cn\/a\.p/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/musicpay\.kuwo\.cn\/music\.pay/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/vip1\.kuwo\.cn\/vip\/(enc\/user\/vip\?op=ui|v\d\/theme\?op=gd)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/vip1\.kuwo\.cn\/vip\/v\d\/user\/vip\?op=ui/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_kuwo.js") with enable=kuwoybyt_enable, tag="酷我音乐", timeout=60, requires_body=true
 
 # > 夸克
-response if ${url} ~= /^https?:\/\/open-cms-api\.(uc|quark)\.cn\/open-cms/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/quark.js") with enable=kxke_enable, tag="夸克", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/open-cms-api\.(uc|quark)\.cn\/open-cms/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_quark.js") with enable=kxke_enable, tag="夸克", timeout=60, requires_body=true
 
 # > 快手联盟,优量汇,穿山甲「广告联盟」
-response if ${url} ~= /^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?)/i then script("https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js") with enable=glgclmmg_enable, tag="快手联盟", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/app2smile_adsense.js") with enable=glgclmmg_enable, tag="快手联盟", timeout=60, requires_body=true
 
 # > Keep
 # hostname = api.gotokeep.com, kad.gotokeep.com, static1.keepcdn.com
 # 我的页面去推广
-response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
 # 应用底部栏净化
-response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
 # 发现页处理
-response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/homepage\/v\d\/tab/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/homepage\/v\d\/tab/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
 # 课程预览页广告
-response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/nuocha\/course\/v\d/\w+\/preview/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/nuocha\/course\/v\d/\w+\/preview/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
 # 我的运动页面去除下方推荐
-response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/sportpage\/sport\/v\d\/mysport/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/sportpage\/sport\/v\d\/mysport/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_keep.js") with enable=keep_enable, tag="keep", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
@@ -8115,59 +8115,59 @@ response if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/sportpage\/sport\/v\d\/my
 # > 旅途随身听
 # hostname = www.1314zhilv.com
 # 首页北京城市导览图片,首页上方轮播图片净化
-response if ${url} ~= /^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(common\/getJGQIconNew|city\/getAllBannelByCity)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/lvtusuishenting/ltsst-ad.js") with enable=lvtusvuftk_enable, tag="旅途随身听", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(common\/getJGQIconNew|city\/getAllBannelByCity)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_ltsst-ad.js") with enable=lvtusvuftk_enable, tag="旅途随身听", timeout=60, requires_body=true
 
 # > 罗森点点
 # hostname = plt.yorentown.com, lawsonapi.yorentown.com
-response if ${url} ~= /^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\//i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/lawson.js") with enable=lawson_enable, tag="罗森点点", timeout=60, requires_body=true
-response if ${url} ~= /^https:\/\/lawsonapi\.yorentown\.com\/portal\/app\/globalLaunch\/listAdvert/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/lawson.js") with enable=lawson_enable, tag="罗森点点", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_lawson.js") with enable=lawson_enable, tag="罗森点点", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/lawsonapi\.yorentown\.com\/portal\/app\/globalLaunch\/listAdvert/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_lawson.js") with enable=lawson_enable, tag="罗森点点", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 
 # > 马蜂窝
 # hostname = mapi.mafengwo.cn
-response if ${url} ~= /^https?:\/\/mapi\.mafengwo\.cn\/user\/profile\/get_(list|profile)/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/mafengwo.js") with enable=mafgwo_enable, tag="马蜂窝", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/mapi\.mafengwo\.cn\/user\/profile\/get_(list|profile)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_mafengwo.js") with enable=mafgwo_enable, tag="马蜂窝", timeout=60, requires_body=true
 
 # > 买单吧
 # hostname = creditcardapp.bankcomm.cn, creditcardapp.bankcomm.com, creditcard.bankcomm.cn, creditcard.bankcomm.com
-response if ${url} ~= /^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/mdb.js") with enable=mddjba_enable, tag="mdb", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_mdb.js") with enable=mddjba_enable, tag="mdb", timeout=60, requires_body=true
 
 # > 脉脉
 # hostname = open.taou.com, h3.open.taou.com
 # 帖子末尾 看过此贴的用户也在看
-response if ${url} ~= /^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/maimai/maimai_ads.js") with enable=mdmd_enable, tag="脉脉帖子末尾", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_maimai_ads.js") with enable=mdmd_enable, tag="脉脉帖子末尾", timeout=60, requires_body=true
 # 移除信息流和评论区大块广告 信息流广告focus_feed / 评论区广告gossip_detail_comment / 评论区广告feed_detail_comment?
-response if ${url} ~= /^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(feed|gossip)\/v\d\/(focus_feed|gossip_detail_comment|feed_detail_comment?)\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/maimai/maimai_ads.js") with enable=mdmd_enable, tag="脉脉", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(feed|gossip)\/v\d\/(focus_feed|gossip_detail_comment|feed_detail_comment?)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_maimai_ads.js") with enable=mdmd_enable, tag="脉脉", timeout=60, requires_body=true
 
 # > 芒果TV
 # hostname = *.mgtv.com
 # 我的页面
-response if ${url} ~= /^https?:\/\/me\.bz\.mgtv\.com\/v3\/module\/list\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=mhgotv_enable, tag="芒果TV我的页面", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/me\.bz\.mgtv\.com\/v3\/module\/list\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=mhgotv_enable, tag="芒果TV我的页面", timeout=60, requires_body=true
 # 首页信息流,顶部tab
-response if ${url} ~= /^https?:\/\/mob-st\.bz\.mgtv\.com\/odin\/c1\/channel\/index\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=mhgotv_enable, tag="芒果TV首页信息流", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/dc2?\.bz\.mgtv\.com\/dynamic\/v1\/channel\/(index|vrsList)\/\w/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=mhgotv_enable, tag="芒果TV", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/mob-st\.bz\.mgtv\.com\/odin\/c1\/channel\/index\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=mhgotv_enable, tag="芒果TV首页信息流", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/dc2?\.bz\.mgtv\.com\/dynamic\/v1\/channel\/(index|vrsList)\/\w/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=mhgotv_enable, tag="芒果TV", timeout=60, requires_body=true
 # 底部tab
-response if ${url} ~= /^https?:\/\/mobile\.api\.mgtv\.com\/mobile\/config\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=mhgotv_enable, tag="芒果TV底部tab", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/mobile\.api\.mgtv\.com\/mobile\/config\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=mhgotv_enable, tag="芒果TV底部tab", timeout=60, requires_body=true
 # 播放详情页
-response if ${url} ~= /^https?:\/\/mobile\.api\.mgtv\.com\/v10\/video\/info\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=mhgotv_enable, tag="芒果TV播放详情页", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/mobile-thor\.api\.mgtv\.com\/v1\/vod\/info\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=mhgotv_enable, tag="芒果TV播放详情页", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/mobile\.api\.mgtv\.com\/v10\/video\/info\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=mhgotv_enable, tag="芒果TV播放详情页", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/mobile-thor\.api\.mgtv\.com\/v1\/vod\/info\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=mhgotv_enable, tag="芒果TV播放详情页", timeout=60, requires_body=true
 # 搜索框填充词
-response if ${url} ~= /^https?:\/\/mobileso\.bz\.mgtv\.com\/mobile\/recommend\/v2\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=mhgotv_enable, tag="芒果TV搜索框填充词", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/mobileso\.bz\.mgtv\.com\/mobile\/recommend\/v2\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=mhgotv_enable, tag="芒果TV搜索框填充词", timeout=60, requires_body=true
 
 # > 美丽修行
 # hostname = api.bevol.com
 # 去除开屏 首页广告 美修盒广告 我的页面广告
-response if ${url} ~= /^https:\/\/api\.bevol\.com\/(?:appmain\/app\/home\/page|usercenter\/account\/info|personal\/page|appmain\/app\/home\/launch|trialbox\/shop\/app\/homePage)$/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/mlxx/mlxx.js") with tag="美丽修行广告", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/api\.bevol\.com\/(?:appmain\/app\/home\/page|usercenter\/account\/info|personal\/page|appmain\/app\/home\/launch|trialbox\/shop\/app\/homePage)$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_mlxx.js") with tag="美丽修行广告", timeout=60, requires_body=true
 
 # > 美柚
 # hostname = x.seeyouyima.com, axxd.xmseeyouyima.com, config-service.seeyouyima.com
-response if ${url} ~= /^https:\/\/config-service\.seeyouyima\.com\/api\/configs\/batch\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/meiyou/meiyou_ads.js") with enable=meiyou_enable, tag="美柚App净化", timeout=60, requires_body=true
-response if ${url} ~= /^https:\/\/config-service\.seeyouyima\.com\/api\/configs\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/meiyou/meiyou_ads.js") with enable=meiyou_enable, tag="美柚App净化", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/config-service\.seeyouyima\.com\/api\/configs\/batch\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_meiyou_ads.js") with enable=meiyou_enable, tag="美柚App净化", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/config-service\.seeyouyima\.com\/api\/configs\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_meiyou_ads.js") with enable=meiyou_enable, tag="美柚App净化", timeout=60, requires_body=true
 
 # > 咪咕视频
 # hostname = ggc.miguvideo.com, public-deliver9.miguvideo.com, display*-sc.miguvideo.com, recommend-dy.miguvideo.com, app-sc.miguvideo.com, common-sc.miguvideo.com, ggx*.miguvideo.com, ggic*.miguvideo.com
-response if ${url} ~= /^https?:\/\/display-sc\.miguvideo\.com\/display\/v3\/static\/PERSONAL_CENTER$/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/Scripts/miguvideo/miguvideo_ads.js") with tag="咪咕视频个人中心去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/display-sc\.miguvideo\.com\/display\/v3\/static\/PERSONAL_CENTER$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_miguvideo_ads.js") with tag="咪咕视频个人中心去广告", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ N ✅ <<<<<<<<<<<<<<
@@ -8180,27 +8180,27 @@ response if ${url} ~= /^https?:\/\/display-sc\.miguvideo\.com\/display\/v3\/stat
 
 # > 朴朴超市
 # hostname = j1.pupuapi.com
-response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/search\/hot_keywords\/v3/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/search\/hot_keywords\/v3/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
 
-http-response ^https:\/\/j1\.pupuapi\.com\/client\/a朴朴超市, enable={pupuicui_enable}_resource\/resource_preload\/list_h5_resource script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PupuSplashAds.js, requires-body=true, timeout=60, tag=朴朴超市, enable={pupuicui_enable}
+http-response ^https:\/\/j1\.pupuapi\.com\/client\/a朴朴超市, enable={pupuicui_enable}_resource\/resource_preload\/list_h5_resource script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_PupuSplashAds.js, requires-body=true, timeout=60, tag=朴朴超市, enable={pupuicui_enable}
 
-response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v1/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v1/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
 
 # 搜索结果页信息流横幅广告
-response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/search\/hub\/search_box\/products\/v6/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/search\/hub\/search_box\/products\/v6/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
 
 # 下单页实惠卡开通推荐
-response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/order_settlement\/detail/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/order_settlement\/detail/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
 
 # 订单列表骑手反馈问题推荐
-response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/order\/orders\/list\/v4/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/order\/orders\/list\/v4/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_PupuSplashAds.js") with enable=pupuicui_enable, tag="朴朴超市", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
 
 # > 企迈 - QMAI(包含: 挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵)
 # hostname = webapi.qmai.cn, miniapp.qmai.cn
-response if ${url} ~= /^https?:\/\/(?>webapi|miniapp)\.qmai\.cn\/web\/catering([0-9]-apiserver)?\/advertising\/ad\/advertiseInfo/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/qmai.js") with tag="企迈（挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵）", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(?>webapi|miniapp)\.qmai\.cn\/web\/catering([0-9]-apiserver)?\/advertising\/ad\/advertiseInfo/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_qmai.js") with tag="企迈（挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵）", timeout=60, requires_body=true
 
 # > 起点读书
 # hostname = qidian.qpic.cn, mage.if.qidian.com, magev6.if.qidian.com
@@ -8209,20 +8209,20 @@ response if ${url} ~= /^https?:\/\/(?>webapi|miniapp)\.qmai\.cn\/web\/catering([
 
 # > 前程无忧 51Job
 # hostname = appapi.51job*.com, cupid.51job*.comhostname = img01.51jobcdn.com, cupid.51job*.com
-response if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamic/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/51job.js") with enable=51job_enable, tag="51job", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamic/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_51job.js") with enable=51job_enable, tag="51job", timeout=60, requires_body=true
 
 
 
 
 
 # 推荐流信息广告
-response if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamic/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/51job.js") with enable=51job_enable, tag="去哒", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamic/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_51job.js") with enable=51job_enable, tag="去哒", timeout=60, requires_body=true
 # 我的页净化
-response if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/my-page\//i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/51job.js") with enable=51job_enable, tag="去哒", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/my-page\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_51job.js") with enable=51job_enable, tag="去哒", timeout=60, requires_body=true
 
 # > 去哒
 # 首页开屏广告 感谢【德克萨斯】分享
-response if ${url} ~= /^https?:\/\/iqushangwang\.8quan\.com\/index\.php\/i\/index\/index/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/QuDa.js") with enable=quda_enable, tag="去哒", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/iqushangwang\.8quan\.com\/index\.php\/i\/index\/index/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_QuDa.js") with enable=quda_enable, tag="去哒", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ R ✅ <<<<<<<<<<<<<<
@@ -8230,90 +8230,90 @@ response if ${url} ~= /^https?:\/\/iqushangwang\.8quan\.com\/index\.php\/i\/inde
 # > 人人视频
 # hostname = api.rr.tv
 # RRTV_level_info
-response if ${url} ~= /^https?:\/\/api\.rr\.tv\/\w{3}\/level\/info/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.rr\.tv\/\w{3}\/level\/info/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 # RRTV_去除首頁廣告
-response if ${url} ~= /https://api.rr.tv/v3plus/index/channel\?pageNum=1&position=CHANNEL_INDEX/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /https://api.rr.tv/v3plus/index/channel\?pageNum=1&position=CHANNEL_INDEX/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 # RRTV_去除廣場tab
-response if ${url} ~= /^https?:\/\/api\.rr\.tv\/app\/config\/h5NativeBar/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.rr\.tv\/app\/config\/h5NativeBar/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 # RRTV_去除商城廣告
-response if ${url} ~= /^https?:\/\/api\.rr\.tv\/v3plus\/index\/channel\?pageNum=1&position=CHANNEL_MY/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.rr\.tv\/v3plus\/index\/channel\?pageNum=1&position=CHANNEL_MY/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 # RRTV_Ad_List
-response if ${url} ~= /^https?:\/\/api\.rr\.tv\/user\/privilege\/list/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.rr\.tv\/user\/privilege\/list/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 # RRTV_Ad_All
-response if ${url} ~= /^https?:\/\/api\.rr\.tv\/ad\/getAll/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.rr\.tv\/ad\/getAll/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 # RRTV_Get_Drama
-response if ${url} ~= /^https?:\/\/api\.rr\.tv\/drama\/app\/get_combined_drama_detail/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.rr\.tv\/drama\/app\/get_combined_drama_detail/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 # RRTV_Watch_V4
-response if ${url} ~= /https://api.rr.tv/watch/v4/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /https://api.rr.tv/watch/v4/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 # RRTV_User_Info
-response if ${url} ~= /https://api.rr.tv/user/profile/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
+response if ${url} ~= /https://api.rr.tv/user/profile/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_rrtv_json.js") with enable=rfrfuipk_enable, tag="rrtv_json", timeout=60, requires_body=true
 
 # > Reddit
 # 过滤推广 关NSFW提示 感谢【xream】分享
-response if ${url} ~= /^https?:\/\/gql(-fed)?\.reddit\.com/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/reddit.js") with enable=reddit_enable, tag="reddit", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/gql(-fed)?\.reddit\.com/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_reddit.js") with enable=reddit_enable, tag="reddit", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
 
 # > 什么值得买
 # hostname = homepage-api.smzdm.com, haojia-api.smzdm.com, app-api.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, qianbao.smzdm.com, s-api.smzdm.com, haojia.m.smzdm.com
-response if ${url} ~= /^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/haojia-api\.smzdm\.com\/ranking_list\/articles\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/user-api\.smzdm\.com\/vip\/creator_user_center/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/user-api\.smzdm\.com\/vip$/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/haojia-api\.smzdm\.com\/ranking_list\/articles\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/user-api\.smzdm\.com\/vip\/creator_user_center/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_smzdm_ads.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/user-api\.smzdm\.com\/vip$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_Smzdm.js") with enable=smzdm_enable, tag="什么值得买去广告", timeout=60, requires_body=true
 # 感谢【怎么肥事】分享
-response if ${url} ~= /^https?:\/\/app-api\.smzdm\.com\/util\/loading/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/app-api\.smzdm\.com\/util\/update/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/haojia-api\.smzdm\.com\/home\/list/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/homepage-api\.smzdm\.com\/v3\/home/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/article-api\.smzdm\.com\/publish\/get_bubble/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/qianbao\.smzdm\.com\/v\d\/app\/home/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/app-api\.smzdm\.com\/util\/loading/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/app-api\.smzdm\.com\/util\/update/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/haojia-api\.smzdm\.com\/home\/list/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/homepage-api\.smzdm\.com\/v3\/home/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/article-api\.smzdm\.com\/publish\/get_bubble/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/qianbao\.smzdm\.com\/v\d\/app\/home/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_Smzdm.js") with enable=smzdm_enable, tag="Smzdm", timeout=60, requires_body=true
 
 # > 苏打校园APP
 # hostname = api.sodalife.xyz
-response if ${url} ~= /^https?:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soda.js") with enable=sudaxnyr_enable, tag="苏打校园APP", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soda.js") with enable=sudaxnyr_enable, tag="苏打校园APP", timeout=60, requires_body=true
 
 # > Soul
 # hostname = 47.110.187.87, ssp.soulapp.cn, chat-live.soulapp.cn, api-chat.soulapp.cn, api-account.soulapp.cn, api-global.soulapp.me, api-a.soulapp.cn, api-pay.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, api-user.soulapp.cn
 # 替换信息收集
-request if ${url} ~= /^https:\/\/data-collector\.soulapp\.cn\/api\/data\/report\/v\d/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/template/req_replace_body.js") with enable=soul_enable, tag="req_replace_body", timeout=60, requires_body=true
+request if ${url} ~= /^https:\/\/data-collector\.soulapp\.cn\/api\/data\/report\/v\d/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_req_replace_body.js") with enable=soul_enable, tag="req_replace_body", timeout=60, requires_body=true
 # 青少年模式弹窗
-response if ${url} ~= /^https?:\/\/api-account\.soulapp\.cn\/teenager\/config/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/api-a\.soulapp\.cn\/v2\/post\/gift\/list/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/api-a\.soulapp\.cn\/official\/scene\/module/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/api-user\.soulapp\.cn\/furion\/position\/content/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/api-user\.soulapp\.cn\/v\d\/planet\/config/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/api-chat\.soulapp\.cn\/chat\/limitInfo/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/post\.soulapp\.cn\/hot\/soul\/rank/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/post\.soulapp\.cn\/v\d\/post\/homepage\/guide\/card/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/post\.soulapp\.cn\/v\d\/post\/recSquare\/subTabs/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/chat-live\.soulapp\.cn\/chatroom\/chatClassifyRoomList/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/gateway-mobile-gray\.soulapp\.cn\/mobile\/app\/version\/queryIos/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/47\.110\.187\.87\/winterfell\/v2\/getIpByDomain/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soul/soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api-account\.soulapp\.cn\/teenager\/config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api-a\.soulapp\.cn\/v2\/post\/gift\/list/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api-a\.soulapp\.cn\/official\/scene\/module/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api-user\.soulapp\.cn\/furion\/position\/content/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api-user\.soulapp\.cn\/v\d\/planet\/config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api-chat\.soulapp\.cn\/chat\/limitInfo/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/post\.soulapp\.cn\/hot\/soul\/rank/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/post\.soulapp\.cn\/v\d\/post\/homepage\/guide\/card/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/post\.soulapp\.cn\/v\d\/post\/recSquare\/subTabs/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/chat-live\.soulapp\.cn\/chatroom\/chatClassifyRoomList/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/gateway-mobile-gray\.soulapp\.cn\/mobile\/app\/version\/queryIos/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/47\.110\.187\.87\/winterfell\/v2\/getIpByDomain/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_soul_ads.js") with enable=soul_enable, tag="soul_ads", timeout=60, requires_body=true
 
 # > Spotify
 # hostname = *-spclient.spotify.com, spclient.wg.spotify.com
-response if ${url} ~= /^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/(?:bootstrap|user-customization-service)/i then script("https://raw.githubusercontent.com/001ProMax/Surge/refs/heads/main/Script/Spotify.Crack.Dev.js") with tag="Protobuf", timeout=3, requires_body=true
+response if ${url} ~= /^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/(?:bootstrap|user-customization-service)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/001ProMax_Spotify.Crack.Dev.js") with tag="Protobuf", timeout=3, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
 
 # > 淘宝
 # hostname = acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
-response if ${url} ~= /^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js") with enable=tcbc_enable, tag="淘宝", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.json/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js") with enable=tcbc_enable, tag="淘宝", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_myBlockAds.js") with enable=tcbc_enable, tag="淘宝", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.json/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_myBlockAds.js") with enable=tcbc_enable, tag="淘宝", timeout=60, requires_body=true
 
 # > 腾讯新闻
-response if ${url} ~= /^https?:\/\/(news\.ssp\.qq\.com\/app|r\.inews\.qq\.com\/(get(QQNewsUnreadList|TagFeedList)|gw\/page\/event_detail|news_feed\/hot_module_list))/i then script("https://raw.githubusercontent.com/app2smile/rules/master/js/qq-news.js") with enable=tgxyxbwf_enable, tag="腾讯新闻", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(news\.ssp\.qq\.com\/app|r\.inews\.qq\.com\/(get(QQNewsUnreadList|TagFeedList)|gw\/page\/event_detail|news_feed\/hot_module_list))/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/app2smile_qq-news.js") with enable=tgxyxbwf_enable, tag="腾讯新闻", timeout=60, requires_body=true
 
 # > 途虎养车
 # hostname = mkt-gateway.tuhu.cn, cl-gateway.tuhu.cn, gateway.tuhu.cn
-response if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/cl-common-api\/api\/personalCenter\/getCmsModuleList/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/tuhu.js") with tag="途虎养车去广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/[a-z-]+\/homePage\/getHomePageInfo/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/tuhu.js") with tag="途虎养车去广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/cl-shop-api\/shopTab\/getModuleForC/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/tuhu.js") with tag="途虎养车去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/cl-common-api\/api\/personalCenter\/getCmsModuleList/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_tuhu.js") with tag="途虎养车去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/[a-z-]+\/homePage\/getHomePageInfo/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_tuhu.js") with tag="途虎养车去广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/cl-shop-api\/shopTab\/getModuleForC/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_tuhu.js") with tag="途虎养车去广告", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
@@ -8323,7 +8323,7 @@ response if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/cl-shop-api\/
 
 # > vgTime
 # App去开屏广告(需全新应用). 若要去新闻列表广告需要搭配广告联盟模块
-response if ${url} ~= /^https?:\/\/app02\.vgtime\.com:8080\/vgtime-app\/api\/v2\/init\/ad\.json/i then script("https://raw.githubusercontent.com/app2smile/rules/master/js/vgtime.js") with enable=vgtime_enable, tag="vgTime", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/app02\.vgtime\.com:8080\/vgtime-app\/api\/v2\/init\/ad\.json/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/app2smile_vgtime.js") with enable=vgtime_enable, tag="vgTime", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
@@ -8331,34 +8331,34 @@ response if ${url} ~= /^https?:\/\/app02\.vgtime\.com:8080\/vgtime-app\/api\/v2\
 # > 网易有道词典
 # hostname = dict.youdao.com, api-overmind.youdao.com, cdke.youdao.com, dictvip-business.youdao.com, dsp-impr2.youdao.com, impservice.dictapp.youdao.com, oral.youdao.com, oimage*.ydstatic.com
 # 首页净化，学习Tab界面净化，首页听读训练净化
-response if ${url} ~= /^https?:\/\/dict\.youdao\.com\/(homepage\/promotion|course\/tab\/home|homepage\/tile)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/youdao/dict-youdao-ad.js") with enable=whyiyzdccidm_enable, tag="网易有道词典", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/dict\.youdao\.com\/(homepage\/promotion|course\/tab\/home|homepage\/tile)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_dict-youdao-ad.js") with enable=whyiyzdccidm_enable, tag="网易有道词典", timeout=60, requires_body=true
 
 # > 网易云音乐
 # hostname = ipv4.music.163.com, interface.music.163.com, interface3.music.163.com, interface9.music.163.com
 # mian | 热推、有话想说、分享一下、歌曲下的祝福等小提示去除 ｜ 评论区 乐迷、星评等级 关注 等 图标去除
-response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(batch|v\d\/resource\/comment\/floor\/get)/i then script("https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_mian", timeout=20, requires_body=true
+response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(batch|v\d\/resource\/comment\/floor\/get)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_mian", timeout=20, requires_body=true
 # 伪vip
-#http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(music-vip-membership\/client\/vip\/info|vipnewcenter\/app\/resource\/newaccountpage) script-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js, requires-body=true, binary-body-mode=true, timeout=20, tag=NetEaseCloudMusic_vip, enable={whyiyyybyt_enable}
+#http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(music-vip-membership\/client\/vip\/info|vipnewcenter\/app\/resource\/newaccountpage) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_wyres.js, requires-body=true, binary-body-mode=true, timeout=20, tag=NetEaseCloudMusic_vip, enable={whyiyyybyt_enable}
 # tab
-response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/home\/framework\/tab/i then script("https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_tab", timeout=20, requires_body=true
+response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/home\/framework\/tab/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_tab", timeout=20, requires_body=true
 # 推荐 | home | 主页
-response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(homepage\/block\/page|link\/page\/rcmd\/(resource\/show|block\/resource\/multi\/refresh))/i then script("https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_home", timeout=20, requires_body=true
+response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(homepage\/block\/page|link\/page\/rcmd\/(resource\/show|block\/resource\/multi\/refresh))/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_home", timeout=20, requires_body=true
 # 发现
-response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/page\/discovery\/resource\/show/i then script("https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_fx", timeout=20, requires_body=true
+response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/page\/discovery\/resource\/show/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_fx", timeout=20, requires_body=true
 # effect
-# http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/song\/play\/more\/list\/v\d script-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js, requires-body=true, binary-body-mode=true, timeout=20, tag=NetEaseCloudMusic_effect, enable={whyiyyybyt_enable}
+# http-response ^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/song\/play\/more\/list\/v\d script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_wyres.js, requires-body=true, binary-body-mode=true, timeout=20, tag=NetEaseCloudMusic_effect, enable={whyiyyybyt_enable}
 # 我的 MyPageBar ad
-response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/position\/show\/resource/i then script("https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_mybarad", timeout=20, requires_body=true
+response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/position\/show\/resource/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_mybarad", timeout=20, requires_body=true
 # 显示未关注你
-response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/user\/follow\/users\/mixed\/get/i then script("https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_foll", timeout=20, requires_body=true
+response if ${url} ~= /^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/user\/follow\/users\/mixed\/get/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Keywos_wyres.js") with enable=whyiyyybyt_enable, tag="NetEaseCloudMusic_foll", timeout=20, requires_body=true
 
 # > 微信解除链接限制
 # hostname = weixin110.qq.com, security.wechat.com
 # 微信跳过中间界面，支付宝链接、被封禁链接进行通知弹窗跳转，在微信中用快照显示被封禁的链接（可选），在微信中进行强制重定向（可选），群聊 / 扫码均可使用，可选项可在脚本 2、3 行更改，也可在 BoxJs 中更改。
-response if ${url} ~= /^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?/i then script("https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js") with enable=lmjpxmvi_enable, tag="UnblockURLinWeChat-解除微信链接限制", timeout=60, requires_body=true
+response if ${url} ~= /^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zZPiglet_UnblockURLinWeChat.js") with enable=lmjpxmvi_enable, tag="UnblockURLinWeChat-解除微信链接限制", timeout=60, requires_body=true
 
 # > 温尼伯站
-response if ${url} ~= /^https:\/\/vue3-api\.zhixiny\.cn\/v1\/initui\?key=index/i then script("https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/AdBlock/xmApp/wnbz.js") with enable=wfnibovj_enable, tag="温尼伯站", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/vue3-api\.zhixiny\.cn\/v1\/initui\?key=index/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Sliverkiss_wnbz.js") with enable=wfnibovj_enable, tag="温尼伯站", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
@@ -8366,53 +8366,53 @@ response if ${url} ~= /^https:\/\/vue3-api\.zhixiny\.cn\/v1\/initui\?key=index/i
 # > 闲鱼
 # hostname = acs.m.goofish.com, g-acs.m.goofish.com
 # 商品信息流广告
-response if ${url} ~= /^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\//i then script("https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js") with tag="商品信息流广告", requires_body=true
+response if ${url} ~= /^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/ishowshu_goofish.js") with tag="商品信息流广告", requires_body=true
 # 定位地区页面的信息流广告
-response if ${url} ~= /^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\//i then script("https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js") with tag="定位地区页面的信息流广告", requires_body=true
+response if ${url} ~= /^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/ishowshu_goofish.js") with tag="定位地区页面的信息流广告", requires_body=true
 # 个人主页
-response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\//i then script("https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js") with tag="个人主页", requires_body=true
+response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/ishowshu_goofish.js") with tag="个人主页", requires_body=true
 # 首页顶部频道菜单
-response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/1\.0/i then script("https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js") with tag="首页顶部频道菜单", requires_body=true
+response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/1\.0/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/ishowshu_goofish.js") with tag="首页顶部频道菜单", requires_body=true
 # 商品详情页周边推荐
-response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.nearby\.itemdetail\.enter\/1\.0/i then script("https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js") with tag="商品详情页周边推荐", requires_body=true
+response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.nearby\.itemdetail\.enter\/1\.0/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/ishowshu_goofish.js") with tag="商品详情页周边推荐", requires_body=true
 # 搜索结果信息流广告
-response if ${url} ~= /^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\//i then script("https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js") with tag="搜索结果信息流广告", requires_body=true
+response if ${url} ~= /^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/ishowshu_goofish.js") with tag="搜索结果信息流广告", requires_body=true
 # 同城页横幅广告
-response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.flow\.plat\.section/i then script("https://raw.githubusercontent.com/ishowshu/qx/refs/heads/main/script/goofish.js") with tag="同城页横幅广告", requires_body=true
+response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.flow\.plat\.section/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/ishowshu_goofish.js") with tag="同城页横幅广告", requires_body=true
 
 # > 香蕉是一种水果
-response if ${url} ~= /^https?:\/\/.+?\.(pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|(\/|)vod\/reqplay\/)/i then script("https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js") with enable=xljnuiyivsuvgo_enable, tag="香蕉是一种水果", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/.+?\.(pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|(\/|)vod\/reqplay\/)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/NobyDa_xjsp.js") with enable=xljnuiyivsuvgo_enable, tag="香蕉是一种水果", timeout=60, requires_body=true
 
 # > 小红书
 # hostname = edith.xiaohongshu.com, www.xiaohongshu.com, ci.xiaohongshu.com, rec.xiaohongshu.com, so.xiaohongshu.com
 # 搜索页
-response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/(banner|hot)_list/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书搜索页", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/(hint|trending)\?/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书搜索页", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/(so|edith)\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\?/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书搜索页", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/(banner|hot)_list/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书搜索页", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/(hint|trending)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书搜索页", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(so|edith)\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书搜索页", timeout=60, requires_body=true
 # 开屏广告
-response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/config\?/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书开屏广告", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/splash_config/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书开屏广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/config\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书开屏广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/splash_config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书开屏广告", timeout=60, requires_body=true
 # 详情页,小部件
-response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/widgets/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书详情页", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/widgets/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书详情页", timeout=60, requires_body=true
 # 图片水印,视频水印
-response if ${url} ~= /^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/(imagefeed|live_photo\/save)/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书图片视频水印", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d+\/(followfeed|homefeed)\?/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书图片视频水印", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v2\/note\/feed|v3\/note\/videofeed)\?/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书图片视频水印", timeout=60, requires_body=true
-response if ${url} ~= /^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v4\/note\/videofeed|v10\/note\/video\/save)\?/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书图片视频水印", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/(imagefeed|live_photo\/save)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书图片视频水印", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d+\/(followfeed|homefeed)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书图片视频水印", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v2\/note\/feed|v3\/note\/videofeed)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书图片视频水印", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v4\/note\/videofeed|v10\/note\/video\/save)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书图片视频水印", timeout=60, requires_body=true
 # 评论区图片、live图水印，表情包下载
-response if ${url} ~= /^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v5\/note\/comment\/list|v3\/note\/comment\/sub_comments)\?/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书评论区去水印存储", timeout=60, requires_body=true
-response if ${url} ~= /^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/interaction\/comment\/video\/download\?/i then script("https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js") with enable=xhs_enable, tag="小红书评论区去水印下载", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v5\/note\/comment\/list|v3\/note\/comment\/sub_comments)\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书评论区去水印存储", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/interaction\/comment\/video\/download\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaohongshu.js") with enable=xhs_enable, tag="小红书评论区去水印下载", timeout=60, requires_body=true
 
 # > 小芒
 # hostname = mgesq.api.mgtv.com, *.hitv.com
-response if ${url} ~= /https://mgesq.api.mgtv.com/dsl/index.+/i then script("https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/AdBlock/xmApp/xmApp.js") with enable=xnmh_enable, tag="小芒APP主页广告", timeout=60, requires_body=true
+response if ${url} ~= /https://mgesq.api.mgtv.com/dsl/index.+/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Sliverkiss_xmApp.js") with enable=xnmh_enable, tag="小芒APP主页广告", timeout=60, requires_body=true
 
 # > 小米商城
-response if ${url} ~= /^https?:\/\/api\.m\.mi\.com\/v1\/app\/start/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js") with enable=xnmiuhig_enable, tag="小米商城", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.m\.mi\.com\/v1\/app\/start/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_myBlockAds.js") with enable=xnmiuhig_enable, tag="小米商城", timeout=60, requires_body=true
 
 # > 小兔充充
 # hostname = ad.xiaotucc.com, mapi.xiaotucc.com
-response if ${url} ~= /^https?:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xiaotucc.js") with enable=xntuisis_enable, tag="小兔充充", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_xiaotucc.js") with enable=xntuisis_enable, tag="小兔充充", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
@@ -8420,33 +8420,33 @@ response if ${url} ~= /^https?:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/i
 # > 优酷
 # hostname = acs.youku.com, push.m.youku.com, un-acs.youku.com
 # 播放详情页,首页信息流,顶部tab,我的页面,评论区
-response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.(gateway\.new\.execute|home\.feed|home\.query|uc\.query|ycp\.query)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=yzku_enable, tag="优酷", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.(gateway\.new\.execute|home\.feed|home\.query|uc\.query|ycp\.query)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=yzku_enable, tag="优酷", timeout=60, requires_body=true
 # 底部tab
-response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.get/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=yzku_enable, tag="优酷底部tab", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.get/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=yzku_enable, tag="优酷底部tab", timeout=60, requires_body=true
 # 青少年模式弹窗
-response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config2/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=yzku_enable, tag="优酷青少年模式弹窗", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config2/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=yzku_enable, tag="优酷青少年模式弹窗", timeout=60, requires_body=true
 # 搜索列表
-response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearch/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=yzku_enable, tag="优酷搜索列表", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearch/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=yzku_enable, tag="优酷搜索列表", timeout=60, requires_body=true
 # 热剧弹窗
-response if ${url} ~= /^https?:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=yzku_enable, tag="优酷热剧弹窗", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=yzku_enable, tag="优酷热剧弹窗", timeout=60, requires_body=true
 # 开屏广告
-response if ${url} ~= /^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js") with enable=yzku_enable, tag="优酷开屏广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cnftp.js") with enable=yzku_enable, tag="优酷开屏广告", timeout=60, requires_body=true
 
 # > 悠洗APP
 # hostname = api.ulife.group
-response if ${url} ~= /^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/yx.js") with enable=yzxiapp_enable, tag="悠洗APP", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_yx.js") with enable=yzxiapp_enable, tag="悠洗APP", timeout=60, requires_body=true
 
 # > YouTube
 # hostname = rr*.googlevideo.com, youtubei.googleapis.com
 # 响应体
-response if ${url} ~= /^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)/i then script("https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/Script/Youtube/youtube.response.js") with enable=youtube_enable, tag="YouTube响应体", timeout=60, requires_body=true
+response if ${url} ~= /^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/Maasea_youtube.response.js") with enable=youtube_enable, tag="YouTube响应体", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<
 
 # > 掌上公交
 # hostname = quanguo.mygolbs.com, wx.mygolbs.com
-response if ${url} ~= /^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhangshanggongjiao.js") with enable=vhuhgsjn_enable, tag="掌上公交小程序广告", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhangshanggongjiao.js") with enable=vhuhgsjn_enable, tag="掌上公交小程序广告", timeout=60, requires_body=true
 
 # > 招财猫直聘
 # hostname = beehiveapi.58.com
@@ -8455,34 +8455,34 @@ response if ${url} ~= /^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do/i 
 # > 招商证券
 # hostname = marketing.cmschina.com
 # 首页和理财页面横幅广告
-response if ${url} ~= /^https:\/\/marketing\.cmschina\.com\/mkt\/api\/v1\?.*/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cmschina/cmschina.js") with tag="招商证券去广告", timeout=20, requires_body=true
+response if ${url} ~= /^https:\/\/marketing\.cmschina\.com\/mkt\/api\/v1\?.*/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_cmschina.js") with tag="招商证券去广告", timeout=20, requires_body=true
 
 # > 知乎
 # hostname = api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, zhuanlan.zhihu.com, link.zhihu.com
 # 首页 - 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片、精简顶部标签
-response if ${url} ~= /^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/(?:moments_v3|topstory\/hot-lists\/total|topstory\/recommend)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/root\/tab/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎精简顶部标签", requires_body=true
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
+response if ${url} ~= /^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/(?:moments_v3|topstory\/hot-lists\/total|topstory\/recommend)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/root\/tab/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎精简顶部标签", requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除首页推广", requires_body=true
 # 会员页面 - 弹窗、悬浮动图
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除会员页面推广", requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除会员页面推广", requires_body=true
 # 回答详情页 - 评论区顶部、下一个回答
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除回答详情页推广", requires_body=true
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=)/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除回答详情页推广", requires_body=true
-response if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/recommendations?\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎移除回答详情页推广", requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除回答详情页推广", requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除回答详情页推广", requires_body=true
+response if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/recommendations?\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎移除回答详情页推广", requires_body=true
 # 其他 - 服务器推送配置
-response if ${url} ~= /^https:\/\/appcloud2\.zhihu\.com\/v3\/config/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎拦截服务器推送配置", requires_body=true
-response if ${url} ~= /^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js") with enable=vihu_enable, tag="知乎拦截服务器推送配置", requires_body=true
+response if ${url} ~= /^https:\/\/appcloud2\.zhihu\.com\/v3\/config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎拦截服务器推送配置", requires_body=true
+response if ${url} ~= /^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhihu.js") with enable=vihu_enable, tag="知乎拦截服务器推送配置", requires_body=true
 
 # > 中国国际航空
-response if ${url} ~= /^https:\/\/m\.airchina\.com\.cn\/airchina\/gateway\/v\d(\.\d)*\/api\/services/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/airchina.js") with enable=vsgogojihhks_enable, tag="中国国际航空", timeout=60
+response if ${url} ~= /^https:\/\/m\.airchina\.com\.cn\/airchina\/gateway\/v\d(\.\d)*\/api\/services/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/zirawell_airchina.js") with enable=vsgogojihhks_enable, tag="中国国际航空", timeout=60
 
 # > 转转
 # hostname = app.zhuanzhuan.com
 # “我的”页面去除冗余的模块
-response if ${url} ~= /^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3/i then script("https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhuanzhuan/zhuanzhuan.js") with enable=vrvr_enable, tag="转转", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAdsV2/fmz200_zhuanzhuan.js") with enable=vrvr_enable, tag="转转", timeout=60, requires_body=true
 
 
 # >>>>>>>>>>>>>>> ✅ # ✅ <<<<<<<<<<<<<<

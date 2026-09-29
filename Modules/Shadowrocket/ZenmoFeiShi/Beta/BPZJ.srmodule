@@ -4,7 +4,7 @@
 #!category=ZenmoFeiShi
 
 [Script]
-BPZJ = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/BPZJ.js, requires-body=true, max-size=-1, timeout=60
+BPZJ = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ZenmoFeiShi/BPZJ/ZenmoFeiShi_BPZJ.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% buy.itunes.apple.com

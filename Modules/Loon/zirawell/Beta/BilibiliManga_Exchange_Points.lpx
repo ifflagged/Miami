@@ -4,5 +4,5 @@
 #!tag=zirawell
 
 [Script]
-cron "0-59 0 0 * * 0-1" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/ExchangePoints.js, timeout=60, tag=ExchangePoints
+cron "0-59 0 0 * * 0-1" script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/BilibiliManga_Exchange_Points/NobyDa_ExchangePoints.js, timeout=60, tag=ExchangePoints
 

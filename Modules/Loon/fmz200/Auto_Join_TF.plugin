@@ -25,12 +25,12 @@ TaskMonitor = input, "0 * * * * ?", tag = 监控TF定时参数, desc = 这里需
 DOMAIN, testflight.apple.com, PROXY
 
 [Script]
-http-request ^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$ script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/TestFlight/AutoJoinTFKeys.js, tag = 获取账号令牌, enable = {CaptureAccountToken}
+http-request ^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$ script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Auto_Join_TF/fmz200_AutoJoinTFKeys.js, tag = 获取账号令牌, enable = {CaptureAccountToken}
 
-# http-request ^https?:\/\/testflight\.apple\.com\/join\/(.*) script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/TestFlight/AutoJoinTFKeys.js, tag = 应用ID捕获(可能抓不到), enable = {CaptureAppID}
+# http-request ^https?:\/\/testflight\.apple\.com\/join\/(.*) script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Auto_Join_TF/fmz200_AutoJoinTFKeys.js, tag = 应用ID捕获(可能抓不到), enable = {CaptureAppID}
 
-cron {TaskCron} script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/TestFlight/AutoJoinTF.js, tag = 自动加入TF, timeout = 600, enable = {RunTask}
-cron {TaskMonitor} script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/TestFlight/AutoMonitorTF.js, tag = 监控TF位置, timeout = 30, enable = {RunMonitor}
+cron {TaskCron} script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Auto_Join_TF/fmz200_AutoJoinTF.js, tag = 自动加入TF, timeout = 600, enable = {RunTask}
+cron {TaskMonitor} script-path = https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Auto_Join_TF/fmz200_AutoMonitorTF.js, tag = 监控TF位置, timeout = 30, enable = {RunMonitor}
 
 # [MitM]
 # hostname = testflight.apple.com

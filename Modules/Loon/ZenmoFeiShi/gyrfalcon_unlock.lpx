@@ -4,7 +4,7 @@
 #!tag=ZenmoFeiShi
 
 [Script]
-http-response ^https://www\.hillnohouse\.com/freev/free_city script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/gyrfalcon_unlock.js, requires-body=true, timeout=60, tag=gyrfalcon_unlock
+http-response ^https://www\.hillnohouse\.com/freev/free_city script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ZenmoFeiShi/gyrfalcon_unlock/ZenmoFeiShi_gyrfalcon_unlock.js, requires-body=true, timeout=60, tag=gyrfalcon_unlock
 
 [MITM]
 hostname = www.hillnohouse.com

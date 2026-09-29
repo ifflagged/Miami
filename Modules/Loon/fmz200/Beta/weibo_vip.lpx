@@ -4,5 +4,5 @@
 #!tag=fmz200
 
 [Script]
-http-response ^https?://new\.vip\.weibo\.cn/aj/appicon/list script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/weibo/weibo_vip.js, requires-body=true, timeout=60, tag=weibo_vip
+http-response ^https?://new\.vip\.weibo\.cn/aj/appicon/list script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/weibo_vip/fmz200_weibo_vip.js, requires-body=true, timeout=60, tag=weibo_vip
 

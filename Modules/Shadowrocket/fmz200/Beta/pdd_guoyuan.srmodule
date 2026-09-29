@@ -4,5 +4,5 @@
 #!category=fmz200
 
 [Script]
-pdd_guoyuan = type=cron, cronexp="30 1,7,12,18,22 * * *", script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/pinduoduo/pdd_guoyuan.js, timeout=120, wake-system=1
+pdd_guoyuan = type=cron, cronexp="30 1,7,12,18,22 * * *", script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/pdd_guoyuan/fmz200_pdd_guoyuan.js, timeout=120, wake-system=1
 

@@ -11,7 +11,7 @@
 #!date=2026-09-24
 
 [Script]
-spdbccc = type=http-response,pattern=^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/.*\.JPG$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/spdbccc.js
+spdbccc = type=http-response,pattern=^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/.*\.JPG$,requires-body=1,max-size=0,script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/spdbccc/zirawell_spdbccc.js
 
 [MITM]
 hostname= %APPEND% image.spdbccc.com.cn

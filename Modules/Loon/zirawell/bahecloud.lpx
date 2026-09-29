@@ -7,3 +7,9 @@
 DOMAIN,pro.dajuhl.com,REJECT
 DOMAIN,djad.nmgyhxxkj.cn,REJECT
 
+[Rewrite]
+^https?:\/\/www\.bahecloud\.com\/webapi\.asmx\/api_GetAdvCmdCode - reject
+
+[MITM]
+hostname = www.bahecloud.com
+

@@ -5,7 +5,7 @@
 
 [Script]
 # 羊了个羊获取token
-http-request https://cat-match.easygame2021.com/sheep/v1/game/user_info script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/sheep/sheepGetToken.js, timeout=60, tag=sheepGetToken
+http-request https://cat-match.easygame2021.com/sheep/v1/game/user_info script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/sheepGetToken/fmz200_sheepGetToken.js, timeout=60, tag=sheepGetToken
 
 [MITM]
 hostname = cat-match.easygame2021.com

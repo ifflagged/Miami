@@ -76,7 +76,7 @@ http-response-jq ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic\? '.data.botto
 ^https:\/\/api\.gotokeep\.com\/search\/v4\/hotword\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
-解锁keep会员 = type=http-response, pattern=^https?:\/\/(api|kit).gotokeep\.com\/(nuocha|gerudo|athena|nuocha\/plans|suit\/v5\/smart|kprime\/v4\/suit\/sales), script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/keep.js, requires-body=true
+解锁keep会员 = type=http-response, pattern=^https?:\/\/(api|kit).gotokeep\.com\/(nuocha|gerudo|athena|nuocha\/plans|suit\/v5\/smart|kprime\/v4\/suit\/sales), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Keep_remove_ads/WeiGiegie_keep.js, requires-body=true
 
 [MITM]
 hostname = %APPEND% api.gotokeep.com, kit.gotokeep.com, *.gotokeep.*, 120.53.74.*, 162.14.5.*, 42.187.199.*, 101.42.124.*
