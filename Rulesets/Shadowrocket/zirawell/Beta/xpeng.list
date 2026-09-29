@@ -1,0 +1,11 @@
+#规则数量:5
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,applog-perf.uc.cn
+DOMAIN,woodpecker.uc.cn
+DOMAIN,collect.xiaopeng.com
+DOMAIN,httpdns.yunxindns.com
+DOMAIN,apps-booster.xiaopeng.com

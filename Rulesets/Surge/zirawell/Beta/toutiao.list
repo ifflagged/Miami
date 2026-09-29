@@ -1,0 +1,17 @@
+#规则数量:11
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN-SUFFIX,ad.toutiao.com
+DOMAIN-SUFFIX,dm.toutiao.com
+DOMAIN-SUFFIX,dsp.toutiao.com
+DOMAIN-SUFFIX,adshare.toutiao.com
+DOMAIN-SUFFIX,partner.toutiao.com
+DOMAIN-SUFFIX,track.toutiao.com
+DOMAIN-KEYWORD,s1.pstatp.com
+DOMAIN-KEYWORD,s2.pstatp.com
+DOMAIN-KEYWORD,s3.pstatp.com
+DOMAIN-KEYWORD,a3.pstatp.com
+DOMAIN-KEYWORD,a3.bytecdn.cn

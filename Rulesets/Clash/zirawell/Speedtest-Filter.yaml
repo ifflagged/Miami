@@ -1,0 +1,12 @@
+#规则数量:3
+#不支持的规则数量:1
+#已排除的规则数量:0
+#不支持的规则:
+#USER-AGENT, SpeedTest*
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN-SUFFIX,fast.com
+  - DOMAIN-KEYWORD,speedtest
+  - DOMAIN-SUFFIX,ooklaserver.net

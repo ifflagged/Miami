@@ -1,0 +1,10 @@
+#规则数量:3
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,imc.abchina.com.cn
+  - DOMAIN,msmp.abchina.com.cn
+  - DOMAIN,firefly.abchina.com.cn

@@ -1,0 +1,14 @@
+#规则数量:7
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,sofire.baidu.com
+  - DOMAIN-SUFFIX,cn-shanghai.nlb.aliyuncs.com
+  - DOMAIN-SUFFIX,volceapplog.com
+  - IP-CIDR,210.13.85.204/32,no-resolve
+  - IP-CIDR,114.80.56.98/32,no-resolve
+  - IP-CIDR,162.14.145.54/32,no-resolve
+  - IP-CIDR,162.14.137.43/32,no-resolve

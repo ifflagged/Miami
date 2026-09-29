@@ -1,0 +1,12 @@
+#规则数量:6
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,adui.tg.meitu.com
+DOMAIN,corp.meitu.com
+DOMAIN,gg.meitu.com
+DOMAIN,message.meitu.com
+DOMAIN,tuiguang.meitu.com
+DOMAIN,stat.meitudata.com
