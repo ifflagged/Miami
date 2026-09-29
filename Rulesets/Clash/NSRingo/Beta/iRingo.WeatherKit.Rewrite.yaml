@@ -1,0 +1,47 @@
+#规则数量:40
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,name:  iRingo: 🌤 WeatherKit (Rewrite)
+  - DOMAIN,open_url: http://boxjs.com/#/app/iRingo.WeatherKit
+  - DOMAIN,homepage: https://NSRingo.github.io/guide/Weather/weather-kit
+  - DOMAIN,icon: https://developer.apple.com/assets/elements/icons/weatherkit/weatherkit-128x128.png
+  - DOMAIN,compat_arguments:
+  - DOMAIN,endpoint: weatherkit.pages.dev
+  - DOMAIN,compat_arguments_desc: |-
+  - DOMAIN,├ weatherkit.pages.dev: 首选；直连；无需代理
+  - DOMAIN,├ dev.weatherkit.pages.dev: 开发版
+  - DOMAIN,└ weather.nanocat.cloud: Worker 版；需要代理
+  - DOMAIN,rules:
+  - DOMAIN,domain:
+  - DOMAIN,match: weather-analytics-events.apple.com
+  - DOMAIN,policy: REJECT
+  - DOMAIN,domain_suffix:
+  - DOMAIN,match: tthr.apple.com
+  - DOMAIN,policy: REJECT
+  - DOMAIN,domain:
+  - DOMAIN,match: tether.edge.apple
+  - DOMAIN,policy: REJECT
+  - DOMAIN,and:
+  - DOMAIN,match:
+  - DOMAIN,or:
+  - DOMAIN,match:
+  - DOMAIN,asn:
+  - DOMAIN,match: 714
+  - DOMAIN,no_resolve: true
+  - DOMAIN,asn:
+  - DOMAIN,match: 6185
+  - DOMAIN,no_resolve: true
+  - DOMAIN,protocol:
+  - DOMAIN,match: QUIC
+  - DOMAIN,policy: REJECT-DROP
+  - DOMAIN,url_rewrites:
+  - DOMAIN,status_code: 307
+  - DOMAIN,status_code: 307
+  - DOMAIN,mitm:
+  - DOMAIN,hostnames:
+  - DOMAIN,includes:
+  - DOMAIN,weatherkit.apple.com
