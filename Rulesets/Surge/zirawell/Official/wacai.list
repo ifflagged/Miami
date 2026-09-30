@@ -1,4 +1,0 @@
-# > 挖财记账 - WACAI
-host, adservice.sigmob.cn, reject
-host, iadsdk.qtlcdn.com.cdnmg.com, reject
-host-suffix, tobidad.cn, reject
