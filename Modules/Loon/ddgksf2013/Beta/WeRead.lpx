@@ -1,0 +1,11 @@
+#!name=微信阅读精简
+#!desc=去除微信阅读扰人提示(beta)
+#!icon=icon not found
+#!tag=ddgksf2013
+
+[Script]
+http-response https:\/\/i\.weread\.qq\.com\/(book\/(reading[sS]tat|chapterReview)|user\/profile|groups\/readerEntrance|review\/list|mobileSync) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/WeRead/Maasea_weread.js, requires-body=true, tag=WeRead
+
+[MITM]
+hostname = i.weread.qq.com
+

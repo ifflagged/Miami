@@ -1,0 +1,11 @@
+#!name=coco
+#!desc=coco
+#!icon=icon not found
+#!tag=zirawell
+
+[Script]
+http-response ^https?:\/\/coco-com\.e\.verystar\.net\/v\d\/home\/info script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/coco/zirawell_wechatApplet.js, requires-body=true, tag=coco
+
+[MITM]
+hostname = coco-com.e.verystar.net
+

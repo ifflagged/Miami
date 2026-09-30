@@ -1,0 +1,11 @@
+#!name=jiediankeji
+#!desc=jiediankeji
+#!icon=icon not found
+#!category=zirawell
+
+[Map Local]
+^https?:\/\/s\.jiediankeji\.com\/adv data-type=json data="{}" status-code=200
+
+[MITM]
+hostname = %APPEND% s.jiediankeji.com
+

@@ -1,0 +1,15 @@
+#!name=naixue
+#!desc=naixue
+#!icon=icon not found
+#!category=zirawell
+
+[Map Local]
+^https?:\/\/tm-api\.pin-dao\.cn\/home\/api\/index\/activeConfig\/ data-type=json data="{}"
+
+^https?:\/\/tm-api\.pin-dao\.cn\/home\/api\/resource\/config\/homeBannerNodes data-type=json data="{}"
+
+^https?:\/\/tm-api\.pin-dao\.cn\/activity\/.*\/pop data-type=json data="{}"
+
+[MITM]
+hostname = %APPEND% tm-api.pin-dao.cn
+
