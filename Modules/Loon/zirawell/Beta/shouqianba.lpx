@@ -1,8 +1,0 @@
-#!name=shouqianba
-#!desc=shouqianba
-#!icon=icon not found
-#!tag=zirawell
-
-[Rule]
-DOMAIN,ads-shopping.shouqianba.com,REJECT
-
