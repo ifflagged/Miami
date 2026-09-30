@@ -1,0 +1,13 @@
+#规则数量:6
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,ad-analysis.pconline.com.cn
+  - DOMAIN,iad0ssl.pcauto.com.cn
+  - DOMAIN,iad0ssl.pconline.com.cn
+  - DOMAIN,imgad0.pcauto.com.cn
+  - DOMAIN,imgad0.pconline.com.cn
+  - DOMAIN,ivy.pchouse.com.cn

@@ -1,0 +1,29 @@
+#规则数量:22
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+payload:
+  - DOMAIN,rd.autohome.com.cn
+  - DOMAIN,rdx.autohome.com.cn
+  - DOMAIN,al.autohome.com.cn
+  - DOMAIN,adm0.autoimg.cn
+  - DOMAIN,adm1.autoimg.cn
+  - DOMAIN,adm2.autoimg.cn
+  - DOMAIN,adm3.autoimg.cn
+  - DOMAIN-SUFFIX,33.autohome.com.cn
+  - DOMAIN-SUFFIX,applogapi.autohome.com.cn
+  - DOMAIN-SUFFIX,c.autohome.com.cn
+  - DOMAIN-SUFFIX,cmx.autohome.com.cn
+  - DOMAIN-SUFFIX,dspmnt.autohome.com.cn
+  - DOMAIN-SUFFIX,pcd.autohome.com.cn
+  - DOMAIN-SUFFIX,pcmx.autohome.com.cn
+  - DOMAIN-SUFFIX,pvx.autohome.com.cn
+  - DOMAIN-SUFFIX,pv.alert.autohome.com.cn
+  - DOMAIN-SUFFIX,activity.app.autohome.com.cn
+  - DOMAIN-SUFFIX,public.app.autohome.com.cn
+  - DOMAIN-SUFFIX,push.app.autohome.com.cn
+  - DOMAIN-KEYWORD,collectionpv.che168.com
+  - DOMAIN-KEYWORD,adproxy.autohome.com
+  - DOMAIN-KEYWORD,applogapi.autohome.com

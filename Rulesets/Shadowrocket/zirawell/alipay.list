@@ -1,0 +1,14 @@
+#规则数量:8
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,adgw.alipay.com
+DOMAIN,amdc.alipay.com
+DOMAIN,rtms.alipay.com
+DOMAIN,amdc-sibling.alipay.com.cn
+DOMAIN,mobiledc.stable.alipay.net
+DOMAIN-SUFFIX,mdap.alipay.com
+DOMAIN-SUFFIX,ynuf.alipay.com
+DOMAIN-KEYWORD,loggw.alipay.com

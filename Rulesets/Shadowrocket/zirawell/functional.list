@@ -1,0 +1,17 @@
+#规则数量:11
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,lookup.api.bsb.baidu.com
+DOMAIN,safebrowsing.g.applimg.com
+DOMAIN,safebrowsing.googleapis.com
+DOMAIN,safebrowsing.urlsec.qq.com
+DOMAIN-SUFFIX,safebrowsing.apple
+DOMAIN-SUFFIX,u3.ucweb.com
+IP-CIDR,119.29.29.90/32,no-resolve
+IP-CIDR,119.29.29.98/32,no-resolve
+IP-CIDR,119.29.29.99/32,no-resolve
+IP-CIDR,81.71.61.216/32,no-resolve
+DOMAIN,geo2.adobe.com

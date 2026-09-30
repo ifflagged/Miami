@@ -1,0 +1,12 @@
+#规则数量:6
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,ad.api.moji.com
+DOMAIN,adlaunch.moji.com
+DOMAIN,ads.mojicdn.com
+DOMAIN-SUFFIX,log.moji.com
+DOMAIN-SUFFIX,fds.api.moji.com
+DOMAIN-SUFFIX,me.api.moji.com

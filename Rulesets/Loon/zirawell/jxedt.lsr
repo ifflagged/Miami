@@ -1,0 +1,12 @@
+#规则数量:6
+#不支持的规则数量:0
+#已排除的规则数量:0
+
+#-----------------以下为解析后的规则-----------------#
+
+DOMAIN,richmanapi.jxedt.com
+DOMAIN,richmanmain.jxedt.com
+DOMAIN,richmanrules.jxedt.com
+DOMAIN,richmanapi.ksedt.com
+DOMAIN,richmanmain.ksedt.com
+DOMAIN,richmanrules.ksedt.com
