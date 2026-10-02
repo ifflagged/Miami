@@ -8,13 +8,6 @@
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-10-02 12:00
 
-[Script]
-response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/iTunes/chxm1023_iTunes.js") with enable=${iTunes-chxm1023}, tag="[iTunes]会员Crack@chxm1023", requires_body=true
-
-response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/iTunes/loon_iTunes-ddgksf2013.js") with enable=${iTunes-ddgksf2013}, tag="[iTunes]会员Crack@ddgksf2013", requires_body=true
-
-response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/iTunes/Guding88_APPheji_iTunes.js") with enable=${iTunes-Guding88}, tag="[iTunes]会员Crack@Guding88", requires_body=true
-
 [MITM]
 hostname = buy.itunes.apple.com
 
