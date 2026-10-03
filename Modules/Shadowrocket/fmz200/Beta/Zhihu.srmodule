@@ -51,29 +51,29 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 http-response ^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? "recommend_queries":\{.+\} "recommend_queries":{}
 
 [Script]
-{{{{{vihu_enable}}}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/(?:moments_v3|topstory\/hot-lists\/total|topstory\/recommend), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/(?:moments_v3|topstory\/hot-lists\/total|topstory\/recommend), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎精简顶部标签 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/root\/tab, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎精简顶部标签 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/root\/tab, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎移除会员页面推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除会员页面推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎移除回答详情页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除回答详情页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎移除回答详情页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除回答详情页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎移除回答详情页推广 = type=http-response, pattern=^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/recommendations?\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎移除回答详情页推广 = type=http-response, pattern=^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/recommendations?\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎拦截服务器推送配置 = type=http-response, pattern=^https:\/\/appcloud2\.zhihu\.com\/v3\/config, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎拦截服务器推送配置 = type=http-response, pattern=^https:\/\/appcloud2\.zhihu\.com\/v3\/config, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
-{{{{{vihu_enable}}}}}知乎拦截服务器推送配置 = type=http-response, pattern=^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
+{{{vihu_enable}}}知乎拦截服务器推送配置 = type=http-response, pattern=^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js, requires-body=true
 
 [MITM]
 hostname = %APPEND% api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, zhuanlan.zhihu.com, link.zhihu.com
