@@ -8,11 +8,9 @@
 #!tg-channel=https://t.me/inaisi
 
 [Rule]
-# 微信小程序
 DOMAIN,et.ykccn.com,REJECT
 
 [URL Rewrite]
-# 微信小程序
 ^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/enterpriseWeChatConfig\/app\/queryCityConfig - reject-dict
 ^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/appAdvertising\/queryAdvertisingByParams - reject-dict
 ^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/charge\/activity\/package\/newest - reject-dict
