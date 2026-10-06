@@ -6,7 +6,7 @@
 #!homepage=https://github.com/fmz200/wool_scripts
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/split/partW/NetEaseCloudMusic.lpx
 #!tg-channel=https://t.me/inaisi
-#!arguments=DT:false,FX:true,MY:true,whyiyyybyt_enable
+#!arguments=DT:false,FX:true,MY:true,whyiyyybyt_enable:""
 #!arguments-desc=DT: 网易云音乐-[隐藏底部]笔记标签\n\nFX: 网易云音乐-[隐藏底部]发现标签\n\nMY: 网易云音乐-[隐藏底部]漫游标签\n\nwhyiyyybyt_enable: 网易云音乐-脚本开关\n可选值: 留空启用, # 禁用
 
 [Rule]

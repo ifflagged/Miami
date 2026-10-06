@@ -6,7 +6,7 @@
 #!homepage=https://github.com/fmz200/wool_scripts
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/split/partZ/Zhihu.lpx
 #!tg-channel=https://t.me/inaisi
-#!arguments=vihu_enable
+#!arguments=vihu_enable:""
 #!arguments-desc=vihu_enable: 知乎-脚本开关\n可选值: 留空启用, # 禁用
 
 [Rule]
