@@ -3,14 +3,16 @@
 #!author=VirgilClyne[https://github.com/VirgilClyne]
 #!icon=icon not found
 #!category=ddgksf2013
-#!openUrl=http://boxjs.com/#/app/DualSubs.YouTube
+#!openUrl=https://dualsubs.github.io/settings/
 #!homepage=https://DualSubs.github.io/guide/youtube
-#!date=2024-12-11 01:41:21
-#!version=1.5.11
+#!date=2026-10-11 14:03:52
+#!version=1.6.0
 
 [Map Local]
-#[rewrite_local]
 ^https?:\/\/([\w-]+)\.googlevideo\.com\/initplayback(\?.*oad=.+)$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+#[rewrite_local]
+^https:\/\/dualsubs\.github\.io\/api\/YouTube(?:\?.*)?$ data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/DualSubs_DualSubs.YouTube.PreferencePanes.json"
 
 [Script]
 # 🍿️ DualSubs.YouTube.Player.request.json
@@ -50,5 +52,5 @@ Translate.response.bundle = type=http-response, pattern=^https?:\/\/music\.youtu
 Translate.response.bundle = type=http-response, pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse\?(.*)subtype=Translate, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/DualSubs_Translate.response.bundle.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% www.youtube.com, m.youtube.com, tv.youtube.com, music.youtube.com, youtubei.googleapis.com, -redirector*.googlevideo.com, *.googlevideo.com
+hostname = %APPEND% dualsubs.github.io, www.youtube.com, m.youtube.com, tv.youtube.com, music.youtube.com, youtubei.googleapis.com, -redirector*.googlevideo.com, *.googlevideo.com
 
