@@ -1,4 +1,4 @@
-#规则数量:1406
+#规则数量:1408
 #不支持的规则数量:0
 #已排除的规则数量:0
 
@@ -133,6 +133,7 @@ payload:
   - DOMAIN,admarketing.yahoo.net
   - DOMAIN,admusicpic.music.126.net
   - DOMAIN,adpinpai.video.weibocdn.com
+  - DOMAIN,ads-img-al.xhscdn.com
   - DOMAIN,ads-img-qc.xhscdn.com
   - DOMAIN,ads-video-al.xhscdn.com
   - DOMAIN,ads-video-qc.xhscdn.com
@@ -1351,6 +1352,7 @@ payload:
   - DOMAIN-KEYWORD,ad-sign.byteimg.com
   - DOMAIN-KEYWORD,ad.google
   - DOMAIN-KEYWORD,adproxy.autohome.com
+  - DOMAIN-KEYWORD,ads-splash-i
   - DOMAIN-KEYWORD,ads.amap.com
   - DOMAIN-KEYWORD,ads.g.doubleclick
   - DOMAIN-KEYWORD,ads.microsoft.com
