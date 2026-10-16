@@ -5,15 +5,17 @@
 #!tag=ddgksf2013
 #!openUrl=https://dualsubs.github.io/preferences/
 #!homepage=https://DualSubs.github.io/guide/youtube
-#!date=2026-10-15 02:15:01
+#!date=2026-10-16 01:54:49
 #!version=1.6.0
 
 [Rewrite]
 ^https?:\/\/([\w-]+)\.googlevideo\.com\/initplayback(\?.*oad=.+)$ - reject-dict
-#[rewrite_local]
 ^https:\/\/dualsubs\.github\.io\/api\/YouTube(?:\?.*)?$ mock-response-body data-type=file data-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/DualSubs_DualSubs.YouTube.PreferencePanes.json
 
 [Script]
+#[rewrite_local]
+http-request ^https:\/\/dualsubs\.github\.io\/api\/(?:get|set|delete)(?:\?.*)?$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/NSNanoCat_api.js, timeout=60, tag=api
+
 # 🍿️ DualSubs.YouTube.Player.request.json
 http-request ^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player(\?.+)?$ script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/DualSubs_request.bundle.js, requires-body=true, binary-body-mode=true, timeout=60, tag=request.bundle
 

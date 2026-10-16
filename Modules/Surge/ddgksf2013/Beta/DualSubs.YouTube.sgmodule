@@ -5,7 +5,7 @@
 #!category=ddgksf2013
 #!openUrl=https://dualsubs.github.io/preferences/
 #!homepage=https://DualSubs.github.io/guide/youtube
-#!date=2026-10-15 02:15:01
+#!date=2026-10-16 01:54:49
 #!version=1.6.0
 
 [Map Local]
@@ -14,6 +14,8 @@
 ^https:\/\/dualsubs\.github\.io\/api\/YouTube(?:\?.*)?$ data-type=file data="https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/DualSubs_DualSubs.YouTube.PreferencePanes.json"
 
 [Script]
+api = type=http-request, pattern=^https:\/\/dualsubs\.github\.io\/api\/(?:get|set|delete)(?:\?.*)?$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/NSNanoCat_api.js, timeout=60
+
 request.bundle = type=http-request, pattern=^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player(\?.+)?$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/DualSubs_request.bundle.js, requires-body=true, binary-body-mode=true, engine=webview, max-size=-1, timeout=60
 
 response.bundle = type=http-response, pattern=^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player(\?.+)?$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/DualSubs.YouTube/DualSubs_response.bundle.js, requires-body=true, binary-body-mode=true, engine=webview, max-size=-1, timeout=60
