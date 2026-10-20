@@ -9,6 +9,17 @@
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-10-02 12:00
 
+[Rewrite]
+request if ${url} ~= /^https?:\/\/popup\.dushu365\.com\/api\/v2\/sfo\/(user_)?popup_(?:config|display)s/i then reject(404)
+request if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/chief-orch\/config\/config\/v\d+\/(?:shortCut|appUpdateUnite|loadingAd)/i then reject(404)
+request if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/fs-retain\/trialVip\/v\d+\/requestTrialVipPopDoNotSendReward/i then reject(404)
+request if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/resource-orchestration-system\/vipLandingPage\/v\d+\/getVipLandingPageApp/i then reject(404)
+request if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/fandeng-orch\/dual2211\/config/i then reject(404)
+request if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/fdtalk-orch\/newcomerzone\/v\d+\/guide/i then reject(404)
+request if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/fandeng-orch\/bookboy\/v\d+\/vipPagePop/i then reject(404)
+request if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/chief-orch\/config\/config\/v\d+\/appConfig/i then reject(404)
+request if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/order-orchestration\/orderWeb\/exchange\/v100\/showExchangeButton/i then reject(404)
+
 [Script]
 response if ${url} ~= /^https?:\/\/g[a-z0-9-]+\.dushu365\.com\/chief-orch\/home\/bookPortal\/v105\/category/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/FanShu/Yuheng0101_No_Ads.js") with tag="[帆书]移除广告", timeout=60, requires_body=true
 
