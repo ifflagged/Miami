@@ -464,7 +464,6 @@ request if ${url} ~= /^https?:\/\/api\.szy\.cn\/appOpenServer\/ad/i then reject(
 request if ${url} ~= /^https?:\/\/ossx-link\.ztehome\.com\.cn.*\/get-ad-position-info/i then reject(200, " ")
 request if ${url} ~= /^https?:\/\/www\.biguotk\.com\/api\/advertising/i then reject(200)
 request if ${url} ~= /^https?:\/\/misc\.eol\.cn\/js\/target\/move\/zskyApp\/Appqdkp\/.*json/i then reject(200)
-response if ${url} ~= /^https?:\/\/ap\.(dongqiudi|dongdianqiu)\.com\/plat\/v4/i then response.body.mock_file("json", "https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/StartUpAds/ddgksf2013_dongqiudi.js", 200)
 
 [Script]
 response if ${url} ~= /^https?:\/\/api\.369cx\.cn\/v\d\/Splash\/GetSplashAd/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/ddgksf2013/StartUpAds/ddgksf2013_dict.js") with tag="dict", timeout=60, requires_body=true
