@@ -9,11 +9,6 @@
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-10-02 12:00
 
-[Rewrite]
-request if ${url} ~= /^https?:\/\/(www\.)?(?:g|google)\.cn/i then redirect(307, "https://www.google.com")
-request if ${url} ~= /^https?:\/\/(?:ditu|maps).google\.cn/i then redirect(307, "https://maps.google.com")
-request if ${url} ~= /^https?:\/\/translate\.google\.cn/i then redirect(307, "https://translate.google.com")
-
 [MITM]
 hostname = *.google.cn, *.g.cn
 
