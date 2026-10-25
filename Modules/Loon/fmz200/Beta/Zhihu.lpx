@@ -4,11 +4,8 @@
 #!icon=icon not found
 #!tag=fmz200
 #!homepage=https://github.com/fmz200/wool_scripts
-#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/split/partZ/Zhihu.lpx
+#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partZ/Zhihu.sgmodule
 #!tg-channel=https://t.me/inaisi
-
-[Argument]
-vihu_enable=switch,true,false,tag=知乎-脚本开关
 
 [Rule]
 USER-AGENT,"AVOS*",REJECT
@@ -18,61 +15,68 @@ DOMAIN,mqtt.zhihu.com,REJECT
 DOMAIN,sugar.zhihu.com,REJECT
 DOMAIN,crash2.zhihu.com,REJECT
 DOMAIN,118.89.204.198,REJECT
-DOMAIN,zxid-m.mobileservice.cn,REJECT
 IP-CIDR,118.89.204.198/32,REJECT,no-resolve
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
+DOMAIN,appcloud.zhihu.com,REJECT
+DOMAIN,appcloud2.in.zhihu.com,REJECT
+DOMAIN,crash2.zhihu.com,REJECT
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN,sugar.zhihu.com,REJECT
+DOMAIN,zxid-m.mobileservice.cn,REJECT
 IP-CIDR,103.41.167.237/32,REJECT,no-resolve
+IP-CIDR,118.89.204.198/32,REJECT,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 
 [Rewrite]
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\?/i then response.body.replace(/"recommend_queries":\{.+\}/, "\"recommend_queries\":{}")
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/commercial_api\/(?:answer\/\d+\/bottom-v2|article\/\d+\/bottom-v2|banners_v3\/app_topstory_banner|launch_v2|real_time_launch_v2)/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/(?:moments\/lastread|drama\/hot-drama-list)/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/root\/window/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/(?:bazaar\/float_window|market\/popovers_v2)/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/me\/guides/i then reject_dict(200)
 request if ${url} ~= /^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card/i then reject(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/search\/(hot_search|preset_words)/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/(?:article|answer)\/\d+/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/comment_v5\/(?:articles|answers)\/\d+\/list-headers/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/prague\/related_suggestion_native\/feed\?/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/v5\.1\/topics\/answer\/\d+\/relation/i then reject_dict(200)
 request if ${url} ~= /^https:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config/i then reject(200)
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/ad-style-service\/request/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/appcloud2\.zhihu\.com\/v3\/resource\?group_name=mp/i then reject_dict(200)
 request if ${url} ~= /^https:\/\/link\.zhihu\.com\/\?target=(?:https?)?(?:%3A|:)?(?:\/\/|%2F%2F)?(.*)/i then redirect(302, "http://$1")
-request if ${url} ~= /^https:\/\/api\.zhihu\.com\/distribute\/rhea\/qa_ad_card\/h5\/recommendation\?/i then reject_dict(200)
 request if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation/i then reject(200)
 request if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/mcn\/v2\/linkcards\?/i then reject(200)
 request if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/(?:answers|questions)\/\d+\/related-readings/i then reject(200)
 request if ${url} ~= /^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner/i then reject(200)
 request if ${url} ~= /^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation/i then reject(200)
 request if ${url} ~= /^https:\/\/zhstatic\.zhihu\.com\/brand-ad/i then reject(200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\?/i then response.body.replace(/"recommend_queries":\{.+\}/, "\"recommend_queries\":{}")
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/commercial_api\/(?:answer\/\d+\/bottom-v2|article\/\d+\/bottom-v2|banners_v3\/app_topstory_banner|launch_v2|real_time_launch_v2)/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/(?:moments\/lastread|drama\/hot-drama-list)/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/root\/window/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/(?:bazaar\/float_window|market\/popovers_v2)/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/me\/guides/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/search\/(hot_search|preset_words)/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/(?:article|answer)\/\d+/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/comment_v5\/(?:articles|answers)\/\d+\/list-headers/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/prague\/related_suggestion_native\/feed\?/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/v5\.1\/topics\/answer\/\d+\/relation/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/ad-style-service\/request/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/appcloud2\.zhihu\.com\/v3\/resource\?group_name=mp/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/distribute\/rhea\/qa_ad_card\/h5\/recommendation\?/i then response.body.mock("text", "{}", 200)
 
 [Script]
-response if ${url} ~= /^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/(?:moments_v3|topstory\/hot-lists\/total|topstory\/recommend)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/(?:moments_v3|topstory\/hot-lists\/total|topstory\/recommend)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/root\/tab/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎精简顶部标签", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/root\/tab/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎精简顶部标签", requires_body=true
 
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除首页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除会员页面推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除会员页面推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除回答详情页推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除回答详情页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除回答详情页推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除回答详情页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/recommendations?\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除回答详情页推广", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/recommendations?\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎移除回答详情页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/appcloud2\.zhihu\.com\/v3\/config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎拦截服务器推送配置", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/appcloud2\.zhihu\.com\/v3\/config/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎拦截服务器推送配置", requires_body=true
 
-response if ${url} ~= /^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎拦截服务器推送配置", enable=${vihu_enable}, requires_body=true
+response if ${url} ~= /^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/Zhihu/fmz200_zhihu.js") with tag="知乎拦截服务器推送配置", requires_body=true
 
 [MITM]
 hostname = api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, zhuanlan.zhihu.com, link.zhihu.com
