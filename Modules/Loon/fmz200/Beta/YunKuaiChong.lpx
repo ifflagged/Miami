@@ -4,16 +4,16 @@
 #!icon=icon not found
 #!tag=fmz200
 #!homepage=https://github.com/fmz200/wool_scripts
-#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/split/partY/YunKuaiChong.lpx
+#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partY/YunKuaiChong.sgmodule
 #!tg-channel=https://t.me/inaisi
 
 [Rule]
 DOMAIN,et.ykccn.com,REJECT
 
 [Rewrite]
-request if ${url} ~= /^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/enterpriseWeChatConfig\/app\/queryCityConfig/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/appAdvertising\/queryAdvertisingByParams/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/charge\/activity\/package\/newest/i then reject_dict(200)
+response if ${url} ~= /^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/enterpriseWeChatConfig\/app\/queryCityConfig/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/appAdvertising\/queryAdvertisingByParams/i then response.body.mock("text", "{}", 200)
+response if ${url} ~= /^https:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/charge\/activity\/package\/newest/i then response.body.mock("text", "{}", 200)
 
 [MITM]
 hostname = gw3.ykccn.com
