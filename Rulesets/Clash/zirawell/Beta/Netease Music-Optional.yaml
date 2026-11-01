@@ -2,8 +2,8 @@
 #不支持的规则数量:2
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90
-#USER-AGENT, NeteaseMusic*
+#USER-AGENT, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90, Netease Music
+#USER-AGENT, NeteaseMusic*, Netease Music
 
 #-----------------以下为解析后的规则-----------------#
 

@@ -2,8 +2,8 @@
 #不支持的规则数量:2
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT, MicroMessenger*
-#USER-AGENT, WeChat*
+#USER-AGENT, MicroMessenger*, WeChat
+#USER-AGENT, WeChat*, WeChat
 
 #-----------------以下为解析后的规则-----------------#
 

@@ -1,24 +1,28 @@
 #!name=PCDN Filter
 #!homepage=https://github.com/zirawell/R-Store
-#!raw-url=https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/QuanX/Filter/PCDN.list
+#!raw-url=https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Filter/PCDN.list
 #!tg-group=https://t.me/RStoreCom
 #!date=2024-11-08 10:24:00
 #!---------------------------------------------------------------------------------------------------------------
-HOST-SUFFIX, gjfzpt.cn, REJECT
-HOST-SUFFIX, szbdyd.com, REJECT
-HOST-SUFFIX, bsccdn.net, REJECT
-HOST-SUFFIX, pkoplink.com, REJECT
-HOST-SUFFIX, saxysec.com, REJECT
-HOST-SUFFIX, uhabo.com, REJECT
-HOST-SUFFIX, xycdn.com, REJECT
-HOST-SUFFIX, kuiniuca.com, REJECT
-HOST-SUFFIX, onethingpcs.com, REJECT
-HOST-SUFFIX, jomodns.cn, REJECT
-HOST-SUFFIX, p2p.huya.com, REJECT
-HOST, stun.douyucdn.cn, REJECT
-HOST, stun.hitv.com, REJECT
-HOST, stun1.douyucdn.cn, REJECT
-HOST-SUFFIX, mcdn.bilivideo.cn, REJECT
-HOST-SUFFIX, tpa-hcdn.iqiyi.com, REJECT
-HOST-SUFFIX, pcdn.xmcdn.com, REJECT
-HOST, pcdn.yximgs.com, REJECT
+DOMAIN-SUFFIX, gjfzpt.cn
+DOMAIN-SUFFIX, szbdyd.com
+DOMAIN-SUFFIX, bsccdn.net
+DOMAIN-SUFFIX, pkoplink.com
+DOMAIN-SUFFIX, saxysec.com
+DOMAIN-SUFFIX, uhabo.com
+DOMAIN-SUFFIX, xycdn.com
+DOMAIN-SUFFIX, kuiniuca.com
+DOMAIN-SUFFIX, onethingpcs.com
+DOMAIN-SUFFIX, jomodns.cn
+DOMAIN-SUFFIX, p2p.huya.com
+DOMAIN, stun.douyucdn.cn
+DOMAIN, stun.hitv.com
+DOMAIN, stun1.douyucdn.cn
+DOMAIN-SUFFIX, mcdn.bilivideo.cn
+DOMAIN-SUFFIX, tpa-hcdn.iqiyi.com
+DOMAIN-SUFFIX, pcdn.xmcdn.com
+DOMAIN, pcdn.yximgs.com
+URL-REGEX, ^http://.*pcdn\.*biliapi\.net
+URL-REGEX, ^http://.*pcdn\.*youku\.com
+URL-REGEX, ^http://.*p2p\.*douyucdn\.cn
+URL-REGEX, ^http://.*p2p\.*qq\.com

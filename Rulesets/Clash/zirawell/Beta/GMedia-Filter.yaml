@@ -2,31 +2,31 @@
 #不支持的规则数量:25
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT, AbemaTV*
-#USER-AGENT, InstantVideo.US*
-#USER-AGENT, Prime%20Video*
-#USER-AGENT, Anime*
-#USER-AGENT, BBCiPlayer*
-#USER-AGENT, Disney*
-#USER-AGENT, encoreTVB*
-#USER-AGENT, FOX%20NOW*
-#USER-AGENT, FOXPlus*
-#USER-AGENT, HBO%20NOW*
-#USER-AGENT, WeMusic*
-#USER-AGENT, JOOX*
-#USER-AGENT, KKTV*
-#USER-AGENT, com.kktv*
-#USER-AGENT, LINE*
-#USER-AGENT, mytv*
-#USER-AGENT, Argo*
-#USER-AGENT, PBS*
-#USER-AGENT, SoundCloud*
-#USER-AGENT, *Spotify*
-#USER-AGENT, ViuTV*
-#USER-AGENT, *YouTubeMusic*
-#USER-AGENT, *com.google.ios.youtubemusic*
-#USER-AGENT, *youtube*
-#USER-AGENT, YouTube*
+#USER-AGENT, AbemaTV*, GMedia
+#USER-AGENT, InstantVideo.US*, GMedia
+#USER-AGENT, Prime%20Video*, GMedia
+#USER-AGENT, Anime*, GMedia
+#USER-AGENT, BBCiPlayer*, GMedia
+#USER-AGENT, Disney*, GMedia
+#USER-AGENT, encoreTVB*, GMedia
+#USER-AGENT, FOX%20NOW*, GMedia
+#USER-AGENT, FOXPlus*, GMedia
+#USER-AGENT, HBO%20NOW*, GMedia
+#USER-AGENT, WeMusic*, GMedia
+#USER-AGENT, JOOX*, GMedia
+#USER-AGENT, KKTV*, GMedia
+#USER-AGENT, com.kktv*, GMedia
+#USER-AGENT, LINE*, GMedia
+#USER-AGENT, mytv*, GMedia
+#USER-AGENT, Argo*, GMedia
+#USER-AGENT, PBS*, GMedia
+#USER-AGENT, SoundCloud*, GMedia
+#USER-AGENT, *Spotify*, GMedia
+#USER-AGENT, ViuTV*, GMedia
+#USER-AGENT, *YouTubeMusic*, GMedia
+#USER-AGENT, *com.google.ios.youtubemusic*, GMedia
+#USER-AGENT, *youtube*, GMedia
+#USER-AGENT, YouTube*, GMedia
 
 #-----------------以下为解析后的规则-----------------#
 
