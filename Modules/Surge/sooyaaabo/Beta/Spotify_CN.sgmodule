@@ -8,12 +8,37 @@
 #!loon_version=3.5.3(1014)
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
-#!arguments=spot-ev3-enable:true,spot-ev1-enable:false
-#!arguments-desc=spot-ev3-enable: Protobuf本地配置修改\n在本地修补bootstrap/customize Protobuf数据（推荐）。\n可选值: true, false\n\nspot-ev1-enable: Protobuf远程配置修改\n另一种Protobuf修补方案。请勿与本地配置修改同时启用。\n可选值: false, true
+#!arguments=spot-ev3-enable:"",spot-ev1-enable:#
+#!arguments-desc=spot-ev3-enable: Protobuf本地配置修改\n在本地修补bootstrap/customize Protobuf数据（推荐）。\n可选值: 留空启用, # 禁用\n\nspot-ev1-enable: Protobuf远程配置修改\n另一种Protobuf修补方案。请勿与本地配置修改同时启用。\n可选值: 留空启用, # 禁用
 
 [Rule]
 AND,((DOMAIN-SUFFIX,spotify.com),(PROTOCOL,QUIC)),REJECT
 DOMAIN,aet.spotify.com,REJECT
+
+[Header Rewrite]
+http-request (?i)^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize header-del "if-none-match"
+
+[Map Local]
+(?i)^https:\/\/(spclient\.wg|.*-spclient)\.spotify\.com(:443)?\/pendragon data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+(?i)^https:\/\/(spclient\.wg|.*-spclient)\.spotify\.com(:443)?\/watch-feed-entrypoints\/v.\/discovery-from-seed data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+(?i)^https:\/\/.*-spclient\.spotify\.com(:443)?\/pam-view-service\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+(?i)37i9dQZF1EYkqdzj48dyYq data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+[Spotify]gabo请求处理 = type=http-request, pattern=(?i)^https:\/\/(.*-spclient\.spotify\.com(:443)?|spclient\.wg\.spotify\.com)\/gabo-receiver-service, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/Spotify_CN/devchristian1337_spot-gabo.js, timeout=10
+
+[Spotify]搜索广告处理 = type=http-response, pattern=(?i)^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/browsita\/v.\/browse, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/Spotify_CN/devchristian1337_spot-NoSearchAd.js, requires-body=true, binary-body-mode=true, timeout=10
+
+[Spotify]首页广告处理 = type=http-response, pattern=(?i)^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/casita\/v.\/home\/, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/Spotify_CN/devchristian1337_spot-NoHomeAd.js, requires-body=true, binary-body-mode=true, timeout=10
+
+[Spotify]滚动信息流广告处理 = type=http-response, pattern=(?i)^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/scrollsita\/v.\/scroll\/spotify, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/Spotify_CN/devchristian1337_spot-NoScrollAd.js, requires-body=true, binary-body-mode=true, timeout=10
+
+{{{spot-ev3-enable}}}[Spotify]Protobuf本地配置 = type=http-response, pattern=(?i)^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)(\?.*)?$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/Spotify_CN/devchristian1337_spot-proto-ev3.js, requires-body=true, binary-body-mode=true, timeout=10
+
+{{{spot-ev1-enable}}}[Spotify]Protobuf远程配置 = type=http-response, pattern=(?i)^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)(\?.*)?$, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/Spotify_CN/devchristian1337_spot-proto-eevee.js, requires-body=true, binary-body-mode=true, timeout=10
 
 [MITM]
 hostname = %APPEND% spclient.wg.spotify.com, *spclient.spotify.com
