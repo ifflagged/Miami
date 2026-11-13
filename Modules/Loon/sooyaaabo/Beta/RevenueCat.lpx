@@ -8,6 +8,27 @@
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
 
+[Argument]
+RevenueCat-chxm1023=switch,false,true,tag = RevenueCat-chxm1023, desc = 是否启用chxm1023的脚本来解锁RevenueCat系列
+RevenueCat-Guding88=switch,false,true,tag = RevenueCat-Guding88, desc = 是否启用Guding88的脚本来解锁RevenueCat系列
+RevenueCat-ddgksf2013=switch,false,true,tag = RevenueCat-ddgksf2013, desc = 是否启用ddgksf2013的脚本来解锁RevenueCat系列
+
+[Rewrite]
+request if ${url} ~= /^https:\/\/api\.lianjiu\.fun\/app\/api\/v1\/profile/i then reject(404)
+
+[Script]
+response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/chxm1023_Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack响应@chxm1023", requires_body=true
+
+request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/chxm1023_Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack请求@chxm1023"
+
+response if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/Guding88_APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack响应@Guding88", requires_body=true
+
+request if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/Guding88_APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack请求@Guding88"
+
+response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/ddgksf2013_revenuecat.vip.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack响应@ddgksf2013", requires_body=true
+
+request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/RevenueCat/ddgksf2013_deleteHeader.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack请求@ddgksf2013"
+
 [MITM]
 hostname = api.revenuecat.com, api.rc-backup.com, api.lianjiu.fun
 
