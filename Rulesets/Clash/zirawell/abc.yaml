@@ -1,4 +1,4 @@
-#规则数量:4
+#规则数量:5
 #不支持的规则数量:0
 #已排除的规则数量:0
 
@@ -8,4 +8,5 @@ payload:
   - DOMAIN,imc.abchina.com.cn
   - DOMAIN,apm.abchina.com.cn
   - DOMAIN,msmp.abchina.com.cn
+  - DOMAIN,mb.cdn-static.abchina.com.cn
   - DOMAIN,firefly.abchina.com.cn
