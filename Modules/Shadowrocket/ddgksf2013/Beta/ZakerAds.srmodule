@@ -1,0 +1,14 @@
+#!name=ZakerAds
+#!desc=ZakerAds
+#!icon=icon not found
+#!category=ddgksf2013
+
+[Body Rewrite]
+http-response-jq ^https:\/\/iphone\.myzaker\.com\/zaker\/cover\.php '.data.cover_ads = {}'
+http-response-jq ^https:\/\/ggs\.myzaker\.com\/zk_block_ad\.php '.data |= (del(.tofu_partner_ad) | with_entries(if (.key as $k | ["ad_list","pic_ad_list","ad_position","pic_ad_position","ad_position_integration","pic_ad_position_integration"] | index($k)) != null then .value = [] else . end))'
+http-response-jq ^https:\/\/ggs\.myzaker\.com\/zk_recommend_ad\.php '.data.ad_list = [] | .data.ad_position_integration = [] | del(.data.partner_ad)'
+http-response-jq ^https?:\/\/search\.myzaker\.com\/api\/\?(?:[^&]*&)*c=keywords(&|$) 'if (.data.wordlist? | type) == "array" then .data.wordlist |= map(select(.pk != "hotwords" and .pk != "keywords")) else . end'
+
+[MITM]
+hostname = %APPEND% iphone.myzaker.com, ggs.myzaker.com, search.myzaker.com
+

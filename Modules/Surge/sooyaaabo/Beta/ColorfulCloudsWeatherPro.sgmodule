@@ -29,5 +29,5 @@ DOMAIN,gather.colorfulclouds.net,REJECT
 [彩云天气Pro]活动推广 = type=http-response, pattern=(?i)^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\?, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/ColorfulCloudsWeatherPro/loon_ColorfulCloudsWeatherPro.js, requires-body=true
 
 [MITM]
-hostname = %APPEND% api.caiyunapp.com, *.cyapi.cn
+hostname = %APPEND% biz.cyapi.cn, wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn
 

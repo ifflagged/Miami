@@ -1,0 +1,14 @@
+#!name=ZakerAds
+#!desc=ZakerAds
+#!icon=icon not found
+#!tag=ddgksf2013
+
+[Rewrite]
+response if ${url} ~= /^https:\/\/iphone\.myzaker\.com\/zaker\/cover\.php/i then response.json.jq(".data.cover_ads = {}")
+response if ${url} ~= /^https:\/\/ggs\.myzaker\.com\/zk_block_ad\.php/i then response.json.jq(".data |= (del(.tofu_partner_ad) | with_entries(if (.key as $k | [\"ad_list\",\"pic_ad_list\",\"ad_position\",\"pic_ad_position\",\"ad_position_integration\",\"pic_ad_position_integration\"] | index($k)) != null then .value = [] else . end))")
+response if ${url} ~= /^https:\/\/ggs\.myzaker\.com\/zk_recommend_ad\.php/i then response.json.jq(".data.ad_list = [] | .data.ad_position_integration = [] | del(.data.partner_ad)")
+response if ${url} ~= /^https?:\/\/search\.myzaker\.com\/api\/\?(?:[^&]*&)*c=keywords(&|$)/i then response.json.jq("if (.data.wordlist? | type) == \"array\" then .data.wordlist |= map(select(.pk != \"hotwords\" and .pk != \"keywords\")) else . end")
+
+[MITM]
+hostname = iphone.myzaker.com, ggs.myzaker.com, search.myzaker.com
+

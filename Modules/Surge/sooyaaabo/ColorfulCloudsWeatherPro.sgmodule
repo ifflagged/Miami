@@ -15,5 +15,5 @@ DOMAIN,ad.cyapi.cn,REJECT
 DOMAIN,gather.colorfulclouds.net,REJECT
 
 [MITM]
-hostname = %APPEND% api.caiyunapp.com, *.cyapi.cn
+hostname = %APPEND% biz.cyapi.cn, wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn
 
