@@ -10,6 +10,7 @@ request if ${url} ~= /^https?:\/\/adc\.tamedia\.com\.tw\/rmadp\/static\/js\/gm-s
 request if ${url} ~= /^https?:\/\/.*?.gliacloud.com.*?www\.novel543\..*/i then reject(200)
 request if ${url} ~= /^https?:\/\/cdn\.holmesmind\.com\/js\/init\.js/i then reject(200)
 request if ${url} ~= /^https:\/\/m.diyibanzhu.me\/js\/js4.js/i then reject(200)
+request if ${url} ~= /rou.video\/js\/clickadu.js/i then reject(200)
 request if ${url} ~= /\/api\/video\/getadsdatalist\?/i then reject(200)
 request if ${url} ~= /js\.wpadmngr\.com\/static\/adManager\.js/i then reject(200)
 request if ${url} ~= /^https?:\/\/[-a-z]{6,}\.com?\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/i then reject(200)

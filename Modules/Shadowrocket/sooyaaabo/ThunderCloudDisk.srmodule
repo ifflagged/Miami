@@ -4,10 +4,19 @@
 #!icon=icon not found
 #!category=sooyaaabo
 #!openUrl=https://apps.apple.com/app/id1503466530
-#!tag=去广告, 解锁会员
+#!category=去广告, 解锁会员
 #!loon_version=3.5.3(1014)
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
+
+[Body Rewrite]
+http-response-jq (?i)^https:\/\/conf-m-ssl\.xunlei\.com\/external\/ 'delpaths([["values","me_config","entrance_list_vertical_enable"]])'
+http-response-jq (?i)^https:\/\/conf-m-ssl\.xunlei\.com\/external\/ 'delpaths([["values","me_config","common_service_list"]])'
+http-response-jq (?i)^https:\/\/conf-m-ssl\.xunlei\.com\/external\/ 'delpaths([["values","me_config","banner_service_list"]])'
+http-response-jq (?i)^https:\/\/api-shoulei-ssl\.xunlei\.com\/flowhub\/v1\/slots:batchGet$ '.slots |= map(select(.id == "xl_ios_mytab_vipicon" or (.native.assets.title.text.value? and (.native.assets.title.text.value | . == "清理助手" or . == "云盘容量" or . == "远程设备"))))'
+
+[Script]
+[迅雷云盘]解锁会员 = type=http-response, pattern=(?i)^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/ThunderCloudDisk/Marol62926_xunlei.js, requires-body=true
 
 [MITM]
 hostname = %APPEND% conf-m-ssl.xunlei.com, api-shoulei-ssl.xunlei.com, xluser-ssl.xunlei.com

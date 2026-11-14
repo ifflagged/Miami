@@ -10,6 +10,7 @@
 ^https?:\/\/.*?.gliacloud.com.*?www\.novel543\..* - reject
 ^https?:\/\/cdn\.holmesmind\.com\/js\/init\.js - reject
 ^https://m.diyibanzhu.me/js/js4.js - reject
+rou.video/js/clickadu.js - reject
 \/api\/video\/getadsdatalist\? - reject
 js\.wpadmngr\.com\/static\/adManager\.js - reject
 ^https?:\/\/[-a-z]{6,}\.com?\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$ - reject
