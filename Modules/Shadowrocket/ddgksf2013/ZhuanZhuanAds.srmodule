@@ -4,11 +4,9 @@
 #!category=ddgksf2013
 
 [URL Rewrite]
-# > 行为埋点
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v\d\/zzlogic\/(?:reportdautracking|reportVariousData|reportPushChannelStatus|reporttabclick) - reject-dict
 ^https:\/\/lego\.zhuanzhuan\.com\/(?:v1\/coke|page\/mark) - reject-dict
 ^https:\/\/lego-tech\.zhuanzhuan\.com\/(?:v1\/coke-tech|page\/mark-p-tech) - reject-dict
-# > Sentry / 听云监控
 ^https:\/\/sentry\.zhuanzhuan\.com\/api\/\d+\/envelope\/ - reject-dict
 ^https:\/\/wkdcm1\.tingyun\.com\/(?:initMobileApp|getTaskDefs|reportSpanData) - reject-dict
 ^https:\/\/wkrt\.tingyun\.com\/getMobileRedirectHost - reject-dict

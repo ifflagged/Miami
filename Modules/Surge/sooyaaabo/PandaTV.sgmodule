@@ -4,10 +4,14 @@
 #!icon=icon not found
 #!category=sooyaaabo
 #!openUrl=https://5721004.xyz/player/pandatv.html
-#!tag=功能增强
+#!category=功能增强
 #!loon_version=3.5.3(1014)
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
+
+[Header Rewrite]
+http-request (?i)^https?:\/\/[^\/:?#]*\.live-video\.net[^\/:?#]*(?=[:\/?#]|$) header-del "Origin"
+http-request (?i)^https?:\/\/[^\/:?#]*\.live-video\.net[^\/:?#]*(?=[:\/?#]|$) header-add "Origin" "https://www.pandalive.co.kr"
 
 [MITM]
 hostname = %APPEND% live-video.net, *.live-video.net

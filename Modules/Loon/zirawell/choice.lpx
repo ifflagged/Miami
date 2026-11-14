@@ -12,9 +12,9 @@
 #!date=2026-11-13
 
 [Rewrite]
-^https?:\/\/\w+\.eastmoney\.com\/ads\/ mock-response-body data-type=json data="{}" status-code=200
-^https?:\/\/\w+\.eastmoney\.com\/busservice\/api\/api\/Config\/GetUpNoticeInfo mock-response-body data-type=json data="{}" status-code=200
-^https?:\/\/innovactivity\.eastmoney\.com\/api\/app\/activity\/start mock-response-body data-type=json data="{}" status-code=200
+response if ${url} ~= /^https?:\/\/\w+\.eastmoney\.com\/ads\//i then response.body.mock("json", "{}", 200)
+response if ${url} ~= /^https?:\/\/\w+\.eastmoney\.com\/busservice\/api\/api\/Config\/GetUpNoticeInfo/i then response.body.mock("json", "{}", 200)
+response if ${url} ~= /^https?:\/\/innovactivity\.eastmoney\.com\/api\/app\/activity\/start/i then response.body.mock("json", "{}", 200)
 
 [MITM]
 hostname = choicegw.eastmoney.com, choicegw2.eastmoney.com, innovactivity.eastmoney.com

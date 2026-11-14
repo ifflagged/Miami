@@ -3,7 +3,7 @@
 #!author=mieqq[https://github.com/mieqq]
 #!icon=icon not found
 #!category=sooyaaabo
-#!tag=功能增强
+#!category=功能增强
 #!loon_version=3.5.3(1014)
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
@@ -14,6 +14,5 @@ skip-proxy = %APPEND% www.baidu.com, yunbusiness.ccb.com, wxh.wo.cn, gate.lagou.
 always-real-ip = %APPEND% easy-login.10099.com.cn, *-update.xoyocdn.com, id6.me, open.e.189.cn
 
 [Rule]
-# 中国农业银行
 DOMAIN,msmp.abchina.com.cn,REJECT
 

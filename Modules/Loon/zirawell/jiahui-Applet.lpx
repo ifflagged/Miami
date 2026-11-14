@@ -4,7 +4,7 @@
 #!tag=zirawell
 
 [Rewrite]
-^https?:\/\/api\.jiahui\.com\/app-rest\/app\/notice\/getMiniAppNotice mock-response-body data-type=json data="{}" status-code=200
+response if ${url} ~= /^https?:\/\/api\.jiahui\.com\/app-rest\/app\/notice\/getMiniAppNotice/i then response.body.mock("json", "{}", 200)
 
 [MITM]
 hostname = api.jiahui.com

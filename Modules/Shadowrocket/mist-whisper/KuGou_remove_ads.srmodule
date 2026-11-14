@@ -5,7 +5,7 @@
 #!category=mist-whisper
 #!date=2025-10-16 23:38:00
 #!arguments-desc=[参数设置]\n酷狗概念版Cookie:获取cookie 脚本启停\n\n├ 获取酷狗音乐概念版Cookie:启用（默认值）\n   └ 填入"#"：注释停用\n\nCRONEXP:定时任务参数,若想禁用定时任务输入表达式 99 99 31 2 即可
-#!arguments=酷狗概念版Cookie:获取酷狗音乐概念版cookie,KuGou_CRONEXP:10 0 * * *
+#!arguments=酷狗概念版Cookie:获取酷狗音乐概念版cookie,KuGou_CRONEXP:"10 0 * * *"
 
 [Rule]
 DOMAIN,ads.service.kugou.com,REJECT
@@ -61,9 +61,9 @@ http-response-jq ^https:\/\/gateway\.kugou\.com\/card\/v1\/pxy\/recommend_stream
 ^https:\/\/ep\.kugou\.com\/v\d\/album_shop\/get_entrance_info data-type=text data="{}" header="Content-Type:application/json"
 
 [Script]
-{{{酷狗概念版Cookie}}} = type=http-request, pattern=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/activity/get_month_vip_record.*, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/KuGou_remove_ads/resource_KuGouCookie.js
+酷狗概念版Cookie = type=http-request, pattern=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/activity/get_month_vip_record.*, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/KuGou_remove_ads/resource_KuGouCookie.js
 
-{酷狗概念版领取VIP} = type=cron, cronexp={{{KuGou_CRONEXP}}}, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/KuGou_remove_ads/resource_KuGouVIP.js
+酷狗概念版领取VIP = type=cron, cronexp="{{{KuGou_CRONEXP}}}", script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/KuGou_remove_ads/resource_KuGouVIP.js
 
 [MITM]
 hostname = %APPEND% gateway.kugou.com, fx.service.kugou.com, hwstore.kugou.com, ep.kugou.com, gatewayretry.kugou.com, gzacshow.kugou.com, m1fxgroup.kugou.com, ads.service.kugou.com, *.kugou.com

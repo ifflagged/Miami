@@ -22,14 +22,12 @@ http-response-jq ^https:\/\/app\.zhuanzhuan\.com\/zz\/v\d\/corecyclelogic\/getre
 http-response-jq ^https:\/\/app\.zhuanzhuan\.com\/zz\/v\d\/zzlogic\/tabredpoint '.respData={}'
 
 [Map Local]
-# > 行为埋点
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v\d\/zzlogic\/(?:reportdautracking|reportVariousData|reportPushChannelStatus|reporttabclick) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 ^https:\/\/lego\.zhuanzhuan\.com\/(?:v1\/coke|page\/mark) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 ^https:\/\/lego-tech\.zhuanzhuan\.com\/(?:v1\/coke-tech|page\/mark-p-tech) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-# > Sentry / 听云监控
 ^https:\/\/sentry\.zhuanzhuan\.com\/api\/\d+\/envelope\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 ^https:\/\/wkdcm1\.tingyun\.com\/(?:initMobileApp|getTaskDefs|reportSpanData) data-type=text data="{}" status-code=200 header="Content-Type:application/json"

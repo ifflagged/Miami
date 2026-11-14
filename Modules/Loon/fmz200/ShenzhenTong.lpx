@@ -9,11 +9,10 @@
 #!date=2026-11-11 21:17:23
 
 [Rule]
-# 微信小程序, REJECT
 DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com,REJECT
 
 [Rewrite]
-^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do mock-response-body data-type=text data=" " status-code=200
+response if ${url} ~= /^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do/i then response.body.mock("text", "", 200)
 
 [MITM]
 hostname = ecard.shenzhentong.com

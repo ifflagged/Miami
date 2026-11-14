@@ -7,7 +7,6 @@
 
 [URL Rewrite]
 ^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native - reject
-#^https?:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native reject
 ^https?:\/\/bkclient\.umetrip\.com\.cn\/gateway\/api\/umetrip\/native - reject
 
 [Map Local]

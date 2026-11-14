@@ -8,5 +8,5 @@
 #!arguments=阿里DNS:223.5.5.5,请求域名:*,请求类型:1,Device ID:IOS
 
 [Script]
-Alidns = type=dns, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/AliDNS/resource_Alidns.js, argument="{"HOST":"{{{阿里DNS}}}","UID":"{Account ID}","ID":"{AccessKey ID}","SECRET":"{AccessKey Secret}","DID":"{{{Device ID}}}","TYPE":"{{{请求类型}}}"}"
+Alidns = type=dns, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/AliDNS/resource_Alidns.js, argument="{"HOST":"{{{阿里DNS}}}","UID":"{{{Account ID}}}","ID":"{{{AccessKey ID}}}","SECRET":"{{{AccessKey Secret}}}","DID":"{{{Device ID}}}","TYPE":"{{{请求类型}}}"}"
 

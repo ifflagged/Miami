@@ -19,11 +19,10 @@ DOMAIN,mb.cdn-static.abchina.com.cn,REJECT
 DOMAIN,firefly.abchina.com.cn,REJECT
 
 [Rewrite]
-# ⚠️域名[mobilepaas.abchina.com.cn]已无法MITM，可能会导致App端部分功能无法使用，请自行选择是否需要
-^https?:\/\/mall\.abchina\.com\.cn\/pips\/EbizccmClientServer\/PIPSPopupAdvertisement mock-response-body data-type=json data="{}" status-code=200
+response if ${url} ~= /^https?:\/\/mall\.abchina\.com\.cn\/pips\/EbizccmClientServer\/PIPSPopupAdvertisement/i then response.body.mock("json", "{}", 200)
 
 [Script]
-http-response ^https?:\/\/(?>midc|mb-mbc)\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/abc/zirawell_adImage.js, requires-body=true, tag=abc
+response if ${url} ~= /^https?:\/\/(?>midc|mb-mbc)\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/abc/zirawell_adImage.js") with tag="abc", requires_body=true
 
 [MITM]
 hostname = mall.abchina.com.cn, midc.cdn-static.abchina.com.cn, mb-mbc.cdn-static.abchina.com.cn

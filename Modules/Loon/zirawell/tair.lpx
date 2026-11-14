@@ -12,7 +12,7 @@
 #!date=2026-10-21
 
 [Rewrite]
-^https?:\/\/www\.thaiairways\.com\/bin\/banner\/notification mock-response-body data-type=json data="{}" status-code=200
+response if ${url} ~= /^https?:\/\/www\.thaiairways\.com\/bin\/banner\/notification/i then response.body.mock("json", "{}", 200)
 
 [MITM]
 hostname = www.thaiairways.com

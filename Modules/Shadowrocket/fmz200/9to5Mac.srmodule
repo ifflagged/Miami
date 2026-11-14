@@ -9,7 +9,6 @@
 #!date=2026-11-11 21:17:23
 
 [Rule]
-#############################################
 DOMAIN-SUFFIX,ad-delivery.net,REJECT
 DOMAIN-SUFFIX,spot.im,REJECT
 DOMAIN-SUFFIX,revjet.com,REJECT

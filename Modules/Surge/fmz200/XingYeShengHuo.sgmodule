@@ -9,7 +9,6 @@
 #!date=2026-11-11 21:17:23
 
 [Map Local]
-#############################################
 ^https?:\/\/file\.cibfintech\.com\/file\/M0[1-9]{1}\/*\/*\/.*.zip data-type=tiny-gif status-code=200
 
 [MITM]

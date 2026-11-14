@@ -4,8 +4,7 @@
 #!icon=icon not found
 #!tag=mist-whisper
 #!date=2024-07-02
-#!arguments-desc=\n⚙️API序号\n\n1.ip-api.com\n2.ipinfo.io\n3.ipleak.net\n4.ip.sb
 
-[Argument]
-API序号=input,1,tag=API序号, desc=API序号
+[Script]
+generic then script("https://resource.wuyra.com/Script/Tools/IP-info/IP-{API序号}.js,no-resolve") with tag="IP-info", timeout=5
 

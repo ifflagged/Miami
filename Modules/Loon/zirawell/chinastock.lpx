@@ -12,8 +12,7 @@
 #!date=2026-10-25
 
 [Rewrite]
-# ⚠️也可在设置-通用-弹窗设置中手动关闭
-^https?:\/\/cdns\.chinastock\.com\.cn\/cdn\/omc\/app\/app\/(startup|\w+_pop) mock-response-body data-type=json data="{}" status-code=200
+response if ${url} ~= /^https?:\/\/cdns\.chinastock\.com\.cn\/cdn\/omc\/app\/app\/(startup|\w+_pop)/i then response.body.mock("json", "{}", 200)
 
 [MITM]
 hostname = cdns.chinastock.com.cn

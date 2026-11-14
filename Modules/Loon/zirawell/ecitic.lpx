@@ -12,10 +12,10 @@
 #!date=2026-11-10
 
 [Rewrite]
-^https?:\/\/edata\.bank\.ecitic\.com\/mobile\/collect\.do mock-response-body data-type=json data="{}" status-code=200
+response if ${url} ~= /^https?:\/\/edata\.bank\.ecitic\.com\/mobile\/collect\.do/i then response.body.mock("json", "{}", 200)
 
 [Script]
-http-request ^https?:\/\/autoload\.bank\.ecitic\.com\/imcslego\/cloud\/\w+\.jpg\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/ecitic/zirawell_ecitic.js, tag=ecitic
+request if ${url} ~= /^https?:\/\/autoload\.bank\.ecitic\.com\/imcslego\/cloud\/\w+\.jpg\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/ecitic/zirawell_ecitic.js") with tag="ecitic"
 
 [MITM]
 hostname = edata.bank.ecitic.com, autoload.bank.ecitic.com

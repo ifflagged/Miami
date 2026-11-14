@@ -9,7 +9,6 @@
 #!date=2026-11-11 21:17:23
 
 [URL Rewrite]
-# 微信小程序
 ^https?:\/\/clubmed\.bd\.clubmedmnp\.com\/miniorder\/api\/basic\/common - reject-dict
 
 [MITM]

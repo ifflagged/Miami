@@ -6,13 +6,13 @@
 #!date=2022-07-06 20:05:57
 
 [Script]
-http-response ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Emby_Unlock/resource_EmbyUnlock.js, requires-body=true, tag=播放解锁
+response if ${url} ~= /^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Emby_Unlock/resource_EmbyUnlock.js") with tag="播放解锁", requires_body=true
 
-http-response ((\/emby)*\/Users\/\w{32}\/Items\/\d+\?)|((\/emby)*\/Items\/\d+\/Download)|(\/web\/modules\/itemcontextmenu\.js)|(\/web\/item\/item\.js) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Emby_Unlock/resource_Emby.js, requires-body=true, tag=视频下载
+response if ${url} ~= /((\/emby)*\/Users\/\w{32}\/Items\/\d+\?)|((\/emby)*\/Items\/\d+\/Download)|(\/web\/modules\/itemcontextmenu\.js)|(\/web\/item\/item\.js)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Emby_Unlock/resource_Emby.js") with tag="视频下载", requires_body=true
 
-http-request (\/Videos\/\d+\/stream\/.+\?.+&filename)|(\/Videos\/\d+\/\w{32}\/Subtitles\/\d+\/.+\?.+&filename) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Emby_Unlock/resource_Download_Path_Rename.js, tag=请求路径重命名
+request if ${url} ~= /(\/Videos\/\d+\/stream\/.+\?.+&filename)|(\/Videos\/\d+\/\w{32}\/Subtitles\/\d+\/.+\?.+&filename)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Emby_Unlock/resource_Download_Path_Rename.js") with tag="请求路径重命名"
 
-http-response (\/Videos\/\d+\/stream\?.+&filename)|(\/Videos\/\d+\/\w{32}\/Subtitles\/.+&filename) script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Emby_Unlock/resource_Download_File_Rename.js, tag=下载文件重命名
+response if ${url} ~= /(\/Videos\/\d+\/stream\?.+&filename)|(\/Videos\/\d+\/\w{32}\/Subtitles\/.+&filename)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/mist-whisper/Emby_Unlock/resource_Download_File_Rename.js") with tag="下载文件重命名"
 
 [MITM]
 hostname = mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0

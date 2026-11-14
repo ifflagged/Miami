@@ -5,7 +5,7 @@
 #!category=zirawell
 #!openUrl=https://apps.apple.com/app/id1483705019
 #!bundleId=com.ysepay.merchant.service
-#!tag=去广告
+#!category=去广告
 #!basedOn=iOS
 #!surge_version=5.14.2(Build3405,SDK18.2)
 #!homepage=https://github.com/zirawell/R-Store/tree/main/Rule/Surge/README.md
@@ -17,7 +17,6 @@ DOMAIN,ads.ysepay.com,REJECT,extended-matching
 [URL Rewrite]
 ^https?:\/\/ya-sdn\.ysepay\.com\/ma_gate\/advertisement - reject
 ^https?:\/\/ya-sdn\.ysepay\.com\/ma_gate\/popupAds - reject
-# 屏蔽更新
 ^https?:\/\/ya-sdn\.ysepay\.com\/ma_gate\/version\/updateAppVersion - reject
 
 [MITM]

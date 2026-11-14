@@ -5,16 +5,16 @@
 #!category=zirawell
 #!openUrl=https://apps.apple.com/app/id547560608
 #!bundleId=com.flyguest.flyertea
-#!tag=去广告
+#!category=去广告
 #!basedOn=iOS
 #!qx_version=1.5.2-854
 #!homepage=https://github.com/zirawell/R-Store/tree/main/Rule/QuanX/README.md
 #!date=2026-05-09
 
 [Map Local]
-^https?:\/\/www\.flyert(rip)?\.com(\.cn)?\/.*\.php\?module=advis data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https?:\/\/www\.flyert(rip)?\.com(\.cn)?\/.*\.php\?(?:[^#?&]+&)*module=advis data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https?:\/\/www\.flyert(rip)?\.com(\.cn)?\/.*\.php\?module=basicdata&type=appinfo data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https?:\/\/www\.flyert(rip)?\.com(\.cn)?\/.*\.php\?(?:[^#?&]+&)*module=basicdata&type=appinfo data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
 replaceBody = type=http-response, pattern=^https?:\/\/www\.flyert(rip)?\.com(\.cn)?\/.*\.php\?.*module=basicdata&type=forumlist, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/flyert/Script-Hub-Org_replace-body.js, requires-body=true, max-size=-1, timeout=30, argument=adv-%3Eadv0

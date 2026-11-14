@@ -12,13 +12,12 @@
 #!date=2026-10-21
 
 [Rewrite]
-^https?:\/\/\w+\.juneyaoair\.com(\/server)?\/data\/index\/(?>queryPopUpWinPic|getLoadPic|getRecommendProduct|creditCardAd) - reject
-^https?:\/\/shopping\.juneyaoair\.com\/mobile\/shop\/mobile\/app response-body-replace-regex "index_pop_wap_enable":true "index_pop_wap_enable":false
-# 屏蔽更新
-^https?:\/\/\w+\.juneyaoair\.com(\/server)?\/version mock-response-body data-type=text status-code=200
+request if ${url} ~= /^https?:\/\/\w+\.juneyaoair\.com(\/server)?\/data\/index\/(?>queryPopUpWinPic|getLoadPic|getRecommendProduct|creditCardAd)/i then reject(200)
+response if ${url} ~= /^https?:\/\/shopping\.juneyaoair\.com\/mobile\/shop\/mobile\/app/i then response.body.replace(/"index_pop_wap_enable":true/, "\"index_pop_wap_enable\":false")
+response if ${url} ~= /^https?:\/\/\w+\.juneyaoair\.com(\/server)?\/version/i then response.body.mock("text", "", 200)
 
 [Script]
-http-response ^https?:\/\/\w+\.juneyaoair\.com(\/server)?\/data\/index\/getPictureList script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/juneyaoair/zirawell_juneyaoair.js, requires-body=true, tag=juneyaoair
+response if ${url} ~= /^https?:\/\/\w+\.juneyaoair\.com(\/server)?\/data\/index\/getPictureList/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/juneyaoair/zirawell_juneyaoair.js") with tag="juneyaoair", requires_body=true
 
 [MITM]
 hostname = hoapp.juneyaoair.com, m.juneyaoair.com, shopping.juneyaoair.com

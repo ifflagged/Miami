@@ -9,7 +9,6 @@
 #!date=2026-11-11 21:17:23
 
 [Rule]
-#############################################
 DOMAIN-SUFFIX,ad-delivery.net,REJECT
 DOMAIN-SUFFIX,spot.im,REJECT
 DOMAIN-SUFFIX,revjet.com,REJECT
@@ -41,7 +40,7 @@ DOMAIN-SUFFIX,presage.io,REJECT
 DOMAIN-SUFFIX,mradx.net,REJECT
 
 [Rewrite]
-https:\/\/this-is-an-example\.com\/example\/ - reject-dict
+request if ${url} ~= /https:\/\/this-is-an-example\.com\/example\//i then reject_dict(200)
 
 [MITM]
 hostname = this-is-an-example.com

@@ -5,7 +5,7 @@
 #!category=zirawell
 #!openUrl=https://apps.apple.com/app/id1387717110
 #!bundleId=com.yueyou.cyreader
-#!tag=去广告
+#!category=去广告
 #!basedOn=iOS
 #!surge_version=5.14.2(Build3405,SDK18.2)
 #!homepage=https://github.com/zirawell/R-Store/tree/main/Rule/Surge/README.md
@@ -29,7 +29,7 @@ DOMAIN-KEYWORD,remad.qm989.com,REJECT,extended-matching
 ^https?:\/\/api-cfg\.wtzw\.com\/v\d\/(?>splash|adv) - reject
 
 [Map Local]
-^https?:\/\/api-cfg\.wtzw\.com\/v\d\/operation\/index\?ad_personal_switch data-type=json data="{}"
+^https?:\/\/api-cfg\.wtzw\.com\/v\d\/operation\/index\?(?:[^#?&]+&)*ad_personal_switch data-type=json data="{}"
 
 [MITM]
 hostname = %APPEND% api-cfg.wtzw.com

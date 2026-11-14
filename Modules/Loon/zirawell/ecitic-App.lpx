@@ -4,7 +4,7 @@
 #!tag=zirawell
 
 [Script]
-http-request ^https?:\/\/autoload\.bank\.ecitic\.com\/imcslego\/cloud\/\w+\.jpg\? script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/ecitic-App/zirawell_ecitic.js, tag=ecitic
+request if ${url} ~= /^https?:\/\/autoload\.bank\.ecitic\.com\/imcslego\/cloud\/\w+\.jpg\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/ecitic-App/zirawell_ecitic.js") with tag="ecitic"
 
 [MITM]
 hostname = autoload.bank.ecitic.com

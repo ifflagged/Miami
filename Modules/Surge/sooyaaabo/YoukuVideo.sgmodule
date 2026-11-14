@@ -4,17 +4,15 @@
 #!icon=icon not found
 #!category=sooyaaabo
 #!openUrl=https://apps.apple.com/app/id336141475
-#!tag=去广告
+#!category=去广告
 #!loon_version=3.5.3(1014)
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
 
 [Rule]
-# 放行地址
 DOMAIN,push.m.youku.com,DIRECT
 DOMAIN,un-acs.youku.com,DIRECT
 DOMAIN,dorangesource.alicdn.com,DIRECT
-# 拦截地址
 DOMAIN,h-adashx.ut.taobao.com,REJECT
 DOMAIN,adx-core.youku.com,REJECT
 DOMAIN,adx-open-service.youku.com,REJECT
@@ -36,6 +34,13 @@ DOMAIN-SUFFIX,iyes.youku.com,REJECT
 DOMAIN,adsmind.ugdtimg.com,REJECT
 DOMAIN,pre-acs.youku.com,REJECT
 DOMAIN,youku-acs.m.taobao.com,REJECT
+
+[Body Rewrite]
+http-response-jq (?i)^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get 'delpaths([["data","data","ad"]])'
+http-response-jq (?i)^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get 'delpaths([["data","data","watermark"]])'
+http-response-jq (?i)^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get 'delpaths([["data","data","ykad"]])'
+http-response-jq (?i)^https:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\? 'delpaths([["data","tipContent"]])'
+http-response-jq (?i)^https:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\? 'delpaths([["data","tipContentNew"]])'
 
 [MITM]
 hostname = %APPEND% push.m.youku.com, un-acs.youku.com

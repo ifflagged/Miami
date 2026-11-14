@@ -4,13 +4,16 @@
 #!icon=icon not found
 #!category=sooyaaabo
 #!openUrl=http://boxjs.com/
-#!tag=功能增强
+#!category=功能增强
 #!loon_version=3.5.3(1014)
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
 
 [Rule]
 DOMAIN-SUFFIX,jsdelivr.net,PROXY
+
+[Script]
+BoxJs = type=http-request, pattern=(?i)^https?:\/\/(.+\.)?boxjs\.(com|net), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/BoxJs/chavyleung_chavy.boxjs.js, requires-body=true, timeout=120
 
 [MITM]
 hostname = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
