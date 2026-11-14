@@ -1,4 +1,4 @@
-#规则数量:1416
+#规则数量:1415
 #不支持的规则数量:0
 #已排除的规则数量:0
 
@@ -298,7 +298,6 @@ payload:
   - DOMAIN,fp-it.fengkongcloud.com
   - DOMAIN,free-aos-cdn-image.amap.com
   - DOMAIN,g1.163.com
-  - DOMAIN,g1.tagtic.cn
   - DOMAIN,g3.letv.com
   - DOMAIN,gather.colorfulclouds.net
   - DOMAIN,gdfp.gifshow.com
@@ -381,7 +380,6 @@ payload:
   - DOMAIN,log-verify.mob.com
   - DOMAIN,log.17gwx.com
   - DOMAIN,log.cmbchina.com
-  - DOMAIN,log.tagtic.cn
   - DOMAIN,log.web.kugou.com
   - DOMAIN,log.ycapp.yiche.com
   - DOMAIN,logs.chelaile.net.cn
@@ -1227,6 +1225,7 @@ payload:
   - DOMAIN-SUFFIX,t.sj.qq.com
   - DOMAIN-SUFFIX,t7z.cupid.iqiyi.com
   - DOMAIN-SUFFIX,ta.qq.com
+  - DOMAIN-SUFFIX,tagtic.cn
   - DOMAIN-SUFFIX,tajs.qq.com
   - DOMAIN-SUFFIX,tappx.com
   - DOMAIN-SUFFIX,tb060x.corp.youdao.com

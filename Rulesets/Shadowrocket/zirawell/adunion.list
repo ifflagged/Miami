@@ -1,4 +1,4 @@
-#规则数量:504
+#规则数量:503
 #不支持的规则数量:0
 #已排除的规则数量:0
 
@@ -21,18 +21,17 @@ DOMAIN,api.verify.mob.com
 DOMAIN,log-verify.mob.com
 DOMAIN,api.adnet.mob.com
 DOMAIN,dig.bdurl.net
-DOMAIN,g1.tagtic.cn
-DOMAIN,log.tagtic.cn
 DOMAIN,sdownload.stargame.com
 DOMAIN-SUFFIX,1sapp.com
 DOMAIN-SUFFIX,aiclk.com
 DOMAIN-SUFFIX,adbiding.com
+DOMAIN-SUFFIX,adview.cn
 DOMAIN-SUFFIX,apkevery.com
 DOMAIN-SUFFIX,accuratead.cn
 DOMAIN-SUFFIX,xwpbj.com
 DOMAIN-SUFFIX,qiyukf.com
 DOMAIN-SUFFIX,qttunion.com
-DOMAIN-SUFFIX,adview.cn
+DOMAIN-SUFFIX,tagtic.cn
 DOMAIN-SUFFIX,ttayy.cn
 DOMAIN-SUFFIX,tobidad.cn
 DOMAIN-SUFFIX,zhengxiaoliu.top
