@@ -7,7 +7,7 @@
 #!basedOn=iOS
 #!surge_version=5.14.2(Build3405,SDK18.2)
 #!homepage=https://github.com/zirawell/R-Store/tree/main/Rule/Surge/README.md
-#!date=2026-11-14 11:34:13
+#!date=2026-11-15 15:54:47
 
 [Rule]
 IP-CIDR,1.202.85.193/32,REJECT,no-resolve
@@ -3091,6 +3091,8 @@ response if ${url} ~= /^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note
 
 response if ${url} ~= /^https?:\/\/api(dd)?\.btyjscl\.com\/api\/v\d\/(?>ads|startup|users|movies)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_javdb.js") with tag="javdb", requires_body=true
 
+response if ${url} ~= /^https?:\/\/mb-mbc\.cdn-static\.abchina\.com\.cn\/image-server\/getImage/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_abc.js") with tag="abc", requires_body=true
+
 response if ${url} ~= /^https?:\/\/app-api\.smzdm\.com\/util\/(loading|update)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_smzdm.js") with tag="smzdm", requires_body=true
 
 response if ${url} ~= /^https?:\/\/api\.rr\.tv\/app\/config\/h5NativeBar/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_rrtv.js") with tag="rrtv", requires_body=true
@@ -3303,8 +3305,6 @@ response if ${url} ~= /^https?:\/\/api\d\.bybutter\.com\/v\d/i then script("http
 
 response if ${url} ~= /^https?:\/\/m\d\.amap\.com\/ws\/bus\/plan\/integrate\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_amap.js") with tag="amap", requires_body=true
 
-response if ${url} ~= /^https?:\/\/(?>midc|mb-mbc)\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_adImage.js") with tag="abc", requires_body=true
-
 response if ${url} ~= /^https?:\/\/g(.*)\.dushu365\.com\/resource-orchestration-system\/book\/channel\/v100\/info/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_dushu365.js") with tag="dushu365", requires_body=true
 
 response if ${url} ~= /^https?:\/\/api-a\.soulapp\.cn\/v\d\/post\/gift\/list/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_soul.js") with tag="soul", requires_body=true
@@ -3484,6 +3484,8 @@ response if ${url} ~= /^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksea
 response if ${url} ~= /^https?:\/\/api\.weibo\.cn\/2\/comments\/build_comments\?/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_weibo.js") with tag="weibo", requires_body=true
 
 response if ${url} ~= /^https?:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_ithome.js") with tag="ithome", requires_body=true
+
+response if ${url} ~= /^https?:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_abc.js") with tag="abc", requires_body=true
 
 response if ${url} ~= /^https?:\/\/youtubei\.googleapis\.com\/(youtubei\/v\d\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/appAdBlock/zirawell_youtube.js") with tag="youtube", requires_body=true
 
