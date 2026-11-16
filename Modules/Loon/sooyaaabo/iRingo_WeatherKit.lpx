@@ -1,16 +1,16 @@
 #!name = iRingo:WeatherKit
-#!desc = 1.解锁全部天气功能；2.替换空气质量数据；3.添加下一小时降水数据；4.添加天气数据。\n仅支持iOS 18 & macOS 15 & watchOS 11及以上版本。
+#!desc = 1.解锁全部天气功能；2.修改空气质量数据；3.修改下一小时降水数据；4.修改天气数据；5.修改天气预警数据。\n仅支持iOS 18 & macOS 15 & watchOS 11及以上版本。
 #!openUrl = http://boxjs.com/#/app/iRingo.WeatherKit
 #!author = VirgilClyne[https://github.com/VirgilClyne], WordlessEcho[https://github.com/WordlessEcho], 001ProMax[https://github.com/001ProMax]
 #!tag = 功能增强
 #!system = 
-#!system_version = 18
+#!system_version = 
 #!loon_version = 3.5.3(1014)
 #!homepage = https://loonlab.103516.xyz/Plugin/
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/AppleWeather.png
-#!date = 2026-11-02 21:00
+#!date = 2026-11-16 18:00
 
-# 2026-08-18 13:01:49
+# 2026-11-16 09:03:37
 # https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.lpx
 
 [Argument]
@@ -24,14 +24,14 @@ API.ColorfulClouds.Token = input, "", tag = [API] 彩云天气令牌, desc = 彩
 API.QWeather.Host = input, "devapi.qweather.com", tag = [API] 和风天气主机, desc = 和风天气 API 使用的主机名
 API.QWeather.Token = input, "", tag = [API] 和风天气令牌, desc = 和风天气 API 令牌
 API.WAQI.Token = input, "", tag = [API] WAQI 令牌, desc = WAQI API 令牌，填写此字段将自动使用WAQI高级API
-Storage = select, "Argument", "PersistentStore", "database", tag = [储存] 配置类型, desc = 选择要使用的配置类型。未设置此选项或不通过此选项的旧版本的配置顺序依旧是 $persistentStore (BoxJs) > $argument > database。
+Storage = select, "Argument", "PersistentStore", "database", tag = [储存] 配置类型, desc = 仅可通过 $argument 设置。默认使用 Argument，配置优先级为 database -> PersistentStore (BoxJs) -> $argument；选择 PersistentStore 时为 database -> $argument -> PersistentStore (BoxJs)。
 LogLevel = select, "WARN", "OFF", "ERROR", "INFO", "DEBUG", "ALL", tag = [调试] 日志等级, desc = 选择脚本日志的输出等级，低于所选等级的日志将全部输出。
 
 [Rule]
 DOMAIN, weather-analytics-events.apple.com, REJECT-DROP
 DOMAIN-SUFFIX, tthr.apple.com, REJECT-DROP
 DOMAIN, tether.edge.apple, REJECT-DROP
-AND, ((OR, ((IP-ASN, 714, no-resolve), (IP-ASN, 6185, no-resolve))), (PROTOCOL, QUIC)), REJECT-DROP
+AND, ((OR, ((IP-ASN, 714, no-resolve), (IP-ASN, 6185, no-resolve))), (PROTOCOL, QUIC), (NOT, ((DOMAIN, mask-api.icloud.com)))), REJECT-DROP
 
 [Script]
 response if ${url} ~= /^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/iRingo_WeatherKit/NSRingo_response.bundle.js", {${DataSets}, ${Weather.Provider}, ${WeatherAlerts.Provider}, ${NextHour.Provider}, ${AirQuality.Current.Pollutants.Provider}, ${AirQuality.Calculate.Algorithm}, ${API.ColorfulClouds.Token}, ${API.QWeather.Host}, ${API.QWeather.Token}, ${API.WAQI.Token}, ${Storage}, ${LogLevel}}) with tag="[iRingo_WeatherKit]v1.availability.response", requires_body=true
@@ -43,6 +43,8 @@ request if ${url} ~= /^https?:\/\/weatherkit\.apple\.com\/api\/v1\/weatherAlerts
 request if ${url} ~= /^https?:\/\/weatherkit\.apple\.com\/api\/v1\/weatherAlerts\?[^#]*&ids=-?[0-9]+(?:\.[0-9]+)?,-?[0-9]+(?:\.[0-9]+)?(?:&|$)/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/iRingo_WeatherKit/NSRingo_request.bundle.js", {${DataSets}, ${Weather.Provider}, ${WeatherAlerts.Provider}, ${NextHour.Provider}, ${AirQuality.Current.Pollutants.Provider}, ${AirQuality.Calculate.Algorithm}, ${API.ColorfulClouds.Token}, ${API.QWeather.Host}, ${API.QWeather.Token}, ${API.WAQI.Token}, ${Storage}, ${LogLevel}}) with tag="[iRingo_WeatherKit]v1.weatherAlerts.api.request"
 
 response if ${url} ~= /^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/iRingo_WeatherKit/NSRingo_response.bundle.js", {${DataSets}, ${Weather.Provider}, ${WeatherAlerts.Provider}, ${NextHour.Provider}, ${AirQuality.Current.Pollutants.Provider}, ${AirQuality.Calculate.Algorithm}, ${API.ColorfulClouds.Token}, ${API.QWeather.Host}, ${API.QWeather.Token}, ${API.WAQI.Token}, ${Storage}, ${LogLevel}}) with tag="[iRingo_WeatherKit]v2.weather.response", requires_body=true, binary_body_mode=true
+
+response if ${url} ~= /^https?:\/\/weatherkit\.apple\.com\/api\/v3\/weather\//i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/iRingo_WeatherKit/NSRingo_response.bundle.js", {${DataSets}, ${Weather.Provider}, ${WeatherAlerts.Provider}, ${NextHour.Provider}, ${AirQuality.Current.Pollutants.Provider}, ${AirQuality.Calculate.Algorithm}, ${API.ColorfulClouds.Token}, ${API.QWeather.Host}, ${API.QWeather.Token}, ${API.WAQI.Token}, ${Storage}, ${LogLevel}}) with tag="[iRingo_WeatherKit]v3.weather.response", requires_body=true, binary_body_mode=true
 
 [MitM]
 hostname = weatherkit.apple.com
