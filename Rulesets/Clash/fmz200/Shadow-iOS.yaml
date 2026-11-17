@@ -39,6 +39,6 @@ payload:
   - RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list
   - RULE-SET,https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/LAN.list
   - RULE-SET,https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/GeoIP_CN.list
-  - FINAL,PROXY
+  - FINAL,兜底策略
   - DOMAIN,^https?://(www.)?g.cn https://www.google.com 302
   - DOMAIN,^https?://(www.)?google.cn https://www.google.com 302
