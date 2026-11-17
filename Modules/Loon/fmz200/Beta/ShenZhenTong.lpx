@@ -12,7 +12,7 @@
 DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com,REJECT
 
 [Rewrite]
-request if ${url} ~= /^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do/i then reject(200, " ")
+request if ${url} ~= /^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do/i then reject(200)
 
 [MITM]
 hostname = ecard.shenzhentong.com

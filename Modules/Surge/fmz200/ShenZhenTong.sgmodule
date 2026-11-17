@@ -12,7 +12,7 @@
 DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com,REJECT
 
 [Map Local]
-^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do data-type=text data=" " status-code=200
+(?i)^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do data-type=text data="" status-code=200
 
 [MITM]
 hostname = %APPEND% ecard.shenzhentong.com

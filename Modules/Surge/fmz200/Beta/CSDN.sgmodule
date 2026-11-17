@@ -15,10 +15,12 @@ DOMAIN-SUFFIX,dc.csdn.net,REJECT
 DOMAIN-SUFFIX,dc2.csdn.net,REJECT
 DOMAIN-SUFFIX,medal.blog.csdn.net,REJECT
 
-[URL Rewrite]
-^https?:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v\d\/assemble\/list\/pub\/channel\/app_open_screen_ad - reject
-^https?:\/\/app-gw\.csdn\.net\/abtesting\/v2\/getList? - reject
-^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement - reject
+[Map Local]
+(?i)^https?:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v\d\/assemble\/list\/pub\/channel\/app_open_screen_ad data-type=text data="" status-code=404
+
+(?i)^https?:\/\/app-gw\.csdn\.net\/abtesting\/v2\/getList? data-type=text data="" status-code=404
+
+(?i)^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement data-type=text data="" status-code=404
 
 [MITM]
 hostname = %APPEND% app-gw.csdn.net, gw.csdn.net

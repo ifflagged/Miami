@@ -11,8 +11,8 @@
 [Rule]
 DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com,REJECT
 
-[URL Rewrite]
-^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do - reject-200
+[Map Local]
+(?i)^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do data-type=text data="" status-code=200
 
 [MITM]
 hostname = %APPEND% ecard.shenzhentong.com

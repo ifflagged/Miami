@@ -9,7 +9,7 @@
 #!date=2026-11-11 21:17:23
 
 [Rewrite]
-response if ${url} ~= /^https?:\/\/chl\.tf\.cn\/channelmg\/sys\/socso\/order\/queryOrderInfo/i then response.body.replace(/imgUrl/, "response-body")
+response if ${url} ~= /^https?:\/\/chl\.tf\.cn\/channelmg\/sys\/socso\/order\/queryOrderInfo/i then response.body.replace(/imgUrl/, "fmz200")
 response if ${url} ~= /^https?:\/\/chl\.tf\.cn\/channelmg\/sys\/socso\/socsonew\/queryIsRealNameAdertInfo/i then response.body.mock("text", "{}", 200)
 response if ${url} ~= /^https?:\/\/wechat\.tf\.cn\/mini-financial\/model\/queryPopup/i then response.body.mock("text", "{}", 200)
 

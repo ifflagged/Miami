@@ -7,7 +7,7 @@
 #!basedOn=iOS
 #!surge_version=5.14.2(Build3405,SDK18.2)
 #!homepage=https://github.com/zirawell/R-Store/tree/main/Rule/Surge/README.md
-#!date=2026-11-15 15:54:47
+#!date=2026-11-16 08:37:58
 
 [Rule]
 IP-CIDR,1.202.85.193/32,REJECT,no-resolve
@@ -286,6 +286,7 @@ DOMAIN,easytomessage.com,REJECT
 DOMAIN,eco.taobao.com,REJECT
 DOMAIN,ef-dongfeng.tanx.com,REJECT
 DOMAIN,effect.snssdk.com,REJECT
+DOMAIN,emapm.eastmoney.com,REJECT
 DOMAIN,emdcadvertise.eastmoney.com,REJECT
 DOMAIN,emdcadvertisepj.eastmoney.com,REJECT
 DOMAIN,emma-414870e223.huodonghezi.com,REJECT
@@ -508,6 +509,7 @@ DOMAIN,statistic.live.126.net,REJECT
 DOMAIN,stun1.douyucdn.cn,REJECT
 DOMAIN,stun1.qvb.qcloud.com,REJECT
 DOMAIN,sugar.zhihu.com,REJECT
+DOMAIN,swdlcdn.eastmoney.com,REJECT
 DOMAIN,switch.cup.com.cn,REJECT
 DOMAIN,t-ads.xiaohongshu.com,REJECT
 DOMAIN,t-dsp.pinduoduo.com,REJECT
