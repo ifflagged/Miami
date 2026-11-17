@@ -9,13 +9,6 @@
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
 
-[Rewrite]
-request if ${url} ~= /^https:\/\/.*\.githubusercontent\.com\//i then request.header.set("Accept-Language", "en-us")
-request if ${url} ~= /^https:\/\/github\.com\//i then request.header.set("Accept-Language", "en-us")
-
-[Script]
-request if ${url} ~= /^https?:\/\/raw\.githubusercontent\.com\/.+/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/GitHub/loon_GitRawAutoCDN.js") with tag="[GitHub]将Raw请求自动重定向到CDN", timeout=5
-
 [MITM]
 hostname = github.com, *.githubusercontent.com
 
