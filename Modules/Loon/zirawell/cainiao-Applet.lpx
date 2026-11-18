@@ -4,8 +4,8 @@
 #!tag=zirawell
 
 [Rewrite]
-response if ${url} ~= /^https?:\/\/cn-acs\.m\.cainiao\.com\/h5\/mtop\.cainiao\.guoguo\.tdwxgateway\.ads/i then response.body.mock("json", "{}", 200)
+response if ${url} ~= /^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads/i then response.body.mock("json", "{}", 200)
 
 [MITM]
-hostname = cn-acs.m.cainiao.com
+hostname = guide-acs.m.taobao.com
 

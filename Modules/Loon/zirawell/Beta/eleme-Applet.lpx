@@ -4,9 +4,13 @@
 #!tag=zirawell
 
 [Rewrite]
-response if ${url} ~= /^https?:\/\/waimai-guide\.ele\.me\/h5\/mtop\.alsc\.eleme\.miniapp\.homepage/i then response.body.replace(/wechat_miniapp_scene_card_template/, "zirawell")
-response if ${url} ~= /^https?:\/\/waimai-guide\.ele\.me\/h5\/mtop\.alsc\.eleme\.homepage\.miniapp\.popup/i then response.body.mock("json", "{}", 200)
+request if ${url} ~= /^https?:\/\/waimai-guide\.ele\.me\/(gw|h5)\/mtop\.alsc\.eleme\.trigger\.respond/i then reject(200)
+response if ${url} ~= /^https?:\/\/shopping\.ele\.me\/(gw|h5)\/mtop\.o2o\.ad\.exposure\.get/i then response.body.mock("json", "{}", 200)
+response if ${url} ~= /^https?:\/\/waimai-guide\.ele\.me\/(gw|h5)\/mtop\.alsc\.upp\.tbet\.send/i then response.body.mock("json", "{}", 200)
+
+[Script]
+response if ${url} ~= /^https?:\/\/waimai-guide\.ele\.me\/(gw|h5)\/mtop\.alsc\.eleme\.miniapp\.homepage/i then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/zirawell/eleme-Applet/zirawell_eleme.js") with tag="eleme", requires_body=true
 
 [MITM]
-hostname = waimai-guide.ele.me
+hostname = shopping.ele.me, waimai-guide.ele.me
 
