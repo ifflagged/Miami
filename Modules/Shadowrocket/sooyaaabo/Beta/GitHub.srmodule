@@ -9,6 +9,15 @@
 #!homepage=https://loonlab.103516.xyz/Plugin/
 #!date=2026-11-02 21:00
 
+[Header Rewrite]
+http-request (?i)^https:\/\/.*\.githubusercontent\.com\/ header-del "Accept-Language"
+http-request (?i)^https:\/\/.*\.githubusercontent\.com\/ header-add "Accept-Language" "en-us"
+http-request (?i)^https:\/\/github\.com\/ header-del "Accept-Language"
+http-request (?i)^https:\/\/github\.com\/ header-add "Accept-Language" "en-us"
+
+[Script]
+[GitHub]将Raw请求自动重定向到CDN = type=http-request, pattern=(?i)^https?:\/\/raw\.githubusercontent\.com\/.+, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/GitHub/loon_GitRawAutoCDN.js, timeout=5
+
 [MITM]
 hostname = %APPEND% github.com, *.githubusercontent.com
 
