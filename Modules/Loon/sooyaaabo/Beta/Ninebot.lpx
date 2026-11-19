@@ -1,0 +1,24 @@
+#!name=九号出行
+#!desc=九号出行每日签到。首次使用需进入「我的-签到中心」，手动签到一次以获取凭证。获取成功后，可关闭获取凭证脚本。
+#!author=sooyaaabo[https://github.com/sooyaaabo]
+#!icon=icon not found
+#!tag=sooyaaabo
+#!openUrl=https://apps.apple.com/app/id1458698038
+#!tag=功能增强
+#!loon_version=3.5.3(1014)
+#!homepage=https://loonlab.103516.xyz/Plugin/
+#!date=2026-11-19 19:00
+
+[Argument]
+Cookie-Ninebot=switch,true,false,tag = [九号出行]获取凭证, desc = 获取[九号出行]账户凭证
+Task-Ninebot=switch,true,false,tag = [九号出行]签到任务, desc = 定时运行[九号出行]签到任务
+Cron-Ninebot=input,"0 0 8 * * *",tag = [九号出行]定时参数Cron, desc = 输入Cron表达式来定时运行[九号出行]签到任务
+
+[Script]
+request if ${url} ~= /^https:\/\/cn-cbu-gateway\.ninebot\.com\/app-api\/api\/user-sign\/v2\/my-page\/status(?:\?|$)/ then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/Ninebot/loon_Ninebot.checkin.js") with enable=${Cookie-Ninebot}, tag="[九号出行]获取凭证"
+
+cron ${Cron-Ninebot} then script("https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/sooyaaabo/Ninebot/loon_Ninebot.checkin.js") with enable=${Task-Ninebot}, tag="[九号出行]签到任务"
+
+[MITM]
+hostname = cn-cbu-gateway.ninebot.com
+
