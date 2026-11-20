@@ -19,12 +19,13 @@
 DOMAIN, iacc.stgw.qq.com, REJECT
 DOMAIN, tacc.video.qq.com, REJECT
 
-# DOMAIN, ad.tencentvideo.com, REJECT
-# DOMAIN, adstats.tencentvideo.com, REJECT
-# DOMAIN-SUFFIX, ugdtimg.com, REJECT
+DOMAIN, ad.tencentvideo.com, REJECT
+DOMAIN, adstats.tencentvideo.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+DOMAIN-SUFFIX, gdtimg.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
 
-# DOMAIN, info4.video.qq.com, REJECT
-# DOMAIN, info6.video.qq.com, REJECT
 # DOMAIN, ugchsy.gtimg.com, REJECT
 # DOMAIN, rmonitor.qq.com, REJECT
 # DOMAIN, activity.video.qq.com, REJECT
@@ -33,7 +34,6 @@ DOMAIN, tacc.video.qq.com, REJECT
 # DOMAIN, aegis.qq.com, REJECT
 # DOMAIN, rdelivery.qq.com, REJECT
 # DOMAIN-SUFFIX, static-res.qq.com, REJECT
-# DOMAIN-SUFFIX, gdtimg.com, REJECT
 # DOMAIN-SUFFIX, l.qq.com, REJECT
 # DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # DOMAIN-SUFFIX, video.mpush.qq.com, REJECT
