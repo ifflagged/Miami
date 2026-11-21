@@ -373,7 +373,6 @@ DOMAIN,afd.baidu.com,REJECT
 DOMAIN,afdconf.baidu.com,REJECT
 DOMAIN,httpdns.baidubce.com,REJECT
 DOMAIN,lc.map.baidu.com,REJECT
-DOMAIN,180.76.76.200,REJECT
 IP-CIDR,180.76.76.200/32,REJECT,no-resolve
 DOMAIN-SUFFIX,admx.baixing.com,REJECT
 DOMAIN-SUFFIX,tu.baixing.com,REJECT
@@ -2510,7 +2509,6 @@ DOMAIN,appcloud2.in.zhihu.com,REJECT
 DOMAIN,mqtt.zhihu.com,REJECT
 DOMAIN,sugar.zhihu.com,REJECT
 DOMAIN,crash2.zhihu.com,REJECT
-DOMAIN,118.89.204.198,REJECT
 DOMAIN,zxid-m.mobileservice.cn,REJECT
 IP-CIDR,118.89.204.198/32,REJECT,no-resolve
 IP-CIDR,103.41.167.237/32,REJECT,no-resolve

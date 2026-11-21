@@ -12,7 +12,6 @@
 per_filter_video_thread=input,"0",tag=per_filter_video_thread, desc=per_filter_video_thread
 
 [Rule]
-DOMAIN,180.76.76.200,REJECT
 IP-CIDR,180.76.76.200/32,REJECT,no-resolve
 
 [Script]
