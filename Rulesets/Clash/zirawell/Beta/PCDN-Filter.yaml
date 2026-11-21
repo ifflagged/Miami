@@ -1,11 +1,6 @@
 #规则数量:18
-#不支持的规则数量:4
+#不支持的规则数量:0
 #已排除的规则数量:0
-#不支持的规则:
-#URL-REGEX, ^http://.*pcdn\.*biliapi\.net
-#URL-REGEX, ^http://.*pcdn\.*youku\.com
-#URL-REGEX, ^http://.*p2p\.*douyucdn\.cn
-#URL-REGEX, ^http://.*p2p\.*qq\.com
 
 #-----------------以下为解析后的规则-----------------#
 

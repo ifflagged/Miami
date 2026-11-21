@@ -2,15 +2,15 @@
 #不支持的规则数量:9
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT, %E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5*
-#USER-AGENT, AwemeI18n*
-#USER-AGENT, Coinbase*
-#USER-AGENT, Instagram*
-#USER-AGENT, Resilio Sync*
-#USER-AGENT, WhatsApp*
-#USER-AGENT, OneDrive*
-#USER-AGENT, PayPal*
-#USER-AGENT, battleroyale*
+#USER-AGENT, %E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5*, Outside
+#USER-AGENT, AwemeI18n*, Outside
+#USER-AGENT, Coinbase*, Outside
+#USER-AGENT, Instagram*, Outside
+#USER-AGENT, Resilio Sync*, Outside
+#USER-AGENT, WhatsApp*, Outside
+#USER-AGENT, OneDrive*, Outside
+#USER-AGENT, PayPal*, Outside
+#USER-AGENT, battleroyale*, Outside
 
 #-----------------以下为解析后的规则-----------------#
 
@@ -234,7 +234,7 @@ payload:
   - DOMAIN-SUFFIX,getpricetag.com
   - DOMAIN-SUFFIX,gfw.press
   - DOMAIN-SUFFIX,ggpht.com
-  - DOMAIN-SUFFIX,gDOMAINnoteapp.com
+  - DOMAIN-SUFFIX,ghostnoteapp.com
   - DOMAIN-SUFFIX,git.io
   - DOMAIN-SUFFIX,gitbook.com
   - DOMAIN-SUFFIX,globalsign.com
@@ -653,7 +653,7 @@ payload:
   - DOMAIN-SUFFIX,akamai.net
   - DOMAIN-SUFFIX,appspot.com
   - DOMAIN-SUFFIX,autodraw.com
-  - DOMAIN-SUFFIX,bandwagonDOMAIN.com
+  - DOMAIN-SUFFIX,bandwagonhost.com
   - DOMAIN-SUFFIX,blogblog.com
   - DOMAIN-SUFFIX,chromeexperiments.com
   - DOMAIN-SUFFIX,creativelab5.com
