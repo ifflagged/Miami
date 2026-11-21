@@ -7,7 +7,6 @@
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, e.crashlynatics.com
 
 [Rewrite]
-#request if ${url} ~= /^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$/i then request.json.jq(".storefrontId = \"143441-19,29\"")
 request if ${url} ~= /udp-fallback-mode/i then reject(200)
 
 [Host]

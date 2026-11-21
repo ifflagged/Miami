@@ -11,9 +11,6 @@ skip-proxy = %APPEND% 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.lo
 [URL Rewrite]
 udp-fallback-mode - reject
 
-[Body Rewrite]
-http-request-jq # ^https?://testflight\.apple\.com/v\d/accounts/.+?/install$ '.storefrontId = "143441-19,29"'
-
 [Host]
 mtalk.google.com = 108.177.125.188
 dl.google.com = server:119.29.29.29
