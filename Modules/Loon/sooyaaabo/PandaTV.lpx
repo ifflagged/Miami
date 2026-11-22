@@ -1,6 +1,6 @@
 #!name = PandaTV
 #!desc = 绕过PandaTV直播源防盗检测，恢复正常播放。
-#!openUrl = https://5721004.xyz/player/pandatv.html
+#!openUrl = https://kbjgirl.com/panda-live
 #!author = sooyaaabo[https://github.com/sooyaaabo]
 #!tag = 功能增强
 #!system = 
@@ -9,6 +9,9 @@
 #!homepage = https://loonlab.103516.xyz/Plugin/
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/PandaTV-02.png
 #!date = 2026-11-02 21:00
+
+# https://kbjgirl.com/panda-live
+# https://5721004.xyz/player/pandatv.html
 
 [Rule]
 DOMAIN-SUFFIX, pandalive.co.kr,PROXY
