@@ -3,7 +3,7 @@
 #!author=sooyaaabo[https://github.com/sooyaaabo]
 #!icon=icon not found
 #!tag=sooyaaabo
-#!openUrl=https://5721004.xyz/player/pandatv.html
+#!openUrl=https://kbjgirl.com/panda-live
 #!tag=功能增强
 #!loon_version=3.5.3(1014)
 #!homepage=https://loonlab.103516.xyz/Plugin/
@@ -14,6 +14,9 @@ DOMAIN-SUFFIX,pandalive.co.kr,PROXY
 DOMAIN-SUFFIX,5721004.xyz,PROXY
 DOMAIN-SUFFIX,live-video.net,PROXY
 DOMAIN-KEYWORD,live-video.net,PROXY
+
+[Rewrite]
+request if ${url} ~= /^https?:\/\/[^\/:?#]*\.live-video\.net[^\/:?#]*(?=[:\/?#]|$)/i then request.header.set("Origin", "https://www.pandalive.co.kr")
 
 [MITM]
 hostname = live-video.net, *.live-video.net
