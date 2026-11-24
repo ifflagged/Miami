@@ -1,4 +1,4 @@
-#规则数量:21
+#规则数量:22
 #不支持的规则数量:0
 #已排除的规则数量:0
 
@@ -10,6 +10,7 @@ payload:
   - DOMAIN,highway-tb.ele.me
   - DOMAIN,app-monitor.ele.me
   - DOMAIN,cdn.ynuf.aliapp.org
+  - DOMAIN,zconfig.elemecdn.com
   - IP-CIDR,59.82.121.172/32,no-resolve
   - IP-CIDR,59.82.121.72/32,no-resolve
   - IP-CIDR,59.82.121.215/32,no-resolve
