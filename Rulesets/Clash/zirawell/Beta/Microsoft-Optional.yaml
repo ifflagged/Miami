@@ -2,7 +2,7 @@
 #不支持的规则数量:1
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT, Microsoft*, Microsoft
+#USER-AGENT, Microsoft*
 
 #-----------------以下为解析后的规则-----------------#
 
