@@ -2,8 +2,8 @@
 #不支持的规则数量:2
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT, *youtube*
-#USER-AGENT, YouTube*
+#USER-AGENT, *youtube*, YouTube
+#USER-AGENT, YouTube*, YouTube
 
 #-----------------以下为解析后的规则-----------------#
 

@@ -2,15 +2,15 @@
 #不支持的规则数量:9
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT, hide*
-#USER-AGENT, TeamViewer*
-#USER-AGENT, TIM*
-#USER-AGENT, ting_en
-#USER-AGENT, WebTorrent*
-#USER-AGENT, cmb*
-#USER-AGENT, %E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C*
-#USER-AGENT, hearthstone*
-#USER-AGENT, Microsoft*
+#USER-AGENT, hide*, Mainland
+#USER-AGENT, TeamViewer*, Mainland
+#USER-AGENT, TIM*, Mainland
+#USER-AGENT, ting_en, Mainland
+#USER-AGENT, WebTorrent*, Mainland
+#USER-AGENT, cmb*, Mainland
+#USER-AGENT, %E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C*, Mainland
+#USER-AGENT, hearthstone*, Mainland
+#USER-AGENT, Microsoft*, Mainland
 
 #-----------------以下为解析后的规则-----------------#
 
@@ -291,7 +291,7 @@ payload:
   - DOMAIN-SUFFIX,werewolf.53site.com
   - DOMAIN-SUFFIX,wkcdn.com
   - DOMAIN-SUFFIX,xdrig.com
-  - DOMAIN-SUFFIX,xDOMAINfire.com
+  - DOMAIN-SUFFIX,xhostfire.com
   - DOMAIN-SUFFIX,xiaojukeji.com
   - DOMAIN-SUFFIX,xiaomi.com
   - DOMAIN-SUFFIX,xiaomi.net
