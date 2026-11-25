@@ -6132,7 +6132,7 @@ ne_foll = type=http-response, pattern=(?i)^https?:\/\/(ipv4|interface\d?)\.music
 
 {{{yzxiapp_enable}}}悠洗APP = type=http-response, pattern=(?i)^https?:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_yx.js, requires-body=true, timeout=60
 
-{{{youtube_enable}}}YouTube响应体 = type=http-response, pattern=(?i)^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/Maasea_youtube.response.js, requires-body=true, binary-body-mode=true, timeout=60
+{{{youtube_enable}}}YouTube响应体 = type=http-response, pattern=(?i)^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/Maasea_youtube.response_1.js, requires-body=true, binary-body-mode=true, timeout=60
 
 {{{vhuhgsjn_enable}}}掌上公交小程序广告 = type=http-response, pattern=(?i)^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do, script-path=https://github.com/ifflagged/Miami/raw/main/Modules/JavaScript/fmz200/blockAds/fmz200_zhangshanggongjiao.js, requires-body=true, timeout=60
 
