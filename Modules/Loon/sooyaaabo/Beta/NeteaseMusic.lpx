@@ -26,16 +26,16 @@ BK=switch,false,true,tag = 顶部-播客, desc = false为隐藏, true为显示
 TS=switch,false,true,tag = 顶部-听书, desc = false为隐藏, true为显示
 HDTAB=switch,false,true,tag = 顶部-活动Tab, desc = false为隐藏, true为显示
 PRGG=switch,false,true,tag = 首页-问候语, desc = false为隐藏, true为显示
-PRDRD=switch,false,true,tag = 首页-每日推荐, desc = false为隐藏, true为显示
-PRSCVPT=switch,false,true,tag = 首页-推荐歌单, desc = false为隐藏, true为显示
+PRDRD=switch,true,false,tag = 首页-每日推荐, desc = false为隐藏, true为显示
+PRSCVPT=switch,true,false,tag = 首页-推荐歌单, desc = false为隐藏, true为显示
 PRST=switch,false,true,tag = 首页-最近常听, desc = false为隐藏, true为显示
 HMPR=switch,false,true,tag = 首页-音乐合伙人, desc = false为隐藏, true为显示
 PRRR=switch,true,false,tag = 首页-雷达歌单, desc = false为隐藏, true为显示
-PRRK=switch,false,true,tag = 首页-排行榜, desc = false为隐藏, true为显示
-PRMST=switch,false,true,tag = 首页-推荐专属歌单, desc = false为隐藏, true为显示
+PRRK=switch,true,false,tag = 首页-排行榜, desc = false为隐藏, true为显示
+PRMST=switch,true,false,tag = 首页-推荐专属歌单, desc = false为隐藏, true为显示
 PRCN=switch,true,false,tag = 首页-你的专属歌单, desc = false为隐藏, true为显示
-PRPRS=switch,true,false,tag = 首页-私房推荐歌曲, desc = false为隐藏, true为显示
-PRRSS=switch,true,false,tag = 首页-红心相似歌曲, desc = false为隐藏, true为显示
+PRPRS=switch,false,true,tag = 首页-私房推荐歌曲, desc = false为隐藏, true为显示
+PRRSS=switch,false,true,tag = 首页-红心相似歌曲, desc = false为隐藏, true为显示
 Music163_VIP_Shared=switch,false,true,tag = 启用[共享会员], desc = 是否启用网易云音乐共享会员
 Cookie=input,"",tag = Cookie, desc = 请填写Cookie值
 MConfigInfo=input,"",tag = MConfigInfo, desc = 请填写MConfigInfo值
