@@ -3,21 +3,8 @@
 #!icon=icon not found
 #!tag=zirawell
 
-[Rule]
-DOMAIN,abapi.hellobike.com,REJECT
-DOMAIN,ip.hellobike.com,REJECT
-DOMAIN,cdn.hellobike.com,REJECT
-DOMAIN,apmgw.hellobike.com,REJECT
-
 [Rewrite]
-request if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?msg\.toast\.user/i then reject(200)
-request if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?homepage\.recommend\.popUp/i then reject(200)
-request if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?homepage\.module\.newAlipay/i then reject(200)
-request if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?homepage\.shortcut\.scene\.perception/i then reject(200)
-request if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?bottom\.aggregation\.tab\.info/i then reject(200)
-response if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?homepage\.newWelfare\.alipay/i then response.body.mock("json", "{}", 200)
-response if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?homepage\.hitch\.awareness/i then response.body.mock("json", "{}", 200)
-response if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?applet\.homepage\.medal\.activity/i then response.body.mock("json", "{}", 200)
+response if ${url} ~= /^https?:\/\/api\.hellobike\.com\/api\?adx/i then response.body.mock("json", "{}", 200)
 
 [MITM]
 hostname = api.hellobike.com
