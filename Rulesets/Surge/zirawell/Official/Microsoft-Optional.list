@@ -1,31 +1,31 @@
 #!name=Microsoft Filter
 #!homepage=https://github.com/zirawell/R-Store
-#!raw-url=https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/QuanX/Filter/Optional/Microsoft.list
+#!raw-url=https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Filter/Optional/Microsoft.list
 #!tg-group=https://t.me/RStoreCom
 #!date=2024-11-08 10:24:00
 #!---------------------------------------------------------------------------------------------------------------
-USER-AGENT, Microsoft*, Microsoft
-HOST-KEYWORD, microsoft, Microsoft
-HOST-SUFFIX, ms, Microsoft
-HOST-SUFFIX, bing.com, Microsoft
-HOST-SUFFIX, bing.net, Microsoft
-HOST-SUFFIX, hotmail.com, Microsoft
-HOST-SUFFIX, live.com, Microsoft
-HOST-SUFFIX, live.net, Microsoft
-HOST-SUFFIX, microsofttranslator.com, Microsoft
-HOST-SUFFIX, msauth.net, Microsoft
-HOST-SUFFIX, msecnd.net, Microsoft
-HOST-SUFFIX, msocdn.com, Microsoft
-HOST-SUFFIX, msedge.net, Microsoft
-HOST-SUFFIX, msn.com, Microsoft
-HOST-SUFFIX, office.com, Microsoft
-HOST-SUFFIX, office.net, Microsoft
-HOST-SUFFIX, office365.com, Microsoft
-HOST-SUFFIX, onenote.com, Microsoft 
-HOST-SUFFIX, onenote.net, Microsoft
-HOST-SUFFIX, outlook.com, Microsoft
-HOST-SUFFIX, visualstudio.com, Microsoft
-HOST-SUFFIX, windows.com, Microsoft
-HOST-SUFFIX, windows.net, Microsoft
-HOST-SUFFIX, xbox.com, Microsoft
-HOST-SUFFIX, xboxlive.com, Microsoft
+USER-AGENT, Microsoft*
+DOMAIN-KEYWORD, microsoft
+DOMAIN-SUFFIX, ms
+DOMAIN-SUFFIX, bing.com
+DOMAIN-SUFFIX, bing.net
+DOMAIN-SUFFIX, hotmail.com
+DOMAIN-SUFFIX, live.com
+DOMAIN-SUFFIX, live.net
+DOMAIN-SUFFIX, microsofttranslator.com
+DOMAIN-SUFFIX, msauth.net
+DOMAIN-SUFFIX, msecnd.net
+DOMAIN-SUFFIX, msocdn.com
+DOMAIN-SUFFIX, msedge.net
+DOMAIN-SUFFIX, msn.com
+DOMAIN-SUFFIX, office.com
+DOMAIN-SUFFIX, office.net
+DOMAIN-SUFFIX, office365.com
+DOMAIN-SUFFIX, onenote.com
+DOMAIN-SUFFIX, onenote.net
+DOMAIN-SUFFIX, outlook.com
+DOMAIN-SUFFIX, visualstudio.com
+DOMAIN-SUFFIX, windows.com
+DOMAIN-SUFFIX, windows.net
+DOMAIN-SUFFIX, xbox.com
+DOMAIN-SUFFIX, xboxlive.com
