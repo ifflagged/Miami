@@ -2,30 +2,30 @@
 #不支持的规则数量:24
 #已排除的规则数量:0
 #不支持的规则:
-#USER-AGENT, AcFun*
-#USER-AGENT, bili*
-#USER-AGENT, Bilibili*
-#USER-AGENT, QIYI*
-#USER-AGENT, iQiYi*
-#USER-AGENT, PPStream*
-#USER-AGENT, QYPlayer*
-#USER-AGENT, %E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*
-#USER-AGENT, MGTV*
-#USER-AGENT, MiguVideo*
-#USER-AGENT, %E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91
-#USER-AGENT, MOO*
-#USER-AGENT, TencentMidasConnect*
-#USER-AGENT, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90
-#USER-AGENT, NeteaseMusic*
-#USER-AGENT, QQ%e9%9f%b3%e4%b9%90*
-#USER-AGENT, QQMusic*
-#USER-AGENT, live4iphone*
-#USER-AGENT, qqlive4iphone*
-#USER-AGENT, TencentMidasConnect*
-#USER-AGENT, walkman*
-#USER-AGENT, xiami*
-#USER-AGENT, Youku*
-#USER-AGENT, %E4%BC%98%E9%85%B7*
+#USER-AGENT, AcFun*, CMedia
+#USER-AGENT, bili*, CMedia
+#USER-AGENT, Bilibili*, CMedia
+#USER-AGENT, QIYI*, CMedia
+#USER-AGENT, iQiYi*, CMedia
+#USER-AGENT, PPStream*, CMedia
+#USER-AGENT, QYPlayer*, CMedia
+#USER-AGENT, %E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*, CMedia
+#USER-AGENT, MGTV*, CMedia
+#USER-AGENT, MiguVideo*, CMedia
+#USER-AGENT, %E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91, CMedia
+#USER-AGENT, MOO*, CMedia
+#USER-AGENT, TencentMidasConnect*, CMedia
+#USER-AGENT, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90, CMedia
+#USER-AGENT, NeteaseMusic*, CMedia
+#USER-AGENT, QQ%e9%9f%b3%e4%b9%90*, CMedia
+#USER-AGENT, QQMusic*, CMedia
+#USER-AGENT, live4iphone*, CMedia
+#USER-AGENT, qqlive4iphone*, CMedia
+#USER-AGENT, TencentMidasConnect*, CMedia
+#USER-AGENT, walkman*, CMedia
+#USER-AGENT, xiami*, CMedia
+#USER-AGENT, Youku*, CMedia
+#USER-AGENT, %E4%BC%98%E9%85%B7*, CMedia
 
 #-----------------以下为解析后的规则-----------------#
 
